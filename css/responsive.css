@@ -1,0 +1,164 @@
+/*Small screen settings and button settings*/
+.dropbtn, .dropdown, .dropdown-content a {
+    display: none;
+}
+@media screen and (max-width: 75em) {
+    nav {
+        display: none;
+    }
+
+
+    .body-container {
+        margin-right:auto;
+        margin-left: auto;
+        width:90%;
+
+    }
+
+    .dropbtn {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        margin: auto auto 2em 82%;
+        width: 5em;
+        height: 5em;
+        border: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #fffcff;
+        -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        cursor: pointer;
+        transition: all 0.2s ease-out 0s;
+    }
+
+    .dropbtn img {
+        padding-top: .5em;
+        width: 3em;
+        pointer-events: none;
+    }
+
+    .dropbtn:hover {
+        background-color: #4CAF50;
+        -webkit-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        -moz-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        color: white;
+    }
+
+    .dropbtn:focus {
+        outline: none;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .dropbtn:hover img, .dropbtn:focus img {
+        -webkit-filter: invert(100%);
+        -ms-filter: invert(100%);
+        filter: invert(100%);
+        -moz-filter: invert(100%);
+        -o-filter: invert(100%);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: fixed;
+        top: 0;
+        display: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+}
+@media screen and (max-height: 44em) {
+    nav {
+        display: none;
+    }
+
+
+    .body-container {
+        margin-right:auto;
+        margin-left: auto;
+        width:90%;
+    }
+    .dropbtn {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        margin: auto;
+        margin-bottom: 2em;
+        margin-left: 82%;
+        width: 5em;
+        height: 5em;
+        border: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #fffcff;
+        -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+        cursor: pointer;
+        transition: all 0.2s ease-out 0s;
+    }
+
+    .dropbtn img {
+        padding-top: .5em;
+        width: 3em;
+        pointer-events: none;
+    }
+
+    .dropbtn:hover {
+        background-color: #4CAF50;
+        -webkit-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        -moz-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
+        color: white;
+    }
+
+    .dropbtn:focus {
+        outline: none;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .dropbtn:hover img, .dropbtn:focus img {
+        -webkit-filter: invert(100%);
+        -ms-filter: invert(100%);
+        filter: invert(100%);
+        -moz-filter: invert(100%);
+        -o-filter: invert(100%);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: fixed;
+        top: 0;
+        display: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+}
