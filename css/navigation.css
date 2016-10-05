@@ -6,11 +6,11 @@ nav {
 }
 
 ul {
-    margin: 0;
-    padding: 1em;
-    width:14em;
-    background-color: #fffcff;
     list-style-type: none;
+    padding: 1em;
+    background-color: #fffcff;
+    width:14em;
+    margin: 0;
 }
 li{
     padding: .25em;
@@ -18,8 +18,8 @@ li{
 }
 /*Nav link styles*/
 li a, ul li:hover li a {
-    display: block;
     color: #000;
+    display: block;
 }
 li:hover{
     position: relative;
@@ -28,16 +28,15 @@ li:hover{
 ul li:hover a, ul li:hover li:hover a {
     color: #ffffff;
 }
-
 /*Flyout menu styling*/
 ul li:hover ul{
-    top: 0;
     left:150px;
+    top: 0;
     display:block;
-    padding: 1em .25em 1em .25em;
     -webkit-box-shadow: 4px 3px 3px 3px rgba(41, 41, 41, .3);
     -moz-box-shadow: 4px 3px 3px 3px rgba(41, 41, 41, .3);
     box-shadow: 4px 3px 3px 3px rgba(41, 41, 41, .3);
+    padding: 1em .25em 1em .25em;
 }
 /*Keeps flyout menu hidden*/
 ul li ul {

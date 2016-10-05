@@ -1,0 +1,141 @@
+a.nav-collapsible-top{
+	padding:  8px 24px; 
+	width: 87%;
+}
+[id*=label]:hover > [id*=nav]{
+	background: #4CAF50; /* Background collapsible nav button*/
+}
+
+[id*=collapsible-]:checked~[class*=collapsible-][class$=area],
+[class*=collapsible-][class$=area] {
+	padding: 0;
+}
+
+.card{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .09), 0 2px 10px 0 rgba(0, 0, 0, .09);
+}
+p,
+.card {
+	padding: 0; /* Resets card padding to 0, to make header bars possible*/
+	background:none;
+	
+}
+.mod-notes{
+	background: #91A6BB; /* Background for mod information*/
+}
+.normal {
+	background: #95A5A6; /* Background for normal text */
+}
+.instructions{
+	background:lightgrey;
+}
+
+.text,
+.steps {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+.text {
+	padding-top: 10px;
+}
+.steps {
+	font-family: Courier New, monospace;
+}
+pre{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	webkit-box-sizing:border-box;
+	display:block; 
+	white-space: pre-wrap;  
+	white-space: -moz-pre-wrap; 
+	white-space: -pre-wrap; 
+	white-space: -o-pre-wrap; 
+	word-wrap: break-word; 
+	overflow-x:auto;
+
+	tab-size: 0;
+ }
+.mod-notes pre{
+		margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+.new-section,
+.download,
+.general,
+.important,
+.settings,
+.ini,
+.clean,
+.merge{
+	margin: 0;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .09), 0 2px 10px 0 rgba(0, 0, 0, .09);
+	padding-left: 20px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	border-radius: 0;
+}
+.not-shown{
+	width: 95%;
+}
+.guide-collapse  {
+	background: lightgrey;
+}
+.new-section{
+	background: #4CAF50;
+	/* 	background: #0A1919 */
+}
+.download{
+	background: #2F4F4F;
+}
+.general{
+	background: grey;
+}
+.important{
+	background: #FF6653; /* Header background for alerts */
+}
+.settings{
+	background: #D9B400; /* Header background for in game settings */
+}
+.ini{
+	background: #7494FF; /* Header background for ini edits */
+}
+.merge{
+	background: #EB8CBA; /* Header background for merges */
+}
+.clean{
+	background:tan;
+}
+
+/* LINK COLORS */
+.program a,
+.fo3 a,
+.fnv a,
+.ttw a{
+	background: none;
+	font-family: Monofonto, sans serif;
+	font-size: 20px;
+}
+.program a:hover,
+.fo3 a:hover,
+.fnv a:hover,
+.ttw a:hover{
+	color: white;
+}
+.sub-section{
+	color: white;
+}
+.program {
+	color:#9666FC; /* Text color for external programs */
+}
+.fo3{
+	color:#74FC39; /* Text color for FO3 mods */
+}
+.fnv{
+	color:#FCB040; /* Text color for FNV mods */
+}
+.ttw{
+	color:#7BDEFC; /* Text color for TTW mods */
+}

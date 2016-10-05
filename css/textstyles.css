@@ -6,9 +6,9 @@
 
 /*Document globals*/
 html, body {
-    background-color: #0a1919;
     font-size: 1em;
     font-family: Arial, sans-serif;
+    background-color: #0a1919;
 }
 
 .text{
@@ -16,16 +16,16 @@ html, body {
     font-weight: bold;
 }
 .instructions{
+    font-family: "Courier New", monospace;
     background-color: #d3d3d3;
     -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
     -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
     box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
-    font-family: "Courier New", monospace;
 }
 /*Header Style*/
 h1, h2, h3, h4{
-    color: white;
     font-family: 'Monofonto', Arial, sans-serif;
+    color: white;
 }
 h1 {
     font-size: 3em;
@@ -65,14 +65,11 @@ a:hover {
 }
 
 /*Headings*/
-.mod{
+.alert, .ini, .settings, .merge, .clean, .mod {
     font-size: 1.2em;
-}
-.alert, .ini, .settings, .merge, .clean{
     -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
     -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
     box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
-    font-size: 1.2em;
 
 }
 .alert {

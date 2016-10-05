@@ -9,57 +9,57 @@
 
 
     .body-container {
-        margin-right:auto;
-        margin-left: auto;
         width:90%;
+        margin-left: auto;
+        margin-right:auto;
 
     }
 
     .dropbtn {
-        position: fixed;
-        bottom: 0;
         display: block;
-        margin: auto auto 2em 82%;
+        background-color: #fffcff;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        bottom: 0;
         width: 5em;
         height: 5em;
-        border: none;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        background-color: #fffcff;
         -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
         -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
         box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
-        cursor: pointer;
+        margin: auto auto 2em 82%;
         transition: all 0.2s ease-out 0s;
     }
 
     .dropbtn img {
-        padding-top: .5em;
         width: 3em;
+        padding-top: .5em;
         pointer-events: none;
     }
 
     .dropbtn:hover {
         background-color: #4CAF50;
+        color: white;
         -webkit-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
         -moz-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
         box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
-        color: white;
     }
 
     .dropbtn:focus {
-        outline: none;
         background-color: #4CAF50;
         color: white;
+        outline: none;
     }
 
     .dropbtn:hover img, .dropbtn:focus img {
         -webkit-filter: invert(100%);
-        -ms-filter: invert(100%);
-        filter: invert(100%);
         -moz-filter: invert(100%);
+        -ms-filter: invert(100%);
         -o-filter: invert(100%);
+        filter: invert(100%);
     }
 
     .dropdown {
@@ -68,10 +68,10 @@
     }
 
     .dropdown-content {
-        position: fixed;
-        top: 0;
         display: none;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
     }
 
     .dropdown-content a {
@@ -89,57 +89,57 @@
 
 
     .body-container {
-        margin-right:auto;
-        margin-left: auto;
         width:90%;
+        margin-left: auto;
+        margin-right:auto;
     }
     .dropbtn {
-        position: fixed;
-        bottom: 0;
         display: block;
-        margin: auto;
-        margin-bottom: 2em;
-        margin-left: 82%;
+        background-color: #fffcff;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        bottom: 0;
         width: 5em;
         height: 5em;
-        border: none;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        background-color: #fffcff;
+        margin: auto;
         -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
         -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
         box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
-        cursor: pointer;
+        margin-left: 82%;
+        margin-bottom: 2em;
         transition: all 0.2s ease-out 0s;
     }
 
     .dropbtn img {
-        padding-top: .5em;
         width: 3em;
+        padding-top: .5em;
         pointer-events: none;
     }
 
     .dropbtn:hover {
         background-color: #4CAF50;
+        color: white;
         -webkit-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
         -moz-box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
         box-shadow: 5px 6px 6px 0 rgba(41, 41, 41, .3);
-        color: white;
     }
 
     .dropbtn:focus {
-        outline: none;
         background-color: #4CAF50;
         color: white;
+        outline: none;
     }
 
     .dropbtn:hover img, .dropbtn:focus img {
         -webkit-filter: invert(100%);
-        -ms-filter: invert(100%);
-        filter: invert(100%);
         -moz-filter: invert(100%);
+        -ms-filter: invert(100%);
         -o-filter: invert(100%);
+        filter: invert(100%);
     }
 
     .dropdown {
@@ -148,10 +148,10 @@
     }
 
     .dropdown-content {
-        position: fixed;
-        top: 0;
         display: none;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
     }
 
     .dropdown-content a {

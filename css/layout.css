@@ -1,7 +1,7 @@
 /*Document globals*/
 .body-container {
-    margin-left: 18em;
     width: 50em;
+    margin-left: 18em;
 }
 p, h4{
     margin:0;
@@ -13,8 +13,8 @@ h1, h2, h3{
      padding: .5em;
  }
 .alert, .ini, .settings, .merge, .clean {
-    margin-top: 1em;
     padding: .5em;
+    margin-top: 1em;
 }
 /*Text styles*/
 .text {
