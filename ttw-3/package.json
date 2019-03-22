@@ -1,12 +1,12 @@
 {
   "name": "ttwoee",
   "description": "Tale of Two Wastelands: Over-Encumbered Edition built with Pug",
-  "license": "GPL",
+  "license": "MIT",
   "homepage": "https://ttwoee.com",
   "repository": "",
   "author": "themagicteeth",
   "scripts": {
-    "build:pug": "pug --pretty --no-debug ./src/index.pug  --out ./dist",
+    "build:pug": "pug --no-debug ./src/index.pug  --out ./dist",
     "build:css": "uglifycss ./src/style.css > ./dist/style.css",
     "build": "yarn build:pug && yarn build:css"
   },

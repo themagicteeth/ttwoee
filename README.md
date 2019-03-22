@@ -25,6 +25,8 @@ the source code.
 
 ## Work on TTWOEE
 
+You will need `Git` and `yarn` Node package manager installed.
+
 Clone the repository: `git clone https://github.com/themagicteeth/ttwoee.git`
 
 From the `ttw-3` directory, install the dependencies: `yarn install`
