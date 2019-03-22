@@ -27,7 +27,7 @@ the source code.
 
 Clone the repository: `git clone https://github.com/themagicteeth/ttwoee.git`
 
-From the `src` directory, install the dependencies: `yarn install`
+From the `ttw-3` directory, install the dependencies: `yarn install`
 
 To see any changes made, run `yarn build`. This will compile the Pug templates
 and minify the CSS, and is viewable in any browser.
