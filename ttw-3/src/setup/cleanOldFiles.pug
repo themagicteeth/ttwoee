@@ -1,0 +1,38 @@
+//-
+    Clean Old Files
+    2019-03-22
+//-
+
+div#clean-old-files
+    h3.section-header Clean Old Files
+    p.copy-bg
+        | It is important that the games installation files are as close to vanilla as possible.
+        | Follow the steps below to ensure that your game is free from previous modding files and
+        | that the ini files are reset to their default state.
+
+    div#reset-game-files
+        h4.section-header Reset Game Files
+        +important If this is not a clean installation of Fallout New Vegas and you have modded prior perform the following:
+        pre.mt0
+            | Delete everything in the New Vegas folder except the Data folder.
+            | Open the Data folder and delete everything that is not a vanilla ESM or BSA from New Vegas or the DLCs.
+            | If you have previously "cleaned" the base game ESMs, delete those as well, as TTW requires them uncleaned.
+            |
+            | Go to New Vegas in Steam, right click, and select [Properties].
+            | Navigate to [Verify Game Cache] option and Steam will download all the necessary files.
+            |
+            | Optional Tip: Making a archive of the clean game installation with 7Zip is handy for reinstalling Fallout.
+
+    div#reset-inis
+        h4.section-header Reset Inis
+        +important To ensure the INI files are the vanilla INI files perform the following:
+        pre.mt0
+            | Navigate to My Games/Documents and delete the following files:
+            |
+            | Fallout.ini
+            | FalloutPrefs.ini
+            |
+            | This will allow the INIs to revert back to vanilla when the game is launched.
+
+
+

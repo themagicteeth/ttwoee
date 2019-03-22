@@ -1,0 +1,82 @@
+//-
+    Fixes and Extensions
+    Updated 2019-03-22
+//-
+
+section#fixes-and-extensions
+    h2.section-header Fixes and Extensions
+
+    //-
+        JIP LN NVSE Plugin
+        Updated 2019-03-22
+    //-
+    +modCard('jip-ln-nvse-plugin', 'JIP LN NVSE Plugin', 'https://www.nexusmods.com/newvegas/mods/58277', 'fnv-color')
+        +author Jazzisparis and LuthienAnarion
+        +version 55.05
+        +installation Install JIP LN NVSE Plugin
+        +notes  
+            | This plugin is an extension of the New Vegas Script Extender (NVSE). It adds 800+ new functions, 
+            | which can be used in GECK scripting and (in some cases) as conditions. Additionally, this mod 
+            | includes numerous engine bug fixes/tweaks, and restores several broken game features.
+
+    //-
+        NVAC - New Vegas Anti Crash
+        Updated 2019-03-22
+    //-
+    +modCard('nvac', 'NVAC - New Vegas Anti Crash', 'https://www.nexusmods.com/newvegas/mods/53635', 'fnv-color')
+        +author Queue
+        +version 7.5.1.0
+        +installation Install NVAC - New Vegas Anti Crash
+        +notes This mod extends error handling of New Vegas, leading to fewer crashes.
+
+    //-
+        NVSR - New Vegas Stutter Remover
+        Updated 2019-03-22
+    //-
+    +modCard('nvsr', 'NVSR - New Vegas Stutter Remover', 'https://www.nexusmods.com/newvegas/mods/34832', 'fnv-color')
+        +author SkyRanger-1
+        +version 4.1.36
+        +installation Install NVSR_4-1-36
+            pre.raised
+                | This mod is packaged incorrectly
+                | During install right click "Data" and select [Set data directory].
+
+            div.raised
+                +important This mod has an INI file that has some options users should be aware of
+                    pre.mt0
+                        | Changes should made by right clicking NVSR in the left pane of Mod Organizer, selecting Information...
+                        | and selecting the INI-Files Tab.
+                        |
+                        | "NVSE/plugins/sr_New_Vegas_Stutter_Remover.ini" should be listed in the top left box
+                        | Click it, and use the following to make changes accordingly: 
+
+            div.raised
+                +ini Master section
+                    pre.mt0
+                        | Master = {
+                        |      _comment = You can turn on or off each distinct feature from here.
+                        |       bManageFPS = 1
+                        |       bHookCriticalSections = 1
+                        |       bHookLightCriticalSections = 0
+                        |       bHookHashtables = 1
+                        |       bReplaceHeap = 0
+                        |       bReplaceGetTickCount = 1
+                        |       bLogToConsole = 0
+                        |       bFastExit = 1
+                        |       bFlushLog = 1
+                        |       iSchedulingResolution = 1
+                        |       bReplaceRandom = 0
+                        |       bExperimentalStuff = 0     
+                        |       iMainHookPoint = 1
+                        | }
+
+            div.raised
+                +ini FPS Management section
+                    pre.mt0
+                        | FPS_Management = {
+                        |	bInject_iFPSClamp = 1
+                        |	fMaximumFPS = 60     
+                        |	fMinimumFPS = 20
+                        |	iFPS_Report_Period = 15000
+                        |	fExtraSleepPercent = 0.05
+                        | }

@@ -1,0 +1,18 @@
+{
+  "name": "ttwoee",
+  "description": "Tale of Two Wastelands: Over-Encumbered Edition built with Pug",
+  "license": "GPL",
+  "homepage": "https://ttwoee.com",
+  "repository": "",
+  "author": "themagicteeth",
+  "scripts": {
+    "build:pug": "pug --pretty --no-debug ./src/index.pug  --out ./dist",
+    "build:css": "uglifycss ./src/style.css > ./dist/style.css",
+    "build": "yarn build:pug && yarn build:css"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "uglifycss": "^0.0.29"
+  }
+}
