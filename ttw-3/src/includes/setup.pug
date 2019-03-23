@@ -105,3 +105,58 @@ section#setup
             +notes 
                 | Fallout New Vegas only allows for 2 GB of RAM to be accessed by the FalloutNV.exe, so this will allow 4 GB of RAM
                 | to be accessed by setting the LAA flag. 
+
+        +important 
+            | These mods are not completely installed yet! Installation will be finished in the following sections.
+    
+    div#configure-mod-organizer
+        h3.section-header Configure Mod Organizer
+
+        p.copy-bg
+            | Now that the base game is properly configured, the next step is to set up our mod management utility.
+            |
+            | Mod Organizer is the mod manager of choice for the following reasons:
+            |
+            | 1) Profiles allow multiple configurations set up per character and/or playthrough.
+            | 2) Mod Downloads via NXM allows downloading of mods directly using the "Download With Manager" button on the Nexus site.
+            | 3) Mod Version Tracking uses the power of the Nexus site to track major mod updates. However, this is not a replacement for the track file option on the actual Nexus site for optional downloads!
+            | 4) NMM Installer Compatibility allows the use of Nexus Mod Manager installers.
+            | 5) Manual Installation Option allows modification and selection of the data folder in an archive manually, allowing fixes of path problems at install time.
+            | 6) Virtual File System allows a clean base Fallout installation without the mess of moving files. Additionally extends this file system to other tools such as LOOT, FNVEdit, and Wrye Flash NV. 
+        
+        div#setup-vanilla-fallout
+            h4.section-header Setup a Vanilla Fallout: New Vegas Profile
+            pre
+                | Start Mod Organizer.
+                | If this is the first run, Mod Organizer will prompt to select which game to manage, select Fallout New Vegas.
+                |
+                | Click the [Configure Profiles] button at the top of the window. The icon looks like an ID card.
+                | Verify "Automatic Archive Invalidation" is checked.
+                | Click [Create] and type "Fallout New Vegas" in the text box.
+                | Verify that "Default Game Settings" is unchecked then click [OK].
+                | Select the "Default" profile and click [Remove]. Select [Yes] when prompted.
+                | Close the dialogue by clicking [Close].
+                |
+                | Verify that "Fallout New Vegas" is the currently selected profile in the "Profile" drop-down above the left-pane of the Mod Organizer window.
+
+    div#mod-organizer-settings
+            h4.section-header Configure ModOrganizer Settings
+
+            p.copy-bg.mb0 Next the ModOrganizer settings will need to be configured.
+                pre.mt0
+                    | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks like a screwdriver and wrench.
+                    |
+                    | In the "Settings" dialogue, click the [Nexus] tab.
+                    | Check "Automatically Log-In to Nexus" and input a valid nexus username and password.
+                    |
+                    | In the "Settings" dialogue, click the [Plugins] tab.
+                    | Select "Basic Diagnosis Plugin" in the left pane.
+                    | In the right pane, double click on the value to the right of "check_modorder" and select "false".
+                    |
+                    | In the "Settings" dialogue, click the [Workarounds] tab.
+                    | Verify that NMM Version is at least 0.52.2, if it is not then update it to this value.
+                    |
+                    | Close the window by clicking [OK]. 
+
+        
+
