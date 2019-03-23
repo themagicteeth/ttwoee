@@ -1,5 +1,7 @@
 # Tale of Two Wastelands: Over-Encumbered Edition
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb40c928-9d43-4124-b95b-7c7b35e144b1/deploy-status)](https://app.netlify.com/sites/ttwoee/deploys)
+
 ## About
 
 TTWOEE is a modding guide for Tale of Two Wastelands.
@@ -50,7 +52,7 @@ Mods follow the following structure, note that the `ini` and, `important` templa
         - All mods must have a comment with their name and updated date
     Updated 2019-03-22
 //-
-+mod
++mod('mod-name', 'Mod Name', 'https://nexusmods.com', 'fnv-color')
     +author Author name
     +version Mod version number
     +installation Basic installation instructions
