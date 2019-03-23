@@ -1,0 +1,29 @@
+mixin modCard(id, name, url, type)
+    div(id=id)
+        h6.mod-name.mb0 #[a(href=url class=type) #{name}]
+        div.mod-card-bg.mt0
+            block
+
+mixin author(name)
+    p.mt0.mb0 #[span.b Author: ]
+        block
+
+mixin installation(text)
+    p.mt0.mb0 #[span.b Installation:] #{text}
+        block
+
+mixin version
+    p.mt0.mb0 #[span.b Version: ]
+        block
+
+mixin notes
+    p.mt0.mb0 #[span.b Mod Notes: ]
+        block
+
+mixin important
+    p.important.mb0 
+        block
+
+mixin ini
+    p.ini.mb0
+        block
