@@ -81,6 +81,27 @@ section#setup
                     | nvse_steam_loader.dll
                     |
                     | The rest will be installed later, during the ModOrganizer setup.
+                div.raised
+                    +important Create the nvse_config.ini
+                        pre.mt0
+                            | Right-click NVSE in the Mod Organizer left pane.
+                            | Select "Open In Explorer".
+                            | Enter the "nvse" folder.
+                            | Create and open a text file.
+                            | Once this file is open and able to be edited, paste in the following: 
+
+                div.raised
+                    +ini Memory allocation
+                        pre.mt0
+                            | [Memory]
+                            | DefaultHeapInitialAllocMB=400
+                            |
+                            | Note: must be between 200 and <500. 400 seems to be the best value, but play around with it a bit.
+                            |
+                            | Click "File/Save As..."
+                            | Type "nvse_config.ini" into the "File Name" field.
+                            | Change the "Save as Type" field below so it reads "All Files"
+                            | Click "Save" 
             +notes
                 | The New Vegas Script Extender, or NVSE for short, is a modder's resource that expands the scripting capabilities 
                 | of Fallout: NV. It does so without modifying the executable files on disk, so there are no permanent side effects.
