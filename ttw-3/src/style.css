@@ -28,19 +28,6 @@
   --white: #ffffff;
   --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
 }
-.github {
-  width: 2rem;
-  position: fixed;
-  right: 0;
-  margin-right: 1rem;
-  background: white;
-  border-radius: 100px;
-  border:solid medium white;
-}
-a {
-  text-decoration: none;
-  font-family: monofonto, sans-serif;
-}
 
 body {
   background-color: var(--page-bg);
@@ -50,10 +37,18 @@ body {
 }
 
 main {
-  max-width: 60rem;
   margin: 0 auto;
-  margin-left: 25%;
-  margin-right: 10%;
+  width: 98%;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.75rem; }
+
+a {
+  text-decoration: none;
+  font-family: Monofonto, sans-serif;
 }
 
 pre {
@@ -63,26 +58,26 @@ pre {
   font-size: 1rem;
 }
 
-.b {
-  font-weight: bold;
+.github {
+  width: 2rem;
+  position: fixed;
+  right: 0;
+  margin-right: 1rem;
+  background: white;
+  border-radius: 100px;
+  border: solid medium white;
 }
 
-.raised {
-  box-shadow: var(--raised-shadow);
-}
+.mw-100 { max-width: 100%;}
+.b { font-weight: bold; }
+.raised { box-shadow: var(--raised-shadow); }
+.mb0 { margin-bottom: 0; }
+.mt0 { margin-top: 0; }
 
-.tool-color {
-  color: var(--tool-color);
-}
-.fo3-color {
-  color: var(--fo3-mod-color);
-}
-.fnv-color {
-  color: var(--fnv-mod-color);
-}
-.ttw-color {
-  color: var(--ttw-mod-color);
-}
+.tool-color { color: var(--tool-color); }
+.fo3-color { color: var(--fo3-mod-color); }
+.fnv-color { color: var(--fnv-mod-color); }
+.ttw-color { color: var(--ttw-mod-color); }
 
 .fo3-color,
 .fnv-color,
@@ -111,24 +106,8 @@ pre {
   font-size: 1.25rem;
 }
 
-.ini {
-  background-color: var(--ini-bg);
-}
-
-.important {
-  background-color: var(--important-bg);
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-.mt0 {
-  margin-top: 0;
-}
-.mv0 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+.ini { background-color: var(--ini-bg); }
+.important { background-color: var(--important-bg); }
 
 .mod-name {
   background-color: var(--mod-name-bg);
@@ -153,7 +132,7 @@ pre {
   background: #67829c;
   border-radius: 4px;
   color: white;
-  font-family: monofonto, sans-serif;
+  font-family: Monofonto, sans-serif;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -163,38 +142,35 @@ pre {
   font-family: "Monofonto";
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.75rem;
-}
-
 nav {
-  top: 0;
-  position: fixed;
-  width: 20%;
-  max-width: 15rem;
+  display: none;
 }
+
+ul,
+li,
+ul li ul {
+  background-color: #ffffff;
+}
+
+li,
+li a,
+li:hover ul li a  {
+  color: #000000;
+}
+
+li:hover ul li:hover a,
+li:hover a,
+.nav-header a {
+  color: #ffffff;
+}
+
 ul {
   list-style: none;
-  background-color: #ffffff;
   margin: 0;
   padding-left: 0;
 }
 
 li {
-  background: #ffffff;
-  color: #000000;
   display: block;
   position: relative;
   padding-top: 0.5rem;
@@ -203,7 +179,6 @@ li {
 
 li a {
   font-family: Monofonto, sans-serif;
-  color: #000000;
   padding-left: 1rem;
 }
 
@@ -217,17 +192,7 @@ li:focus-within a {
   outline: none;
 }
 
-li:hover ul li:hover a,
-li:hover a {
-  color: #ffffff;
-}
-
-li:hover ul li a {
-  color: #000000;
-}
-
 ul li ul {
-  background: #ffffff;
   visibility: hidden;
   opacity: 0;
   min-width: 25rem;
@@ -256,16 +221,13 @@ ul li ul li {
   clear: both;
   width: 100%;
 }
+
 .nav-header {
   font-size: 2rem;
   font-family: Monofonto, sans-serif;
   padding-left: 0.5rem;
   background: var(--menu-accent-bg);
   border-bottom: solid thin black;
-}
-
-.nav-header a {
-  color: white;
 }
 
 .old {
@@ -277,4 +239,31 @@ ul li ul li {
 .old:hover {
   background: lightgray;
   color: var(--menu-accent-bg);
+}
+
+.hamburger {
+  fill: white;
+  position: fixed;
+  top: 0;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 30em) {}
+@media screen and (min-width: 30em) and (max-width: 60em) {}
+
+@media screen and (min-width: 60em) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    top: 0;
+    position: fixed;
+    width: 15rem;
+    display: block;
+  }
+  main {
+    max-width: 60rem;
+    margin-left: 18rem;
+  }
 }
