@@ -1,0 +1,66 @@
+
+- sections.push(['#ttw', 'Install TTW'])
+- ttw = []
+
+section#ttw
+    h2.section-header Install TTW
+
+    - ttw.push(['#create-ttwoee-profile', 'Create TTWOEE Profile'])
+    div#create-ttwoee-profile
+        h3.section-header Create the TTWOEE Profile
+
+        p.copy-bg.mb0
+            | Now that an established clean "Fallout New Vegas" profile has been created an unmodified
+            | New Vegas may be run at any time. However, the goal of the guide is to mod Fallout and 
+            | so a new profile must be established, perform the following.
+        pre.mt0.mb0
+            | Click the [Configure Profiles] icon at the top of the main Mod Organizer window. 
+            | The icon looks like an id card.
+            | Select "Fallout New Vegas" then click [Copy].
+            | Type "TTWOEE" in the text box and hit [OK]. 
+
+        p.copy-bg.mt0
+            | Mod Organizer just copied the "Fallout New Vegas" profile into a new profile named "TTWOEE". 
+            | In the Prerequisites section, NVSE was installed without the required script files. 
+            | This kept the FalloutNV/Data folder clean. But NVSE will not function properly without 
+            | the supplied scripts. Perform the following to install the scripts. 
+        pre.mt0.mb0
+            | Launch ModOrganizer
+            | Click the small screwdriver and wrench icon adjacent to the "Profile" drop-down and select
+            | "Install Mod...".
+            | Navigate to the downloaded NVSE archive and click [Open].
+            | In the file tree, navigate to the "Data" folder inside the archive, right-click and select
+            | "Set Data Directory". Only the nvse folder should be visible and checked.
+            | Click [OK]. 
+        p.copy-bg.mt0
+            | The mod will now be displayed with an empty check box in the mod window. 
+            | This mod is now installed but not yet enabled for use by the game. Checking the 
+            | box will enable it for use within the game.
+
+    - ttw.push(['#install-ttw', 'Tale of Two Wastelands'])
+    div#install-ttw
+        h3.section-header Tale of Two Wastelands
+    
+        p.copy-bg
+            | Next, Tale of Two Wastelands will be installed into this profile. Navigate to the mods 
+            | download page below, and download the latest version, as well as any
+            | hot fixes. Instructions are included as part of this guide so no need to use the ones 
+            | found on the download page for now, just know that they are there. 
+
+        +modCard('#tale-of-two-wastelands', 'Tale of Two Wastelands', 'https://taleoftwowastelands.com/dl', 'ttw-color')
+            +author TTW Team
+            +version 3.2.2
+            +installation Download the 3.2 Installer, 3.2.1 Incremental Update, and 3.2.2 Incremental Update
+
+        p.copy-bg
+            | If you would like a clean save file in order to skip the long introduction quest 
+            | you can use Tale of Two Wastelands Quick Start. You will have the opportunity to 
+            | customize the character just like normal.
+
+        +modCard('#ttw-quick-start', 'Tale of Two Wastelands Quick Start', 'https://www.nexusmods.com/newvegas/mods/65937', 'ttw-color')
+            +author Roy Batty
+            +version 1.2
+            +installation Install TTW Quick Start
+            +notes Quick start plugin to skip Vault 101 and start in the cave just outside the vault.
+
+- mods.push(ttw)
