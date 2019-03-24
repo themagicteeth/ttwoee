@@ -31,6 +31,7 @@
 
 a {
   text-decoration: none;
+  font-family: monofonto, sans-serif;
 }
 
 body {
@@ -137,6 +138,15 @@ pre {
   padding: 0.5rem;
   font-family: sans-serif;
   font-weight: bold;
+}
+
+.file {
+  background: #67829c;
+  border-radius: 4px;
+  color: white;
+  font-family: monofonto, sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .section-header {
