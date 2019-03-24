@@ -248,3 +248,14 @@ ul li ul li {
 .nav-header a {
   color: white;
 }
+
+.old {
+  font-size: 0.75rem;
+  background: lightgray;
+}
+
+.old:hover a,
+.old:hover {
+  background: lightgray;
+  color: var(--menu-accent-bg);
+}
