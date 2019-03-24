@@ -2,6 +2,8 @@ nav
     ul
         li.nav-header 
             a(href='#guide') ☢️ TTW:OEE
+        li.old
+            a(href='https://www.ttwoee.com/old').old TTW:OEE for 2.9.4b
         - for(i=0;i<sections.length;i++)
             - const section = sections[i]
             li 
@@ -12,5 +14,3 @@ nav
                         - for(j=0;j<mods[i].length;j++)
                             li
                                 a(href=mods[i][j][0]) #{mods[i][j][1]}
-        li.old
-            a(href='https://www.ttwoee.com/old').old TTW:OEE for 2.9.4b

@@ -3,6 +3,9 @@
     Updated 2019-03-23
 //-
 
+- sections.push(['#ini-tweaks', 'Ini Tweaks'])
+- let iniTweaks = []
+
 section#ini-tweaks
     h2.section-header Initial Ini Tweaks
 
@@ -12,6 +15,7 @@ section#ini-tweaks
         Fallout.ini
         Updated 2019-03-23
     //-
+    - iniTweaks.push(['#fallout-ini', 'Fallout.ini'])
     div#fallout-ini
         h3.section-header Fallout.ini
 
@@ -63,6 +67,7 @@ section#ini-tweaks
         FalloutPrefs.ini
         Updated 2019-03-23
     //-
+    - iniTweaks.push(['#falloutprefs-ini', 'FalloutPrefs.ini'])
     div#falloutprefs-ini
         h3.section-header FalloutPrefs.ini
 
@@ -102,3 +107,5 @@ section#ini-tweaks
             pre.mt0
                 | [TerrainManager]
                 | fBlockLoadDistanceLow=100000.0000
+
+- mods.push(iniTweaks)

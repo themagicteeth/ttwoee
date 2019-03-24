@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#fixes-and-extensions', 'Fixes and Extensions'])
+- let fixesExtensions = []
+
 section#fixes-and-extensions
     h2.section-header Fixes and Extensions
 
@@ -10,6 +13,7 @@ section#fixes-and-extensions
         JIP LN NVSE Plugin
         Updated 2019-03-22
     //-
+    - fixesExtensions.push(['#jip-ln-nvse-plugin', 'JIP LN NVSE Plugin'])
     +modCard('jip-ln-nvse-plugin', 'JIP LN NVSE Plugin', 'https://www.nexusmods.com/newvegas/mods/58277', 'fnv-color')
         +author Jazzisparis and LuthienAnarion
         +version 55.05
@@ -23,6 +27,7 @@ section#fixes-and-extensions
         NVAC - New Vegas Anti Crash
         Updated 2019-03-22
     //-
+    - fixesExtensions.push(['#nvac', 'NVAC - New Vegas Anti Crash'])
     +modCard('nvac', 'NVAC - New Vegas Anti Crash', 'https://www.nexusmods.com/newvegas/mods/53635', 'fnv-color')
         +author Queue
         +version 7.5.1.0
@@ -33,6 +38,7 @@ section#fixes-and-extensions
         NVSR - New Vegas Stutter Remover
         Updated 2019-03-22
     //-
+    - fixesExtensions.push(['#nvsr', 'NVSR - New Vegas Stutter Remover'])
     +modCard('nvsr', 'NVSR - New Vegas Stutter Remover', 'https://www.nexusmods.com/newvegas/mods/34832', 'fnv-color')
         +author SkyRanger-1
         +version 4.1.36
@@ -80,3 +86,5 @@ section#fixes-and-extensions
                         |	iFPS_Report_Period = 15000
                         |	fExtraSleepPercent = 0.05
                         | }
+
+- mods.push(fixesExtensions)
