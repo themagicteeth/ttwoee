@@ -7,13 +7,13 @@
   "author": "themagicteeth",
   "scripts": {
     "build:pug": "pug --no-debug ./ttw-3/src/index.pug  --out ./dist",
-    "build:css": "juice --css ./ttw-3/src/style.css ./dist/index.html ./dist/index.html",
+    "build:css": "uglifycss ./ttw-3/src/style.css > ./dist/style.css",
     "build": "yarn build:pug && yarn build:css"
   },
   "devDependencies": {
-    "juice": "^5.2.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
+    "uglify": "^0.1.5",
     "yarn": "^1.13.0"
   }
 }

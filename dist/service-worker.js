@@ -1,5 +1,5 @@
 var CACHE_NAME = "ttwoee-cache";
-var urlsToCache = ["/"];
+var urlsToCache = ["/", "/style.css"];
 
 self.addEventListener("install", function(event) {
   event.waitUntil(
