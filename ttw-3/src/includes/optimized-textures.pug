@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#optimized-textures', 'Optimized Textures'])
+- let optimizedTextures = []
+
 section#optimized-textures
     h2.section-header Optimized Bethesda Textures
 
@@ -27,6 +30,7 @@ section#optimized-textures
         Fallout 3 Textures Optimized
         Updated 2019-03-22
     //-
+    - optimizedTextures.push(['#fo3-textures-optimized', 'Fallout 3 Textures Optimized'])
     +modCard('fo3-textures-optimized', 'Fallout 3 Textures Optimized', 'https://www.nexusmods.com/fallout3/mods/21401', 'fo3-color')
         +author Worriedwalrus
         +version 1.1
@@ -36,6 +40,9 @@ section#optimized-textures
         Fallout New Vegas Textures Optimized
         Updated 2019-03-22
     //-
+    - optimizedTextures.push(['#fnv-textures-optimized', 'Fallout New Vegas Textures Optimized'])
     +modCard('fnv-textures-optimized', 'Fallout New Vegas Textures Optimized', 'https://www.nexusmods.com/newvegas/mods/59435', 'fnv-color')
         +author Worriedwalrus
         +version 1.1
+
+- mods.push(optimizedTextures)

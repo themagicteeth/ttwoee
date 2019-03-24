@@ -164,6 +164,7 @@ nav {
   top: 0;
   position: fixed;
   width: 20%;
+  max-width: 15rem;
 }
 ul {
   list-style: none;
