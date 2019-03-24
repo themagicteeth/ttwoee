@@ -6,7 +6,8 @@ nav
             - const section = sections[i]
             li 
                 a(href=section[0]) #{section[1]}
-                - if(mods[i])
+                
+                - if(mods[i].length > 0)
                     ul
                         - for(j=0;j<mods[i].length;j++)
                             li
