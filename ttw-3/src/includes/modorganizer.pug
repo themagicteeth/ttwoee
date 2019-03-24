@@ -52,5 +52,111 @@ section#configure-mod-organizer
                 | Verify that NMM Version is at least 0.52.2, if it is not then update it to this value.
                 |
                 | Close the window by clicking [OK].
-                
+
+    - modOrganizer.push(['#setup-executables', 'Setup Executables'])            
+    div#setup-executables
+        h3.section-header Setup Executables
+
+        p.copy-bg.mb0
+            | We will now add all of the previously downloaded Tools to the Mod Organizer executable menu. 
+            | Follow the directions below to access the "Add Executables" menu. 
+            pre.mt0.mb0
+                 | Click the [Executables] button at the top of the main Mod Organizer window. 
+                 | The icon looks like a pair of cogs. 
+
+      
+            p.copy-bg.mb0.mt0
+                | If all prerequisites were installed correctly, some software such as NVSE should appear already 
+                | configured in the list. To add the executables we will be using this menu. 
+            p.copy-bg.mb0.mt0
+                | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNV4GB 
+                | Launcher and Wrye Flash NV will be added. 
+            pre.mt0
+                | In the "Title" text box type the name of the executable being added.
+                | In the "Binary" text box select the .exe by using windows explorer by pressing the [...] button.
+                | Do not select any of the optional check boxes.
+                | Click the [Add] button. The executable should appear in the list.
+                | Repeat this process for each one.
+
+            +important Select the executables listed below and input the text into the "Arguments" box.
+                pre.mt0
+                    | Remove the outer most quotations marks, and click [Modify] after each one:
+                    | 
+                    | LOOT:"--game=FalloutNV"
+                    | FNV4GB: "-laaexe .\FalloutMO.exe"
+                    |
+                    | Then close the dialogue by clicking [OK]. 
+
+    - modOrganizer.push(['#mod-organizer-bsas', 'ModOrganizer and BSAs'])        
+    div#mod-organizer-bsas
+        h3.section-header ModOrganizer and BSAs
+
+        p.copy-bg.mb0
+            | Bethesda Software Archives (BSA) can be used to store mod files to reduce file sizes. 
+            | The added benefit is the reducing in file system fragmentation caused by having many
+            | loose files. Sometimes extracting the contents of a BSA is necessary for various reasons,
+            | such as: not wanting the entire contents of the BSA, to optimize textures within the BSA,
+            | or just to view the contents of it.
+        p.copy-bg.mb0.mt0
+            | Mod Organizer manages these archives, follow the steps below to ensure proper loading:
+        pre.mt0
+            | Go to the Archives tab on the right pane of Mod Organizer.
+            | Ensure that “Have MO Manage Archives” is checked.
+            |
+            | Note: Greyed out BSAs will be checked no matter what due to their plugin requiring
+            | that BSA to load. Make sure that all BSAs in the list are checked, this allows MO to
+            | read their contents. 
+
+        +important
+            | Ensure "Fallout - Invalidation.bsa" is the top file in the list, just under data. 
+            | Otherwise many mods will not function properly.
+
+        p.copy-bg.mb0
+            | Throughout the guide BSAs may need to be extracted. Configure Mod Organizer as follows,
+            | so it will ask if you would like to extract BSA's anytime there is a BSA within a mod.
+        pre.mt0
+            | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks 
+            | like a screwdriver and wrench.
+            | Click the [Plugins] tab.
+            | Select BSA Extractor plugin and change false to true. 
+
+    - modOrganizer.push(['#sort-base-plugins', 'Sort Base Game Plugins']) 
+    div#sort-base-plugins
+        h3.section-header Sort The Base Game Plugins
+        
+        p.copy-bg.mb0
+            | By default the install and plugin load order in Mod Organizer is slightly scrambled.
+            | To fix the install order, perform the following steps: 
+        pre.mt0.mb0
+            | In the left pane of Mod Organizer drag and drop the "Non-MO" category mods that represent
+            | the DLCs to the following order:
+            |
+            | *FalloutNV
+            | *DeadMoney
+            | *HonestHearts
+            | *OldWorldBlues
+            | *LonesomeRoad
+            | *GunRunnersArsenal.esm
+            | *CaravanPak
+            | *ClassicPack
+            | *MercenaryPack
+            | *TribalPack 
+
+        p.copy-bg.mt0.mb0
+            | The plugin order can be fixed by running LOOT to do a quick sort. Perform the following steps: 
+        pre.mt0.mb0
+            | Ensure all ESMs in the right pane are checked.
+            |
+            | Select "LOOT" from the drop-down above the right pane of the Mod Organizer window.
+            | Click the [Run] push button.
+            | Find the icon that looks like a horizontal bar graph (mouse over text should state "Sort Plugins")
+            | and click it.
+            | After some processing, the calculated load order is displayed in the right pane of LOOT. Click 
+            | the [Apply] button to apply the load order.
+            | Click the [X] on the title bar to close LOOT. 
+        p.mt0
+            | This process loads LOOT through the ModOrganizer interface to sort the current ESMs/ESPs in the
+            | virtual data folder. For now this only consists of the base game and DLC ESM/ESP files. Note in
+            | the Mod Organizer window the load order has been corrected to match the output from LOOT.
+    
 - mods.push(modOrganizer)
