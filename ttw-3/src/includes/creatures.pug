@@ -4,6 +4,9 @@
     themagicteeth
 //-
 
+- sections.push(['#creatures', 'Creatures'])
+- let creatures = []
+
 section#creatures
     h2.section-header Creatures
 
@@ -11,7 +14,8 @@ section#creatures
         It's a Dogs World - Dog Texture Overhaul
         Updated 2019-03-22
     //-
-    +modCard('its-a-dogs-world',"It's a Dogs World - Dog Texture Overhaul",'https://www.nexusmods.com/newvegas/mods/59020','fnv-color')
+    - creatures.push(['#its-a-dogs-world', "It's a Dogs World - Dog Texture Overhaul"])
+    +modCard('its-a-dogs-world', "It's a Dogs World - Dog Texture Overhaul",'https://www.nexusmods.com/newvegas/mods/59020','fnv-color')
         +author Nivea
         +version 1.0
         +installation Install DogsWorldTextureOverhaul_Large_V1_0
@@ -21,6 +25,7 @@ section#creatures
         Eyebot Retextured
         Updated 2019-03-22
     //-
+    - creatures.push(['#eyebot-retextured', 'Eyebot Retextured'])
     +modCard('eyebot-retextured', 'Eyebot Retextured', 'https://www.nexusmods.com/fallout3/mods/22564', 'fo3-color')
         +author d7 aka id2301
         +version 1
@@ -30,6 +35,7 @@ section#creatures
         Fawkes Retexture Hi-Res
         Updated 2019-03-22
     //-
+    - creatures.push(['#fawkes-retexture', 'Fawkes Retexture Hi-Res'])
     +modCard('fawkes-retexture', 'Fawkes Retexture Hi-Res', 'https://www.nexusmods.com/fallout3/mods/8721', 'fo3-color')
         +author Macintroll
         +installation Install FAWLKES Re-Texture
@@ -39,6 +45,7 @@ section#creatures
         FO3 Hirezd - Supermutants
         Updated 2019-03-22
     //-
+    - creatures.push(['#fo3-hirezd-supermutants', 'FO3 Hirezd - Supermutants'])
     +modCard('fo3-hirezd-supermutants', 'FO3 Hirezd - Supermutants', 'https://www.nexusmods.com/fallout3/mods/19931', 'fo3-color')
         +author Emerald Reign
         +version 1.0
@@ -49,6 +56,7 @@ section#creatures
         SentryTurret Retextured
         Updated 2019-03-22
     //-
+    - creatures.push(['#sentryturret-retextured', 'SentryTurret Retextured'])
     +modCard('sentryturret-retextured', 'SentryTurret Retextured', 'https://www.nexusmods.com/fallout3/mods/23034', 'fo3-color')
         +author d7 aka id2301 
         +version 1
@@ -59,6 +67,7 @@ section#creatures
         Swampfolk Backwater Retexture
         Updated 2019-03-22
     //-
+    - creatures.push(['#swampfolk-backwater-retexture', 'Swampfolk Backwater Retexture'])
     +modCard('swampfolk-backwater-retexture', 'Swampfolk Backwater Retexture', 'https://www.nexusmods.com/fallout3/mods/18894', 'fo3-color')
         +author Deathclaw Alpha
         +version 1
@@ -69,6 +78,7 @@ section#creatures
         Robot Revolution HD - Protectron
         Updated 2019-03-22
     //-
+    - creatures.push(['#robot-revolution-protectron', 'Robot Revolution HD - Protectron'])
     +modCard('robot-revolution-protectron', 'Robot Revolution HD - Protectron', 'https://www.nexusmods.com/fallout3/mods/18902', 'fo3-color')
         +author OpenSaucer
         +version 1.1
@@ -79,6 +89,7 @@ section#creatures
         Vandr HD Creatures
         Updated 2019-03-22
     //-
+    - creatures.push(['#vandr-hd-creatures', 'Vandr HD Creatures'])
     +modCard('vandr-hd-creatures', 'Vandr HD Creatures', 'https://www.nexusmods.com/fallout3/mods/18500', 'fo3-color')
         +author Vandrerer
         +version 1.0
@@ -92,6 +103,7 @@ section#creatures
         aMidianBorn Book Of Water - Book of Flesh
         Updated 2019-03-22
     //-
+    - creatures.push(['#book-of-flesh', 'aMidianBorn Book Of Water - Book of Flesh'])
     +modCard('book-of-flesh', 'aMidianBorn Book Of Water - Book of Flesh', 'https://www.nexusmods.com/newvegas/mods/39873', 'fnv-color')
         +author CaBaL
         +installation Install BOA NV The Book Of Flesh
@@ -100,6 +112,7 @@ section#creatures
         FeralGhouls Hires Retexture
         Updated 2019-03-22
     //-
+    - creatures.push(['#feralghouls-hires-retexture', 'FeralGhouls Hires Retexture'])
     +modCard('feralghouls-hires-retexture', 'FeralGhouls Hires Retexture', 'https://www.nexusmods.com/newvegas/mods/53960', 'fnv-color')
         +author Macintroll
         +version 1.0
@@ -113,6 +126,9 @@ section#creatures
         Super Mutant Mesh Replacer
         Updated 2019-03-22
     //-
+    - creatures.push(['#super-mutant-mesh-replacer', 'Super Mutant Mesh Replacer'])
     +modCard('super-mutant-mesh-replacer', 'Super Mutant Mesh Replacer', 'https://mega.nz/#!9cQXGbQS!GdWRCNZtmEWl_8RSouF70dD8MIQGrWIsFax6mtIRzM0', 'fnv-color')
         +author TheNeglected
         +version 1.3
+
+- mods.push(creatures)

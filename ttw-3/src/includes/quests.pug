@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#quests', 'Quests'])
+- let quests = []
+
 section#quests
     h2.section-header Quests
 
@@ -11,8 +14,12 @@ section#quests
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6517&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - quests.push(['#a-trail-of-crumbs', 'A Trail of Crumbs'])
     +modCard('a-trail-of-crumbs', 'A Trail of Crumbs', 'https://www.nexusmods.com/newvegas/mods/66267', 'fo3-color')
         +author Mike Hancho, Roy Batty
         +version 1.4
         +installation Install A Trail of Crumbs
         +notes An exciting, fun and challenging quest to 10 forgotten locations
+
+
+- mods.push(quests)

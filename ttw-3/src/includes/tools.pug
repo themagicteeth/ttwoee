@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#tools', 'Tools'])
+- let tools = []
+
 section#tools
     h2.section-header Tools
     
@@ -10,6 +13,7 @@ section#tools
         7-Zip
         Updated 2019-03-22
     //-
+    - tools.push(['#7-zip', '7-Zip'])
     +modCard('7-zip', '7-Zip', 'https://www.7-zip.org', 'tool-color')
         +author Igor Pavlov
         +version 2019-02-21
@@ -19,6 +23,7 @@ section#tools
         FNVEdit aka xEdit
         Updated 2019-03-22
     //-
+    - tools.push(['#fnvedit', 'FNVEdit aka xEdit'])
     +modCard('fnvedit', 'FNVEdit aka xEdit', 'https://www.nexusmods.com/newvegas/mods/34703', 'tool-color')
         +author ElminsterAU
         +version 4.0.2
@@ -30,6 +35,7 @@ section#tools
         Mod Organizer
         Updated 2019-03-22
     //-
+    - tools.push(['#mod-organizer', 'Mod Organizer'])
     +modCard('mod-organizer', 'Mod Organizer', 'https://www.nexusmods.com/skyrimspecialedition/mods/6194', 'tool-color')
         +author Tannin, MO2 Team 
         +version 2.1.6 (Installer version)
@@ -47,7 +53,10 @@ section#tools
         LOOT
         Updated 2019-03-22
     //-
+    - tools.push(['#loot', 'LOOT'])
     +modCard('loot', 'LOOT', 'https://loot.github.io', 'tool-color')
         +author LOOT Team
         +version v0.14.3
         +installation Download LOOT.Installer.exe
+
+- mods.push(tools)

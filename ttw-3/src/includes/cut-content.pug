@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#cut-content', 'Cut Content'])
+- let cutContent = []
+
 section#cut-content
     h2.section-header Cut Content
 
@@ -10,6 +13,7 @@ section#cut-content
         Strip Wall Billboards
         Updated 2019-03-22
     //-
+    - cutContent.push(['#strip-wall-billboards', 'Strip Wall Billboards'])
     +modCard('strip-wall-billboards', 'Strip Wall Billboards', 'https://www.nexusmods.com/newvegas/mods/56257', 'fnv-color')
         +author sandbox6
         +version 1.0
@@ -23,6 +27,7 @@ section#cut-content
         No more giant manhole covers
         Updated 2019-03-22
     //-
+    - cutContent.push(['#no-more-giant-manhole-covers', 'No more giant manhole covers'])
     +modCard('no-more-giant-manhole-covers', 'No more giant manhole covers', 'https://www.nexusmods.com/newvegas/mods/55946', 'fnv-color')
         +author sandbox6
         +version 1.01
@@ -30,3 +35,5 @@ section#cut-content
         +notes
             | Simply replaces those ridiculous looking doors in the sewers that were obviously oversized sideways
             | manhole covers with sewer grates instead. 
+
+- mods.push(cutContent)

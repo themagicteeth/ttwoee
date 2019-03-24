@@ -3,6 +3,8 @@
     Updated 2019-03-22
 //-
 
+- let environment = []
+
 section#environment
     h2.section-header Environment
 
@@ -10,7 +12,10 @@ section#environment
         Gas Pumps of New Vegas
         Updated 2019-03-22
     //-
-    +modCard('gas-pumps-of-new-vegas', 'Gas Pumps of New Vegas', 'https://www.nexusmods.com/newvegas/mods/60246', 'fnv-color')
+    - id = 'gas-pumps-of-new-vegas'
+    - mod = 'Gas Pumps of New Vegas'
+    - environment.push([`#${id}`, mod])
+    +modCard(id, mod, 'https://www.nexusmods.com/newvegas/mods/60246', 'fnv-color')
         +author EdibleGrenade12, Thaiauxn
         +version v1.5
         +installation Install Gas Pumps of NV Ver. 1.0 main file, and Gas Pumps of NV Update 1.5 update file.
@@ -20,7 +25,10 @@ section#environment
         Vault 22 Flora Overhaul
         Updated 2019-03-22
     //-
-    +modCard('vault-22-flora-overhaul', 'Vault 22 Flora Overhaul', 'https://www.nexusmods.com/newvegas/mods/54472', 'fnv-color')
+    - id = 'vault-22-flora-overhaul'
+    - mod = 'Vault 22 Flora Overhaul'
+    - environment.push([`#${id}`, mod])
+    +modCard(id, mod, 'https://www.nexusmods.com/newvegas/mods/54472', 'fnv-color')
         +author Macintroll
         +version 1.1
         +installation Install Vault 22 FloraOverhaul Alpha 1-1
@@ -32,3 +40,12 @@ section#environment
             | This mod trys to add realistic flora overgrown in the vault 22. All levels have 
             | been modified and cluttered with more flora, ivy, bushes, grasses and some creepy things.
             | Game play should be a little more difficult but main quest is almost untouched.
+
+- sections.push(['#environment', 'Environment'])
+- mods.push(environment)
+
+//- block append nav
+//-     ul
+//-         - for(i=0;i<environment.length;i++)
+//-             - const mod = environment[i]
+//-             li #[a(href=mod[0]) #{mod[1]}]

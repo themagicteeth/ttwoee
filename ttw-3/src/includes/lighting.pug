@@ -4,6 +4,9 @@
     themagicteeth
 //-
 
+- sections.push(['#lighting', 'Lighting'])
+- let lighting = []
+
 section#lighting
     h2.section-header Lighting
 
@@ -14,6 +17,7 @@ section#lighting
         Interior Lighting Overhaul
         Updated 2019-03-22
     //-
+    - lighting.push(['#interior-lighting-overhaul', 'Interior Lighting Overhaul'])
     +modCard('interior-lighting-overhaul', 'Interior Lighting Overhaul', 'https://www.nexusmods.com/newvegas/mods/35794', 'fnv-color')
         +author Sarge198 and Killergrimm
         +version 6.9
@@ -34,6 +38,7 @@ section#lighting
         Old World Blues Path Lighting
         Updated 2019-03-22
     //-
+    - lighting.push(['#old-world-blues-path-lighting', 'Old World Blues Path Lighting'])
     +modCard('old-world-blues-path-lighting', 'Old World Blues Path Lighting', 'https://www.nexusmods.com/newvegas/mods/43485', 'fnv-color')
         +author Sarge198
         +version 1.1
@@ -45,6 +50,7 @@ section#lighting
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6685&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - lighting.push(['#realistic-wasteland-lighting', 'FNV Realistic Wasteland Lighting'])
     +modCard('realistic-wasteland-lighting', 'FNV Realistic Wasteland Lighting', 'https://www.nexusmods.com/newvegas/mods/52037', 'ttw-color')
         +author xCamoLegend, Sal203, RoyBatty 
         +version v5.542
@@ -53,3 +59,5 @@ section#lighting
             | A complete weather overhaul for Fallout New Vegas and its DLCs with complete Tale of Two Wastelands support. 
             | Designed to make the game look more realistic. Improves lighting, weather, clouds, stars, moon and the overall 
             | look and feel of the wasteland.
+
+- mods.push(lighting)

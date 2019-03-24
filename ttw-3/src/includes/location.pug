@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#exploration', 'Exploration'])
+- let location = []
+
 section#exploration
     h2.section-header Exploration
 
@@ -11,6 +14,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6518&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#another-interior-mod', 'Another Interior Mod'])
     +modCard('another-interior-mod', 'Another Interior Mod', 'https://www.nexusmods.com/newvegas/mods/66611', 'ttw-color')
         +author Roy Batty
         +version 1.0
@@ -22,6 +26,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6519&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#auto-gates-redux', 'Auto Gates Redux'])
     +modCard('auto-gates-redux', 'Auto Gates Redux', 'https://drive.google.com/open?id=1Sy-LA2dGBudt_os63LYv9LTjsWvH0OnT', 'ttw-color')
         +author Roy Batty
         +version Update 2
@@ -32,6 +37,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6617&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#awop-fo3', 'A World of Pain F03'])
     +modCard('awop-fo3', 'A World of Pain F03', 'https://www.nexusmods.com/newvegas/mods/66611', 'fo3-color')
         +author mystro, Roy Batty
         +version 2.02
@@ -42,6 +48,7 @@ section#exploration
         A World of Pain NV
         Updated 2019-03-22
     //-
+    - location.push(['#awop-fnv', 'A World of Pain NV'])
     +modCard('awop-fnv', 'A World of Pain NV', 'https://www.nexusmods.com/newvegas/mods/38719', 'fnv-color')
         +author Dj Mystro
         +version 6.01
@@ -56,6 +63,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6526&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#ttw-awopnv-patch', 'TTW - AWOPNV Compatibility Patch'])
     +modCard('ttw-awopnv-patch', 'TTW - AWOPNV Compatibility Patch', 'https://www.nexusmods.com/newvegas/mods/66268', 'ttw-color')
         +author Roy Batty
         +version 1.01
@@ -67,6 +75,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6521&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#devestated-city', 'Devestated City'])
     +modCard('devestated-city', 'Devestated City', 'https://drive.google.com/open?id=1MqAsu6aicz3nVnLm1HSC36resUGs0r_p', 'ttw-color')
         +author Wasteland Loner, Roy Batty
         +notes 
@@ -78,6 +87,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6520&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#intro-bus-street-alignment', 'Intro Bus Street Alignment'])
     +modCard('intro-bus-street-alignment', 'Intro Bus Street Alignment', 'https://www.nexusmods.com/newvegas/mods/66542', 'fo3-color')
         +author bigpete, Roy Batty
         +version 1.0a
@@ -89,6 +99,7 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6522&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#museum-halls-of-today', 'Museum Halls of Today'])
     +modCard('museum-halls-of-today', 'Museum Halls of Today', 'https://drive.google.com/open?id=1BQ04-lB4n6g1rhM0ku5LRKgCaK8uTjcY', 'fo3-color')
         +author Wasteland Loner, Roy Batty
         +notes This mod adds The Halls of Today to the Museum of Technology in The Mall.
@@ -98,9 +109,13 @@ section#exploration
             - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6541&sid=d7978d3911e87f0ba5b6af81269d94e9
         Updated 2019-03-22
     //-
+    - location.push(['#ttw-interiors', 'TTW Interiors'])
     +modCard('ttw-interiors', 'TTW Interiors', 'https://www.nexusmods.com/newvegas/mods/66449', 'ttw-color')
         +author chucksteel
         +installation
             | Install TTW Interiors Core v4.3.2 and _TTW Interiors Combo v6.4 main files, NMC NVInt - TTW Int compatibility Patch Large v2.0
             | miscellaneous file, and the Devestated City patch from  #[a(href='https://drive.google.com/file/d/13u2iAyJMHw3bK7tgKlM597f80wFjERkE/view?usp=sharing') here]
         +notes This is a total merge of The D.C. Interiors Project, The N.V. Interiors Project and some of chucksteels other mods.
+
+
+- mods.push(location)

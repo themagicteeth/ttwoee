@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#physics', 'Physics'])
+- let physics = []
+
 section#physics
     h2.section-header Physics
 
@@ -10,6 +13,7 @@ section#physics
         Collision Meshes FO3
         Updated 2019-03-22
     //-
+    - physics.push(['#collision-meshes-fo3', 'Collision Meshes FO3'])
     +modCard('collision-meshes-fo3', 'Collision Meshes', 'https://www.nexusmods.com/fallout3/mods/21946', 'fo3-color')
         +author KaneWright
         +version
@@ -21,6 +25,7 @@ section#physics
         Collision Meshes FNV
         Updated 2019-03-22
     //-
+    - physics.push(['#collision-meshes-fnv', 'Collision Meshes FNV'])
     +modCard('collision-meshes-fnv', 'Collision Meshes', 'https://www.nexusmods.com/newvegas/mods/59149', 'fnv-color')
         +author MadAce
         +version 1.6.1
@@ -28,3 +33,5 @@ section#physics
             | Install Collision Meshes FNV main file, and all of the update files (Hectrol Tumbleweed compatibility, 
             | OJO BUENO Texture Pack compatibility, PrecisionCollisionClutterFix, Textures Over Time FlagStoneWalls compatibility).
             | Merge them together while installing.
+
+- mods.push(physics)

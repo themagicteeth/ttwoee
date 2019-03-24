@@ -4,6 +4,9 @@
     themagicteeth
 //-
 
+- sections.push(['#effects', 'Effects'])
+- let effects = [] 
+
 section#effects
     h2.section-header Effects
 
@@ -11,6 +14,7 @@ section#effects
         Enhanced Blood
         Updated 2019-03-22
     //-
+    - effects.push(['#enhanced-blood', 'Enhanced Blood'])
     +modCard('enhanced-blood', 'Enhanced Blood', 'https://www.nexusmods.com/newvegas/mods/34917', 'fnv-color')
         +author dDefinder
         +version 2.22c
@@ -22,6 +26,7 @@ section#effects
         EXE - Effect teXtures Enhanced
         Updated 2019-03-22
     //-
+    - effects.push(['#exe-effect-textures-enhanced', 'EXE - Effect teXtures Enhanced'])
     +modCard('exe-effect-textures-enhanced', 'EXE - Effect teXtures Enhanced', 'https://www.nexusmods.com/newvegas/mods/62989', 'fnv-color')
         +author weijiesen
         +version v2
@@ -32,6 +37,7 @@ section#effects
         HD Mist
         Updated 2019-03-22
     //-
+    - effects.push(['#hd-mist', 'HD Mist'])
     +modCard('hd-mist', 'HD Mist', 'https://www.nexusmods.com/newvegas/mods/58955', 'fnv-color')
         +author Ramccoid, Adonis VII
         +version 1.0
@@ -42,6 +48,7 @@ section#effects
         Hectrol FX Dustorm Deluxe
         Updated 2019-03-22
     //-
+    - effects.push(['#hectrol-fx-duststorm-deluxe', 'Hectrol FX Dustorm Deluxe'])
     +modCard('hectrol-fx-duststorm-deluxe', 'Hectrol FX Dustorm Deluxe', 'https://www.nexusmods.com/newvegas/mods/44025', 'fnv-color')
         +author Hectrol
         +version 1.0
@@ -56,6 +63,7 @@ section#effects
         IMPACT
         Updated 2019-03-22
     //-
+    - effects.push(['#impact', 'IMPACT'])
     +modCard('impact', 'IMPACT', 'https://www.nexusmods.com/newvegas/mods/57113', 'fnv-color')
         +author Weijiesen
         +version 2.0
@@ -65,7 +73,10 @@ section#effects
         IMPACT - Compatibility Edition
         Updated 2019-03-22
     //-
+    - effects.push(['#impact-compatibility-edition', 'IMPACT - Compatibility Edition'])
     +modCard('impact-compatibility-edition', 'IMPACT - Compatibility Edition', 'https://www.nexusmods.com/newvegas/mods/62050', 'fnv-color')
         +author Weijiesen, darthbdaman
         +version 1.1.2
         +installation Install IMPACT
+
+- mods.push(effects)

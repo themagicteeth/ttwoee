@@ -1,36 +1,47 @@
 include mixins.pug
 
+- let sections = []
+- let mods = []
+- let navMods = []
+- let nav = []
+- let mod
+- let id
+
 doctype html
 html(lang="en")
     include includes/head.pug
-    body
-        +important
-            | This guide is in transition to TTW version 3.2. It is in a state of heavy
-            | development. Please report any problems on the TTWOEE forum post
-            | #[a(href='https://forum.step-project.com/topic/8447-tale-of-two-wastelands-over-encumbered-edition') here].
-            | Many mods have not yet been converted for the new version of TTW, therfore they are not
-            | included in this guide. It should be playable in it's current state, but no gaurantees are
-            | provided.
+    body(style="margin-bottom: 5rem;")
 
-        h1.section-header Tale of Two Wastelands: Over-Encumbered Edition
+        main#guide
+            +important
+                | This guide is in transition to TTW version 3.2. It is in a state of heavy
+                | development. Please report any problems on the TTWOEE forum post
+                | #[a(href='https://forum.step-project.com/topic/8447-tale-of-two-wastelands-over-encumbered-edition') here].
+                | Many mods have not yet been converted for the new version of TTW, therfore they are not
+                | included in this guide. It should be playable in it's current state, but no gaurantees are
+                | provided.
 
-        include includes/introduction.pug
-        include includes/tools.pug
-        include includes/setup.pug
-        include includes/optimized-textures.pug
-        include includes/initweaks.pug
-        include includes/fixes-and-extensions.pug
-        include includes/ui.pug
-        include includes/physics.pug
-        include includes/cut-content.pug
-        include includes/location.pug
-        include includes/quests.pug
-        include includes/textures.pug
-        include includes/environment.pug
-        include includes/creatures.pug
-        include includes/npcs.pug
-        include includes/armor.pug
-        include includes/weapons.pug
-        include includes/effects.pug
-        include includes/lighting.pug
-        include includes/gameplay.pug
+            h1.section-header Tale of Two Wastelands: Over-Encumbered Edition
+
+            include includes/introduction.pug
+            include includes/tools.pug
+            include includes/setup.pug
+            include includes/optimized-textures.pug
+            include includes/initweaks.pug
+            include includes/fixes-and-extensions.pug
+            include includes/ui.pug
+            include includes/physics.pug
+            include includes/cut-content.pug
+            include includes/location.pug
+            include includes/quests.pug
+            include includes/textures.pug
+            include includes/environment.pug
+            include includes/creatures.pug
+            include includes/npcs.pug
+            include includes/armor.pug
+            include includes/weapons.pug
+            include includes/effects.pug
+            include includes/lighting.pug
+            include includes/gameplay.pug
+
+        include includes/nav.pug

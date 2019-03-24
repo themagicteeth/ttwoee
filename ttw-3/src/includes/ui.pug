@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#ui', 'User Interface'])
+- let ui = []
+
 section#ui
     h2.section-header User Interface
 
@@ -10,6 +13,7 @@ section#ui
         JIP Improved Recipe Menu
         Updated 2019-03-22
     //-
+    - ui.push(['#jip-improved-recipe-menu', 'JIP Improved Recipe Menu'])
     +modCard('jip-improved-recipe-menu', 'JIP Improved Recipe Menu', 'https://www.nexusmods.com/newvegas/mods/59638', 'fnv-color')
         +author jazzisparis
         +version 1.20
@@ -20,6 +24,7 @@ section#ui
         The Mod Configuration Menu
         Updated 2019-03-22
     //-
+    - ui.push(['#mcm', 'The Mod Configuration Menu'])
     +modCard('mcm', 'The Mod Configuration Menu', 'https://www.nexusmods.com/newvegas/mods/42507', 'fnv-color')
         +author Pelinor
         +version 1.5
@@ -30,6 +35,7 @@ section#ui
         High Quality Pip-Boy Icons
         Updated 2019-03-22
     //-
+    - ui.push(['#high-quality-pip-boy-icons', 'High Quality Pip-Boy Icons'])
     +modCard('high-quality-pip-boy-icons', 'High Quality Pip-Boy Icons', 'https://www.nexusmods.com/fallout3/mods/22808', 'fo3-color')
         +author Genin32
         +version 3.00
@@ -40,6 +46,7 @@ section#ui
         Vanilla UI Plus
         Updated 2019-03-22
     //-
+    - ui.push(['#vanilla-ui-plus', 'Vanilla UI Plus'])
     +modCard('vanilla-ui-plus', 'Vanilla UI Plus', 'https://www.moddb.com/mods/vanilla-ui-plus/downloads', 'fnv-color')
         +author Axonis
         +version 7.71
@@ -54,6 +61,7 @@ section#ui
         Vanilla HUD Remastered
         Updated 2019-03-22
     //-
+    - ui.push(['#vanilla-hud-remastered', 'Vanilla HUD Remastered'])
     +modCard('vanilla-hud-remastered', 'Vanilla HUD Remastered', 'https://www.nexusmods.com/newvegas/mods/64102', 'fnv-color')
         +author BmanBlazer
         +version 1.83
@@ -69,6 +77,7 @@ section#ui
         UIO - UI Organizer
         Updated 2019-03-22
     //-
+    - ui.push(['#uio', 'UIO - UI Organizer'])
     +modCard('uio', 'UIO - UI Organizer', 'https://www.nexusmods.com/newvegas/mods/57174', 'fnv-color')
         +author jazzisparis
         +version 2.03
@@ -78,3 +87,5 @@ section#ui
             | various mods. Once installed, UIO will ensure UI extensions are always properly installed and, when necessary,
             | properly removed; it will automatically detect, resolve and prevent UI-related issues, and will help keep the game's
             | UI intact. 
+
+- mods.push(ui)

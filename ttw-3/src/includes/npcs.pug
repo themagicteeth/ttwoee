@@ -3,6 +3,9 @@
     Updated 2019-03-22
 //-
 
+- sections.push(['#npcs', 'NPCs'])
+- let npcs = []
+
 section#npcs
     h2.section-header NPCs
 
@@ -10,6 +13,7 @@ section#npcs
         Authentic Burned Man
         Updated 2019-03-22
     //-
+    - npcs.push(['#authentic-burned-man', 'Authentic Burned Man'])
     +modCard('authentic-burned-man', 'Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974', 'fnv-color')
         +author Rocket
         +version 1.0
@@ -24,6 +28,7 @@ section#npcs
         Beards
         Updated 2019-03-22
     //-
+    - npcs.push(['#beards', 'Beards'])
     +modCard('beards', 'Beards', 'https://www.nexusmods.com/newvegas/mods/49624', 'fnv-color')
         +author Drumber
         +version 1.0
@@ -32,3 +37,5 @@ section#npcs
                 | Double click Beards in the left pane and go to the [Optional ESPs] tab.
                 | Move "Beards.esp" to the "Optional ESPs" box.
         +notes Nice beards.
+
+- mods.push(npcs)
