@@ -1,0 +1,112 @@
+/*Monofonto*/
+@font-face {
+    font-family: Monofonto;
+    src: url(../fonts/monofonto.ttf);
+}
+
+/*Document globals*/
+html, body {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    background-color: #0a1919;
+}
+
+.text{
+    background-color: gray;
+    font-weight: bold;
+}
+.instructions{
+    font-family: "Courier New", monospace;
+    background-color: #d3d3d3;
+    -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+}
+/*Header Style*/
+h1, h2, h3, h4{
+    font-family: 'Monofonto', Arial, sans-serif;
+    color: white;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.2em;
+
+}
+
+/*LINK STYLES*/
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+.link {
+    color: #3271c0;
+}
+.mod-name-3,.link-3 {
+    color: #74fc39;
+}
+.mod-name-nv,.link-nv {
+    color: #fcb040;
+}
+.mod-name-ttw,.link-ttw {
+    color: #7bdefc;
+}
+.mod-name-tools {
+    color: #9666fc;
+}
+
+/*Headings*/
+.alert, .ini, .settings, .merge, .clean, .mod {
+    font-size: 1.2em;
+    -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+
+}
+.alert {
+    background-color: #ff6653;
+    color: black;
+}
+.ini {
+    background-color: #7494ff;
+    color: black;
+}
+.settings {
+    background-color: #d9b400;
+    color: black;
+}
+.merge {
+    background-color: #eb8cba;
+    color: black;
+}
+.clean {
+    background-color: #ff9c5c;
+    color: black;
+}
+.mod{
+    background-color: #2f4f4f;
+    font-family: 'Monofonto', sans-serif;
+}
+
+/*Mod info settings*/
+
+.mod-info {
+    background-color: #91a6bb;
+}
+.mod-info .instructions {
+    -webkit-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    -moz-box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+    box-shadow: 2px 3px 3px 0 rgba(41, 41, 41, .3);
+}
+.mod-info .alert, .ini, .settings, .merge, .clean{
+
+}
