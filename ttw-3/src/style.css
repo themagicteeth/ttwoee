@@ -28,7 +28,15 @@
   --white: #ffffff;
   --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
 }
-
+.github {
+  width: 2rem;
+  position: fixed;
+  right: 0;
+  margin-right: 1rem;
+  background: white;
+  border-radius: 100px;
+  border:solid medium white;
+}
 a {
   text-decoration: none;
   font-family: monofonto, sans-serif;
@@ -38,6 +46,7 @@ body {
   background-color: var(--page-bg);
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 5rem;
 }
 
 main {

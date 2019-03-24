@@ -9,8 +9,12 @@ include mixins.pug
 
 doctype html
 html(lang="en")
+
     include includes/head.pug
-    body(style="margin-bottom: 5rem;")
+
+    body
+
+        include includes/github.pug
 
         main#guide
             +important
