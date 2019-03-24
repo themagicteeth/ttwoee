@@ -1,0 +1,55 @@
+
+- sections.push(['#ttw-customization', 'TTW Customization'])
+- let ttwCustom = []
+
+section#ttw-customization
+    h2.section-header TTW Customization
+
+    p.copy-bg
+        | The following mods make the Tale of Two Wastelands feel like its own game, rather than
+        | just being a mash up inside of New Vegas. 
+
+    - ttwCustom.push(['#concept-art-loading', 'Concept Art Loading Screens'])
+    +modCard('concept-art-loading', 'Concept Art Loading Screens', 'https://www.nexusmods.com/newvegas/mods/46681', 'fnv-color')
+        +author Mutent
+        +version 3.0
+        +installation Install #[span.file Concept Art Loading screens - v3]
+            pre.raised
+                | Expand Concept Art loading screens 3.0 by clicking the [+] on the left.
+                | Expand Data/textures/interface/main and uncheck main_title.dds
+                | Expand [Alternate main titles] folder, and select TTW Green.dds.
+                | Drag TTW Green.dds to Data/textures/interface/main.
+                | Right-click Data and select "Set data directory".
+                | Click Ok.
+                |
+                | Post installation, right click "Concept Art Loading Screens" in the left pane 
+                | of ModOrganizer and select "Open in explorer".
+                |
+                | Navigate to textures/interface/main and rename the following files:
+                |
+                | TTW Green.dds -> main_title.dds 
+
+    - ttwCustom.push(['#no-loading-screen-text', 'No Loading Screen Text'])
+    +modCard('no-loading-screen-text', 'No Loading Screen Text', 'https://www.nexusmods.com/newvegas/mods/37367', 'fnv-color')
+        +author Archanix
+        +version 1.0
+        +installation Install #[span.file No Loading Screen Tip Text]
+
+    - ttwCustom.push(['#main-pause-color-mod', 'the main and pause menu color mod'])
+    +modCard('main-pause-color-mod', 'the main and pause menu color mod', 'https://www.nexusmods.com/newvegas/mods/44406', 'fnv-color')
+        +author LVB2 
+        +version V2
+        +installation Install #[span.file the main and pause menu color mod update V2]
+
+    - ttwCustom.push(['#ams-start-menu-text-color-changer', 'AMS - Start menu text color changer'])
+    +modCard('ams-start-menu-text-color-changer', 'AMS - Start menu text color changer', 'https://www.nexusmods.com/newvegas/mods/45216', 'fnv-color')
+        +author Allmightysausage 
+        +version 1.3
+        +installation Install #[span.file V1 3 Main]
+
+    - ttwCustom.push(['#radiation-wheel', 'Radiation Loading Roulette Wheel'])
+    +modCard('radiation-wheel', 'Radiation Loading Roulette Wheel', 'https://www.nexusmods.com/newvegas/mods/40773', 'fnv-color')
+        +author w31
+        +installation Install #[span.file radiation wheel MK1]
+
+- mods.push(ttwCustom)
