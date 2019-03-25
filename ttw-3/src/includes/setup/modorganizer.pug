@@ -42,20 +42,20 @@ section#configure-mod-organizer
         h3.section-header Mod Organizer Settings
 
         p.copy-bg.mb0 Next the ModOrganizer settings will need to be configured.
-            pre.mt0
-                | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks like a screwdriver and wrench.
-                |
-                | In the "Settings" dialogue, click the [Nexus] tab.
-                | Check "Automatically Log-In to Nexus" and input a valid nexus username and password.
-                |
-                | In the "Settings" dialogue, click the [Plugins] tab.
-                | Select "Basic Diagnosis Plugin" in the left pane.
-                | In the right pane, double click on the value to the right of "check_modorder" and select "false".
-                |
-                | In the "Settings" dialogue, click the [Workarounds] tab.
-                | Verify that NMM Version is at least 0.52.2, if it is not then update it to this value.
-                |
-                | Close the window by clicking [OK].
+        pre.mt0
+            | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks like a screwdriver and wrench.
+            |
+            | In the "Settings" dialogue, click the [Nexus] tab.
+            | Check "Automatically Log-In to Nexus" and input a valid nexus username and password.
+            |
+            | In the "Settings" dialogue, click the [Plugins] tab.
+            | Select "Basic Diagnosis Plugin" in the left pane.
+            | In the right pane, double click on the value to the right of "check_modorder" and select "false".
+            |
+            | In the "Settings" dialogue, click the [Workarounds] tab.
+            | Verify that NMM Version is at least 0.52.2, if it is not then update it to this value.
+            |
+            | Close the window by clicking [OK].
 
     - modOrganizer.push(['#setup-executables', 'Setup Executables'])            
     div#setup-executables
@@ -64,32 +64,31 @@ section#configure-mod-organizer
         p.copy-bg.mb0
             | We will now add all of the previously downloaded Tools to the Mod Organizer executable menu. 
             | Follow the directions below to access the "Add Executables" menu. 
-            pre.mt0.mb0
-                 | Click the [Executables] button at the top of the main Mod Organizer window. 
-                 | The icon looks like a pair of cogs. 
+        pre.mt0.mb0
+            | Click the [Executables] button at the top of the main Mod Organizer window. 
+            | The icon looks like a pair of cogs. 
 
-      
-            p.copy-bg.mb0.mt0
-                | If all prerequisites were installed correctly, some software such as NVSE should appear already 
-                | configured in the list. To add the executables we will be using this menu. 
-            p.copy-bg.mb0.mt0
-                | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNV4GB 
-                | Launcher and Wrye Flash NV will be added. 
-            pre.mt0
-                | In the "Title" text box type the name of the executable being added.
-                | In the "Binary" text box select the .exe by using windows explorer by pressing the [...] button.
-                | Do not select any of the optional check boxes.
-                | Click the [Add] button. The executable should appear in the list.
-                | Repeat this process for each one.
+        p.copy-bg.mb0.mt0
+            | If all prerequisites were installed correctly, some software such as NVSE should appear already 
+            | configured in the list. To add the executables we will be using this menu. 
+        p.copy-bg.mb0.mt0
+            | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNV4GB 
+            | Launcher and Wrye Flash NV will be added. 
+        pre.mt0
+            | In the "Title" text box type the name of the executable being added.
+            | In the "Binary" text box select the .exe by using windows explorer by pressing the [...] button.
+            | Do not select any of the optional check boxes.
+            | Click the [Add] button. The executable should appear in the list.
+            | Repeat this process for each one.
 
-            +important Select the executables listed below and input the text into the "Arguments" box.
-                pre.mt0
-                    | Remove the outer most quotations marks, and click [Modify] after each one:
-                    | 
-                    | LOOT:"--game=FalloutNV"
-                    | FNV4GB: "-laaexe .\FalloutMO.exe"
-                    |
-                    | Then close the dialogue by clicking [OK]. 
+        +important Select the executables listed below and input the text into the "Arguments" box.
+        pre.mt0
+            | Remove the outer most quotations marks, and click [Modify] after each one:
+            | 
+            | LOOT:"--game=FalloutNV"
+            | FNV4GB: "-laaexe .\FalloutMO.exe"
+            |
+            | Then close the dialogue by clicking [OK]. 
 
     - modOrganizer.push(['#mod-organizer-bsas', 'ModOrganizer and BSAs'])        
     div#mod-organizer-bsas

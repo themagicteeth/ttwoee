@@ -26,42 +26,42 @@ section#ini-tweaks
             | Click [Save] and close the window. 
 
         +ini TTW changes
-            pre.mt0
-                | [General]
-                | ; This one is blank on purpose, it needs to be blank
-                | sIntroMovie=
-                | bLoadFaceGenHeadEGTFiles=1
+        pre.mt0
+            | [General]
+            | ; This one is blank on purpose, it needs to be blank
+            | sIntroMovie=
+            | bLoadFaceGenHeadEGTFiles=1
 
         +ini Allow AI threading
-            pre.mt0
-                | [General]
-                | bUseThreadedAI=1
-                | ; Add this line
-                | iNumHWThreads=2
+        pre.mt0
+            | [General]
+            | bUseThreadedAI=1
+            | ; Add this line
+            | iNumHWThreads=2
 
         +ini Light distance fade
-            pre.mt0
-                | [Display]
-                | fLightLODDefaultStartFade=10240.0
-                | fLightLODRange=10240.0
-                | fLightLODMinStartFade=10240.0
-                | fLightLODMaxStartFade=10240.0
-                | fShadowLODDefaultStartFade=200.0
-                | fShadowLODRange=200.0
-                | fShadowLODMinStartFade=100.0
-                | fShadowLODMaxStartFade=1000.0
-                | fSpecularLODDefaultStartFade=10240.0
-                | fSpecularLODRange=10240.0
-                | fSpecularLODMinStartFade=10240.0
-                | fSpecularLODMaxStartFade=10240.0
+        pre.mt0
+            | [Display]
+            | fLightLODDefaultStartFade=10240.0
+            | fLightLODRange=10240.0
+            | fLightLODMinStartFade=10240.0
+            | fLightLODMaxStartFade=10240.0
+            | fShadowLODDefaultStartFade=200.0
+            | fShadowLODRange=200.0
+            | fShadowLODMinStartFade=100.0
+            | fShadowLODMaxStartFade=1000.0
+            | fSpecularLODDefaultStartFade=10240.0
+            | fSpecularLODRange=10240.0
+            | fSpecularLODMinStartFade=10240.0
+            | fSpecularLODMaxStartFade=10240.0
 
         +ini Extending LOD
-            pre.mt0
-                | [LOD]
-                | bDisplayLODBuildings=1
-                | fLODFadeOutMultItems=15
-                | fLODFadeOutMultObjects=15
-                | fLODFadeOutMultActors=15
+        pre.mt0
+            | [LOD]
+            | bDisplayLODBuildings=1
+            | fLODFadeOutMultItems=15
+            | fLODFadeOutMultObjects=15
+            | fLODFadeOutMultActors=15
     
     //-
         FalloutPrefs.ini
@@ -78,34 +78,34 @@ section#ini-tweaks
             | Click [Save] and close the window. 
 
         +ini Allow additional plugins to be loaded
-            pre.mt0
-                | [Launcher]
-                | bEnableFileSelection=1        
+        pre.mt0
+            | [Launcher]
+            | bEnableFileSelection=1        
 
         +ini TTW changes
-            pre.mt0
-                | [General]
-                | ; Change from 0 to 1
-                | bUseThreadedAI=1
-                | ; Add this line
-                | iNumHWThreads=2
+        pre.mt0
+            | [General]
+            | ; Change from 0 to 1
+            | bUseThreadedAI=1
+            | ; Add this line
+            | iNumHWThreads=2
 
         +ini Increase grass render distance
-            pre.mt0
-                | Grass]
-                | fGrassStartFadeDistance=17000
+        pre.mt0
+            | Grass]
+            | fGrassStartFadeDistance=17000
 
         +ini Set resolution
-            pre.mt0
-                | [Display]
-                | ; Horizontal
-                | iSize W=1920
-                | ; Vertical
-                | iSize H=1080
+        pre.mt0
+            | [Display]
+            | ; Horizontal
+            | iSize W=1920
+            | ; Vertical
+            | iSize H=1080
 
         +ini Double LOD distance
-            pre.mt0
-                | [TerrainManager]
-                | fBlockLoadDistanceLow=100000.0000
+        pre.mt0
+            | [TerrainManager]
+            | fBlockLoadDistanceLow=100000.0000
 
 - mods.push(iniTweaks)

@@ -16,26 +16,26 @@ section#setup
         div#reset-game-files
             h4.section-header Reset Game Files
             +important If this is not a clean installation of Fallout New Vegas and you have modded prior perform the following:
-                pre.mt0
-                    | Delete everything in the New Vegas folder except the Data folder.
-                    | Open the Data folder and delete everything that is not a vanilla ESM or BSA from New Vegas or the DLCs.
-                    | If you have previously "cleaned" the base game ESMs, delete those as well, as TTW requires them uncleaned.
-                    |
-                    | Go to New Vegas in Steam, right click, and select [Properties].
-                    | Navigate to [Verify Game Cache] option and Steam will download all the necessary files.
-                    |
-                    | Optional Tip: Making a archive of the clean game installation with 7Zip is handy for reinstalling Fallout.
+            pre.mt0
+                | Delete everything in the New Vegas folder except the Data folder.
+                | Open the Data folder and delete everything that is not a vanilla ESM or BSA from New Vegas or the DLCs.
+                | If you have previously "cleaned" the base game ESMs, delete those as well, as TTW requires them uncleaned.
+                |
+                | Go to New Vegas in Steam, right click, and select [Properties].
+                | Navigate to [Verify Game Cache] option and Steam will download all the necessary files.
+                |
+                | Optional Tip: Making a archive of the clean game installation with 7Zip is handy for reinstalling Fallout.
 
         div#reset-inis
             h4.section-header Reset Inis
             +important To ensure the INI files are the vanilla INI files perform the following:
-                pre.mt0
-                    | Navigate to My Games/Documents and delete the following files:
-                    |
-                    | Fallout.ini
-                    | FalloutPrefs.ini
-                    |
-                    | This will allow the INIs to revert back to vanilla when the game is launched.
+            pre.mt0
+                | Navigate to My Games/Documents and delete the following files:
+                |
+                | Fallout.ini
+                | FalloutPrefs.ini
+                |
+                | This will allow the INIs to revert back to vanilla when the game is launched.
 
 
     - setup.push(['#steam-settings', 'Steam Settings'])
@@ -86,33 +86,33 @@ section#setup
             +author ianpatt, behippo and scruggsywuggsy the ferret
             +version 5.1b4
             +installation Install only the following files to the main FalloutNV folder:
-                pre.mt0.raised
-                    | nvse_1_4.dll
-                    | nvse_loader.exe
-                    | nvse_steam_loader.dll
-                    |
-                    | The rest will be installed later, during the ModOrganizer setup.
-                div.raised
-                    +important Create the nvse_config.ini
-                        pre.mt0
-                            | Right-click NVSE in the Mod Organizer left pane.
-                            | Select "Open In Explorer".
-                            | Enter the "nvse" folder.
-                            | Create and open a text file.
-                            | Once this file is open and able to be edited, paste in the following:
+            pre.mt0.raised
+                | nvse_1_4.dll
+                | nvse_loader.exe
+                | nvse_steam_loader.dll
+                |
+                | The rest will be installed later, during the ModOrganizer setup.
+            div.raised
+                +important Create the nvse_config.ini
+                pre.mt0
+                    | Right-click NVSE in the Mod Organizer left pane.
+                    | Select "Open In Explorer".
+                    | Enter the "nvse" folder.
+                    | Create and open a text file.
+                    | Once this file is open and able to be edited, paste in the following:
 
-                div.raised
-                    +ini Memory allocation
-                        pre.mt0
-                            | [Memory]
-                            | DefaultHeapInitialAllocMB=400
-                            |
-                            | Note: must be between 200 and <500. 400 seems to be the best value, but play around with it a bit.
-                            |
-                            | Click "File/Save As..."
-                            | Type "nvse_config.ini" into the "File Name" field.
-                            | Change the "Save as Type" field below so it reads "All Files"
-                            | Click "Save"
+            div.raised
+                +ini Memory allocation
+                pre.mt0
+                    | [Memory]
+                    | DefaultHeapInitialAllocMB=400
+                    |
+                    | Note: must be between 200 and <500. 400 seems to be the best value, but play around with it a bit.
+                    |
+                    | Click "File/Save As..."
+                    | Type "nvse_config.ini" into the "File Name" field.
+                    | Change the "Save as Type" field below so it reads "All Files"
+                    | Click "Save"
             +notes
                 | The New Vegas Script Extender, or NVSE for short, is a modder's resource that expands the scripting capabilities
                 | of Fallout: NV. It does so without modifying the executable files on disk, so there are no permanent side effects.
@@ -128,12 +128,12 @@ section#setup
             +author Roy Batty, LuthienAnarion
             +version 1.4
             +installation
-                pre.mt0.raised
-                    | Install only the following files to the main FalloutNV folder:
-                    |
-                    | FalloutNVpatch.exe
-                    |
-                    | Then run the exe
+            pre.mt0.raised
+                | Install only the following files to the main FalloutNV folder:
+                |
+                | FalloutNVpatch.exe
+                |
+                | Then run the exe
             +notes
                 | Fallout New Vegas only allows for 2 GB of RAM to be accessed by the FalloutNV.exe, so this will allow 4 GB of RAM
                 | to be accessed by setting the LAA flag.

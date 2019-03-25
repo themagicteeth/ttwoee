@@ -43,48 +43,48 @@ section#fixes-and-extensions
         +author SkyRanger-1
         +version 4.1.36
         +installation Install #[span.file NVSR_4-1-36]
-            pre.raised
-                | This mod is packaged incorrectly
-                | During install right click "Data" and select [Set data directory].
+        pre.raised
+            | This mod is packaged incorrectly
+            | During install right click "Data" and select [Set data directory].
 
-            div.raised
-                +important This mod has an INI file that has some options users should be aware of
-                    pre.mt0
-                        | Changes should made by right clicking NVSR in the left pane of Mod Organizer, selecting Information...
-                        | and selecting the INI-Files Tab.
-                        |
-                        | "NVSE/plugins/sr_New_Vegas_Stutter_Remover.ini" should be listed in the top left box
-                        | Click it, and use the following to make changes accordingly: 
+        div.raised
+            +important This mod has an INI file that has some options users should be aware of
+            pre.mt0
+                | Changes should made by right clicking NVSR in the left pane of Mod Organizer, selecting Information...
+                | and selecting the INI-Files Tab.
+                |
+                | "NVSE/plugins/sr_New_Vegas_Stutter_Remover.ini" should be listed in the top left box
+                | Click it, and use the following to make changes accordingly: 
 
-            div.raised
-                +ini Master section
-                    pre.mt0
-                        | Master = {
-                        |      _comment = You can turn on or off each distinct feature from here.
-                        |       bManageFPS = 1
-                        |       bHookCriticalSections = 1
-                        |       bHookLightCriticalSections = 0
-                        |       bHookHashtables = 1
-                        |       bReplaceHeap = 0
-                        |       bReplaceGetTickCount = 1
-                        |       bLogToConsole = 0
-                        |       bFastExit = 1
-                        |       bFlushLog = 1
-                        |       iSchedulingResolution = 1
-                        |       bReplaceRandom = 0
-                        |       bExperimentalStuff = 0     
-                        |       iMainHookPoint = 1
-                        | }
+        div.raised
+            +ini Master section
+            pre.mt0
+                | Master = {
+                |      _comment = You can turn on or off each distinct feature from here.
+                |       bManageFPS = 1
+                |       bHookCriticalSections = 1
+                |       bHookLightCriticalSections = 0
+                |       bHookHashtables = 1
+                |       bReplaceHeap = 0
+                |       bReplaceGetTickCount = 1
+                |       bLogToConsole = 0
+                |       bFastExit = 1
+                |       bFlushLog = 1
+                |       iSchedulingResolution = 1
+                |       bReplaceRandom = 0
+                |       bExperimentalStuff = 0     
+                |       iMainHookPoint = 1
+                | }
 
-            div.raised
-                +ini FPS Management section
-                    pre.mt0
-                        | FPS_Management = {
-                        |	bInject_iFPSClamp = 1
-                        |	fMaximumFPS = 60     
-                        |	fMinimumFPS = 20
-                        |	iFPS_Report_Period = 15000
-                        |	fExtraSleepPercent = 0.05
-                        | }
+        div.raised
+            +ini FPS Management section
+            pre.mt0
+                | FPS_Management = {
+                |	bInject_iFPSClamp = 1
+                |	fMaximumFPS = 60     
+                |	fMinimumFPS = 20
+                |	iFPS_Report_Period = 15000
+                |	fExtraSleepPercent = 0.05
+                | }
 
 - mods.push(fixesExtensions)
