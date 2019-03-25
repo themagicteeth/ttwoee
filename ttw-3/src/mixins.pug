@@ -1,6 +1,6 @@
 mixin modCard(id, name, url, type)
     div(id=id)
-        h6.mod-name.mb0 #[a(href=url class=type) #{name}]
+        h6.mod-name.mb0 #[a(href=url class=type target='_blank' rel="nofollow") #{name}]
         div.mod-card-bg.mt0
             block
 
@@ -21,7 +21,7 @@ mixin notes
         block
 
 mixin important
-    p.important.mb0 
+    p.important.mb0
         block
 
 mixin ini
