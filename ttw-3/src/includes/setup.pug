@@ -41,7 +41,7 @@ section#setup
     - setup.push(['#steam-settings', 'Steam Settings'])
     div#steam-settings
         h3.section-header Steam Settings
-        p.copy-bg.mb0 
+        p.copy-bg.mb0
             | Steam overlay can cause some visual problems with some mods and ENB. If it is not needed,
             | it is recommended to turn it off.
         pre.mt0
@@ -50,27 +50,27 @@ section#setup
             | In the [General] tab, uncheck the [Enable Steam Overlay...] box.
             | Click close.
 
-    - setup.push(['#ogg-vorbis-libs', 'Ogg Vorbis'])
-    div#ogg-vorbis-libs
-        h3.section-header Ogg Vorbis Libraries
+    //- - setup.push(['#ogg-vorbis-libs', 'Ogg Vorbis'])
+    //- div#ogg-vorbis-libs
+    //-     h3.section-header Ogg Vorbis Libraries
 
-        +modCard('', 'Ogg Vorbis Libraries', 'https://www.nexusmods.com/newvegas/mods/61265', 'fnv-color')
-            +author Kanewright
-            +version 3
-            +installation Install only the following files to the main FalloutNV folder:
-                pre.mt0.raised
-                    | libogg.dll
-                    | libvorbis.dll
-                    | libvorbisfile.dll
-            +notes Latest compiled Ogg Vorbis Libraries. The game uses it for decoding оgg audio format.
+    //-     +modCard('', 'Ogg Vorbis Libraries', 'https://www.nexusmods.com/newvegas/mods/61265', 'fnv-color')
+    //-         +author Kanewright
+    //-         +version 3
+    //-         +installation Install only the following files to the main FalloutNV folder:
+    //-             pre.mt0.raised
+    //-                 | libogg.dll
+    //-                 | libvorbis.dll
+    //-                 | libvorbisfile.dll
+    //-         +notes Latest compiled Ogg Vorbis Libraries. The game uses it for decoding оgg audio format.
 
     - setup.push(['#nvse-and-4gbfnv', 'NVSE and 4GBNV'])
     div#nvse-and-4gbfnv
         h3.section-header NVSE and 4GBNV
 
         p.copy-bg
-            | The following mods are very important to a any modded Fallout. The first mod, New Vegas Script Extender (NVSE) allows 
-            | for many game changing things to be added into the game, while the 4GB New Vegas Loader (4GBNV) allows for more memory 
+            | The following mods are very important to a any modded Fallout. The first mod, New Vegas Script Extender (NVSE) allows
+            | for many game changing things to be added into the game, while the 4GB New Vegas Loader (4GBNV) allows for more memory
             | to be used by the game, which allows for better graphics and more things to be going on at once.
 
         //-
@@ -94,7 +94,7 @@ section#setup
                             | Select "Open In Explorer".
                             | Enter the "nvse" folder.
                             | Create and open a text file.
-                            | Once this file is open and able to be edited, paste in the following: 
+                            | Once this file is open and able to be edited, paste in the following:
 
                 div.raised
                     +ini Memory allocation
@@ -107,9 +107,9 @@ section#setup
                             | Click "File/Save As..."
                             | Type "nvse_config.ini" into the "File Name" field.
                             | Change the "Save as Type" field below so it reads "All Files"
-                            | Click "Save" 
+                            | Click "Save"
             +notes
-                | The New Vegas Script Extender, or NVSE for short, is a modder's resource that expands the scripting capabilities 
+                | The New Vegas Script Extender, or NVSE for short, is a modder's resource that expands the scripting capabilities
                 | of Fallout: NV. It does so without modifying the executable files on disk, so there are no permanent side effects.
                 | Without NVSE, many mods that add incredible features to Fallout New Vegas cannot be used.
 
@@ -120,7 +120,7 @@ section#setup
             Updated 2019-03-23
         //-
         +modCard('4gbfnv', 'FNV 4GB Patcher', 'https://www.nexusmods.com/newvegas/mods/62552', 'fnv-color')
-            +author Roy Batty, LuthienAnarion 
+            +author Roy Batty, LuthienAnarion
             +version 1.4
             +installation
                 pre.mt0.raised
@@ -129,11 +129,11 @@ section#setup
                     | FalloutNVpatch.exe
                     |
                     | Then run the exe
-            +notes 
+            +notes
                 | Fallout New Vegas only allows for 2 GB of RAM to be accessed by the FalloutNV.exe, so this will allow 4 GB of RAM
-                | to be accessed by setting the LAA flag. 
+                | to be accessed by setting the LAA flag.
 
-        +important 
+        +important
             | These mods are not completely installed yet! Installation will be finished in the following sections.
 
 - mods.push(setup)
