@@ -1,4 +1,4 @@
-include mixins.pug
+include includes/mixins/mixins.pug
 
 - let sections = []
 - let mods = []
@@ -10,11 +10,11 @@ include mixins.pug
 doctype html
 html(lang="en")
 
-    include includes/head.pug
+    include includes/layout/head.pug
 
     body
 
-        include includes/github.pug
+        include includes/layout/github.pug
 
         main#guide
             +important
@@ -27,14 +27,14 @@ html(lang="en")
 
             h1.section-header Tale of Two Wastelands: Over-Encumbered Edition
 
-            include includes/introduction.pug
-            include includes/tools.pug
-            include includes/setup.pug
-            include includes/modorganizer.pug
-            include includes/ttw.pug
-            include includes/cleaning-esms.pug
-            include includes/optimized-textures.pug
-            include includes/initweaks.pug
+            include includes/setup/introduction.pug
+            include includes/setup/tools.pug
+            include includes/setup/setup.pug
+            include includes/setup/modorganizer.pug
+            include includes/setup/ttw.pug
+            include includes/setup/cleaning-esms.pug
+            include includes/setup/optimized-textures.pug
+            include includes/setup/initweaks.pug
             include includes/fixes-and-extensions.pug
             include includes/ui.pug
             include includes/physics.pug
@@ -52,4 +52,4 @@ html(lang="en")
             include includes/gameplay.pug
             include includes/ttw-custom.pug
 
-        include includes/nav.pug
+        include includes/layout/nav.pug

@@ -50,8 +50,37 @@ section#ttw
         +modCard('tale-of-two-wastelands', 'Tale of Two Wastelands', 'https://taleoftwowastelands.com/dl', 'ttw-color')
             +author TTW Team
             +version 3.2.2
-            +installation Download the #[span.file 3.2 Installer], #[span.file 3.2.1 Incremental Update],
-            | and #[span.file 3.2.2 Incremental Update]
+            +installation 
+                | Download the #[span.file 3.2 Installer], #[span.file 3.2.1 Incremental Update],
+                | and #[span.file 3.2.2 Incremental Update]
+            pre.raised
+                | Create a working folder called "TTW Installer"
+                | Extract TTW_Install_v3.2_Full.7z into the "TTW Installer" folder
+                |
+                | Extract TTW_v3.2_to_v3.2.1_Update.mpi from TTW_Install_v3.2.1_Update.7z into the 
+                | "TTW Installer" folder
+                |
+                | Extract TTW_v3.2.1_to_v3.2.2_Update.mpi from TTW_Install_v3.2.2_Update.7z into the
+                | "TTW Installer folder"
+
+            pre.raised
+                | Create three empty folders:
+                |
+                | TTW
+                | TTW 3.2.1
+                | TTW 3.2.2
+            pre.raised
+                | Navigate into the "TTW Installer" folder created previously and click TTW Install.exe
+                | Highlight TTW_v3.2_Full and click the [Install] button
+                |
+                | Ensure that both game paths are correctly pointing to the root folder of each game
+                |
+                | Select the empty TTW folder created previously by clicking [Browse] and selecting the folder
+                | Click [Install]
+                |
+                | The creation of the base TTW files can take upwards of an hour depending on your PC.
+
+            +important Once you have created the TTW install files, you may reinstall Fallout 3 if you want
 
         p.copy-bg
             | If you would like a clean save file in order to skip the long introduction quest 
