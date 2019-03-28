@@ -111,44 +111,5 @@ section#configure-mod-organizer
             | like a screwdriver and wrench.
             | Click the [Plugins] tab.
             | Select BSA Extractor plugin and change false to true. 
-
-    - modOrganizer.push(['#sort-base-plugins', 'Sort Base Game Plugins']) 
-    div#sort-base-plugins
-        h3.section-header Sort The Base Game Plugins
-        
-        p.copy-bg.mb0
-            | By default the install and plugin load order in Mod Organizer is slightly scrambled.
-            | To fix the install order, perform the following steps: 
-        pre.mt0.mb0
-            | In the left pane of Mod Organizer drag and drop the "Non-MO" category mods that represent
-            | the DLCs to the following order:
-            |
-            | *FalloutNV
-            | *DeadMoney
-            | *HonestHearts
-            | *OldWorldBlues
-            | *LonesomeRoad
-            | *GunRunnersArsenal.esm
-            | *CaravanPak
-            | *ClassicPack
-            | *MercenaryPack
-            | *TribalPack 
-
-        p.copy-bg.mt0.mb0
-            | The plugin order can be fixed by running LOOT to do a quick sort. Perform the following steps: 
-        pre.mt0.mb0
-            | Ensure all ESMs in the right pane are checked.
-            |
-            | Select "LOOT" from the drop-down above the right pane of the Mod Organizer window.
-            | Click the [Run] push button.
-            | Find the icon that looks like a horizontal bar graph (mouse over text should state "Sort Plugins")
-            | and click it.
-            | After some processing, the calculated load order is displayed in the right pane of LOOT. Click 
-            | the [Apply] button to apply the load order.
-            | Click the [X] on the title bar to close LOOT. 
-        p.copy-bg.mt0
-            | This process loads LOOT through the ModOrganizer interface to sort the current ESMs/ESPs in the
-            | virtual data folder. For now this only consists of the base game and DLC ESM/ESP files. Note in
-            | the Mod Organizer window the load order has been corrected to match the output from LOOT.
     
 - mods.push(modOrganizer)
