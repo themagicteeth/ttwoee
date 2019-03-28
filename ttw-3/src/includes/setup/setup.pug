@@ -54,48 +54,5 @@ section#setup
             | select "Only update this game when I launch it"
             |
             | Click close.
-
-    //- - setup.push(['#ogg-vorbis-libs', 'Ogg Vorbis'])
-    //- div#ogg-vorbis-libs
-    //-     h3.section-header Ogg Vorbis Libraries
-
-    //-     +modCard('', 'Ogg Vorbis Libraries', 'https://www.nexusmods.com/newvegas/mods/61265', 'fnv-color')
-    //-         +author Kanewright
-    //-         +version 3
-    //-         +installation Install only the following files to the main FalloutNV folder:
-    //-             pre.mt0.raised
-    //-                 | libogg.dll
-    //-                 | libvorbis.dll
-    //-                 | libvorbisfile.dll
-    //-         +notes Latest compiled Ogg Vorbis Libraries. The game uses it for decoding оgg audio format.
-
-    - setup.push(['#4gbfnv', '4GBNV'])
-    div#4gbfnv
-        h3.section-header 4GBNV
-
-        p.copy-bg
-            | The following mods are very important to a any modded Fallout. The 4GB New Vegas Loader (4GBNV) allows for more memory
-            | to be used by the game, which allows for better graphics and more things to be going on at once.
-        //-
-            FNV 4GB Patcher
-                - https://forum.step-project.com/topic/11603-fallout-new-vegas-4gb-patcher-roy-batty-luthienanarion/
-            Updated 2019-03-23
-        //-
-        +modCard('4gbfnv', 'FNV 4GB Patcher', 'https://www.nexusmods.com/newvegas/mods/62552', 'fnv-color')
-            +author Roy Batty, LuthienAnarion
-            +version 1.4
-            +installation
-            pre.mt0.raised
-                | Install only the following files to the main FalloutNV folder:
-                |
-                | FalloutNVpatch.exe
-                |
-                | Then run the exe
-            +notes
-                | Fallout New Vegas only allows for 2 GB of RAM to be accessed by the FalloutNV.exe, so this will allow 4 GB of RAM
-                | to be accessed by setting the LAA flag.
-
-        +important
-            | These mods are not completely installed yet! Installation will be finished in the following sections.
-
+            
 - mods.push(setup)
