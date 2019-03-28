@@ -69,56 +69,13 @@ section#setup
     //-                 | libvorbisfile.dll
     //-         +notes Latest compiled Ogg Vorbis Libraries. The game uses it for decoding оgg audio format.
 
-    - setup.push(['#nvse-and-4gbfnv', 'NVSE and 4GBNV'])
-    div#nvse-and-4gbfnv
-        h3.section-header NVSE and 4GBNV
+    - setup.push(['#4gbfnv', '4GBNV'])
+    div#4gbfnv
+        h3.section-header 4GBNV
 
         p.copy-bg
-            | The following mods are very important to a any modded Fallout. The first mod, New Vegas Script Extender (NVSE) allows
-            | for many game changing things to be added into the game, while the 4GB New Vegas Loader (4GBNV) allows for more memory
+            | The following mods are very important to a any modded Fallout. The 4GB New Vegas Loader (4GBNV) allows for more memory
             | to be used by the game, which allows for better graphics and more things to be going on at once.
-
-        //-
-            New Vegas Script Extender (NVSE)
-            Updated 2019-03-23
-        //-
-        +modCard('nvse', 'New Vegas Script Extender (NVSE)', 'http://nvse.silverlock.org', 'fnv-color')
-            +author ianpatt, behippo and scruggsywuggsy the ferret
-            +version 5.1b4
-            +installation Install only the following files to the main FalloutNV folder:
-            pre.mt0.raised
-                | nvse_1_4.dll
-                | nvse_loader.exe
-                | nvse_steam_loader.dll
-                |
-                | The rest will be installed later, during the ModOrganizer setup.
-            div.raised
-                +important Create the nvse_config.ini
-                pre.mt0
-                    | Right-click NVSE in the Mod Organizer left pane.
-                    | Select "Open In Explorer".
-                    | Enter the "nvse" folder.
-                    | Create and open a text file.
-                    | Once this file is open and able to be edited, paste in the following:
-
-            div.raised
-                +ini Memory allocation
-                pre.mt0
-                    | [Memory]
-                    | DefaultHeapInitialAllocMB=400
-                    |
-                    | Note: must be between 200 and <500. 400 seems to be the best value, but play around with it a bit.
-                    |
-                    | Click "File/Save As..."
-                    | Type "nvse_config.ini" into the "File Name" field.
-                    | Change the "Save as Type" field below so it reads "All Files"
-                    | Click "Save"
-            +notes
-                | The New Vegas Script Extender, or NVSE for short, is a modder's resource that expands the scripting capabilities
-                | of Fallout: NV. It does so without modifying the executable files on disk, so there are no permanent side effects.
-                | Without NVSE, many mods that add incredible features to Fallout New Vegas cannot be used.
-
-
         //-
             FNV 4GB Patcher
                 - https://forum.step-project.com/topic/11603-fallout-new-vegas-4gb-patcher-roy-batty-luthienanarion/
