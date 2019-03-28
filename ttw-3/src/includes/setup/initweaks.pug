@@ -15,29 +15,15 @@ section#ini-tweaks
         Fallout.ini
         Updated 2019-03-23
     //-
-    - iniTweaks.push(['#fallout-ini', 'Fallout.ini'])
-    div#fallout-ini
-        h3.section-header Fallout.ini
+    - iniTweaks.push(['#fallout-custom-ini', 'FalloutCustom.ini'])
+    div#fallout-custom-ini
+        h3.section-header FalloutCustom.ini
 
         pre
             | Open Mod Organizer.
             | Click [Tools]>[Edit Ini] at the top of the window.
-            | Verify fallout.ini is selected and input the tweaks in the following subsections.
+            | Verify falloutcustom.ini is selected and input the tweaks in the following subsections.
             | Click [Save] and close the window. 
-
-        +ini TTW changes
-        pre.mt0
-            | [General]
-            | ; This one is blank on purpose, it needs to be blank
-            | sIntroMovie=
-            | bLoadFaceGenHeadEGTFiles=1
-
-        +ini Allow AI threading
-        pre.mt0
-            | [General]
-            | bUseThreadedAI=1
-            | ; Add this line
-            | iNumHWThreads=2
 
         +ini Light distance fade
         pre.mt0
@@ -62,39 +48,12 @@ section#ini-tweaks
             | fLODFadeOutMultItems=15
             | fLODFadeOutMultObjects=15
             | fLODFadeOutMultActors=15
-    
-    //-
-        FalloutPrefs.ini
-        Updated 2019-03-23
-    //-
-    - iniTweaks.push(['#falloutprefs-ini', 'FalloutPrefs.ini'])
-    div#falloutprefs-ini
-        h3.section-header FalloutPrefs.ini
-
-        pre
-            | Open Mod Organizer.
-            | Click [Tools]>[Edit Ini] at the top of the window.
-            | Verify falloutprefs.ini is selected and input the tweaks in the following subsections.
-            | Click [Save] and close the window. 
-
-        +ini Allow additional plugins to be loaded
-        pre.mt0
-            | [Launcher]
-            | bEnableFileSelection=1        
-
-        +ini TTW changes
-        pre.mt0
-            | [General]
-            | ; Change from 0 to 1
-            | bUseThreadedAI=1
-            | ; Add this line
-            | iNumHWThreads=2
-
+        
         +ini Increase grass render distance
         pre.mt0
             | Grass]
             | fGrassStartFadeDistance=17000
-
+    
         +ini Set resolution
         pre.mt0
             | [Display]
