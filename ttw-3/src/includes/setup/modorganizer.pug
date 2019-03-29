@@ -1,6 +1,5 @@
 
 - sections.push(['#configure-mod-organizer', 'Mod Organizer'])
-- let modOrganizer = []
 
 section#configure-mod-organizer
     h2.section-header Configure Mod Organizer
@@ -21,8 +20,7 @@ section#configure-mod-organizer
         | 6) Virtual File System allows a clean base Fallout installation without the mess of moving files. 
         | Additionally extends this file system to other tools such as LOOT, FNVEdit, and Wrye Flash NV. 
 
-    - modOrganizer.push(['#setup-vanilla-fallout', 'Setup Vanilla Fallout'])
-    div#setup-vanilla-fallout
+    #setup-vanilla-fallout
         h3.section-header Setup a Vanilla Fallout: New Vegas Profile
         pre
             | Start Mod Organizer, and select [Portable]
@@ -43,8 +41,8 @@ section#configure-mod-organizer
             |
             | Verify that "Fallout New Vegas" is the currently selected profile in the "Profile" drop-down above the left-pane of the Mod Organizer window.
 
-    - modOrganizer.push(['#mod-organizer-settings', 'Mod Organizer Settings'])
-    div#mod-organizer-settings
+
+    #mod-organizer-settings
         h3.section-header Mod Organizer Settings
 
         p.copy-bg.mb0 Next the ModOrganizer settings will need to be configured.
@@ -63,9 +61,8 @@ section#configure-mod-organizer
             | This will show if loose files and BSAs have conflicting files
             |
             | Close the window by clicking [OK].
-
-    - modOrganizer.push(['#setup-executables', 'Setup Executables'])            
-    div#setup-executables
+  
+    #setup-executables
         h3.section-header Setup Executables
 
         p.copy-bg.mb0
@@ -95,9 +92,8 @@ section#configure-mod-organizer
             | LOOT:"--game=FalloutNV"
             |
             | Then close the dialogue by clicking [OK]. 
-
-    - modOrganizer.push(['#mod-organizer-bsas', 'ModOrganizer and BSAs'])        
-    div#mod-organizer-bsas
+   
+    #mod-organizer-bsas
         h3.section-header ModOrganizer and BSAs
 
         p.copy-bg.mb0
@@ -129,4 +125,4 @@ section#configure-mod-organizer
             | Click the [Plugins] tab.
             | Select BSA Extractor plugin and change false to true. 
     
-- mods.push(modOrganizer)
+- mods.push([])
