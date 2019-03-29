@@ -4,46 +4,46 @@
 //-
 
 - sections.push(['#optimized-textures', 'Optimized Textures'])
-- let optimizedTextures = []
 
 section#optimized-textures
     h2.section-header Optimized Bethesda Textures
 
-    div.copy-bg
-        p
-            | Both vanilla and modded texture packs are often composed of textures saved in an inefficient compression format. 
-            | This translates into textures often being 2x larger than necessary or worse due to inclusion of redundancies that
-            | add no useful information. The effect is that more memory (both RAM and VRAM) is required to render these 'bloated'
-            | textures, which in turn costs valuable resources and hampers performance.
+    p.copy-bg.mb0
+        | Both vanilla and modded texture packs are often composed of textures saved in an inefficient compression format. 
+        | This translates into textures often being 2x larger than necessary or worse due to inclusion of redundancies that
+        | add no useful information. The effect is that more memory (both RAM and VRAM) is required to render these 'bloated'
+        | textures, which in turn costs valuable resources and hampers performance.
 
-        p
-            | In addition to bloat, improperly-formatted textures may also lack important information in the form of mipmap levels
-            | required for scaling the texture in game. What are mipmaps? They are smaller copies of a texture that are used for 
-            | rescaling object details in game as one moves away from them and they get smaller (i.e., rather than dynamically resizing,
-            | which would create aliasing artifacts and require more resources).
+    p.copy-bg.mb0.mt0
+        | In addition to bloat, improperly-formatted textures may also lack important information in the form of mipmap levels
+        | required for scaling the texture in game. What are mipmaps? They are smaller copies of a texture that are used for 
+        | rescaling object details in game as one moves away from them and they get smaller (i.e., rather than dynamically resizing,
+        | which would create aliasing artifacts and require more resources).
 
-        p 
-            | Downloading the following files and installing them via ModOrganizer is quicker than manually optimizing the textures. If manual
-            | optimization is preferred, follow the Fallout Quick-Start Guide found on STEP. 
+    p.copy-bg.mt0
+        | Downloading the following files and installing them via ModOrganizer is quicker than manually optimizing the textures. If manual
+        | optimization is preferred, follow the Fallout Quick-Start Guide found on STEP. 
 
     //-
         Fallout 3 Textures Optimized
         Updated 2019-03-22
     //-
-    - optimizedTextures.push(['#fo3-textures-optimized', 'Fallout 3 Textures Optimized'])
-    +modCard('fo3-textures-optimized', 'Fallout 3 Textures Optimized', 'https://www.nexusmods.com/fallout3/mods/21401', 'fo3-color')
-        +author Worriedwalrus
-        +version 1.1
-        +installation Install #[span.file DLC's Optimized] and #[span.file Fallout New Vegas Optimized]
+    #fo3-textures-optimized
+        +name('Fallout 3 Textures Optimized', 'https://www.nexusmods.com/fallout3/mods/21401', 'fo3')
+        +modInfo
+            +author Worriedwalrus
+            +version 1.1
+            +installation Install #[+file("DLC's Optimized")] and #[+file('Fallout New Vegas Optimized')]
 
     //-
         Fallout New Vegas Textures Optimized
         Updated 2019-03-22
     //-
-    - optimizedTextures.push(['#fnv-textures-optimized', 'Fallout New Vegas Textures Optimized'])
-    +modCard('fnv-textures-optimized', 'Fallout New Vegas Textures Optimized', 'https://www.nexusmods.com/newvegas/mods/59435', 'fnv-color')
-        +author Worriedwalrus
-        +version 1.1
-        +installation Install #[span.file  Fallout 3 DLC Optimized] and #[span.file Fallout 3 Optimized]
+    #fnv-textures-optimized
+        +name('Fallout New Vegas Textures Optimized', 'https://www.nexusmods.com/newvegas/mods/59435', 'fnv')
+        +modInfo
+            +author Worriedwalrus
+            +version 1.1
+            +installation Install #[+file('Fallout 3 DLC Optimized')] and #[+file('Fallout 3 Optimized')]
 
-- mods.push(optimizedTextures)
+- mods.push([])
