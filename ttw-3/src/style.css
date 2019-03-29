@@ -54,9 +54,11 @@ h4 {font-size: 1.75rem;}
   margin-bottom: 0;
 }
 
+/* Instructions */
 pre {
   white-space: pre-wrap;
   background-color: var(--instructions-bg);
+  font-family: monospace;
   padding: 0.5rem;
   font-size: 1rem;
 }
