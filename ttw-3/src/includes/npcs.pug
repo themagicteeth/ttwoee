@@ -9,7 +9,6 @@
 //-
 
 - sections.push(['#npcs', 'NPCs'])
-- let npcs = []
 
 section#npcs
     h2.section-header NPCs
@@ -18,29 +17,30 @@ section#npcs
         Authentic Burned Man
         Updated 2019-03-22
     //-
-    - npcs.push(['#authentic-burned-man', 'Authentic Burned Man'])
-    +modCard('authentic-burned-man', 'Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974', 'fnv-color')
-        +author Rocket
-        +version 1.0
-        +installation Install #[span.file Better Burned Man]
-        pre.raised
-            | TO DO - Requires cleaning
-        +notes
-            | This redesigns Joshua Graham, The Burned Man, to much more closely match his appearance in the game art. 
-            | Now he actually looks burnt! 
+    #authentic-burned-man
+        +name('Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974', 'fnv')
+        +modInfo
+            +author Rocket
+            +version 1.0
+            +installation Install #[+file('Better Burned Man')]
+            pre.raised TO DO - Requires cleaning
+            +notes
+                | This redesigns Joshua Graham, The Burned Man, to much more closely match his
+                | appearance in the game art. Now he actually looks burnt! 
 
     //-
         Beards
         Updated 2019-03-22
     //-
-    - npcs.push(['#beards', 'Beards'])
-    +modCard('beards', 'Beards', 'https://www.nexusmods.com/newvegas/mods/49624', 'fnv-color')
-        +author Drumber
-        +version 1.0
-        +installation #[span.file HQ Beards 2048x2048]
-        pre.raised
-            | Double click Beards in the left pane and go to the [Optional ESPs] tab.
-            | Move "Beards.esp" to the "Optional ESPs" box.
-        +notes Nice beards.
+    #beards
+        +name('Beards', 'https://www.nexusmods.com/newvegas/mods/49624', 'fnv')
+        +modInfo
+            +author Drumber
+            +version 1.0
+            +installation Install #[+file('HQ Beards 2048x2048')]
+            pre.raised
+                | Double click Beards in the left pane and go to the [Optional ESPs] tab.
+                | Move "Beards.esp" to the "Optional ESPs" box.
+            +notes Nice beards.
 
-- mods.push(npcs)
+- mods.push([])
