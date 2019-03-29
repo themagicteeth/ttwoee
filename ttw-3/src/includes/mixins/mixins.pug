@@ -4,6 +4,20 @@ mixin modCard(id, name, url, type)
         div.mod-card-bg.mt0
             block
 
+mixin link(name, url)
+    a(href=url target='_blank' rel="nofollow") #{name}
+
+mixin modInfo
+    div.mod-card-bg.mt0
+        block
+
+mixin name(name, url, type)
+    - const color = `${type}-color`
+    h6.mod-name.mb0 #[a(href=url class=color target='_blank' rel="nofollow") #{name}]
+
+mixin file(name)
+    span.file #{name}
+
 mixin author(name)
     p.mt0.mb0 #[span.b Author: ]
         block
