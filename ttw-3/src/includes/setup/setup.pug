@@ -1,11 +1,13 @@
+//-
+    Setup
+    Updated 2019-03-29
+//-
 
 - sections.push(['#setup', 'Setup'])
-- let setup = []
 
 section#setup
     h2.section-header Setup
 
-    - setup.push(['#clean-old-files', 'Clean Old Files'])
     div#clean-old-files
         h3.section-header Clean Old Files
         p.copy-bg
@@ -37,8 +39,6 @@ section#setup
                 |
                 | This will allow the INIs to revert back to vanilla when the game is launched.
 
-
-    - setup.push(['#steam-settings', 'Steam Settings'])
     div#steam-settings
         h3.section-header Steam Settings
         p.copy-bg.mb0
@@ -55,4 +55,4 @@ section#setup
             |
             | Click close.
             
-- mods.push(setup)
+- mods.push([])
