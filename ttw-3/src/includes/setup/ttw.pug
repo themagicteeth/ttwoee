@@ -1,12 +1,10 @@
 
 - sections.push(['#ttw', 'Install TTW'])
-- ttw = []
 
 section#ttw
     h2.section-header Install TTW
 
-    - ttw.push(['#create-ttwoee-profile', 'Create TTWOEE Profile'])
-    div#create-ttwoee-profile
+    #create-ttwoee-profile
         h3.section-header Create the TTWOEE Profile
 
         p.copy-bg.mb0
@@ -19,8 +17,7 @@ section#ttw
             | Select "Fallout New Vegas" then click [Copy].
             | Type "TTWOEE" in the text box and hit [OK]. 
 
-    - ttw.push(['#install-ttw', 'Tale of Two Wastelands'])
-    div#install-ttw        
+    #install-ttw        
         h3.section-header Tale of Two Wastelands
      
         +important Creating the TTW install files can take over an hour, ensure you have enough time to finish creating them
@@ -31,58 +28,63 @@ section#ttw
             | hot fixes. Instructions are included as part of this guide so no need to use the ones 
             | found on the download page for now, just know that they are there. 
 
-        +modCard('tale-of-two-wastelands', 'Tale of Two Wastelands', 'https://taleoftwowastelands.com/dl', 'ttw-color')
-            +author TTW Team
-            +version 3.2.2
-            +installation 
-                | Download the #[span.file 3.2 Installer], #[span.file 3.2.1 Incremental Update],
-                | and #[span.file 3.2.2 Incremental Update]. You can follow the 
-                | #[a(href='https://youtube.com/watch?v=BHXIEGtP2Hw' target='_blank' rel="nofollow") video guide by Gamer Poets].
-            pre.raised
-                | Create a working folder called "TTW Installer"
-                | Extract TTW_Install_v3.2_Full.7z into the "TTW Installer" folder
-                |
-                | Extract TTW_v3.2_to_v3.2.1_Update.mpi from TTW_Install_v3.2.1_Update.7z into the 
-                | "TTW Installer" folder
-                |
-                | Extract TTW_v3.2.1_to_v3.2.2_Update.mpi from TTW_Install_v3.2.2_Update.7z into the
-                | "TTW Installer folder"
+        #tale-of-two-wastelands
+            +name('Tale of Two Wastelands', 'https://taleoftwowastelands.com/dl', 'ttw')
+            +modInfo
+                +author TTW Team
+                +version 3.2.2
+                +installation 
+                    | Download the #[+file('3.2 Installer')], #[+file('3.2.1 Incremental Update')],
+                    | and #[+file('3.2.2 Incremental Update')]. You can follow the 
+                    | #[+link('video guide by Gamer Poets', 'https://youtube.com/watch?v=BHXIEGtP2Hw')]
 
-            pre.raised
-                | Create an empty folder names TTW
-        
-            pre.raised
-                | Navigate into the "TTW Installer" folder created previously and click TTW Install.exe
-                | Highlight TTW_v3.2_Full and click the [Install] button
-                |
-                | Ensure that both game paths are correctly pointing to the root folder of each game
-                |
-                | Select the empty TTW folder created previously by clicking [Browse] and selecting the folder
-                | Click [Install]
-                |
-                | The creation of the base TTW files can take upwards of an hour depending on your PC.
-                |
-                | Repeat the steps above for both updates.
-                | But set the path for "Tale of Two Wastelands Install Files" to be the TTW folder that was created
-                | and installed to previously
+                pre.raised
+                    | Create a working folder called "TTW Installer"
+                    | Extract TTW_Install_v3.2_Full.7z into the "TTW Installer" folder
+                    |
+                    | Extract TTW_v3.2_to_v3.2.1_Update.mpi from TTW_Install_v3.2.1_Update.7z into the 
+                    | "TTW Installer" folder
+                    |
+                    | Extract TTW_v3.2.1_to_v3.2.2_Update.mpi from TTW_Install_v3.2.2_Update.7z into the
+                    | "TTW Installer folder"
+
+                pre.raised
+                    | Create an empty folder names TTW
             
-            pre.raised
-                | Once completed move the TTW folder into the Mod Organizer mods folder
-                | Open Mod Organizer, and enable the TTWOEE profile
-                | Check the box in the left pane next to TTW
+                pre.raised
+                    | Navigate into the "TTW Installer" folder created previously and click TTW Install.exe
+                    | Highlight TTW_v3.2_Full and click the [Install] button
+                    |
+                    | Ensure that both game paths are correctly pointing to the root folder of each game
+                    |
+                    | Select the empty TTW folder created previously by clicking [Browse] and selecting the folder
+                    | Click [Install]
+                    |
+                    | The creation of the base TTW files can take upwards of an hour depending on your PC.
+                    |
+                    | Repeat the steps above for both updates.
+                    | But set the path for "Tale of Two Wastelands Install Files" to be the TTW folder that was created
+                    | and installed to previously
+                
+                pre.raised
+                    | Once completed move the TTW folder into the Mod Organizer mods folder
+                    | Open Mod Organizer, and enable the TTWOEE profile
+                    | Check the box in the left pane next to TTW
 
-            div.raised
-                +important Once you have created the TTW install files, you may reinstall Fallout 3 if you want
+                .raised
+                    +important Once you have created the TTW install files, you may reinstall Fallout 3 if you want
 
         p.copy-bg
             | If you would like a clean save file in order to skip the long introduction quest 
             | you can use Tale of Two Wastelands Quick Start. You will have the opportunity to 
             | customize the character just like normal.
 
-        +modCard('ttw-quick-start', 'Tale of Two Wastelands Quick Start', 'https://www.nexusmods.com/newvegas/mods/65937', 'ttw-color')
-            +author Roy Batty
-            +version 1.2
-            +installation Install #[span.file TTW Quick Start]
-            +notes Quick start plugin to skip Vault 101 and start in the cave just outside the vault.
+        #ttw-quick-start
+            +name('Tale of Two Wastelands Quick Start', 'https://www.nexusmods.com/newvegas/mods/65937', 'ttw')
+            +modInfo
+                +author Roy Batty
+                +version 1.2
+                +installation Install #[+file('TTW Quick Start')]
+                +notes Quick start plugin to skip Vault 101 and start in the cave just outside the vault.
 
-- mods.push(ttw)
+- mods.push([])
