@@ -68,7 +68,7 @@ section#ini-tweaks
         
         +ini Increase grass render distance
         pre.mt0
-            | Grass]
+            | [Grass]
             | fGrassStartFadeDistance=17000
     
         +ini Set resolution
@@ -83,5 +83,14 @@ section#ini-tweaks
         pre.mt0
             | [TerrainManager]
             | fBlockLoadDistanceLow=100000.0000
+
+        +ini Mouse acceleration
+        pre.mt0
+            | [Controls]
+            | fForegroundMouseAccelBase=0
+            | fForegroundMouseAccelTop=0
+            | fForegroundMouseBase=0
+            | fForegroundMouseMult=0
+
 
 - mods.push(iniTweaks)
