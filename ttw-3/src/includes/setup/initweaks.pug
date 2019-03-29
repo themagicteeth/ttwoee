@@ -4,29 +4,22 @@
 //-
 
 - sections.push(['#ini-tweaks', 'Ini Tweaks'])
-- let iniTweaks = []
 
 section#ini-tweaks
     h2.section-header Initial Ini Tweaks
 
     p.copy-bg 
         | The following INI tweaks tweak the games engine to enhance visuals, stability, and performance.
-        | a very good reference for many tweaks can be found at
-        | #[a(href='https://fallout.gamepedia.com/Fallout.ini_(Gamebryo)' target='_blank' rel="nofollow") Gamepedia]
+        | a very good reference for many tweaks can be found at 
+        | #[+link('Gamepedia', 'https://fallout.gamepedia.com/Fallout.ini_(Gamebryo)')]
 
-    //-
-        Fallout.ini
-        Updated 2019-03-23
-    //-
-    - iniTweaks.push(['#fallout-custom-ini', 'FalloutCustom.ini'])
-    div#fallout-custom-ini
+    #fallout-custom-ini
         h3.section-header FalloutCustom.ini
 
         p.copy-bg.mb0
             | Tale of Two Wastlands during installation created a FalloutCustom.ini located in
             | Documents\My Games\FalloutNV\FalloutCUstom.ini, these ini settings must be copied
             | into Mod Organizer.
-
         pre.mt0
             | Open the FalloutCustom.ini located in Documents\My Games\FalloutNV\FalloutCUstom.ini
             |
@@ -38,7 +31,6 @@ section#ini-tweaks
         p.copy-bg.mb0
             | There are a few more tweaks to improve graphics and performance that should be added
             | to the FalloutCustom.ini. Follow the instructions below to add them.
-
         pre.mt0
             | Open Mod Organizer.
             | Click [Tools]>[Edit Ini] at the top of the window.
@@ -95,5 +87,4 @@ section#ini-tweaks
             | fForegroundMouseBase=0
             | fForegroundMouseMult=0
 
-
-- mods.push(iniTweaks)
+- mods.push([])
