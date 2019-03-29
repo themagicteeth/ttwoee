@@ -41,10 +41,18 @@ main {
   width: 98%;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
-h4 { font-size: 1.75rem; }
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.75rem;
+}
 
 a {
   text-decoration: none;
@@ -68,16 +76,34 @@ pre {
   border: solid medium white;
 }
 
-.mw-100 { max-width: 100%;}
-.b { font-weight: bold; }
-.raised { box-shadow: var(--raised-shadow); }
-.mb0 { margin-bottom: 0; }
-.mt0 { margin-top: 0; }
+.mw-100 {
+  max-width: 100%;
+}
+.b {
+  font-weight: bold;
+}
+.raised {
+  box-shadow: var(--raised-shadow);
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mt0 {
+  margin-top: 0;
+}
 
-.tool-color { color: var(--tool-color); }
-.fo3-color { color: var(--fo3-mod-color); }
-.fnv-color { color: var(--fnv-mod-color); }
-.ttw-color { color: var(--ttw-mod-color); }
+.tool-color {
+  color: var(--tool-color);
+}
+.fo3-color {
+  color: var(--fo3-mod-color);
+}
+.fnv-color {
+  color: var(--fnv-mod-color);
+}
+.ttw-color {
+  color: var(--ttw-mod-color);
+}
 
 .fo3-color,
 .fnv-color,
@@ -97,6 +123,7 @@ pre {
 }
 
 .ini,
+.merge,
 .important {
   font-family: sans-serif;
   color: black;
@@ -106,8 +133,15 @@ pre {
   font-size: 1.25rem;
 }
 
-.ini { background-color: var(--ini-bg); }
-.important { background-color: var(--important-bg); }
+.ini {
+  background-color: var(--ini-bg);
+}
+.important {
+  background-color: var(--important-bg);
+}
+.merge {
+  background-color: var(--merge-bg);
+}
 
 .mod-name {
   background-color: var(--mod-name-bg);
@@ -154,7 +188,7 @@ ul li ul {
 
 li,
 li a,
-li:hover ul li a  {
+li:hover ul li a {
   color: #000000;
 }
 
@@ -248,8 +282,10 @@ ul li ul li {
   cursor: pointer;
 }
 
-@media screen and (min-width: 30em) {}
-@media screen and (min-width: 30em) and (max-width: 60em) {}
+@media screen and (min-width: 30em) {
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+}
 
 @media screen and (min-width: 60em) {
   .hamburger {
