@@ -15,10 +15,11 @@ section#enb
             +author Boris Vorontsov
             +version v1.0
             +installation Download #[+file('VRamSizeTest v1.0')]
-            +important Determine usable video RAM for setting up the ENB
-            pre.raised
-                | Extract the archive and run VRamSizeDX9.exe
-                | Take note of the number for use in the enblocal.ini
+            .raised
+                +important Determine usable video RAM for setting up the ENB
+                pre.mt0
+                    | Extract the archive and run VRamSizeDX9.exe
+                    | Take note of the number for use in the enblocal.ini
 
     #enboost
         +name('ENBoost', 'http://enbdev.com/mod_falloutnv_v0322.htm', 'tool')
@@ -26,10 +27,48 @@ section#enb
             +author Boris Vorontsov
             +version v0.322
             +installation Download #[+file('enbseries_falloutnv_v0322.zip')]
-        pre.raised
-            | Open the archive and navigate into the "WrapperVersion" folder
-            |
-            | Extract everything into the Fallout New Vegas root folder except:
-            |
-            | * license_en.txt
-            | * readme_en.txt
+            pre.raised
+                | Open the archive and navigate into the "WrapperVersion" folder
+                |
+                | Extract everything into the Fallout New Vegas root folder except:
+                |
+                | * license_en.txt
+                | * readme_en.txt
+
+            pre.raised
+                | Navigate the Fallout New Vegas folder
+                | Open enseries.ini and make the following change
+    
+            .raised
+                +ini Disable the ENB effects
+                pre.mt0
+                    | ; Put on the first line
+                    | UseEffect=false
+            
+            pre.raised
+                | Navigate the Fallout New Vegas folder
+                | Open enblocal.ini and make the following changes
+
+            .raised
+                +ini Set the memory settings
+                pre.mt0
+                    | [MEMORY]
+                    | ExpandSystemMemoryX64=false
+                    | ReduceSystemMemoryUsage=true
+                    | DisableDriverMemoryManager=false
+                    | DisablePreloadToVRAM=false
+                    |
+                    | ; As a last resort, setting this to 'true' may actually benefit some people getting stutter.  
+                    | ; Beware that it could potentially cause CTDs on some systems.
+                    | EnableUnsafeMemoryHacks=false
+                    |
+                    | ; Possible values include 128, 256, or 512. 
+                    | ; It may require some tweaking depending on system hardware, but 256 is a good starting point.
+                    | ReservedMemorySizeMb=256
+                    |
+                    | ; Subtract 350 from the output of the VRamTestTool and put it here
+                    | VideoMemorySizeMb=
+                    | AutodetectVideoMemorySize=false
+                    | 
+                    | ; Weaker systems may benefit from this setting being false.
+                    | EnableCompression=true 
