@@ -6,6 +6,7 @@
 
 - let armor = []
 - sections.push(['#armor', 'Armor'])
+- mods.push([])
 
 section#armor
     h2.section-header Armor
@@ -21,8 +22,11 @@ section#armor
         +author CaBaL
         +version omni2
         +installation Install #[span.file nov 2011 book of steel]
-        pre.raised
-            | Post install move "boa ncrpahelmet.esp" and "Boacombat2glove.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click aMidianBorn NV Book of Water - Book of Steel in the left pane and go to the [Optional ESPs] tab.
+                | Move to "boa ncrpahelmet.esp" and "Boacombat2glove.esp" to the "Optional ESPs" box.
 
     //-
         Bornagain Combat Armor FO3
@@ -37,8 +41,11 @@ section#armor
             | Install #[span.file BornagainCombatArmor4096] main file, #[span.file BornagainCombatArmor4096EnvironmentMaps]
             | update file, and #[span.file BornagainAnchorageCombatArmor2048],
             | #[span.file BornagainGhoulCombatArmor4096], and #[span.file BornagainZetaCombatArmor409] update files
-        pre.raised
-            | Post install move "Bornagain Zeta Combat Armor Texture Patch.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click Bornagain Combat Armor in the left pane and go to the [Optional ESPs] tab.
+                | Move "Bornagain Zeta Combat Armor Texture Patch.esp" to the "Optional ESPs" box.
 
     //-
         Bornagain Combat Armor FNV
@@ -72,8 +79,11 @@ section#armor
         +author Cabal, EmeraldReign
         +version 1.0
         +installation Install #[span.file BornagainOutcastT45d4096]
-        pre.raised
-            |  Post install move "Bornagain Outcast T-45d Texture Patch.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click Bornagain Outcast T-45d Power Armor in the left pane and go to the [Optional ESPs] tab.
+                | Move "Bornagain Outcast T-45d Texture Patch.esp" to the "Optional ESPs" box.
 
     //-
         Bornagain FO3 Outcast
@@ -84,8 +94,11 @@ section#armor
     +modCard('bornagain-fo3-outcast', 'Bornagain FO3 Outcast', 'https://www.nexusmods.com/fallout3/mods/16199', 'fo3-color')
         +author Cabal
         +installation Install #[span.file Bornagain Fo3 outcast MAIN] and #[span.file helmet fix]
-        pre.raised
-            | Post install move "BornAgain Outcast v3.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click Bornagain FO3 Outcast in the left pane and go to the [Optional ESPs] tab.
+                | Move "BornAgain Outcast v3.esp" to the "Optional ESPs" box.
 
     //-
         Enclave Power Armors Retextured
@@ -97,8 +110,11 @@ section#armor
         +author d_seven aka id2301
         +version 1
         +installation Install #[span.file EPA], #[span.file Hellfire], and #[span.file Tesla]
-        pre.raised
-            | Post install move "teslaPA -retextured.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click Enclave Power Armors Retextured in the left pane and go to the [Optional ESPs] tab.
+                | Move "teslaPA -retextured.esp" to the "Optional ESPs" box.
 
     //-
         Book of Steel - Compatibility Edition
@@ -125,8 +141,11 @@ section#armor
     +modCard('tribal-dx', 'Tribal DX', 'https://www.nexusmods.com/fallout3/mods/6520', 'fo3-color')
         +author Weijiesen
         +installation Install #[span.file Tribal DX - 4096 res -]
-        pre.raised
-            | Post install move "Tribal_DX.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click Tribal DX in the left pane and go to the [Optional ESPs] tab.
+                | Move "Tribal_DX.esp" to the "Optional ESPs" box.
         +notes A high res and much better Tribal armor with more details.
 
     //-
@@ -178,8 +197,11 @@ section#armor
         +author Emerald Reign, nekronom, cabal, wjs, dragbody
         +version beta
         +installation Install #[span.file Main File Beta 7_2] main file and #[span.file Sapper Leg Fix] update file
-        pre.raised
-            | Post install move "NCRTrooperOverhaul.esp" to optional ESPs
+        .raised
+            +optional 
+            pre.mt0
+                | Double click NCR Trooper Overhaul in the left pane and go to the [Optional ESPs] tab.
+                | Move "NCRTrooperOverhaul.esp" to the "Optional ESPs" box.
         +notes This is much like ADAM except that it covers the NCR troopers.
 
     //-
@@ -256,5 +278,3 @@ section#armor
         +author Ellise
         +version 1.0
         +installation Install #[span.file HR Armored Vault 101 Jumpsuit_4k]
-
-- mods.push(armor)

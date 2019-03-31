@@ -17,6 +17,7 @@
   --important-bg: #ff6653;
   --ini-bg: #7494ff;
   --merge-bg: #eb8cba;
+  --optional-bg: #f68f3b;
   --settings-bg: #d9b400;
   --mod-name-bg: #2f4f4f;
   --copy-bg: #808080;
@@ -120,7 +121,8 @@ a:hover {
 /* Special header styles */
 .ini,
 .merge,
-.important {
+.important,
+.optional {
   font-family: sans-serif;
   color: black;
   padding-top: 0.5rem;
@@ -133,6 +135,7 @@ a:hover {
 .ini {background-color: var(--ini-bg);}
 .important {background-color: var(--important-bg);}
 .merge {background-color: var(--merge-bg);}
+.optional {background-color: var(--optional-bg);}
 
 /* Mod card name style */
 .mod-name {
