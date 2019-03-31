@@ -9,17 +9,27 @@
 section#enb
     h2.section-header ENB
 
-    #enboost
-        +name('ENBoost', 'http://enbdev.com/patch_falloutnv_enboost_v0203.htm', 'tool')
+    #vramtesttool
+        +name('VRamSizeTest', 'http://enbdev.com/download_vramsizetest.htm', 'tool')
         +modInfo
             +author Boris Vorontsov
-            +version v0.203
-            +installation Download #[+file('ENBoost v0.203 patch for Fallout 3 / New Vegas')]
+            +version v1.0
+            +installation Download #[+file('VRamSizeTest v1.0')]
+            +important Determine usable video RAM for setting up the ENB
+            pre.raised
+                | Extract the archive and run VRamSizeDX9.exe
+                | Take note of the number for use in the enblocal.ini
+
+    #enboost
+        +name('ENBoost', 'http://enbdev.com/mod_falloutnv_v0322.htm', 'tool')
+        +modInfo
+            +author Boris Vorontsov
+            +version v0.322
+            +installation Download #[+file('enbseries_falloutnv_v0322.zip')]
         pre.raised
-            | Open the archive and navigate into the "InjectorVersion" folder
-            | Extract the following files to the root New Vegas folder:
+            | Open the archive and navigate into the "WrapperVersion" folder
             |
-            | * enbhost.exe
-            | * ENBInjector.exe
-            | * enbseries.dll
-            | * enblocal.ini
+            | Extract everything into the Fallout New Vegas root folder except:
+            |
+            | * license_en.txt
+            | * readme_en.txt
