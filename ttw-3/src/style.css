@@ -27,6 +27,7 @@
   --fnv-mod-color: #fcb040;
   --ttw-mod-color: #7bdefc;
   --hidden-bg: #4597de;
+  --mispackage-bg: #8C7B4C;
   --white: #ffffff;
   --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
 }
@@ -124,7 +125,8 @@ a:hover {
 .merge,
 .important,
 .optional,
-.hidden {
+.hidden,
+.mispackage {
   font-family: sans-serif;
   color: black;
   padding-top: 0.5rem;
@@ -139,6 +141,7 @@ a:hover {
 .merge {background-color: var(--merge-bg);}
 .optional {background-color: var(--optional-bg);}
 .hidden {background-color: var(--hidden-bg);}
+.mispackage {background-color: var(--mispackage-bg);}
 
 /* Mod card name style */
 .mod-name {

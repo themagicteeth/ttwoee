@@ -45,9 +45,11 @@ section#fixes-and-extensions
             +author SkyRanger-1
             +version 4.1.36
             +installation Install #[+file('NVSR_4-1-36')]
-            pre.raised
-                | This mod is packaged incorrectly
-                | During install right click "Data" and select [Set data directory].
+            +mispackaged
+                pre.mt0
+                    | This mod is packaged incorrectly
+                    | During install right click "Data" and select [Set data directory]
+                    | Click [OK]
 
             div.raised
                 +important This mod has an INI file that has some options users should be aware of
