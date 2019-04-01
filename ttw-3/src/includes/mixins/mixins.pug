@@ -1,11 +1,11 @@
 mixin modCard(id, name, url, type)
     div(id=id)
-        h6.mod-name.mb0 #[a(href=url class=type target='_blank' rel="nofollow") #{name}]
+        h6.mod-name.mb0 #[a(href=url class=type target='_blank' rel="noopener") #{name}]
         div.mod-card-bg.mt0
             block
 
 mixin link(name, url)
-    a(href=url target='_blank' rel="nofollow") #{name}
+    a(href=url target='_blank' rel="noopener") #{name}
 
 mixin modInfo
     div.mod-card-bg.mt0
@@ -13,7 +13,7 @@ mixin modInfo
 
 mixin name(name, url, type)
     - const color = `${type}-color`
-    h6.mod-name.mb0 #[a(href=url class=color target='_blank' rel="nofollow") #{name}]
+    h6.mod-name.mb0 #[a(href=url class=color target='_blank' rel="noopener") #{name}]
 
 mixin file(name)
     span.file #{name}
