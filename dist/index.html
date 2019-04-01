@@ -106,16 +106,20 @@ Follow the directions below to access the "Add Executables" menu.
 
 Note that NVSE is already listed as an executable, this is because it was installed with 
 Tale of Two Wastelands</p><pre class="mt0 mb0">Click the [Executables] button at the top of the main Mod Organizer window. 
-The icon looks like a pair of cogs. </pre><p class="copy-bg mb0 mt0">Follow directions below, some of them have specific instructions. FNVEdit, LOOT, 
-and Wrye Flash NV will be added. </p><pre class="mt0">In the "Title" text box type the name of the executable being added.
+The icon looks like a pair of cogs. </pre><p class="copy-bg mb0 mt0">Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNVLODGen, 
+Merge Plugins Standalone and Wrye Flash NV will be added. </p><pre class="mt0">In the "Title" text box type the name of the executable being added.
 In the "Binary" text box select the .exe by using windows explorer by pressing the [...] button.
 Do not select any of the optional check boxes.
 Click the [Add] button. The executable should appear in the list.
-Repeat this process for each one.</pre><p class="important mb0">Select the executables listed below and input the text into the "Arguments" box.</p><pre class="mt0">Remove the outer most quotations marks, and click [Modify] after each one:
+Repeat this process for each one.</pre><p class="important mb0">Select the executables listed below and input the text into the "Arguments" box.</p><pre class="mt0">Click [Modify] after adding each argument:
  
-LOOT:"--game=FalloutNV"
+LOOT: --game=FalloutNV
 
-Then close the dialogue by clicking [OK]. </pre></div><div id="mod-organizer-bsas"><h3 class="section-header">ModOrganizer and BSAs</h3><p class="copy-bg mb0">Bethesda Software Archives (BSA) can be used to store mod files to reduce file sizes. 
+FNVLODGen: -o:"path\to\modorganizer\mods\FNVLODGenOutput"
+Make the path point to your Mod Organizer mods directory, and put it in a folder called FNVLODGenOutput
+
+Then close the dialogue by clicking [OK].</pre><p class="important mb0">Launch Wrye Flash NV from Mod Organizer and change the following settings:</p><pre class="mt0"> Go to the Mods tab
+Right click the header on the top bar and make sure Lock Times is UNTICKED.</pre></div><div id="mod-organizer-bsas"><h3 class="section-header">ModOrganizer and BSAs</h3><p class="copy-bg mb0">Bethesda Software Archives (BSA) can be used to store mod files to reduce file sizes. 
 The added benefit is the reducing in file system fragmentation caused by having many
 loose files. Sometimes extracting the contents of a BSA is necessary for various reasons,
 such as: not wanting the entire contents of the BSA, to optimize textures within the BSA,
@@ -423,4 +427,22 @@ Click [Generate]
 LODs will now be generated, this can take 20 to 30 minutes
 Once it is finished, close the window
 
-Open Mod Organizer and enable "FNVLODGENOutput" in the left pane.</pre></section></main><nav><ul><li class="nav-header"> <a href="#guide">☢️ TTW:OEE</a></li><li class="old"><a class="old" href="https://www.ttwoee.com/old">TTW:OEE for 2.9.4b</a></li><li> <a href="#introduction">Introduction</a></li><li> <a href="#tools">Tools</a></li><li> <a href="#setup">Setup</a></li><li> <a href="#configure-mod-organizer">Mod Organizer</a></li><li> <a href="#ttw">Install TTW</a></li><li> <a href="#cleaning-esms">Cleaning Bethesda ESMs</a></li><li> <a href="#ini-tweaks">Ini Tweaks</a></li><li> <a href="#enb">ENB</a></li><li> <a href="#fixes-and-extensions">Fixes and Extensions</a></li><li> <a href="#project-nevada">Project Nevada</a></li><li> <a href="#ui">User Interface</a></li><li> <a href="#physics">Physics</a><ul><li><a href="#collision-meshes-fo3">Collision Meshes FO3</a></li><li><a href="#collision-meshes-fnv">Collision Meshes FNV</a></li></ul></li><li> <a href="#cut-content">Cut Content</a></li><li> <a href="#exploration">Exploration</a></li><li> <a href="#quests">Quests</a></li><li> <a href="#textures">Textures</a></li><li> <a href="#environment">Environment</a></li><li> <a href="#creatures">Creatures</a><ul><li><a href="#its-a-dogs-world">It's a Dogs World - Dog Texture Overhaul</a></li><li><a href="#eyebot-retextured">Eyebot Retextured</a></li><li><a href="#fawkes-retexture">Fawkes Retexture Hi-Res</a></li><li><a href="#fo3-hirezd-supermutants">FO3 Hirezd - Supermutants</a></li><li><a href="#sentryturret-retextured">SentryTurret Retextured</a></li><li><a href="#swampfolk-backwater-retexture">Swampfolk Backwater Retexture</a></li><li><a href="#robot-revolution-protectron">Robot Revolution HD - Protectron</a></li><li><a href="#vandr-hd-creatures">Vandr HD Creatures</a></li><li><a href="#book-of-flesh">aMidianBorn Book Of Water - Book of Flesh</a></li><li><a href="#feralghouls-hires-retexture">FeralGhouls Hires Retexture</a></li><li><a href="#super-mutant-mesh-replacer">Super Mutant Mesh Replacer</a></li></ul></li><li> <a href="#npcs">NPCs</a></li><li> <a href="#armor">Armor</a></li><li> <a href="#weapons">Weapons</a></li><li> <a href="#effects">Effects</a></li><li> <a href="#lighting">Lighting</a></li><li> <a href="#gameplay">Gameplay</a><ul><li><a href="#bleed">BLEED</a></li><li><a href="#gunsmithing">Gunsmithing</a></li><li><a href="#mobile-truck-base">Mobile Truck Base TTW</a></li><li><a href="#nipton-fires-extinguished">Nipton Fires Extinguished</a></li><li><a href="#root-n-loot">Root 'n Loot TTW</a></li><li><a href="#static-battery-replacer">Static Battery Replacer</a></li></ul></li><li> <a href="#annoyances">Annoyances</a></li><li> <a href="#lod">LOD</a></li></ul></nav></body></html>
+Open Mod Organizer and enable "FNVLODGENOutput" in the left pane.</pre></section><section id="bash-tags"><h2 class="section-header">Generate Bash Tags</h2><p class="important mb0">Do not attempt this process on an already created bashed patch</p><p class="copy-bg mb0">The purpose of this process is to analyze plugins and recognize the correct bash tags to
+apply to them. This is a tedious process that involves running a script on all non-vanilla
+plugins that have been installed, but it is necessary in order to allow a vital patch called
+a bashed patch to properly combine records from all installed plugins that can benefit from
+being in that patch. </p><pre class="mt0">Open FNVEdit through MO.
+Right click the list of mods and choose "Select None".
+Find the first non-vanilla/TTW plugin in the list
+Tick that plugin (and that plugin only), then hold shift and click [OK].
+After FNVEdit loads, right click on the previously ticked plugin from the list on the left and select "Apply Script".
+From the top dropdown select Generate Bash Tags and click [OK].
+Click [Yes] in the popup.
+
+After the script is completed, you will see a [Apply Script done] message at the bottom of the right window panel.
+
+Close FNVEdit and save the plugin, ensure "Backup plugins" is unchecked
+
+Repeat this process for all plugins that are not part of TTW or vanilla ESMs
+
+NOTE: Shortcuts WILL NOT WORK - only process one plugin at a time</pre></section></main><nav><ul><li class="nav-header"> <a href="#guide">☢️ TTW:OEE</a></li><li class="old"><a class="old" href="https://www.ttwoee.com/old">TTW:OEE for 2.9.4b</a></li><li> <a href="#introduction">Introduction</a></li><li> <a href="#tools">Tools</a></li><li> <a href="#setup">Setup</a></li><li> <a href="#configure-mod-organizer">Mod Organizer</a></li><li> <a href="#ttw">Install TTW</a></li><li> <a href="#cleaning-esms">Cleaning Bethesda ESMs</a></li><li> <a href="#ini-tweaks">Ini Tweaks</a></li><li> <a href="#enb">ENB</a></li><li> <a href="#fixes-and-extensions">Fixes and Extensions</a></li><li> <a href="#project-nevada">Project Nevada</a></li><li> <a href="#ui">User Interface</a></li><li> <a href="#physics">Physics</a><ul><li><a href="#collision-meshes-fo3">Collision Meshes FO3</a></li><li><a href="#collision-meshes-fnv">Collision Meshes FNV</a></li></ul></li><li> <a href="#cut-content">Cut Content</a></li><li> <a href="#exploration">Exploration</a></li><li> <a href="#quests">Quests</a></li><li> <a href="#textures">Textures</a></li><li> <a href="#environment">Environment</a></li><li> <a href="#creatures">Creatures</a><ul><li><a href="#its-a-dogs-world">It's a Dogs World - Dog Texture Overhaul</a></li><li><a href="#eyebot-retextured">Eyebot Retextured</a></li><li><a href="#fawkes-retexture">Fawkes Retexture Hi-Res</a></li><li><a href="#fo3-hirezd-supermutants">FO3 Hirezd - Supermutants</a></li><li><a href="#sentryturret-retextured">SentryTurret Retextured</a></li><li><a href="#swampfolk-backwater-retexture">Swampfolk Backwater Retexture</a></li><li><a href="#robot-revolution-protectron">Robot Revolution HD - Protectron</a></li><li><a href="#vandr-hd-creatures">Vandr HD Creatures</a></li><li><a href="#book-of-flesh">aMidianBorn Book Of Water - Book of Flesh</a></li><li><a href="#feralghouls-hires-retexture">FeralGhouls Hires Retexture</a></li><li><a href="#super-mutant-mesh-replacer">Super Mutant Mesh Replacer</a></li></ul></li><li> <a href="#npcs">NPCs</a></li><li> <a href="#armor">Armor</a></li><li> <a href="#weapons">Weapons</a></li><li> <a href="#effects">Effects</a></li><li> <a href="#lighting">Lighting</a></li><li> <a href="#gameplay">Gameplay</a><ul><li><a href="#bleed">BLEED</a></li><li><a href="#gunsmithing">Gunsmithing</a></li><li><a href="#mobile-truck-base">Mobile Truck Base TTW</a></li><li><a href="#nipton-fires-extinguished">Nipton Fires Extinguished</a></li><li><a href="#root-n-loot">Root 'n Loot TTW</a></li><li><a href="#static-battery-replacer">Static Battery Replacer</a></li></ul></li><li> <a href="#annoyances">Annoyances</a></li><li> <a href="#lod">LOD</a></li><li> <a href="#bash-tags">Generate Bash Tags </a></li></ul></nav></body></html>

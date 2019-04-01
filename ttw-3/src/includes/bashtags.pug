@@ -1,0 +1,36 @@
+//-
+    Generate Bash Tags 
+    Updated 2019-03-31
+//-
+
+- sections.push(['#bash-tags', 'Generate Bash Tags '])
+- mods.push([])
+
+section#bash-tags
+    h2.section-header Generate Bash Tags
+
+    +important Do not attempt this process on an already created bashed patch
+
+    p.copy-bg.mb0
+        | The purpose of this process is to analyze plugins and recognize the correct bash tags to
+        | apply to them. This is a tedious process that involves running a script on all non-vanilla
+        | plugins that have been installed, but it is necessary in order to allow a vital patch called
+        | a bashed patch to properly combine records from all installed plugins that can benefit from
+        | being in that patch. 
+    pre.mt0
+        | Open FNVEdit through MO.
+        | Right click the list of mods and choose "Select None".
+        | Find the first non-vanilla/TTW plugin in the list
+        | Tick that plugin (and that plugin only), then hold shift and click [OK].
+        | After FNVEdit loads, right click on the previously ticked plugin from the list on the left and select "Apply Script".
+        | From the top dropdown select Generate Bash Tags and click [OK].
+        | Click [Yes] in the popup.
+        |
+        | After the script is completed, you will see a [Apply Script done] message at the bottom of the right window panel.
+        |
+        | Close FNVEdit and save the plugin, ensure "Backup plugins" is unchecked
+        |
+        | Repeat this process for all plugins that are not part of TTW or vanilla ESMs
+        |
+        | NOTE: Shortcuts WILL NOT WORK - only process one plugin at a time
+    
