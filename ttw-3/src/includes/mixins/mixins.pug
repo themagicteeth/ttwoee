@@ -49,14 +49,21 @@ mixin merge
 mixin optional
     .raised
         p.optional.mb0 Optional ESPs
-        block
+        pre.mt0
+            block
 
 mixin hidden
     .raised
         p.hidden.mb0 Hidden Files
-        block
+        pre.mt0
+            block
 
 mixin mispackaged
     .raised
         p.mispackage.mb0 Packaged Incorrectly
+        pre.mt0
+            block
+
+mixin instructions
+    pre.raised
         block
