@@ -80,8 +80,8 @@ section#configure-mod-organizer
             | The icon looks like a pair of cogs. 
 
         p.copy-bg.mb0.mt0
-            | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, 
-            | and Wrye Flash NV will be added. 
+            | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNVLODGen, 
+            | Merge Plugins Standalone and Wrye Flash NV will be added. 
         pre.mt0
             | In the "Title" text box type the name of the executable being added.
             | In the "Binary" text box select the .exe by using windows explorer by pressing the [...] button.
@@ -91,11 +91,19 @@ section#configure-mod-organizer
 
         +important Select the executables listed below and input the text into the "Arguments" box.
         pre.mt0
-            | Remove the outer most quotations marks, and click [Modify] after each one:
+            | Click [Modify] after adding each argument:
             | 
-            | LOOT:"--game=FalloutNV"
+            | LOOT: --game=FalloutNV
             |
-            | Then close the dialogue by clicking [OK]. 
+            | FNVLODGen: -o:"path\to\modorganizer\mods\FNVLODGenOutput"
+            | Make the path point to your Mod Organizer mods directory, and put it in a folder called FNVLODGenOutput
+            |
+            | Then close the dialogue by clicking [OK].
+
+        +important Launch Wrye Flash NV from Mod Organizer and change the following settings:
+        pre.mt0 
+            | Go to the Mods tab
+            | Right click the header on the top bar and make sure Lock Times is UNTICKED.
    
     #mod-organizer-bsas
         h3.section-header ModOrganizer and BSAs
