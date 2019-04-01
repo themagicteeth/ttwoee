@@ -1,16 +1,99 @@
 //-
     UI
     Updated 2019-03-22
+
+    +UIO - User Interface Organizer
+    +Vanilla HUD Remastered
+    +Vanilla UI Plus
+    +One HUD - oHUD
+    +The Weapon Mod Menu
+    +The Mod Configuration Menu
+    +
+    +
+    +
+    +
+    +
+    +Enhanced Item Info - Extra UI HUD
+    +Better Pickup Prompt
+    -HUD_separator
+    +Universal Item Sorter
+    +TTW DLC Sortomatic Homes
+    +Sortomatic Ingredient Loader
+    +Sortomatic
+    +
+    +Consistent Pip-Boy Icons
+    +Misc Item Icons
+    +JIP Realistic Weapon Overheating
+    +JIP Selective-Fire
+    +JIP Improved Recipe Menu
+    +JIP Companions Command and Control
+    +
+    +
+    -User Interface_separator
 //-
 
 - sections.push(['#ui', 'User Interface'])
-- let ui = []
 - mods.push([])
 
 section#ui
     h2.section-header User Interface
 
-    - ui.push(['#better-pick-up-prompt', 'Better Pickup Prompt'])
+    #casm-with-mcm
+        +name('CASM with MCM', 'https://www.nexusmods.com/newvegas/mods/45652', 'fnv')
+        +modInfo
+            +author Cipscis and Gribbleshnibit8 
+            +version 1.8
+            +installation Install #[+file('CASM with MCM')]
+
+    #enhanced-camera
+        +name('Enhanced Camera', 'https://www.nexusmods.com/newvegas/mods/45652', 'fnv')
+        +modInfo
+            +author LogicDragon
+            +version 1.4c
+            +installation Install #[+file('Enhanced Camera 1.4c')]
+
+    #pause-menu-hd
+        +name('Pause Menu HD', 'https://www.nexusmods.com/newvegas/mods/63934', 'fnv')
+        +modInfo
+            +author pilamin
+            +version 1.0
+            +installation Install #[+file('Pause Menu HD - 2048')]
+
+    #fps-weapon-wheel
+        +name('FPS Weapon Wheel', 'https://www.nexusmods.com/newvegas/mods/39997', 'fnv')
+        +modInfo
+            +author vivanto
+            +version 1.13
+            +installation Install #[+file('FPSWeaponWheel113')]
+
+    #fps-weapon-wheel-vanilla-ui
+        +name('FPS Weapon Wheel - Vanilla UI Patch', 'https://www.nexusmods.com/newvegas/mods/63908', 'fnv')
+        +modInfo
+            +author frosty-theaussie
+            +version 1.0
+            +installation Install #[+file('FPS Weapon Wheel - Vanilla UI Patch')]
+
+    #loot-menu
+        +name('Loot Menu', 'https://www.nexusmods.com/newvegas/mods/61723', 'fnv')
+        +modInfo
+            +author Gribbleshnibit8
+            +version 1.13
+            +installation Install #[+file('Loot Menu')]
+
+    #loot-menu-vanilla-ui
+        +name('Loot Menu - Vanilla UI Patch', 'https://www.nexusmods.com/newvegas/mods/63908', 'fnv')
+        +modInfo
+            +author frosty-theaussie
+            +version 1.1
+            +installation Install #[+file('Loot Menu - Vanilla UI Patch')]
+
+    #weapon-wheel-plus-looting
+        +name('Wweapon Wheel Plus Looting Menu for FNV', 'https://www.nexusmods.com/newvegas/mods/65198', 'fnv')
+        +modInfo
+            +author samaelaunweor
+            +version 1.0
+            +installation Install #[+file('Weapon Wheel Plus Looting Menu for FNV')]
+
     +modCard('better-pick-up-prompt', 'Better Pickup Prompt', 'https://www.nexusmods.com/newvegas/mods/63091', 'fnv-color')
         +author Ladez
         +version 2.0
@@ -19,14 +102,12 @@ section#ui
         JIP Improved Recipe Menu
         Updated 2019-03-22
     //-
-    - ui.push(['#jip-improved-recipe-menu', 'JIP Improved Recipe Menu'])
     +modCard('jip-improved-recipe-menu', 'JIP Improved Recipe Menu', 'https://www.nexusmods.com/newvegas/mods/59638', 'fnv-color')
         +author jazzisparis
         +version 1.20
         +installation Install #[span.file JIP Improved Recipe Menu]
         +notes This mod makes the crafting interface (Recipe Menu) easier, more efficient and less tedious to use.
 
-    - ui.push(['#jip-ccc', 'JIP CCC'])
     +modCard('jip-ccc', 'JIP Companions Command and Control', 'https://www.nexusmods.com/newvegas/mods/50468', 'fnv-color')
         +author jazzisparis
         +version 2.60
@@ -36,7 +117,6 @@ section#ui
         The Mod Configuration Menu
         Updated 2019-03-22
     //-
-    - ui.push(['#mcm', 'The Mod Configuration Menu'])
     +modCard('mcm', 'The Mod Configuration Menu', 'https://www.nexusmods.com/newvegas/mods/42507', 'fnv-color')
         +author Pelinor
         +version 1.5
@@ -49,7 +129,6 @@ section#ui
         High Quality Pip-Boy Icons
         Updated 2019-03-22
     //-
-    - ui.push(['#high-quality-pip-boy-icons', 'High Quality Pip-Boy Icons'])
     +modCard('high-quality-pip-boy-icons', 'High Quality Pip-Boy Icons', 'https://www.nexusmods.com/fallout3/mods/22808', 'fo3-color')
         +author Genin32
         +version 3.00
@@ -65,7 +144,6 @@ section#ui
         Vanilla UI Plus
         Updated 2019-03-22
     //-
-    - ui.push(['#vanilla-ui-plus', 'Vanilla UI Plus'])
     +modCard('vanilla-ui-plus', 'Vanilla UI Plus', 'https://www.moddb.com/mods/vanilla-ui-plus/downloads', 'fnv-color')
         +author Axonis
         +version 7.71
@@ -78,7 +156,6 @@ section#ui
         Vanilla HUD Remastered
         Updated 2019-03-22
     //-
-    - ui.push(['#vanilla-hud-remastered', 'Vanilla HUD Remastered'])
     +modCard('vanilla-hud-remastered', 'Vanilla HUD Remastered', 'https://www.nexusmods.com/newvegas/mods/64102', 'fnv-color')
         +author BmanBlazer
         +version 1.83
@@ -89,7 +166,6 @@ section#ui
             | This mod is designed to update the HUD for 1080p resolutions or higher (1440p, 4K, etc) while maintaining the
             | same original look and style.
 
-    - ui.push(['#enhanced-item-info', 'Enhanced Item Info'])
     +modCard('enhanced-item-info', 'Enhanced Item Info - Extra UI HUD', 'https://www.nexusmods.com/newvegas/mods/60534', 'fnv-color')
         +author pintocat
         +version 1.4.3
@@ -99,7 +175,6 @@ section#ui
         UIO - UI Organizer
         Updated 2019-03-22
     //-
-    - ui.push(['#uio', 'UIO - UI Organizer'])
     +modCard('uio', 'UIO - UI Organizer', 'https://www.nexusmods.com/newvegas/mods/57174', 'fnv-color')
         +author jazzisparis
         +version 2.03
@@ -110,31 +185,26 @@ section#ui
             | properly removed; it will automatically detect, resolve and prevent UI-related issues, and will help keep the game's
             | UI intact.
 
-    - ui.push(['#sortomatic', 'Sortomatic'])
     +modCard('sortomatic', 'Sortomatic', 'https://www.nexusmods.com/newvegas/mods/41142', 'fnv-color')
         +author tunaisafish and Gribbleshnibit8
         +version 1.3
         +installation Install #[span.file Sortomatic_v1_3]
 
-    - ui.push(['#sortomatic-ingredient', 'Sortomatic Ingredient Loader'])
     +modCard('sortomatic-ingredient', 'Sortomatic Ingredient Loader', 'https://www.nexusmods.com/newvegas/mods/65921', 'fnv-color')
         +author pintocat
         +version 1.1
         +installation Install #[span.file Sortomatic Ingredient Loader 1-1]
 
-    - ui.push(['#sortomatic-homes', 'TTW DLC Sortomatic Homes'])
     +modCard('sortomatic-homes', 'TTW DLC Sortomatic Homes', 'https://www.nexusmods.com/newvegas/mods/65988', 'ttw-color')
         +author pintocat
         +version 1.0
         +installation Install #[span.file TTW DLC Sortomatic Homes 1-0]
 
-    - ui.push(['#universal-item-sorter', 'Universal Item Sorter'])
     +modCard('universal-item-sorter', 'Universal Item Sorter', 'https://www.nexusmods.com/newvegas/mods/63867', 'fnv-color')
         +author PushTheWinButton
         +version 1.06
         +installation Install #[span.file Universal Item Sorter]
 
-    - ui.push(['#ohud', 'One HUD - oHUD'])
     +modCard('ohud', 'One HUD - oHUD', 'https://www.nexusmods.com/newvegas/mods/44757', 'fnv-color')
         +author Gopher
         +version 1.1
