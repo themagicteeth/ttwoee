@@ -17,7 +17,6 @@
     "build:css": "uglifycss ./ttw-3/src/style.css > ./dist/style.css",
     "build": "yarn build:pug && yarn build:css"
   },
-  "flat": true,
   "devDependencies": {
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
@@ -26,9 +25,5 @@
   },
   "engines": {
     "yarn": "^1.15.0"
-  },
-  "resolutions": {
-    "acorn": "4.0.13",
-    "source-map": "0.6.1"
   }
 }
