@@ -3,7 +3,6 @@
   "description": "Tale of Two Wastelands: Over-Encumbered Edition built with Pug",
   "license": "Unlicense",
   "version": "3.2.2",
-  "private": true,
   "homepage": "https://ttwoee.com",
   "repository": "github:themagicteeth/ttwoee",
   "bugs": "https://github.com/themagicteeth/ttwoee/issues",
@@ -21,9 +20,6 @@
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "uglifycss": "^0.0.29",
-    "yarn": "^1.15.0"
-  },
-  "engines": {
     "yarn": "^1.15.0"
   }
 }
