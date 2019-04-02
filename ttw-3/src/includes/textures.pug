@@ -4,20 +4,12 @@
 //-
 
 - sections.push(['#textures', 'Textures'])
-- textures = []
+- mods.push([])
 
 section#textures
     h2.section-header Textures
 
-    //-
-        Arlington Tombstones Redone
-        Updated 2019-03-22
-    //-
-    +modCard('arlington-tombstone-redone', 'Arlington Tombstones Redone', 'https://www.nexusmods.com/fallout3/mods/23059', 'fo3-color')
-        +author d7
-        +version 1
-        +installation Install #[span.file d7_tombstones_redo]
-        +notes New meshes and textures for the Arlington graveyard tombstones
+    h3.section-header Texture Overhauls
 
     //-
         Retextured Clutter Collection
@@ -110,6 +102,15 @@ section#textures
         +notes High quality hand-crafted texture replacers for a myriad of items throughout the Mojave wasteland.
 
     //-
+        Textures Over Time
+        Updated 2019-03-22
+    //-
+    +modCard('textures-over-time', 'Textures Over Time', 'https://www.nexusmods.com/newvegas/mods/41101', 'fnv-color')
+        +author DonKnotts
+        +version 1.0
+        +installation Install #[span.file FlagStoneWalls], #[span.file HH_Sandstone], and #[span.file Sandbags]
+
+    //-
         UHQ Terrain, Rock, Roads, & Grass Overhaul
         Updated 2019-03-22
     //-
@@ -127,6 +128,8 @@ section#textures
             | Move the "MCGrass.esp" and "MCRockTextures.esp" to the "Optional ESPs" box.
         +notes This Texture/Mesh Pack will upgrade the Terrain fidelity of the Fallout 3 Wasteland.
 
+    h3.section-header DLC Retextures
+
     //-
         Mothership Zeta DLC Retextured
         Updated 2019-03-22
@@ -139,6 +142,17 @@ section#textures
             | The spaceship looks like metal instead of cardboard now! The aliens look creepy instead of bland now!
             | Zeta has been awesomefied. EVERY single last texture.
 
+    h3.section-header Other Textures
+    //-
+        Arlington Tombstones Redone
+        Updated 2019-03-22
+    //-
+    +modCard('arlington-tombstone-redone', 'Arlington Tombstones Redone', 'https://www.nexusmods.com/fallout3/mods/23059', 'fo3-color')
+        +author d7
+        +version 1
+        +installation Install #[span.file d7_tombstones_redo]
+        +notes New meshes and textures for the Arlington graveyard tombstones
+
     //-
         Hectrol Tumbleweed
         Updated 2019-03-22
@@ -148,15 +162,6 @@ section#textures
         +version 1.0
         +installation Install #[span.file Hectrol Tumbleweed Deluxe HighRes Retex]
         +notes This skin modifies the aspect of default boring tumbleweeds by realistic tumbleweeds, and adds a new Normal Map
-
-    //-
-        Textures Over Time
-        Updated 2019-03-22
-    //-
-    +modCard('textures-over-time', 'Textures Over Time', 'https://www.nexusmods.com/newvegas/mods/41101', 'fnv-color')
-        +author DonKnotts
-        +version 1.0
-        +installation Install #[span.file FlagStoneWalls], #[span.file HH_Sandstone], and #[span.file Sandbags]
 
     //-
         Money Higher Quality Retex
@@ -422,5 +427,3 @@ section#textures
             | This mod is packaged incorrectly
             | Expand 
             | Right click and select [Set Data Directory] and click [OK]
-
-- mods.push(textures)
