@@ -4,20 +4,12 @@
 //-
 
 - sections.push(['#textures', 'Textures'])
-- textures = []
+- mods.push([])
 
 section#textures
     h2.section-header Textures
 
-    //-
-        Arlington Tombstones Redone
-        Updated 2019-03-22
-    //-
-    +modCard('arlington-tombstone-redone', 'Arlington Tombstones Redone', 'https://www.nexusmods.com/fallout3/mods/23059', 'fo3-color')
-        +author d7
-        +version 1
-        +installation Install #[span.file d7_tombstones_redo]
-        +notes New meshes and textures for the Arlington graveyard tombstones
+    h3.section-header Texture Overhauls
 
     //-
         Retextured Clutter Collection
@@ -48,7 +40,7 @@ section#textures
             | #[span.file NMCs Texture pack WASHEDOUTWASTELAND Large and Medium] optional file
         +notes Re-textures roads, trees, landscape, vehicles buildings and interiors with high-resolution photographic based equivalent textures.
     
-    +modCard('nmc-ttw', 'NMC Textures Combined - TTW', 'https://taleoftwowastelands.com/viewtopic.php?p=41661#p41661', 'ttw-color')
+    +modCard('nmc-ttw', 'NMC Textures Combined - TTW', 'https://taleoftwowastelands.com/download/file.php?id=2189&sid=7e34f9e642b87e7e17516369d4a02a47', 'ttw-color')
         +author Roy Batty
         +installation
         pre.raised
@@ -78,10 +70,9 @@ section#textures
             | Close explorer, launch ModOrganizer, and enable NMC Textures - TTW and NMC Washed Out Wasteland in the left pane.
 
         +hidden
-            pre.mt0
-                | Hide the following folders:
-                |
-                | Textures/interface
+            | Hide the following folders:
+            |
+            | Textures/interface
 
         div.raised
             +important 
@@ -111,6 +102,15 @@ section#textures
         +notes High quality hand-crafted texture replacers for a myriad of items throughout the Mojave wasteland.
 
     //-
+        Textures Over Time
+        Updated 2019-03-22
+    //-
+    +modCard('textures-over-time', 'Textures Over Time', 'https://www.nexusmods.com/newvegas/mods/41101', 'fnv-color')
+        +author DonKnotts
+        +version 1.0
+        +installation Install #[span.file FlagStoneWalls], #[span.file HH_Sandstone], and #[span.file Sandbags]
+
+    //-
         UHQ Terrain, Rock, Roads, & Grass Overhaul
         Updated 2019-03-22
     //-
@@ -123,10 +123,12 @@ section#textures
             |
             | meshes/architecture/urban
             | textures/architecture/urban
-        +optional 
+        +optional
             | Double click UHQ Terrain, Rock, Roads, & Grass Overhaul in the left pane and go to the [Optional ESPs] tab.
             | Move the "MCGrass.esp" and "MCRockTextures.esp" to the "Optional ESPs" box.
         +notes This Texture/Mesh Pack will upgrade the Terrain fidelity of the Fallout 3 Wasteland.
+
+    h3.section-header DLC Retextures
 
     //-
         Mothership Zeta DLC Retextured
@@ -140,6 +142,17 @@ section#textures
             | The spaceship looks like metal instead of cardboard now! The aliens look creepy instead of bland now!
             | Zeta has been awesomefied. EVERY single last texture.
 
+    h3.section-header Other Textures
+    //-
+        Arlington Tombstones Redone
+        Updated 2019-03-22
+    //-
+    +modCard('arlington-tombstone-redone', 'Arlington Tombstones Redone', 'https://www.nexusmods.com/fallout3/mods/23059', 'fo3-color')
+        +author d7
+        +version 1
+        +installation Install #[span.file d7_tombstones_redo]
+        +notes New meshes and textures for the Arlington graveyard tombstones
+
     //-
         Hectrol Tumbleweed
         Updated 2019-03-22
@@ -149,15 +162,6 @@ section#textures
         +version 1.0
         +installation Install #[span.file Hectrol Tumbleweed Deluxe HighRes Retex]
         +notes This skin modifies the aspect of default boring tumbleweeds by realistic tumbleweeds, and adds a new Normal Map
-
-    //-
-        Textures Over Time
-        Updated 2019-03-22
-    //-
-    +modCard('textures-over-time', 'Textures Over Time', 'https://www.nexusmods.com/newvegas/mods/41101', 'fnv-color')
-        +author DonKnotts
-        +version 1.0
-        +installation Install #[span.file FlagStoneWalls], #[span.file HH_Sandstone], and #[span.file Sandbags]
 
     //-
         Money Higher Quality Retex
@@ -214,7 +218,7 @@ section#textures
         +author Majormodder 
         +version 3.0
         +installation Install #[span.file Food compilation dirty set uncompressed 3 point Oh]
-        +optional 
+        +optional
             | Double click Fallout Food Package Retexture Compilation in the left pane and go to the [Optional ESPs] tab.
             | Move the "majormodder's Junk Food to Barbeque Crisps.esp" to the "Optional ESPs" box.
         +notes Revamps the old food textures for the box packages with textures ranging from 1k-2k size, lore friendly too. 
@@ -423,5 +427,3 @@ section#textures
             | This mod is packaged incorrectly
             | Expand 
             | Right click and select [Set Data Directory] and click [OK]
-
-- mods.push(textures)
