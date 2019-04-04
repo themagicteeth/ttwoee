@@ -3,11 +3,8 @@
     Updated 2019-03-31
 //-
 
-- sections.push(['#annoyances', 'Annoyances'])
-- mods.push([])
-
-section#annoyances
-    h2.section-header Annoyances
+div#annoyances
+    h3.section-header Annoyances
 
     #ttw-comment-removal
         +name('TTW Comment Removal Mod (Clumsy, Locks, Sneak)', 'https://drive.google.com/file/d/1NBiMZonFNPvD0yvYarS_eULsIYyghvSH/view?usp=sharing', 'ttw')
@@ -36,6 +33,28 @@ section#annoyances
             +version 2.1
             +installation Install #[+file('No Grabbing of NPC Owned Items 2.1')]
             +notes You cannot grab items that you don't own.
+
+   #1stewieAI-tweaks
+        +name("lStewieAl's Tweaks", 'https://www.nexusmods.com/newvegas/mods/66347', 'fnv')
+        +modInfo
+            +author lStewieAl
+            +version 2.21
+            +installation Install #[+file('Stewie Tweaks')] and #[+file('Stewie Tweaks INI')]
+            +instructions
+                | Double click lStewieAl's Tweaks in the left pane of Mod Organizer
+                | Click the [INIs] tab
+                | Modify the ini settings as below
+            .raised
+                +ini Enable features in nvse_stewie_tweaks.ini
+                pre.mt0
+                    | [Tweaks]
+                    | bNoScreenshotPopup=1
+                    | bNoKarmaMessages=1
+                    | bNoCrippleCriticalMessages=1
+                    | bFasterSleepWait=1
+                    | bNoXPMessages=1
+                    | bNoUnconciousMessage=1
+                    | bNoStartMenuDLCPopup=1
 
     #tutorial-killer
         +name('Tutorial Killer', 'https://www.nexusmods.com/newvegas/mods/47746', 'fnv')

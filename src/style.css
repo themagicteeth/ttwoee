@@ -59,7 +59,6 @@ pre {
 .mw-100 {max-width: 100%;}
 .b {font-weight: bold;}
 .raised {box-shadow: var(--raised-shadow);}
-.mb0 {margin-bottom: 0;}
 .mt0 {margin-top: 0;}
 
 /* Link colors */
@@ -135,14 +134,6 @@ a:hover {
   padding: 0.5rem;
 }
 
-/* Copy text blocks */
-.copy-bg {
-  background-color: var(--copy-bg);
-  padding: 0.5rem;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
 /* File name bubble */
 .file {
   background: #67829c;
@@ -153,12 +144,6 @@ a:hover {
   padding-right: 0.5rem;
 }
 
-nav {
-  display: none;
-}
-
-ul,
-li,
 ul li ul {
   background-color: #ffffff;
 }
@@ -175,23 +160,6 @@ li:hover a,
 .nav-header a {
   color: #ffffff;
   text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-li {
-  display: block;
-  position: relative;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-li a {
-  padding-left: 1rem;
 }
 
 li:hover,
@@ -233,27 +201,7 @@ ul li ul li {
   width: 100%;
 }
 
-/* Top TTWOEE nav header */
-.nav-header {
-  font-size: 2rem;
-  font-family: Monofonto, sans-serif;
-  padding-left: 0.5rem;
-  background: var(--menu-accent-bg);
-  border-bottom: solid thin black;
-}
-
-.hamburger {
-  fill: white;
-  position: fixed;
-  top: 0;
-  display: block;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 60em) {
-  .hamburger {
-    display: none;
-  }
   nav {
     top: 0;
     position: fixed;
