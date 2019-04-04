@@ -1,17 +1,13 @@
-
-
 nav
     ul
         //- include hamburger.pug
-        li.nav-header 
+        li.nav-header
             a(href='#guide') ☢️ TTW:OEE
-        li.old
-            a(href='https://www.ttwoee.com/old').old TTW:OEE for 2.9.4b
         - for(i=0;i<sections.length;i++)
             - const section = sections[i]
-            li 
+            li
                 a(href=section[0]) #{section[1]}
-                
+
                 - if(mods[i].length > 0)
                     ul
                         - for(j=0;j<mods[i].length;j++)
