@@ -12,39 +12,38 @@ section#lighting
 
     +copy Currently TTW does not have a patched interior lighting mod for the Capital Wasteland.
 
-    //-
-        Old World Blues Path Lighting
-        Updated 2019-03-22
-    //-
-    #old-world-blues-path-lighting
-        +name('Old World Blues Path Lighting', 'https://www.nexusmods.com/newvegas/mods/43485', 'fnv')
-        +modInfo
-            +author Sarge198
-            +version 1.1
-            +installation Install #[+file('Old World Blues Path Lighting')]
-            +optional 
-                | Double click Old World Blues Path Lighting in the left pane
-                | Go to the [Optional ESPs] tab.
-                | Move "OWB-Path Lights - Darker Nights.esp" to the "Optional ESPs" box.
-            +notes 
-                | Turns on all the blue garden lights in the Old World Blues DLC.
-                | Also scripted to turn them on at 2000hrs and off at 0700hrs.
+    //- Old World Blues Path Lighting
+    - modId = 'old-world-blues-path-lighting'
+    - modName = 'Old World Blues Path Lighting'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/43485'
+    - modAuthor = 'Sarge198'
+    - modVersion = '1.1'
+    - mainFiles = ['Old World Blues Path Lighting']
+    +mod
+        +optional 
+            | Double click Old World Blues Path Lighting in the left pane
+            | Go to the [Optional ESPs] tab.
+            | Move "OWB-Path Lights - Darker Nights.esp" to the "Optional ESPs" box.
+        +notes 
+            | Turns on all the blue garden lights in the Old World Blues DLC.
+            | Also scripted to turn them on at 2000hrs and off at 0700hrs.
 
-    //-
-        Realistic Wasteland Lighting
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6685&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #realistic-wasteland-lighting
-        +name('FNV Realistic Wasteland Lighting', 'https://www.nexusmods.com/newvegas/mods/52037', 'ttw')
-        +modInfo
-            +author xCamoLegend, Sal203, RoyBatty
-            +version v5.542
-            +installation Install #[+file('TTW Realistic Wasteland Lighting')]
-            +notes
-                | A complete weather overhaul for Fallout New Vegas and its DLCs 
-                | with complete Tale of Two Wastelands support. Designed to make 
-                | the game look more realistic. Improves lighting, weather, clouds,
-                | stars, moon and the overall look and feel of the wasteland.
+
+    //- Realistic Wasteland Lighting
+    - modId = 'realistic-wasteland-lighting'
+    - modName = 'Realistic Wasteland Lighting'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/52037'
+    - modAuthor = 'xCamoLegend, Sal203, RoyBatty'
+    - modVersion = 'v5.542'
+    - mainFiles = ['TTW Realistic Wasteland Lighting']
+    +mod
+        +notes
+            | A complete weather overhaul for Fallout New Vegas and its DLCs 
+            | with complete Tale of Two Wastelands support. Designed to make 
+            | the game look more realistic. Improves lighting, weather, clouds,
+            | stars, moon and the overall look and feel of the wasteland. For
+            | more details check the 
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6685&sid=d7978d3911e87f0ba5b6af81269d94e9')]
+
 
 
