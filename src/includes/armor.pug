@@ -1,7 +1,5 @@
 //-
     Armor
-    Updated 2019-03-22
-    themagicteeth
 //-
 
 - sections.push(['#armor', 'Armor'])
@@ -11,184 +9,235 @@ section#armor
 
     h3 Book of Steel
 
-    #book-of-steel
-        +name('aMidianBorn NV Book of Water - Book of Steel', 'https://www.nexusmods.com/newvegas/mods/39873')
-        +modInfo
-            +author CaBaL
-            +version omni2
-            +installation Install #[+file('nov 2011 book of steel')]
-            +optionalEsps('aMidianBorn NV Book of Water - Book of Steel', 'boa ncrpahelmet.esp', 'Boacombat2glove.esp')
-            +notes All of Cabals armor retextures
 
-    #bornagain-combat-armor-fo3
-        +name('Bornagain Combat Armor', 'https://www.nexusmods.com/fallout3/mods/18220')
-        +modInfo
-            +author EmeraldReign and Cabal
-            +version 1.01
-            +installation
-                | Install #[+file('BornagainCombatArmor4096')] main file, #[+file('BornagainCombatArmor4096EnvironmentMaps')]
-                | update file, and #[+file('BornagainAnchorageCombatArmor2048')],
-                | #[+file('BornagainGhoulCombatArmor4096')], and #[+file('BornagainZetaCombatArmor4096')] update files
-            +optionalEsps('Bornagain Combat Armor', 'Bornagain Zeta Combat Armor Texture Patch.esp')
-            +notes Combat armor high res replacer for all Fallout 3 default game combat armors
-
-    #bornagain-combat-armor-fnv
-        +name('Bornagain Combat Armor', 'https://www.nexusmods.com/newvegas/mods/48068')
-        +modInfo
-            +author EmeraldReign and Cabal
-            +version 1.0
-            +installation 
-                | Install #[+file('BornagainFNVCombatArmor4096')] main file and 
-                | #[+file('BornagainFNVCombatArmorLonesomeRoad4096')] optional file
-            +notes Combat armor high res replacer for all New Vegas default game combat armors
-
-    #bornagain-fo3-t45d-power-armor
-        +name('Bornagain FO3 T45d Power Armor', 'https://www.nexusmods.com/fallout3/mods/16882')
-        +modInfo
-            +author Cabal
-            +version v3
-            +installation Install #[+file('bornagain fo3 t45d 4096 huge v3 fixed')]
-            +notes T45d PA replacer, full textures with environment and glow maps made from scratch 
-
-    #bornagain-outcast-t45d-power-armor
-        +name('Bornagain Outcast T-45d Power Armor', 'https://www.nexusmods.com/fallout3/mods/18221')
-        +modInfo
-            +author Cabal, EmeraldReign
-            +version 1.0
-            +installation Install #[+file('BornagainOutcastT45d4096')]
-            +optionalEsps('Bornagain Outcast T-45d Power Armor', 'Bornagain Outcast T-45d Texture Patch.esp')
-            +notes High res replacer for the Outcast T-45d
-
-    #bornagain-fo3-outcast
-        +name('Bornagain FO3 Outcast', 'https://www.nexusmods.com/fallout3/mods/16199')
-        +modInfo
-            +author Cabal
-            +installation Install #[+file('Bornagain Fo3 outcast MAIN')] and #[+file('helmet fix')]
-            +optionalEsps('Bornagain FO3 Outcast', 'BornAgain Outcast v3.esp')
-            +notes Replaces outcast armor textures for Fallout 3
+    //- aMidianBorn NV Book of Water - Book of Steel
+    - modId = 'book-of-steel'
+    - modName = 'aMidianBorn NV Book of Water - Book of Steel'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/39873'
+    - modAuthor = 'CaBaL'
+    - modVersion = 'omni2'
+    - mainFiles = ['nov 2011 book of steel']
+    +mod
+        +optionalEsps('aMidianBorn NV Book of Water - Book of Steel', 'boa ncrpahelmet.esp', 'Boacombat2glove.esp')
+        +notes All of Cabals armor retextures
 
 
-    #enclave-power-armors-retextured
-        +name('Enclave Power Armors Retextured', 'https://www.nexusmods.com/fallout3/mods/18370')
-        +modInfo
-            +author d_seven aka id2301
-            +version 1
-            +installation Install #[+file('EPA')], #[+file('Hellfire')], and #[+file('Tesla')]
-            +optionalEsps('Enclave Power Armors Retextured', 'teslaPA -retextured.esp')
-            +notes Enclave PA + Hellfire PA retextured
+    //- Bornagain Combat Armor FO3
+    - modId = 'bornagain-combat-armor-fo3'
+    - modName = 'Bornagain Combat Armor FO3'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18220'
+    - modAuthor = 'EmeraldReign and Cabal'
+    - modVersion = '1.01'
+    - mainFiles = ['BornagainCombatArmor4096']
+    - updateFiles = ['BornagainCombatArmor4096EnvironmentMaps', 'BornagainGhoulCombatArmor4096', 'BornagainAnchorageCombatArmor2048', 'BornagainZetaCombatArmor4096']
+    +mod
+        +optionalEsps('Bornagain Combat Armor', 'Bornagain Zeta Combat Armor Texture Patch.esp')
+        +notes Combat armor high res replacer for all Fallout 3 default game combat armors
 
-    #book-of-steel-compatibility-edition
-        +name('Book of Steel - Compatibility Edition', 'https://www.nexusmods.com/newvegas/mods/60666', 'ttw')
-        +modInfo
-            +author Darthbdaman
-            +version 2.1.0
-            +installation 
-                | Install #[+file('Book of Steel - Compatibility Edition')]
-                | main file, and #[+file('Tale of Two Wastelands')] optional file
-            +notes
-                | A patch for Cabal's aMidianBorn Book of Steel textures, to make them compatible with TTW. the original ESP's made
-                | very strange edits to the game, that caused incompatibilities, which were unnecessary for a texture mod. All of 
-                | these have been removed, and the only changes are made to make the armors display correctly.
+
+    //- Bornagain Combat Armor FNV
+    - modId = 'bornagain-combat-armor-fnv'
+    - modName = 'Bornagain Combat Armor FNV'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/48068'
+    - modAuthor = 'EmeraldReign and Cabal'
+    - modVersion = '1.0'
+    - mainFiles = ['BornagainFNVCombatArmor4096']
+    - optionalFiles = ['BornagainFNVCombatArmorLonesomeRoad4096']
+    +mod
+        +notes Combat armor high res replacer for all New Vegas default game combat armors
+
+
+    //- Bornagain FO3 T45d Power Armor
+    - modId = 'bornagain-fo3-t45d-power-armor'
+    - modName = 'Bornagain FO3 T45d Power Armor'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/16882'
+    - modAuthor = 'Cabal'
+    - modVersion = 'v3'
+    - mainFiles = ['bornagain fo3 t45d 4096 huge v3 fixed']
+    +mod
+        +notes T45d PA replacer, full textures with environment and glow maps made from scratch 
+
+
+    //- Bornagain Outcast T-45d Power Armor
+    - modId = 'bornagain-outcast-t45d-power-armor'
+    - modName = 'Bornagain Outcast T-45d Power Armor'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18221'
+    - modAuthor = 'Cabal, EmeraldReign'
+    - modVersion = '1.0'
+    - mainFiles = ['BornagainOutcastT45d4096']
+    +mod
+        +optionalEsps('Bornagain Outcast T-45d Power Armor', 'Bornagain Outcast T-45d Texture Patch.esp')
+        +notes High res replacer for the Outcast T-45d
+
+
+    //- Bornagain FO3 Outcast
+    - modId = 'bornagain-fo3-outcast'
+    - modName = 'Bornagain FO3 Outcast'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/16199'
+    - modAuthor = 'Cabal'
+    - modVersion = '3'
+    - mainFiles = ['Bornagain Fo3 outcast MAIN']
+    - updateFiles = ['helmet fix']
+    +mod
+        +optionalEsps('Bornagain FO3 Outcast', 'BornAgain Outcast v3.esp')
+        +notes Replaces outcast armor textures for Fallout 3
+
+
+    //- Book of Steel - Compatibility Edition
+    - modId = 'book-of-steel-compatibility-edition'
+    - modName = 'Book of Steel - Compatibility Edition'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/60666'
+    - modAuthor = 'Darthbdaman'
+    - modVersion = '2.1.0'
+    - mainFiles = ['Book of Steel - Compatibility Edition']
+    - optionalFiles = ['Tale of Two Wastelands']
+    +mod
+        +notes
+            | A patch for Cabal's aMidianBorn Book of Steel textures, to make them compatible with TTW. the original ESP's made
+            | very strange edits to the game, that caused incompatibilities, which were unnecessary for a texture mod. All of 
+            | these have been removed, and the only changes are made to make the armors display correctly.
+       
 
     h3 Other Armors
 
-    #tribal-dx
-        +name('Tribal DX', 'https://www.nexusmods.com/fallout3/mods/6520')
-        +modInfo
-            +author Weijiesen
-            +installation Install #[+file('Tribal DX - 4096 res -')]
-            +optionalEsps('Tribal DX', 'Tribal_DX.esp')
-            +notes A high res and much better Tribal armor with more details.
+     //- Enclave Power Armors Retextured
+    - modId = 'enclave-power-armors-retextured'
+    - modName = 'Enclave Power Armors Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18370'
+    - modAuthor = 'd_seven aka id2301'
+    - modVersion = '1'
+    - mainFiles = ['Hellfire']
+    +mod
+        +notes Hellfire PA retextured
 
-    #adam
-        +name("Mono's Updated ADAM Package", 'https://www.nexusmods.com/newvegas/mods/61390')
-        +modInfo
-            +author MonoAccipiter, EssArrBee and darthbdaman
-            +version 4.5.1
-            +installation Install #[+file('ADAM All-in-one Installer 4.5.1')]
-            +instructions('raised')
-                | During install:
-                | Select "Complete Version"
-                | Then select "No" for NCR Trooper module
-            +notes 
-                | The original versions have ridiculous package structure that makes installation difficult. 
-                | Pretty much the go-to overhaul for the game's most iconic equipment. The linked version includes
-                | improvements upon AI99's updated version and a FOMOD installer.
 
-    #aptoms-legion-retextured
-        +name('ALR - Aptoms Legion Retextured', 'https://www.nexusmods.com/newvegas/mods/44248')
-        +modInfo
-            +author sukayoupt aka Aptom
-            +version 1.1
-            +installation Install #[+file('ALR v1_1')]
-            +notes Better gear for Legion.
+    //- Tribal DX
+    - modId = 'tribal-dx'
+    - modName = 'Tribal DX'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/6520'
+    - modAuthor = 'Weijiesen'
+    - modVersion = '1.0'
+    - mainFiles = ['Tribal DX - 4096 res -']
+    +mod
+        +optionalEsps('Tribal DX', 'Tribal_DX.esp')
+        +notes A high res and much better Tribal armor with more details.
 
-    #ncr-civilian-clothing
-        +name('NCR Civilian Clothing', 'https://www.nexusmods.com/newvegas/mods/49675')
-        +modInfo
-            +author Darziak
-            +version 1.0
-            +installation Install #[+file('NCR Civilian Clothing')]
-            +notes Makes nice tweaks to the NCR clothing and brings a bit of color to the their wardrobe.
 
-    #ncr-trooper-overhaul
-        +name('NCR Trooper Overhaul_beta', 'https://www.nexusmods.com/newvegas/mods/52721')
-        +modInfo
-            +author Emerald Reign, nekronom, cabal, wjs, dragbody
-            +version beta
-            +installation Install #[+file('Main File Beta 7_2')] main file and #[+file('Sapper Leg Fix')] update file
-            +optional
-                | Double click NCR Trooper Overhaul in the left pane
-                | Go to the [Optional ESPs] tab.
-                | Move "NCRTrooperOverhaul.esp" to the "Optional ESPs" box.
-            +notes This is much like ADAM except that it covers the NCR troopers.
+    //- Mono's Updated ADAM Package
+    - modId = 'adam'
+    - modName = "Mono's Updated ADAM Package"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/61390'
+    - modAuthor = 'MonoAccipiter, EssArrBee and darthbdaman'
+    - modVersion = '4.5.1'
+    - mainFiles = ['ADAM All-in-one Installer 4.5.1']
+    +mod
+        +instructions
+            | During install:
+            | Select "Complete Version"
+            | Then select "No" for NCR Trooper module
+        +notes 
+            | The original versions have ridiculous package structure that makes installation difficult. 
+            | Pretty much the go-to overhaul for the game's most iconic equipment. The linked version includes
+            | improvements upon AI99's updated version and a FOMOD installer.
 
-    #ncr-trooper-overhaul-distributed
-        +name('NCR Trooper Overhaul - Distributed', 'https://www.nexusmods.com/newvegas/mods/54978')
-        +modInfo
-            +author pwinkle
-            +version 1.0
-            +installation Install #[+file('Trooper Overhaul Main File')]
-            +notes 
-                | This mod takes the added trooper models and textures from NCR Trooper Overhaul
-                | and distributes them across the wasteland.
 
-    #realistic-pip-boy
-        +name('Realistic Pip-Boy Retexture', 'https://www.nexusmods.com/fallout3/mods/22065')
-        +modInfo
-            +author Numb Squirrel
-            +version 1.0
-            +installation Install #[+file('Numb Squirrel Pip-Boy 4k Uncompressed')]
+    //- ALR - Aptoms Legion Retextured
+    - modId = 'aptoms-legion-retextured'
+    - modName = 'ALR - Aptoms Legion Retextured'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/44248'
+    - modAuthor = 'sukayoupt aka Aptom'
+    - modVersion = '1.1'
+    - mainFiles = ['ALR v1_1']
+    +mod
+        +notes Better gear for Legion.
 
-    #pimpboy
-        +name('Pimpboy', 'https://www.nexusmods.com/newvegas/mods/60629')
-        +modInfo
-            +author weijiesen
-            +version 1.0
-            +installation Install #[+file('Pimpboy - Opal - default')]
 
-    #wasteland-clothing-retexture
-        +name('Wasteland clothing Hires retexture', 'https://www.nexusmods.com/newvegas/mods/54478')
-        +modInfo
-            +author Macintroll
-            +version 1.3A
-            +installation 
-                | Install #[+file('Wasteland Clothing HD V1-3 FULL PACK')]
-                | main file, and #[+file('Wasteland Clothing HD V1-3 POWDERGANG FIX -IMPORTANT-')] update file
-            +mispackaged
-                | This mod is packaged incorrectly
-            +notes High res retexture of the clothing from the Mojave.
+    //- NCR Civilian Clothing
+    - modId = 'ncr-civilian-clothing'
+    - modName = 'NCR Civilian Clothing'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/49675'
+    - modAuthor = 'Darziak'
+    - modVersion = '1.0'
+    - mainFiles = ['NCR Civilian Clothing']
+    +mod
+        +notes Makes nice tweaks to the NCR clothing and brings a bit of color to the their wardrobe.
 
-    #hr-armored-vault-13-jumpsuit
-        +name('HR Armored Vault 13 Jumpsuit', 'https://www.nexusmods.com/newvegas/mods/62642')
-        +modInfo
-            +author Ellise Decer aka Asurah
-            +version 1.0
-            +installation Install #[+file('HR Armored Vault 13 Jumpsuit_2k')]
 
-    #hr-armored-vault-101-jumpsuit
-        +name('HR Armored Vault 101 Jumpsuit', 'https://www.nexusmods.com/fallout3/mods/21887')
-        +modInfo
-            +author Ellise
-            +version 1.0
-            +installation Install #[+file('HR Armored Vault 101 Jumpsuit_4k')]
+    //- NCR Trooper Overhaul
+    - modId = 'ncr-trooper-overhaul'
+    - modName = 'NCR Trooper Overhaul'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/52721'
+    - modAuthor = 'Emerald Reign, nekronom, cabal, wjs, dragbody'
+    - modVersion = 'beta'
+    - mainFiles = ['Main File Beta 7_2']
+    - updateFiles = ['Sapper Leg Fix']
+    +mod
+        +optionalEsps('NCR Trooper Overhaul', 'NCRTrooperOverhaul.esp')
+        +notes This is much like ADAM except that it covers the NCR troopers.
+
+
+    //- NCR Trooper Overhaul - Distributed
+    - modId = 'ncr-trooper-overhaul-distributed'
+    - modName = 'NCR Trooper Overhaul - Distributed'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/54978'
+    - modAuthor = 'pwinkle'
+    - modVersion = '1.0'
+    - mainFiles = ['Trooper Overhaul Main File']
+    +mod
+        +notes 
+            | This mod takes the added trooper models and textures from NCR Trooper Overhaul
+            | and distributes them across the wasteland.
+
+
+    //- Realistic Pip-Boy Retexture
+    - modId = 'realistic-pip-boy'
+    - modName = 'Realistic Pip-Boy Retexture'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/22065'
+    - modAuthor = 'Numb Squirrel'
+    - modVersion = '1.0'
+    - mainFiles = ['Numb Squirrel Pip-Boy 4k Uncompressed']
+    +mod
+
+
+    //- Pimpboy
+    - modId = 'pimpboy'
+    - modName = 'Pimpboy'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/60629'
+    - modAuthor = 'weijiesen'
+    - modVersion = '1.0'
+    - mainFiles = ['Pimpboy - Opal - default']
+    +mod
+
+            
+    //- Wasteland Clothing Hires Retexture
+    - modId = 'wasteland-clothing-retexture'
+    - modName = 'Wasteland Clothing Hires Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/54478'
+    - fileType = ''
+    - modAuthor = 'Macintroll'
+    - modVersion = '1.3A'
+    - mainFiles = ['Wasteland Clothing HD V1-3 FULL PACK']
+    - updateFiles = ['Wasteland Clothing HD V1-3 POWDERGANG FIX -IMPORTANT-']
+    +mod
+        +notes High res retexture of the clothing from the Mojave.
+
+
+    //- HR Armored Vault 13 Jumpsuit
+    - modId = 'hr-armored-vault-13-jumpsuit'
+    - modName = 'HR Armored Vault 13 Jumpsuit'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62642'
+    - modAuthor = 'Ellise Decer aka Asurah'
+    - modVersion = '1.0'
+    - mainFiles = ['HR Armored Vault 13 Jumpsuit_2k']
+    +mod
+
+
+    //- HR Armored Vault 101 Jumpsuit
+    - modId = 'hr-armored-vault-101-jumpsuit'
+    - modName = 'HR Armored Vault 101 Jumpsuit'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/21887'
+    - modAuthor = 'Ellise'
+    - modVersion = '1.0'
+    - mainFiles = ['HR Armored Vault 101 Jumpsuit_4k']
+    +mod
+
