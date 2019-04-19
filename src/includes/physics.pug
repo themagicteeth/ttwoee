@@ -1,42 +1,31 @@
 //-
     Physics
-    Updated 2019-03-22
-
-    +Unnecessary Physics
-    +Collision Meshes
-    +Collision Meshes - Precision Collision Clutter Fix
-    +Precision Collision - Clutter
 //-
 
 - sections.push(['#physics', 'Physics'])
 - mods.push([])
 
 section#physics
-    h2.section-header Physics
+    h2 Physics
 
-    //-
-        Collision Meshes FO3
-        Updated 2019-03-22
-    //-
-    +modCard('collision-meshes-fo3', 'Collision Meshes', 'https://www.nexusmods.com/fallout3/mods/21946', 'fo3-color')
-        +author KaneWright
-        +version
-        +installation 
-            | Install #[span.file CollisionMeshesFO3] main file, the 
-            | #[span.file update Collision Meshes FO3 1.6.0 to 1.6.1] update file, 
-            | and the #[span.file BetterBoozeFix] and #[span.file PrecisionCollisionClutterFix] 
-            | optional files. Merge them together while installing.
 
-    //-
-        Collision Meshes FNV
-        Updated 2019-03-22
-    //-
-    +modCard('collision-meshes-fnv', 'Collision Meshes', 'https://www.nexusmods.com/newvegas/mods/59149', 'fnv-color')
-        +author MadAce
-        +version 1.6.1
-        +installation
-            | Install #[span.file Collision Meshes FNV] main file, and all of the update files 
-            | (#[span.file Hectrol Tumbleweed compatibility], 
-            | #[span.file OJO BUENO Texture Pack compatibility], #[span.file PrecisionCollisionClutterFix], 
-            | #[span.file Textures Over Time FlagStoneWalls compatibility]).
-            | Merge them together while installing.
+    //- Collision Meshes FO3
+    - modId = 'collision-meshes-fo3'
+    - modName = 'Collision Meshes FO3'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/21946'
+    - modAuthor = 'KaneWright'
+    - modVersion = '1.6.1'
+    - mainFiles = ['CollisionMeshesFO3']
+    - updateFiles = ['update Collision Meshes FO3 1.6.0 to 1.6.1']
+    +mod
+
+
+    //- Collision Meshes FNV
+    - modId = 'collision-meshes-fnv'
+    - modName = 'Collision Meshes FNV'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59149'
+    - modAuthor = 'MadAce'
+    - modVersion = '1.6.1'
+    - mainFiles = ['Collision Meshes FNV']
+    +mod
+

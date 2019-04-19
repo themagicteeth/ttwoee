@@ -4,11 +4,12 @@
 //-
 
 - sections.push(['#configure-mod-organizer', 'Mod Organizer'])
+- mods.push([])
 
 section#configure-mod-organizer
-    h2.section-header Configure Mod Organizer
+    h2 Configure Mod Organizer
 
-    p.copy-bg
+    +copy
         | Now that the base game is properly configured, the next step is to set up our mod management utility.
         |
         | Mod Organizer is the mod manager of choice for the following reasons: #[br] #[br]
@@ -25,7 +26,7 @@ section#configure-mod-organizer
         | Additionally extends this file system to other tools such as LOOT, FNVEdit, and Wrye Flash NV. 
 
     #setup-vanilla-fallout
-        h3.section-header Setup a Vanilla Fallout: New Vegas Profile
+        h3 Setup a Vanilla Fallout: New Vegas Profile
         pre
             | Start Mod Organizer, and select [Portable]
             |
@@ -47,9 +48,10 @@ section#configure-mod-organizer
 
 
     #mod-organizer-settings
-        h3.section-header Mod Organizer Settings
+        h3 Mod Organizer Settings
 
-        p.copy-bg.mb0 Next the ModOrganizer settings will need to be configured.
+        +copy('mb0') 
+            | Next the ModOrganizer settings will need to be configured.
         pre.mt0
             | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks like a screwdriver and wrench.
             |
@@ -67,9 +69,9 @@ section#configure-mod-organizer
             | Close the window by clicking [OK].
   
     #setup-executables
-        h3.section-header Setup Executables
+        h3 Setup Executables
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | We will now add all of the previously downloaded Tools to the Mod Organizer executable menu. 
             | Follow the directions below to access the "Add Executables" menu. 
             |
@@ -79,7 +81,7 @@ section#configure-mod-organizer
             | Click the [Executables] button at the top of the main Mod Organizer window. 
             | The icon looks like a pair of cogs. 
 
-        p.copy-bg.mb0.mt0
+        +copy('mb0', 'mt0')
             | Follow directions below, some of them have specific instructions. FNVEdit, LOOT, FNVLODGen, 
             | Merge Plugins Standalone and Wrye Flash NV will be added. 
         pre.mt0
@@ -106,15 +108,15 @@ section#configure-mod-organizer
             | Right click the header on the top bar and make sure Lock Times is UNTICKED.
    
     #mod-organizer-bsas
-        h3.section-header ModOrganizer and BSAs
+        h3 ModOrganizer and BSAs
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | Bethesda Software Archives (BSA) can be used to store mod files to reduce file sizes. 
             | The added benefit is the reducing in file system fragmentation caused by having many
             | loose files. Sometimes extracting the contents of a BSA is necessary for various reasons,
             | such as: not wanting the entire contents of the BSA, to optimize textures within the BSA,
             | or just to view the contents of it.
-        p.copy-bg.mb0.mt0
+        +copy('mb0', 'mt0')
             | Mod Organizer manages these archives, follow the steps below to ensure proper loading:
         pre.mt0
             | Go to the Archives tab on the right pane of Mod Organizer.
@@ -128,7 +130,7 @@ section#configure-mod-organizer
             | Ensure "Fallout - Invalidation.bsa" is the top file in the list, just under data. 
             | Otherwise many mods will not function properly.
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | Throughout the guide BSAs may need to be extracted. Configure Mod Organizer as follows,
             | so it will ask if you would like to extract BSA's anytime there is a BSA within a mod.
         pre.mt0
@@ -137,4 +139,3 @@ section#configure-mod-organizer
             | Click the [Plugins] tab.
             | Select BSA Extractor plugin and change false to true. 
     
-- mods.push([])

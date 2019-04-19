@@ -4,121 +4,138 @@
 //-
 
 - sections.push(['#exploration', 'Exploration'])
+- mods.push([])
 
 section#exploration
-    h2.section-header Exploration
+    h2 Exploration
 
-    //-
-        Another Interior Mod
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6518&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #another-interior-mod
-        +name('Another Interior Mod', 'https://www.nexusmods.com/newvegas/mods/66611', 'ttw')
-        +modInfo
-            +author Roy Batty
-            +version 1.0
-            +installation Install #[+file('Another Interior Mod')]
-            +notes Adds 40+ locations to the DC Wasteland, compatible with TTW Interiors, AWOP4FO3 and The Regulators
+    //- Another Interior Mod
+    - modId = 'another-interior-mod'
+    - modName = 'Another Interior Mod'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66611'
+    - modAuthor = 'Roy Batty'
+    - modVersion = '1.0'
+    - mainFiles = ['Another Interior Mod']
+    +mod
+        +notes 
+            | Adds 40+ locations to the DC Wasteland, compatible with TTW Interiors, AWOP4FO3 
+            | and The Regulators, for more info visit the
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6518&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
-    //-
-        Auto Gates Redux
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6519&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #auto-gates-redux
-        +name('Auto Gates Redux', 'https://drive.google.com/open?id=1Sy-LA2dGBudt_os63LYv9LTjsWvH0OnT', 'ttw')
-        +modInfo
-            +author Roy Batty
-            +version Update 2
-            +notes 
-                | This mod makes all the animated gates, doors and rivet city bridge animate when you
-                | approach and leave.
 
-    //-
-        A World of Pain F03
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6617&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #awop-fo3
-        +name('A World of Pain F03', 'https://www.nexusmods.com/newvegas/mods/66265', 'fo3')
-        +modInfo
-            +author mystro, Roy Batty
-            +version 2.02
-            +installation Install #[+file('A World of Pain for Fallout 3')]
-            +notes 
-                | Adds many intense and unique locations to the Capital Wasteland, new items, 4D storage, 
-                | two companions and a couple of quests.
+    //- Auto Gates Redux
+    - modId = 'auto-gates-redux'
+    - modName = 'Auto Gates Redux'
+    - modUrl = 'https://drive.google.com/open?id=1Sy-LA2dGBudt_os63LYv9LTjsWvH0OnT'
+    - fileType = 'ttw'
+    - modAuthor = 'Roy Batty'
+    - modVersion = 'Update 2'
+    +mod
+        +notes 
+            | This mod makes all the animated gates, doors and rivet city bridge animate when you
+            | approach and leave. For more info visit the 
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6519&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
-    //-
-        A World of Pain NV
-        Updated 2019-03-22
-    //-
-    #awop-fnv
-        +name('A World of Pain NV', 'https://www.nexusmods.com/newvegas/mods/38719', 'fnv')
-        +modInfo
-            +author Dj Mystro
-            +version 6.01
-            +installation Install #[+file('A World of Pain')], and #[+file('AWOP Dead Money 2.0')]
-            +notes 
-                | Adds 159 new and intense locations to the wasteland filled with enemies and loot. They vary from small Gas Stations
-                | to huge maze-like sewers and derelict factories. Adds several days of new gameplay possibilities. Filled with quests, 
-                | NPCs with dialogue, vendors and some of the toughest enemies you will ever encounter. 
 
-    //-
-        TTW - AWOPNV Compatibility Patch
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6526&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #ttw-awopnv-patch
-        +name('TTW - AWOPNV Compatibility Patch', 'https://www.nexusmods.com/newvegas/mods/66268', 'ttw')
-        +modInfo
-            +author Roy Batty
-            +version 1.01
-            +installation
-                | Install #[+file('TTW A World of Pain A World of Pain for Fallout 3')], and 
-                | #[+file('TTW A World of Pain Patch')]
-            +notes Compatibility patches for A World of Pain, A World of Pain for Fallout 3 and Tale of Two Wastelands.
+    //- A World of Pain F03
+    - modId = 'awop-fo3'
+    - modName = 'A World of Pain F03'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66265'
+    - modAuthor = 'mystro, Roy Batty'
+    - fileType = 'fo3'
+    - modVersion = '2.02'
+    - mainFiles = ['A World of Pain for Fallout 3']
+    - optionalFiles = ['JIP CCC Avatars']
+    +mod
+        +notes 
+            | Adds many intense and unique locations to the Capital Wasteland, new items, 4D storage, 
+            | two companions and a couple of quests. For more info visit the 
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6617&sid=d7978d3911e87f0ba5b6af81269d94e9')]
+    
 
-    //-
-        Devestated City
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6521&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #devestated-city
-        +name('Devestated City', 'https://drive.google.com/open?id=1MqAsu6aicz3nVnLm1HSC36resUGs0r_p', 'ttw')
-        +modInfo
-            +author Wasteland Loner, Roy Batty
-            +notes 
-                | This mod attempts to make the downtown D.C. area feel more post apocalyptic, 
-                | by adding things like vehicles, rubble, craters etc. However, the changes are
-                | not too extensive at the moment.
+    //- A World of Pain NV
+    - modId = 'awop-fnv'
+    - modName = 'A World of Pain NV'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/38719'
+    - modAuthor = 'Dj Mystro'
+    - modVersion = '6.01'
+    - mainFiles = ['A World of Pain', 'AWOP Dead Money 2.0']
+    +mod
+        +notes 
+            | Adds 159 new and intense locations to the wasteland filled with enemies and loot. They vary from small Gas Stations
+            | to huge maze-like sewers and derelict factories. Adds several days of new gameplay possibilities. Filled with quests, 
+            | NPCs with dialogue, vendors and some of the toughest enemies you will ever encounter. 
+        
 
-    //-
-        Museum Halls of Today
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6522&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #museum-halls-of-today
-        +name('Museum Halls of Today', 'https://drive.google.com/open?id=1BQ04-lB4n6g1rhM0ku5LRKgCaK8uTjcY', 'fo3')
-        +modInfo
-            +author Wasteland Loner, Roy Batty
-            +notes This mod adds The Halls of Today to the Museum of Technology in The Mall.
+    //- A World of Pain for Dead Money - Unofficial Revisions
+    - modId = 'awop-dm-revisions'
+    - modName = 'A World of Pain for Dead Money - Unofficial Revisions'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66657'
+    - modAuthor = 'Manan6619'
+    - modVersion = '1.1'
+    - mainFiles = ['AWoP Dead Money Revisions v1.1']
+    +mod
 
-    //-
-        TTW Interiors
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6541&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #ttw-interiors
-        +name('TTW Interiors', 'https://www.nexusmods.com/newvegas/mods/66449', 'ttw')
-        +modInfo
-            +author chucksteel
-            +installation
-                | Install #[+file('TTW Interiors Core v4.3.2')] and #[+file('_TTW Interiors Combo v6.4')]
-                | main files, #[+file('NMC NVInt - TTW Int compatibility Patch Large v2.0')]
-                | miscellaneous file, and the #[+file('Devestated City patch')] from 
-                | #[+link('the TTW forums', 'https://drive.google.com/file/d/13u2iAyJMHw3bK7tgKlM597f80wFjERkE/view?usp=sharing')]
-            +notes This is a total merge of The D.C. Interiors Project, The N.V. Interiors Project and some of chucksteels other mods.
 
-- mods.push([])
+    //- TTW - AWOPNV Compatibility Patch
+    - modId = 'ttw-awop-patch'
+    - modName = 'TTW - AWOP Compatibility Patches'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66268'
+    - modAuthor = 'Roy Batty'
+    - modVersion = '1.01'
+    - mainFiles = ['TTW A World of Pain A World of Pain for Fallout 3', 'TTW A World of Pain Patch']
+    +mod
+        +notes 
+            | Compatibility patches for A World of Pain, A World of Pain for Fallout 3 
+            | and Tale of Two Wastelands. For more info visit the
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6526&sid=d7978d3911e87f0ba5b6af81269d94e9')]
+
+
+    //- Devestated City
+    - modId = 'devestated-city'
+    - modName = 'Devestated City'
+    - modUrl = 'https://drive.google.com/open?id=1MqAsu6aicz3nVnLm1HSC36resUGs0r_p'
+    - fileType = 'ttw'
+    - modAuthor = 'Wasteland Loner, Roy Batty'
+    +mod
+        +notes 
+            | This mod attempts to make the downtown D.C. area feel more post apocalyptic, 
+            | by adding things like vehicles, rubble, craters etc. However, the changes are
+            | not too extensive at the moment.
+            
+
+    //- Museum Halls of Today
+    - modId = 'museum-halls-of-today'
+    - modName = 'Museum Halls of Today'
+    - modUrl = 'https://drive.google.com/open?id=1BQ04-lB4n6g1rhM0ku5LRKgCaK8uTjcY'
+    - fileType = 'fo3'
+    - modAuthor = 'Wasteland Loner, Roy Batty'
+    +mod
+        +notes 
+            | This mod adds The Halls of Today to the Museum of Technology in The Mall.
+            | For more information check the 
+            | #[+link('TTW forums', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6522&sid=d7978d3911e87f0ba5b6af81269d94e9')]
+
+
+    //- TTW Interiors
+    - modId = 'ttw-interiors'
+    - modName = 'TTW Interiors'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66449'
+    - modAuthor = 'chucksteel'
+    - fileType = 'ttw'
+    - mainFiles = ['TTW Interiors Core v4.3.2', '_TTW Interiors Combo v6.4']
+    - miscFiles = ['NMC NVInt - TTW Int compatibility Patch Large v2.0' ]
+    +mod
+        +notes 
+            | This is a total merge of The D.C. Interiors Project, The N.V. Interiors Project and
+            | some of chucksteels other mods. For more details check the 
+            | #[+link('TTW forums', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6541&sid=d7978d3911e87f0ba5b6af81269d94e9')]
+
+
+    //- TTW Interiors - Devestated City Patch
+    - modId = 'ttw-interiors-devestated-city'
+    - modName = 'TTW Interiors - Devestated City Patch'
+    - modUrl = 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6541&sid=d7978d3911e87f0ba5b6af81269d94e9'
+    - modAuthor = 'chucksteel'
+    - fileType = 'ttw'
+    +mod

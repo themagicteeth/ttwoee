@@ -1,50 +1,57 @@
-mixin modCard(id, name, url, type)
+//- Deprecated
+mixin modCard(id, name, url, game)
     div(id=id)
-        h6.mod-name.mb0 #[a(href=url class=type target='_blank' rel="noopener") #{name}]
+        h6.mod-name.mb0 #[a(href=url class=game target="_blank" rel="noopener") #{name}]
         div.mod-card-bg.mt0
             block
 
-mixin link(name, url)
-    a(href=url target='_blank' rel="noopener") #{name}
-
+//- Deprecated
 mixin modInfo
     div.mod-card-bg.mt0
         block
 
-mixin name(name, url, type)
-    - const color = `${type}-color`
+//- Deprecated
+mixin name(name, url, fileType=null)
+    - let color
+    - const game = url.split('/')[3]
+
+    if game === 'fallout3'
+        - color = 'fo3-color'
+    if game === 'newvegas'
+        - color = 'fnv-color'
+    if fileType !== null
+        - color = `${fileType}-color`
+
     h6.mod-name.mb0 #[a(href=url class=color target='_blank' rel="noopener") #{name}]
 
-mixin file(name)
-    span.file #{name}
-
-mixin author(name)
-    p.mt0.mb0 #[span.b Author: ]
+//- Deprecated
+mixin author
+    p.mt0.mb0 
+        span.b Author:
         block
 
-mixin installation(text)
-    p.mt0.mb0 #[span.b Installation:] #{text}
+//- Deprecated
+mixin installation
+    p.mt0.mb0 
+        span.b Installation: #{text}
         block
 
+//- Deprecated
 mixin version
-    p.mt0.mb0 #[span.b Version: ]
-        block
-
-mixin notes
-    p.mt0.mb0 #[span.b Mod Notes: ]
+    p.mt0.mb0 
+        span.b Version: 
         block
 
 mixin important
     p.important.mb0
         block
 
-mixin ini
-    p.ini.mb0
-        block
-
 mixin merge
     p.merge.mb0
         block
+
+mixin newName
+    h6.mod-name.mb0 #[a(href=modUrl class=color target='_blank' rel="noopener") #{modName}]
 
 mixin optional
     .raised
@@ -64,6 +71,5 @@ mixin mispackaged
         pre.mt0
             block
 
-mixin instructions
-    pre.raised
-        block
+
+

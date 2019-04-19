@@ -7,42 +7,59 @@
 - mods.push([])
 
 section#textures
-    h2.section-header Textures
+    h2 Textures
 
-    h3.section-header Texture Overhauls
+    h3 Texture Overhauls
 
-    //-
-        Retextured Clutter Collection
-        Updated 2019-03-22
-    //-
-    +modCard('retextured-clutter-collection', 'Retextured Clutter Collection', 'https://www.nexusmods.com/fallout3/mods/6894', 'fo3-color')
-        +author ObsidianStag
-        +version FINAL
-        +installation Install #[span.file BetterClutterCollection]
+    //- Retextured Clutter Collection
+    - modId = 'retextured-clutter-collection'
+    - modName = 'Retextured Clutter Collection'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/6894'
+    - modAuthor = 'ObsidianStag'
+    - modVersion = 'FINAL'
+    - mainFiles = ['BetterClutterCollection']
+    +mod
         +notes 
             | This mod replaces several Clutter textures with a much larger, more detailed
             | versions. Also included are a few new textures, for wooden and metal shelves. 
 
-    +modCard('nmc-fo3', 'NMC Texture Pack – Fallout 3', 'https://www.nexusmods.com/fallout3/mods/12056', 'fo3-color')
-        +author NeilMc_NMC
-        +version 1.0
-        +installation Download #[span.file NMCs Texture Pack MAXIMUM Pack SINGLE FILE FOR NMM]
-        +notes Replaces Terrain, trees, interiors/ exteriors, and most vehicles and furniture with high resolution (200-400%) real-life photograph-based equivalents.
 
-    +modCard('nmc-fnv', 'NMC Texture Pack – New Vegas', 'https://www.nexusmods.com/newvegas/mods/43135', 'fnv-color')
-        +author NeilMc_NMC
-        +version 1.0
-        +installation 
-            | Download #[span.file NMCs Textures NV LARGE Pack Part 1 of 3 FOR NMM], 
-            | #[span.file NMCs Textures NV LARGE Pack Part 2 of 3 FOR NMM],
-            | #[span.file NMCs Textures NV LARGE Pack Part 3 of 3 FOR NMM] main files, 
-            | #[span.file NMC New Vegas Patch for ALL Sized packs] optional file, and
-            | #[span.file NMCs Texture pack WASHEDOUTWASTELAND Large and Medium] optional file
-        +notes Re-textures roads, trees, landscape, vehicles buildings and interiors with high-resolution photographic based equivalent textures.
-    
-    +modCard('nmc-ttw', 'NMC Textures Combined - TTW', 'https://taleoftwowastelands.com/download/file.php?id=2189&sid=7e34f9e642b87e7e17516369d4a02a47', 'ttw-color')
-        +author Roy Batty
-        +installation
+    //- NMC Texture Pack – Fallout 3
+    - modId = 'nmc-fo3'
+    - modName = 'NMC Texture Pack – Fallout 3'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/12056'
+    - modAuthor = 'NeilMc_NMC'
+    - modVersion = '1.0'
+    - mainFiles = ['NMCs Texture Pack MAXIMUM Pack SINGLE FILE FOR NMM']
+    +mod
+        +notes
+            | Replaces Terrain, trees, interiors/ exteriors, and most vehicles 
+            | and furniture with high resolution (200-400%) real-life photograph-based 
+            | equivalents.
+
+
+    //- NMC Texture Pack – New Vegas
+    - modId = 'nmc-fnv'
+    - modName = 'NMC Texture Pack – New Vegas'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/43135'
+    - modAuthor = 'NeilMc_NMC'
+    - modVersion = '1.0'
+    - mainFiles = ['NMCs Textures NV LARGE Pack Part 1 of 3 FOR NMM', 'NMCs Textures NV LARGE Pack Part 2 of 3 FOR NMM', 'NMCs Textures NV LARGE Pack Part 3 of 3 FOR NMM']
+    - optionalFiles = ['NMCs Texture pack WASHEDOUTWASTELAND Large and Medium']
+    - updateFiles = ['NMC New Vegas Patch for ALL Sized packs']
+    +mod
+        +notes
+            | Re-textures roads, trees, landscape, vehicles buildings and interiors with high-resolution
+            | photographic based equivalent textures.
+
+
+    //- NMC Textures Combined - TTW
+    - modId = 'nmc-ttw'
+    - modName = 'NMC Textures Combined - TTW'
+    - modUrl = 'https://taleoftwowastelands.com/download/file.php?id=2189&sid=7e34f9e642b87e7e17516369d4a02a47'
+    - fileType = 'ttw'
+    - modAuthor = 'Roy Batty'
+    +mod
         pre.raised
             | Create a work folder.
             | Create a folder in your work folder and name it "NMC Textures - TTW".
@@ -74,346 +91,404 @@ section#textures
             |
             | Textures/interface
 
-        div.raised
+        .raised
             +important 
                 | The "NMC Washed Out Wasteland" folder is enabled during the Fallout 3 portion of Tale of Two Wastelands and disabled for
                 | the New Vegas portion.
 
-    //-
-        MG's Neat Clutter Retextures
-        Updated 2019-03-22
-    //-
-    +modCard('mgs-neat-clutter-retextures', "MG's Neat Clutter Retextures", 'https://www.nexusmods.com/newvegas/mods/42551', 'fnv-color')
-        +author Mental Gear
-        +version 7.0
-        +installation Install #[span.file MGs NCR Pack Ojo friendly 7]
+
+    //- MG's Neat Clutter Retextures
+    - modId = 'mgs-neat-clutter-retextures'
+    - modName = "MG's Neat Clutter Retextures"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/42551'
+    - modAuthor = 'Mental Gear'
+    - modVersion = '7.0'
+    - mainFiles = ['MGs NCR Pack Ojo friendly 7']
+    +mod
         +notes Hires textures and normal maps for more than 200 items or objects.
 
-    //-
-        Ojo Bueno Texture Pack
-        Updated 2019-03-22
-    //-
-    +modCard('ojo-bueno', 'Ojo Bueno Texture Pack', 'https://www.nexusmods.com/newvegas/mods/39755', 'fnv-color')
-        +author tapioks
-        +version Quiznak
-        +installation
-            | Install #[span.file Ojo Bueno Texture Pack for FNV - ULTRA]
-            | main file and #[span.file Ojo Bueno Vending Machine Update ULTRA] update file
+
+    //- Ojo Bueno Texture Pack
+    - modId = 'ojo-bueno'
+    - modName = 'Ojo Bueno Texture Pack'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/39755'
+    - modAuthor = 'tapioks'
+    - modVersion = 'Quiznak'
+    - mainFiles = ['Ojo Bueno Texture Pack for FNV - ULTRA']
+    - updateFiles = ['Ojo Bueno Vending Machine Update ULTRA']
+    +mod
         +notes High quality hand-crafted texture replacers for a myriad of items throughout the Mojave wasteland.
 
-    //-
-        Textures Over Time
-        Updated 2019-03-22
-    //-
-    +modCard('textures-over-time', 'Textures Over Time', 'https://www.nexusmods.com/newvegas/mods/41101', 'fnv-color')
-        +author DonKnotts
-        +version 1.0
-        +installation Install #[span.file FlagStoneWalls], #[span.file HH_Sandstone], and #[span.file Sandbags]
 
-    //-
-        UHQ Terrain, Rock, Roads, & Grass Overhaul
-        Updated 2019-03-22
-    //-
-    +modCard('uhq-terrain-rock-roads-grass', 'UHQ Terrain, Rock, Roads, & Grass Overhaul', 'https://www.moddb.com/mods/uhq-terrain-rock-roads-grass-overhaul/downloads', 'fo3-color')
-        +author Marcurios
-        +version v1.1
-        +installation Download #[span.file UHQ Terrain, Rock, Roads & Grass Overhaul v1.1]
+    //- Collision Meshes - OJO BUENO
+    - modId = 'collision-meshes-ojo'
+    - modName = 'Collision Meshes - OJO BUENO'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59149'
+    - modAuthor = 'MadAce, KiCHo666'
+    - modVersion = '1.0'
+    - miscFiles = ['OJO BUENO Texture Pack compatibility']
+    +mod
+
+
+    //- Textures Over Time
+    - modId = 'textures-over-time'
+    - modName = 'Textures Over Time'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/41101'
+    - modAuthor = 'DonKnotts'
+    - modVersion = '1.0'
+    - mainFiles = ['FlagStoneWalls', 'HH_Sandstone', 'Sandbags']
+    +mod
+
+
+    //- Collision Meshes - FlagStoneWalls
+    - modId = 'collision-meshes-flagstonewalls'
+    - modName = 'Collision Meshes - FlagStoneWalls'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59149'
+    - modAuthor = 'MadAce, KiCHo666'
+    - modVersion = '1.0'
+    - miscFiles = ['Textures Over Time FlagStoneWalls compatibility']
+    +mod
+
+
+    //- UHQ Terrain, Rock, Roads, & Grass Overhaul
+    - modId = 'uhq-terrain-rock-roads-grass'
+    - modName = 'UHQ Terrain, Rock, Roads, & Grass Overhaul'
+    - modUrl = 'https://www.moddb.com/mods/uhq-terrain-rock-roads-grass-overhaul/downloads'
+    - fileType = 'fo3'
+    - modAuthor = 'Marcurios'
+    - modVersion = 'v1.1'
+    - mainFiles = ['UHQ Terrain, Rock, Roads & Grass Overhaul v1.1']
+    +mod
         +hidden
             | Hide the following folders:
             |
             | meshes/architecture/urban
             | textures/architecture/urban
-        +optional
-            | Double click UHQ Terrain, Rock, Roads, & Grass Overhaul in the left pane and go to the [Optional ESPs] tab.
-            | Move the "MCGrass.esp" and "MCRockTextures.esp" to the "Optional ESPs" box.
+        +optionalEsps('UHQ Terrain, Rock, Roads, & Grass Overhaul', 'MCGrass.esp', 'MCRockTextures.esp')
         +notes This Texture/Mesh Pack will upgrade the Terrain fidelity of the Fallout 3 Wasteland.
 
-    h3.section-header DLC Retextures
 
-    //-
-        Mothership Zeta DLC Retextured
-        Updated 2019-03-22
-    //-
-    +modCard('mothership-zeta-dlc-retextured', 'Mothership Zeta DLC Retextured', 'https://www.nexusmods.com/fallout3/mods/8260', 'fo3-color')
-        +author Weijiesen
-        +version 1.0
-        +installation Install #[span.file WJS DLC05 Retex 1_0]
+    h3 DLC Retextures
+
+    //- Mothership Zeta DLC Retextured
+    - modId = 'mothership-zeta-dlc-retextured'
+    - modName = 'Mothership Zeta DLC Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/8260'
+    - modAuthor = 'Weijiesen'
+    - modVersion = '1.0'
+    - mainFiles = ['WJS DLC05 Retex 1_0']
+    +mod
         +notes
             | The spaceship looks like metal instead of cardboard now! The aliens look creepy instead of bland now!
             | Zeta has been awesomefied. EVERY single last texture.
 
-    h3.section-header Other Textures
-    //-
-        Arlington Tombstones Redone
-        Updated 2019-03-22
-    //-
-    +modCard('arlington-tombstone-redone', 'Arlington Tombstones Redone', 'https://www.nexusmods.com/fallout3/mods/23059', 'fo3-color')
-        +author d7
-        +version 1
-        +installation Install #[span.file d7_tombstones_redo]
+
+    h3 Other Textures
+
+    //- Arlington Tombstones Redone
+    - modId = 'arlington-tombstone-redone'
+    - modName = 'Arlington Tombstones Redone'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/23059'
+    - modAuthor = 'd7'
+    - modVersion = '1'
+    - mainFiles = ['d7_tombstones_redo']
+    +mod
         +notes New meshes and textures for the Arlington graveyard tombstones
 
-    //-
-        Hectrol Tumbleweed
-        Updated 2019-03-22
-    //-
-    +modCard('hectrol-tumbleweed', 'Hectrol Tumbleweed', 'https://www.nexusmods.com/newvegas/mods/40333', 'fnv-color')
-        +author Hectrol
-        +version 1.0
-        +installation Install #[span.file Hectrol Tumbleweed Deluxe HighRes Retex]
-        +notes This skin modifies the aspect of default boring tumbleweeds by realistic tumbleweeds, and adds a new Normal Map
 
-    //-
-        Money Higher Quality Retex
-        Updated 2019-03-22
-    //-
-    +modCard('money-higher-quality-retex', 'Money Higher Quality Retex', 'https://www.nexusmods.com/newvegas/mods/40792', 'fnv-color')
-        +author Lord Inquisitor
-        +version 1.2
-        +installation Install #[span.file MoneyRetexV1_2]
+    //- Hectrol Tumbleweed
+    - modId = 'hectrol-tumbleweed'
+    - modName = 'Hectrol Tumbleweed'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/40333'
+    - modAuthor = 'Hectrol'
+    - modVersion = '1.0'
+    - mainFiles = ['Hectrol Tumbleweed Deluxe HighRes Retex']
+    +mod
+        +notes 
+            | This skin modifies the aspect of default boring tumbleweeds 
+            | by realistic tumbleweeds, and adds a new Normal Map
 
-    //-
-        Acoraito HD Textures Pack
-        Updated 2019-03-22
-    //-
-    +modCard('acoraito-hd-textures', 'Acoraito HD Textures Pack', 'https://www.nexusmods.com/newvegas/mods/59194', 'fnv-color')
-        +author Acoraito
-        +installation Install #[span.file Acoraito HD Textures Pack 2k]
 
-    //-
-        Audley's Misc Textures
-        Updated 2019-03-22
-    //-
-    +modCard('audleys-misc-textures', "Audley's Misc Textures", 'https://www.nexusmods.com/newvegas/mods/58318', 'fnv-color')
-        +author Audley
-        +version 1.0
-        +installation Install #[span.file Audleys Misc Textures - Fear and Loathing] optional file
+    //- Collision Meshes - Hectrol Tumbleweed
+    - modId = 'collision-meshes-tumbleweed'
+    - modName = 'Collision Meshes - Hectrol Tumbleweed'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59149'
+    - modAuthor = 'MadAce, KiCHo666'
+    - modVersion = '1.0'
+    - miscFiles = ['Hectrol Tumbleweed compatibility']
+    +mod
 
-    //-
-        Bear Trap Retextured
-        Updated 2019-03-22
-    //-
-    +modCard('bear-trap-retextured', 'Bear Trap Retextured', 'https://www.nexusmods.com/fallout3/mods/11748', 'fo3-color')
-        +author konji
-        +version 1.00
-        +installation Install #[span.file beartrap retextured]
+
+    //- Money Higher Quality Retex
+    - modId = 'money-higher-quality-retex'
+    - modName = 'Money Higher Quality Retex'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/40792'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.2'
+    - mainFiles = ['MoneyRetexV1_2']
+    +mod
+
+
+    //- Acoraito HD Textures Pack
+    - modId = 'acoraito-hd-textures'
+    - modName = 'Acoraito HD Textures Pack'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59194'
+    - modAuthor = 'Acoraito'
+    - mainFiles = ['Acoraito HD Textures Pack 2k']
+    +mod
+
+
+    //- Audley's Misc Textures
+    - modId = 'audleys-misc-textures'
+    - modName = "Audley's Misc Textures"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58318'
+    - modAuthor = 'Audley'
+    - modVersion = '1.0'
+    - optionalFiles = ['Audleys Misc Textures - Fear and Loathing']
+    +mod
+
+
+    //- Bear Trap Retextured
+    - modId = 'bear-trap-retextured'
+    - modName = 'Bear Trap Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/11748'
+    - modAuthor = 'konji'
+    - modVersion = '1.00'
+    - mainFiles = ['beartrap retextured']
+    +mod
         +notes A new texture for the bear trap.
 
-    //-
-        Cherry Bomb HD Retexture
-        Updated 2019-03-22
-    //-
-    +modCard('cherry-bomb-hd-retexture', 'Cherry Bomb HD Retexture', 'https://www.nexusmods.com/newvegas/mods/61186', 'fnv-color')
-        +author legandalfo and Jokerine
-        +installation 
-            | Install #[span.file Cherry Bomb HD retexture] main file, and 
-            | #[span.file Round mesh for cherry bomb] optional files
-        +notes Cherry Bomb retextured to be less ugly. 
 
-    //-
-        Fallout Food Package Retexture Compilation
-        Updated 2019-03-22
-    //-
-    +modCard('food-package-retexture-collection', 'Fallout Food Package Retexture Compilation', 'https://www.nexusmods.com/newvegas/mods/59232', 'fnv-color')
-        +author Majormodder 
-        +version 3.0
-        +installation Install #[span.file Food compilation dirty set uncompressed 3 point Oh]
-        +optional
-            | Double click Fallout Food Package Retexture Compilation in the left pane and go to the [Optional ESPs] tab.
-            | Move the "majormodder's Junk Food to Barbeque Crisps.esp" to the "Optional ESPs" box.
-        +notes Revamps the old food textures for the box packages with textures ranging from 1k-2k size, lore friendly too. 
+    //- Cherry Bomb HD Retexture
+    - modId = 'cherry-bomb-hd-retexture'
+    - modName = 'Cherry Bomb HD Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/61186'
+    - modAuthor = 'legandalfo and Jokerine'
+    - mainFiles = ['Cherry Bomb HD retexture']
+    - optionalFiles = ['Round mesh for cherry bomb']
+    +mod
+        +notes Cherry Bomb retextured to be less ugly.
 
-    //-
-        Collision Meshes - Fallout Food Package Retexture Patch
-        Updated 2019-03-22
-    //-
-    +modCard('collision-meshes-fo3-food-package-retexture-patch', 'Collision Meshes - Fallout Food Package Retexture Patch', 'https://www.nexusmods.com/fallout3/mods/21946', 'fo3-color')
-        +author KaneWright
-        +version 1.0
-        +installation Install optional file #[span.file FalloutFoodPackageRetextureCompilationFix]
+         
+    //- Fallout Food Package Retexture Compilation
+    - modId = 'food-package-retexture-collection'
+    - modName = 'Fallout Food Package Retexture Compilation'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59232'
+    - modAuthor = 'Majormodder'
+    - modVersion = '3.0'
+    - mainFiles = ['Food compilation dirty set uncompressed 3 point Oh']
+    +mod
+        +optionalEsps('Food Package Retexture Compilation', "majormodder's Junk Food to Barbeque Crisps.esp")
+        +notes
+            | Revamps the old food textures for the box packages with textures ranging
+            | from 1k-2k size, lore friendly too. 
 
-    //-
-        Hectrol Lockinterface Deluxe
-        Updated 2019-03-22
-    //-
-    +modCard('hectrol-lockinterface-deluxe', 'Hectrol Lockinterface Deluxe', 'https://www.nexusmods.com/newvegas/mods/39945', 'fnv-color')
-        +author Hectrol
-        +version 1.0
-        +installation Install #[span.file Hectrol Lockinterface Deluxe HighRes Retex]
-        +notes This skin modifies the aspect of blocked locks interface. The full effect of the Normal Map is displayed correctly in motion.
 
-    //-
-        Hectrol Mailbox Deluxe
-        Updated 2019-03-22
-    //-
-    +modCard('hectrol-mailbox-deluxe', 'Hectrol Mailbox Deluxe', 'https://www.nexusmods.com/newvegas/mods/40513', 'fnv-color')
-        +author Hectrol
-        +version 1.0
-        +installation Install #[span.file Hectrol Mailbox Deluxe HighRes Retex]
+    //- Collision Meshes FO3 - Fallout Food Package Retexture Compilation
+    - modId = 'collision-meshes-fo3-food-package-retexture-patch'
+    - modName = 'Collision Meshes FO3 - Fallout Food Package Retexture Compilation'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/21946'
+    - modAuthor = 'KaneWright'
+    - modVersion = '1.0'
+    - miscFiles = ['FalloutFoodPackageRetextureCompilationFix']
+    +mod
+
+
+    //- Hectrol Lockinterface Deluxe
+    - modId = 'hectrol-lockinterface-deluxe'
+    - modName = 'Hectrol Lockinterface Deluxe'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/39945'
+    - modAuthor = 'Hectrol'
+    - modVersion = '1.0'
+    - mainFiles = ['Hectrol Lockinterface Deluxe HighRes Retex']
+    +mod
+        +notes 
+            | This skin modifies the aspect of blocked locks interface. 
+            | The full effect of the Normal Map is displayed correctly in motion.
+
+
+    //- Hectrol Mailbox Deluxe
+    - modId = 'hectrol-mailbox-deluxe'
+    - modName = 'Hectrol Mailbox Deluxe'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/40513'
+    - modAuthor = 'Hectrol'
+    - modVersion = '1.0'
+    - mainFiles = ['Hectrol Mailbox Deluxe HighRes Retex']
+    +mod
         +notes This skin modifies the aspect of default boring mailbox by realistic mailbox.
 
-    //-
-        Hi-Res Lunchbox
-        Updated 2019-03-22
-    //-
-    +modCard('hi-res-lunchbox', 'Hi-Res Lunchbox', 'https://www.nexusmods.com/fallout3/mods/3682', 'fo3-color')
-        +author Dazington
-        +version 1.0
-        +installation Install #[span.file Hi-Res_Lunchbox_V1_0]
+
+    //- Hi-Res Lunchbox
+    - modId = 'hi-res-lunchbox'
+    - modName = 'Hi-Res Lunchbox'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/3682'
+    - modAuthor = 'Dazington'
+    - modVersion = '1.0'
+    - mainFiles = ['Hi-Res_Lunchbox_V1_0']
+    +mod
         +notes Replaces the standard 256x256 lunchbox texture with a higher resolution 1024x1024
+        
 
-    //-
-        Magazine Redux
-        Updated 2019-03-22
-    //-
-    +modCard('magazine-redux', 'Magazine Redux', 'https://www.nexusmods.com/newvegas/mods/42681', 'fnv-color')
-        +author razzy1319
-        +version 1.1
-        +installation Install #[span.file Magazine Redux] main file, and #[span.file MagRedux QuickFix] update file
-        +notes High Quality(although grunged up to fit the lore) Magazines.
+    //- Magazine Redux
+    - modId = 'magazine-redux'
+    - modName = 'Magazine Redux'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/42681'
+    - modAuthor = 'razzy1319'
+    - modVersion = '1.1'
+    - mainFiles = ['Magazine Redux']
+    - updateFiles = ['MagRedux QuickFix']
+    +mod
+        +notes High Quality(although grunged up to fit the lore) Magazines. 
 
-    //-
-        Minimod - High Resolution Newspapers
-        Updated 2019-03-22
-    //-
-    +modCard('minimod', 'Minimod - High Resolution Newspapers', 'https://www.nexusmods.com/newvegas/mods/50812', 'fnv-color')
-        +author Tagaziel and LadySinestro
-        +version 1.5
-        +installation Download #[span.file New and Improved Meshes by LadySinestro]
-        +mispackaged
-            | This mod is packaged incorrectly
-            | Expand 
-            | Right click and select [Set Data Directory] and click [OK]
 
-    //-
-        Neglected Clutter
-        Updated 2019-03-22
-    //-
-    +modCard('neglected-clutter', 'Neglected Clutter', 'https://www.nexusmods.com/newvegas/mods/59756', 'fnv-color')
-        +author aogara
-        +version 1.4
-        +installation 
-            | Install #[span.file Neglected Architecture and Furnitures], #[span.file Neglected Clutters], 
-            | and #[span.file Neglected Clutters - New Paint Gun]
+    //- Minimod - High Resolution Newspapers
+    - modId = 'minimod'
+    - modName = 'Minimod - High Resolution Newspapers'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/50812'
+    - modAuthor = 'Tagaziel and LadySinestro'
+    - modVersion = '1.5'
+    - mainFiles = ['New and Improved Meshes by LadySinestro']
+    +mod
 
-    //-
-        PM's HD Ammo Boxes
-        Updated 2019-03-22
-    //-
-    +modCard('pms-hd-ammo-boxes', "PM's HD Ammo Boxes", 'https://www.nexusmods.com/newvegas/mods/64007', 'fnv-color')
-        +author Pommymax
-        +version 1.1
-        +installation Install #[span.file PM's HD Ammo Boxes - 4K Diffuse 2K Normals] optional file
+
+    //- Neglected Clutter
+    - modId = 'neglected-clutter'
+    - modName = 'Neglected Clutter'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59756'
+    - modAuthor = 'aogara'
+    - modVersion = '1.4'
+    - mainFiles = ['Neglected Architecture and Furnitures', 'Neglected Clutters']
+    - optionalFiles = ['Neglected Clutters - New Paint Gun']
+    +mod
+
+
+    //- PM's HD Ammo Boxes
+    - modId = 'pms-hd-ammo-boxes'
+    - modName = "PM's HD Ammo Boxes"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/64007'
+    - modAuthor = 'Pommymax'
+    - modVersion = '1.1'
+    - optionalFiles = ["PM's HD Ammo Boxes - 4K Diffuse 2K Normals"]
+    +mod
         +notes HD Retextures for all ammo boxes.
 
-    //-
-        PM's Med-Textures - HD Chems and Venoms
-        Updated 2019-03-22
-    //-
-    +modCard('pms-med-textures', "PM's Med-Textures - HD Chems and Venoms", 'https://www.nexusmods.com/newvegas/mods/62946', 'fnv-color')
-        +author Pommymax
-        +version 1.0
-        +installation
-            | Install #[span.file PM's Med-Textures v1.0] main file, #[span.file PM's Med-X Texture],
-            | and #[span.file Sebastjin's Normals] optional files
+
+    //- PM's Med-Textures - HD Chems and Venoms
+    - modId = 'pms-med-textures'
+    - modName = "PM's Med-Textures - HD Chems and Venoms"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62946'
+    - modAuthor = 'pommymax'
+    - modVersion = '1.0'
+    - mainFiles = ["PM's Med-Textures v1.0"]
+    - optionalFiles = ["PM's Med-X Texture", "Sebastjin's Normals"]
+    +mod  
         +notes HD Retextures for all chems, venoms, and antivenoms.
 
-    //-
-        Pre-War Money Retexture
-        Updated 2019-03-22
-    //-
-    +modCard('pre-war-money-retexture', 'Pre-War Money Retexture', 'https://www.nexusmods.com/newvegas/mods/36718', 'fnv-color')
-        +author Red.Room.Service
-        +version  1.2
-        +installation Install #[span.file Pre-War Money Retexture -RRS]. When prompted, select Light Distress for both bills.
-        +notes A re-texture of Pre-War Money featuring authentic, time-frame accurate, appropriately distressed, bills
 
-    //-
-        TVSet Retextured
-        Updated 2019-03-22
-    //-
-    +modCard('tvset-retextured', 'TVSet Retextured', 'https://www.nexusmods.com/fallout3/mods/23023', 'fo3-color')
-        +author d7 aka id2301
-        +version 1
-        +installation Install #[span.file d7_tvset_retextured]
+    //- Pre-War Money Retexture
+    - modId = 'pre-war-money-retexture'
+    - modName = 'Pre-War Money Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/36718'
+    - modAuthor = 'Red.Room.Service'
+    - modVersion = '1.2'
+    - mainFiles = ['Pre-War Money Retexture -RRS']
+    +mod
+        +instructions When prompted, select Light Distress for both bills.
+        +notes 
+            | A re-texture of Pre-War Money featuring authentic, time-frame accurate,
+            | appropriately distressed, bills
 
-    //-
-        Tweaked Cashregister
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-cashregister', 'Tweaked Cashregister', 'https://www.nexusmods.com/newvegas/mods/40329', 'fnv-color')
-        +author Lord Inquisitor and Tapiokas
-        +version 1.0
-        +installation Install #[span.file TweakCashregisterV1_0]
+
+    //- TVSet Retextured
+    - modId = 'tvset-retextured'
+    - modName = 'TVSet Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/23023'
+    - modAuthor = 'd7 aka id2301'
+    - modVersion = '1'
+    - mainFiles = ['d7_tvset_retextured']
+    +mod
+
+
+    //- Tweaked Cashregister
+    - modId = 'tweaked-cashregister'
+    - modName = 'Tweaked Cashregister'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/40329'
+    - modAuthor = 'Lord Inquisitor and Tapiokas'
+    - modVersion = '1.0'
+    - mainFiles = ['TweakCashregisterV1_0']
+    +mod
         +notes Cashregister tweaked and made more 3d based
+ 
 
-    //-
-        Tweaked Chems Replacer
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-chems-replacer', 'Tweaked Chems Replacer', 'https://www.nexusmods.com/newvegas/mods/37255', 'fnv-color')
-        +author Lord Inquisitor
-        +version 1.1
-        +installation Install #[span.file TweakChems1_1]
-        +notes The chems given a tweaked meshs and also new textures in case of Mentats, Rebound, and Jet Turbo. 
+    //- Tweaked Chems Replacer
+    - modId = 'tweaked-chems-replacer'
+    - modName = 'Tweaked Chems Replacer'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/37255'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.1'
+    - mainFiles = ['TweakChems1_1']
+    +mod
+        +notes 
+            | The chems given a tweaked meshs and also new textures
+            | in case of Mentats, Rebound, and Jet Turbo. 
 
-    //-
-        Tweaked Coffee Maker
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-coffee-maker', 'Tweaked Coffee Maker', 'https://www.nexusmods.com/fallout3/mods/10246', 'fo3-color')
-        +author Lord Inquisitor
-        +version 1.0
-        +installation Install #[span.file coffeemaker01 v1]
-        +notes A tweaked Coffeemaker for the office, made it so its less flat. Adds the "wings", switches and grilles. Causes minor issue with a TTW Interiors mesh.
 
-    //-
-        Tweaked Generator
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-generator', 'Tweaked Generator', 'https://www.nexusmods.com/fallout3/mods/12353', 'fo3-color')
-        +author Lord Inquisitor
-        +version 1.0
-        +installation Install #[span.file GeneratorTweaked1_0]
-        +notes Replaces the vanilla generator mesh (generator01.nif) with a slightly up meshed version.
+    //- Tweaked Coffee Maker
+    - modId = 'tweaked-coffee-maker'
+    - modName = 'Tweaked Coffee Maker'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/10246'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.0'
+    - mainFiles = ['coffeemaker01 v1']
+    +mod
+        +notes 
+            | A tweaked Coffeemaker for the office, made it so its less flat.
+            | Adds the "wings", switches and grilles. Causes minor issue with 
+            | a TTW Interiors mesh.
 
-    //-
-        Tweaked Intercom
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-intercom', 'Tweaked Intercom', 'https://www.nexusmods.com/fallout3/mods/10003', 'fo3-color')
-        +author Lord Inquisitor
-        +version 1.0
-        +installation Install #[span.file Intercom01 replacer]
-        +mispackaged
-            | This mod is packaged incorrectly
-            | Expand 
-            | Right click and select [Set Data Directory] and click [OK]
+
+    //- Tweaked Generator
+    - modId = 'tweaked-generator'
+    - modName = 'Tweaked Generator'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/12353'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.0'
+    - mainFiles = ['GeneratorTweaked1_0']
+    +mod
+        +notes 
+            | Replaces the vanilla generator mesh (generator01.nif) 
+            | with a slightly up meshed version.
+
+        
+    //- Tweaked Intercom
+    - modId = 'tweaked-intercom'
+    - modName = 'Tweaked Intercom'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/10003'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.0'
+    - mainFiles = ['Intercom01 replacer']
+    +mod
         +notes Just makes it more 3D. Original was a bit too flat.
 
-    //-
-        Tweaked Wrench
-        Updated 2019-03-22
-    //-
-    +modCard('tweaked-wrench', 'Tweaked Wrench', 'https://www.nexusmods.com/fallout3/mods/10212', 'fo3-color')
-        +author Lord Inquisitor
-        +version  1.0
-        +installation Install #[span.file Wrench01 V_0]
-        +mispackaged
-            | This mod is packaged incorrectly
-            | Expand 
-            | Right click and select [Set Data Directory] and click [OK]
-        +notes The Vanilla Wrench has been tweaked to be more 3D with hollow handle, hanging hole and adjuster.
 
-    //-
-        Vertibird Re-textured
-        Updated 2019-03-22
-    //-
-    +modCard('vertibird-retextured', 'Vertibird Re-textured', 'https://www.nexusmods.com/fallout3/mods/8602', 'fo3-color')
-        +author Macintroll
-        +version v0.1
-        +installation Install #[span.file Vertibird re-textured]
-        +mispackaged
-            | This mod is packaged incorrectly
-            | Expand 
-            | Right click and select [Set Data Directory] and click [OK]
+    //- Tweaked Wrench
+    - modId = 'tweaked-wrench'
+    - modName = 'Tweaked Wrench'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/10212'
+    - modAuthor = 'Lord Inquisitor'
+    - modVersion = '1.0'
+    - mainFiles = ['Wrench01 V_0']
+    +mod
+        +notes 
+            | The Vanilla Wrench has been tweaked to be more 3D with 
+            | hollow handle, hanging hole and adjuster.
+ 
+        
+    //- Vertibird Re-textured
+    - modId = 'vertibird-retextured'
+    - modName = 'Vertibird Re-textured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/8602'
+    - modAuthor = 'Macintroll'
+    - modVersion = 'v0.1'
+    - mainFiles = ['Vertibird re-textured']
+    +mod

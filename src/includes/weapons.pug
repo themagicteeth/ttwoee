@@ -1,180 +1,170 @@
 //-
     Weapons
-    Updated 2019-03-22
 //-
 
 - sections.push(['#weapons', 'Weapons'])
 - mods.push([])
 
 section#weapons
-    h2.section-header Weapons
+    h2 Weapons
 
-    //-
-        Bowie knife retexture
-        Updated 2019-03-22
-    //-
-    #bowie-knife-retexture
-        +name('Bowie knife retexture', 'https://www.nexusmods.com/newvegas/mods/62970', 'fnv')
-        +modInfo
-            +author FalloutMG
-            +version 1
-            +installation Install #[+file('Bowie knife retexture')]
+    //- Bowie knife retexture
+    - modId = 'bowie-knife-retexture'
+    - modName = 'Bowie knife retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62970'
+    - modAuthor = 'FalloutMG'
+    - modVersion = '1'
+    - mainFiles = ['Bowie knife retexture']
+    +mod
 
-    //-
-        Fallout 3 Hirezd
-        Updated 2019-03-22
-    //-
-    #fo3-hirezd
-        +name('Fallout 3 Hirezd','https://www.nexusmods.com/fallout3/mods/19931','fo3')
-        +modInfo
-            +author Emerald Reign
-            +installation 
-                | Install #[+file('BB Gun')], #[+file('Grenades')], #[+file('Knuckles')],
-                | #[+file('Lincolns Repeater')], and #[+file('Mines')]
 
-    //-
-        Hatchet retexture
-        Updated 2019-03-22
-    //-
-    #hatchet-retexture
-        +name('Hatchet retexture', 'https://www.nexusmods.com/newvegas/mods/62997', 'fnv')
-        +modInfo
-            +author FalloutMG
-            +version 1
-            +installation Install #[+file('Hatchet retexture')]
+    //- Fallout 3 Hirezd - Weapons
+    - modId = 'fo3-hirezd-weapons'
+    - modName = 'Fallout 3 Hirezd - Weapons'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/19931'
+    - modAuthor = 'Emerald Reign'
+    - mainFiles = ['BB Gun', 'Grenades', 'Knuckles', 'Lincolns Repeater', 'Mines']
+    +mod
 
-    //-
-        HD One Hand Melee
-        Updated 2019-03-22
-    //-
-    #hd-one-hand-melee
-        +name('HD One Hand Melee', 'https://www.nexusmods.com/newvegas/mods/42509', 'fnv')
-        +modInfo
-            +author InsanitySorrow, 2cooldays 
-            +installation Install #[+file('One Hand Melee HD')] and #[+file('Gun Runner Box HD')]
-            +hidden
-                | Hide the following folders:
-                |
-                | meshes
-    
-    //-
-        Cleaver and Chopper Retexture
-        Updated 2019-03-22
-    //-
-    #cleaver-chopper-retexture
-        +name('Cleaver and Chopper Retexture', 'https://www.nexusmods.com/newvegas/mods/63539', 'fnv')
-        +modInfo
-            +author FalloutMG
-            +installation Install #[+file('Cleaver Retexture')]
 
-    //-
-        Combat and Chance's knife retexture
-        Updated 2019-03-22
-    //-
-    #combat-chance-knife-retexture
-        +name("Combat and Chance's knife retexture", 'https://www.nexusmods.com/newvegas/mods/63055', 'fnv')
-        +modInfo
-            +author FalloutMG
-            +version 1
-            +installation Install #[+file('Combat knife Retexture')]
+    //- Hatchet retexture
+    - modId = 'hatchet-retexture'
+    - modName = 'Hatchet retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62997'
+    - modAuthor = 'FalloutMG'
+    - modVersion = '1'
+    - mainFiles = ['Hatchet retexture']
+    +mod
 
-    //-
-        Laer Retexture
-        Updated 2019-03-22
-    //-
-    #laer-retexture
-        +name('Laer Retexture', 'https://www.nexusmods.com/newvegas/mods/45042', 'fnv')
-        +modInfo
-            +author  The Riff
-            +version 1.1
-            +installation Install #[+file('Main')]
-            +mispackaged
-                | This mod is packaged incorrectly
-                | During install right click "data" and select [Set Data Directory]
-                | Untick "before.png" and "after.png"
-                | Click [Ok]
 
-    //-
-        MFC Grenade Texture Fix
-        Updated 2019-03-22
-    //-
-    #mfc-grenade-texture-fix
-        +name('MFC Grenade Texture Fix', 'https://www.nexusmods.com/newvegas/mods/58734', 'fnv')
-        +modInfo
-            +author Adonis VII
-            +version v1.0
-            +installation Install #[+file('MFC Meshes')]
+    //- HD One Hand Melee
+    - modId = 'hd-one-hand-melee'
+    - modName = 'HD One Hand Melee'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/42509'
+    - modAuthor = 'InsanitySorrow, 2cooldays '
+    - modVersion = ''
+    - mainFiles = ['One Hand Melee HD']
+    - optionaFiles = ['Gun Runner Box HD']
+    +mod
+        +hidden
+            | Hide the following folders:
+            |
+            | meshes
 
-    //-
-        Retextured Fallout Ordnance - RFO
-        Updated 2019-03-22
-    //-
-    #rfo
-        +name('Retextured Fallout Ordnance - RFO', 'https://www.nexusmods.com/newvegas/mods/44429', 'fnv')
-        +modInfo
-            +author Emerald Reign
-            +version 0.2
-            +installation Install #[+file('Retextured FALLOUT Ordnance')]
 
-    //-
-        Shishkebab the Retexture
-        Updated 2019-03-22
-    //-
-    #shishkebab-the-retexture
-        +name('Shishkebab the Retexture', 'https://www.nexusmods.com/fallout3/mods/3879', 'fo3')
-        +modInfo
-            +author macintroll
-            +installation Install #[+file('shishkebab the flaming sword')]
+    //- Cleaver and Chopper Retexture
+    - modId = 'cleaver-chopper-retexture'
+    - modName = 'Cleaver and Chopper Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/63539'
+    - modAuthor = 'FalloutMG'
+    - mainFiles = ['Cleaver Retexture']
+    +mod
 
-    //-
-        Throwing melee weapon retexture
-        Updated 2019-03-22
-    //-
-    #throwing-melee-weapon-retexture
-        +name('Throwing melee weapon retexture', 'https://www.nexusmods.com/newvegas/mods/63000', 'fnv')
-        +modInfo
-            +author FalloutMG
-            +version 1
-            +installation Install #[+file('Throwing melee weapon retexture')]
 
-    //-
-        Weapon Enhancement Project
-        Updated 2019-03-22
-    //-
-    #weapon-enhancement-project
-        +name('Weapon Enhancement Project', 'https://www.nexusmods.com/fallout3/mods/21245', 'fo3')
-        +modInfo
-            +author Christopher Wallace and MadCat221
-            +version 1.0
-            +installation Install #[+file('Weapon Enhancement Pack')]
+    //- Combat and Chance's knife retexture
+    - modId = 'combat-chance-knife-retexture'
+    - modName = "Combat and Chance's knife retexture"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/63055'
+    - modAuthor = 'FalloutMG'
+    - modVersion = '1'
+    - mainFiles = ['Combat knife Retexture']
+    +mod
 
-    //-
-        Weapon Retexture Project
-        Updated 2019-03-22
-    //-
-    +modCard('weapon-retexture-project', 'Weapon Retexture Project', 'https://www.nexusmods.com/newvegas/mods/38285', 'fnv')
-        +author Millenia
-        +version 2.1.8
-        +installation 
-            | Install #[span.file Weapon Retexture Project - WRP] main file, 
-            | #[span.file WRP Hotfix] update file, and #[span.file WRP-TTW Patch] optional file
 
-    //-
-        Bozar Retexture
-        Updated 2019-03-22
-    //-
-    +modCard('bozar-retexture', 'Bozar Retexture', 'https://www.nexusmods.com/newvegas/mods/56477', 'fnv')
-        +author Millenia
-        +version 1.1
-        +installation Install #[span.file Bozar_retexture_4k_maps]
+    //- Laer Retexture
+    - modId = 'laer-retexture'
+    - modName = 'Laer Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/45042'
+    - modAuthor = 'The Riff'
+    - modVersion = '1.1'
+    - mainFiles = ['Main']
+    +mod
+        +mispackaged
+            | This mod is packaged incorrectly
+            | During install right click "data" and select [Set Data Directory]
+            | Untick "before.png" and "after.png"
+            | Click [Ok]
 
-    //-
-        Half Hansified Holorifle
-        Updated 2019-03-22
-    //-
-    +modCard('half-hansified-holorifle', 'Half Hansified Holorifle', 'https://www.nexusmods.com/newvegas/mods/50547', 'fnv')
-        +author MadCat221
-        +version 1
-        +installation Install #[span.file Half Hansified Holorifle Standard]
-            pre.raised
-                | Rename holorifle.nif to Nvdlc01weapholorifle.nif
+
+    //- MFC Grenade Texture Fix
+    - modId = 'mfc-grenade-texture-fix'
+    - modName = 'MFC Grenade Texture Fix'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58734'
+    - modAuthor = 'Adonis VII'
+    - modVersion = 'v1.0'
+    - mainFiles = ['MFC Meshes']
+    +mod
+
+
+    //- Retextured Fallout Ordnance - RFO
+    - modId = 'rfo'
+    - modName = 'Retextured Fallout Ordnance - RFO'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/44429'
+    - modAuthor = 'Emerald Reign'
+    - modVersion = '0.2'
+    - mainFiles = ['Retextured FALLOUT Ordnance']
+    +mod
+
+
+    //- Shishkebab the Retexture
+    - modId = 'shishkebab-the-retexture'
+    - modName = 'Shishkebab the Retexture'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/3879'
+    - modAuthor = 'macintroll'
+    - mainFiles = ['shishkebab the flaming sword']
+    +mod
+
+
+    //- Throwing melee weapon retexture
+    - modId = 'throwing-melee-weapon-retexture'
+    - modName = 'Throwing melee weapon retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/63000'
+    - modAuthor = 'FalloutMG'
+    - modVersion = '1'
+    - mainFiles = ['Throwing melee weapon retexture']
+    +mod
+
+
+    //- Weapon Enhancement Project
+    - modId = 'weapon-enhancement-project'
+    - modName = 'Weapon Enhancement Project'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/21245'
+    - modAuthor = 'Christopher Wallace and MadCat221'
+    - modVersion = '1.0'
+    - mainFiles = ['Weapon Enhancement Pack']
+    +mod
+
+
+    //- Weapon Retexture Project
+    - modId = 'weapon-retexture-project'
+    - modName = 'Weapon Retexture Project'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/38285'
+    - modAuthor = 'Millenia'
+    - modVersion = '2.1.8'
+    - mainFiles = ['Weapon Retexture Project - WRP']
+    - updateFiles = ['WRP Hotfix']
+    - optionalFiles = ['WRP-TTW Patch']
+    +mod
+
+
+    //- Bozar Retexture
+    - modId = 'bozar-retexture'
+    - modName = 'Bozar Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/56477'
+    - modAuthor = 'Millenia'
+    - modVersion = '1.1'
+    - mainFiles = ['Bozar_retexture_4k_maps']
+    +mod
+
+
+    //- Half Hansified Holorifle
+    - modId = 'half-hansified-holorifle'
+    - modName = 'Half Hansified Holorifle'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/50547'
+    - modAuthor = 'MadCat221'
+    - modVersion = '1'
+    - mainFiles = ['Half Hansified Holorifle Standard']
+    +mod
+        +instructions
+            | Rename: holorifle.nif -> Nvdlc01weapholorifle.nif
+
