@@ -1,80 +1,98 @@
 //-
     ENB
-    Updated 2019-03-30
 //-
 
-- sections.push(['#enb', 'ENB'])
+- sections.push(['#enb', 'ENB and NVR'])
 - mods.push([])
 
 section#enb
-    h2 ENB
+    h2 ENB and NVR
 
-    //-
-        VRamSizeTest
-        Updated 2019-04-02
-    //-
-    #vramtesttool
-        +name('VRamSizeTest', 'http://enbdev.com/download_vramsizetest.htm', 'tool')
-        +modInfo
-            +author Boris Vorontsov
-            +version v1.0
-            +installation Download #[+file('VRamSizeTest v1.0')]
-            .raised
-                +important Determine usable video RAM for setting up the ENB
-                pre.mt0
-                    | Extract the archive and run VRamSizeDX9.exe
-                    | Take note of the number for use in the enblocal.ini
+    +important This section is still being tested
 
-    //-
-        ENBoost
-        Updated 2019-04-02
-    //-
-    #enboost
-        +name('ENBoost', 'http://enbdev.com/mod_falloutnv_v0322.htm', 'tool')
-        +modInfo
-            +author Boris Vorontsov
-            +version v0.322
-            +installation Download #[+file('enbseries_falloutnv_v0322.zip')]
-            +instructions('raised')
-                | Open the archive and navigate into the "WrapperVersion" folder
-                |
-                | Extract everything into the Fallout New Vegas root folder except:
-                |
-                | * license_en.txt
-                | * readme_en.txt
+    //- ENBoost
+    - modId = 'enboost'
+    - modName = 'FNV Large Texture Support - ENB Settings'
+    - modUrl = 'http://enbdev.com/mod_falloutnv_v0322.htm'
+    - fileType = 'tool'
+    - modAuthor = 'Boris Vorontsov'
+    - modVersion = 'v0.322'
+    - mainFiles = ['enbseries_falloutnv_v0322.zip']
+    +mod
+        +instructions
+            | Open the archive and navigate into the "WrapperVersion" folder
+            |
+            | Copy the following into the root Fallout New Vegas folder:
+            |
+            | * d3d9.dll
+            | * enbhost.exe
 
-            +instructions('raised')
-                | Navigate the Fallout New Vegas folder
-                | Open enseries.ini and make the following change
+
+    //- FNV Large Texture Support - ENB Settings
+    - modId = 'fnv-large-texture-support-enb'
+    - modName = 'FNV Large Texture Support - ENB Settings'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66626'
+    - modAuthor = 'DcCharge'
+    - modVersion = '1.01'
+    - mainFiles = ['Large Texture Support - Enb Boost - DLL Setup']
+    +mod
+        +instructions
+            | Copy the following files into the root Fallout New Vegas directory:
+            |
+            | * enblocal.ini
+            | * enbseries.ini
+
+        +ini('Set VideoMemorySizeMb')
+            | ; Pick your VideoMemorySizeMb from the following chart:
+            |
+            | ; Graphics Video Ram	VideoMemorySizeMb
+            | ; ------------------	-----------------
+            | ; 1 Gb			    1024		
+            | ; 2 Gb			    2048		
+            | ; 3 Gb			    3072		
+            | ; 4 Gb			    4096		
+            | ; 5 Gb			    5120		
+            | ; 6 Gb			    6144		
+            | ; 7 Gb			    7168		
+            | ; 8 Gb			    8192		
+            | ; 9 Gb			    9216		
+            | ; 10 Gb			    10240	
+            |
+            | ; Use the value you selected in place of 8192
+            | [MEMORY]:
+            | VideoMemorySizeMb=8192
+
+        +ini('Disable SpeedHack for NVR')
+            | [PERFORMANCE]
+            | SpeedHack=false
+
     
-            .raised
-                +ini('Disable the ENB effects')
-                    | ; Put on the first line
-                    | UseEffect=false
-            
-            +instructions('raised')
-                | Navigate the Fallout New Vegas folder
-                | Open enblocal.ini and make the following changes
+    //- NVR - New Vegas Reloaded
+    - modId = 'nvr'
+    - modName = 'NVR - New Vegas Reloaded'
+    - modUrl = 'http://tesreloaded.com/thread/494/package'
+    - fileType = 'fnv'
+    - modAuthor = 'Alenet, Timeslip, Scanti, ShadeMe, Ethatron'
+    - modVersion = '1.3.0'
+    - mainFiles = ['NVR v1.3.0']
+    +mod
+        +instructions
+            | Navigate to the Fallout New Vegas root directory
+            |
+            | Rename: binkw32.dll -> binkw32_backup.dll
+            |
+            | Copy the binkw32.dll from the archive into the Fallout New Vegas directory
+        +mispack
+            | Right click "Data"
 
-            .raised
-                +ini('Set the memory settings')
-                    | [MEMORY]
-                    | ExpandSystemMemoryX64=false
-                    | ReduceSystemMemoryUsage=true
-                    | DisableDriverMemoryManager=false
-                    | DisablePreloadToVRAM=false
-                    |
-                    | ; As a last resort, setting this to 'true' may actually benefit some people getting stutter.  
-                    | ; Beware that it could potentially cause CTDs on some systems.
-                    | EnableUnsafeMemoryHacks=false
-                    |
-                    | ; Possible values include 128, 256, or 512. 
-                    | ; It may require some tweaking depending on system hardware, but 256 is a good starting point.
-                    | ReservedMemorySizeMb=256
-                    |
-                    | ; Subtract 350 from the output of the VRamTestTool and put it here
-                    | VideoMemorySizeMb=
-                    | AutodetectVideoMemorySize=false
-                    | 
-                    | ; Weaker systems may benefit from this setting being false.
-                    | EnableCompression=true 
+    
+    //- FNV Large Texture Support - NVR Ini
+    - modId = 'fnv-large-texture-support-nvr'
+    - modName = 'FNV Large Texture Support - NVR Ini'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66626'
+    - modAuthor = 'DcCharge'
+    - modVersion = '1.01'
+    - mainFiles = ['Large Texture Support - New Vegas Reloaded - Mod']
+    +mod
+        +instructions
+            | Install only NVSE\Plugins\NewVegasReloaded.ini

@@ -209,24 +209,74 @@ fBlockLoadDistanceLow=100000.0000</pre></div><div class="instruction-block"><p c
 fForegroundMouseAccelBase=0
 fForegroundMouseAccelTop=0
 fForegroundMouseBase=0
-fForegroundMouseMult=0</pre></div></div></section><section id="fixes-and-extensions"><h2>Fixes and Extensions</h2><div id="jip-ln-nvse-plugin"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank" rel="noopener">JIP LN NVSE Plugin</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Jazzisparis and LuthienAnarion</p><p class="mt0 mb0"><span class="b">Version: </span> 55.05</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+fForegroundMouseMult=0</pre></div></div></section><section id="enb"><h2>ENB and NVR</h2><p class="important mb0">This section is still being tested</p><div id="enboost"><h6 class="mod-name mb0"><a class="tool-color" href="http://enbdev.com/mod_falloutnv_v0322.htm" target="_blank" rel="noopener">FNV Large Texture Support - ENB Settings</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Boris Vorontsov</p><p class="mt0 mb0"><span class="b">Version: </span> v0.322</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">enbseries_falloutnv_v0322.zip</span>
+main file</p><div class="instruction-block"><pre>Open the archive and navigate into the "WrapperVersion" folder
+
+Copy the following into the root Fallout New Vegas folder:
+
+* d3d9.dll
+* enbhost.exe</pre></div></div></div><div id="fnv-large-texture-support-enb"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/66626" target="_blank" rel="noopener">FNV Large Texture Support - ENB Settings</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> DcCharge</p><p class="mt0 mb0"><span class="b">Version: </span> 1.01</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">Large Texture Support - Enb Boost - DLL Setup</span>
+main file</p><div class="instruction-block"><pre>Copy the following files into the root Fallout New Vegas directory:
+
+* enblocal.ini
+* enbseries.ini</pre></div><div class="instruction-block"><p class="ini mb0">Set VideoMemorySizeMb</p><pre class="mt0">; Pick your VideoMemorySizeMb from the following chart:
+
+; Graphics Video Ram	VideoMemorySizeMb
+; ------------------	-----------------
+; 1 Gb			    1024		
+; 2 Gb			    2048		
+; 3 Gb			    3072		
+; 4 Gb			    4096		
+; 5 Gb			    5120		
+; 6 Gb			    6144		
+; 7 Gb			    7168		
+; 8 Gb			    8192		
+; 9 Gb			    9216		
+; 10 Gb			    10240	
+
+; Use the value you selected in place of 8192
+[MEMORY]:
+VideoMemorySizeMb=8192</pre></div><div class="instruction-block"><p class="ini mb0">Disable SpeedHack for NVR</p><pre class="mt0">[PERFORMANCE]
+SpeedHack=false</pre></div></div></div><div id="nvr"><h6 class="mod-name mb0"><a class="fnv-color" href="http://tesreloaded.com/thread/494/package" target="_blank" rel="noopener">NVR - New Vegas Reloaded</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Alenet, Timeslip, Scanti, ShadeMe, Ethatron</p><p class="mt0 mb0"><span class="b">Version: </span> 1.3.0</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">NVR v1.3.0</span>
+main file</p><div class="instruction-block"><pre>Navigate to the Fallout New Vegas root directory
+
+Rename: binkw32.dll -> binkw32_backup.dll
+
+Copy the binkw32.dll from the archive into the Fallout New Vegas directory</pre></div><div class="raised"><p class="mispackage mb0">Packaged Incorrectly</p><pre class="mt0">This mod is packaged incorrectly
+Right click "Data"
+Right click and select [Set Data Directory] and click [OK]</pre></div></div></div><div id="fnv-large-texture-support-nvr"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/66626" target="_blank" rel="noopener">FNV Large Texture Support - NVR Ini</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> DcCharge</p><p class="mt0 mb0"><span class="b">Version: </span> 1.01</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">Large Texture Support - New Vegas Reloaded - Mod</span>
+main file</p><div class="instruction-block"><pre>Install only NVSE\Plugins\NewVegasReloaded.ini</pre></div></div></div></section><section id="fixes-and-extensions"><h2>Fixes and Extensions</h2><div id="jip-ln-nvse-plugin"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/58277" target="_blank" rel="noopener">JIP LN NVSE Plugin</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Jazzisparis and LuthienAnarion</p><p class="mt0 mb0"><span class="b">Version: </span> 55.05</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
 <span class="file">JIP LN NVSE Plugin</span>
 main file</p><p class="mt0 mb0"> <span class="b">Mod Notes: </span> This plugin is an extension of the New Vegas Script Extender (NVSE). It adds 800+ new functions, 
 which can be used in GECK scripting and (in some cases) as conditions. Additionally, this mod 
 includes numerous engine bug fixes/tweaks, and restores several broken game features.</p></div></div><div id="nvac"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/53635" target="_blank" rel="noopener">NVAC - New Vegas Anti Crash</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Queue</p><p class="mt0 mb0"><span class="b">Version: </span> 7.5.1.0</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
 <span class="file">NVAC - New Vegas Anti Crash</span>
-main file</p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>This mod extends error handling of New Vegas, leading to fewer crashes.</p></div></div><div id="nvtf"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/66537" target="_blank" rel="noopener">NVTF - New Vegas Tick Fix</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> SCarxt - Tgspy</p><p class="mt0 mb0"><span class="b">Version: </span> 1.3</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
-<span class="file">New Vegas Tick Fix</span>
+main file</p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>This mod extends error handling of New Vegas, leading to fewer crashes.</p></div></div><div id="nvsr"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/34832" target="_blank" rel="noopener">NVSR - New Vegas Stutter Remover</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> SkyRanger-1</p><p class="mt0 mb0"><span class="b">Version: </span> 4.1.3.6</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">NVSR_4-1-36</span>
 main file</p><div class="raised"><p class="mispackage mb0">Packaged Incorrectly</p><pre class="mt0">This mod is packaged incorrectly
-During install right click and select "Create folder"
-Name the new folder NVSE
-
-Right click the new NVSE folder and create a new folder
-Name the new folder plugins
-
-Move FastExitnTickCountReplace.dll and FastExitnTickCountReplace.ini into the new plugins folder
-
-Click [OK]</pre></div></div></div></section><section id="ui"><h2>User Interface</h2><div id="better-pick-up-prompt"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/63091" target="_blank" rel="noopener">Better Pickup Prompt</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Ladez</p><p class="mt0 mb0"><span class="b">Version: </span> 2.0</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+Select "Data"
+Right click and select [Set Data Directory] and click [OK]</pre></div><div class="instruction-block"><p class="ini mb0">Edit the NVSR ini</p><pre class="mt0">Master = {
+	_comment = You can turn on or off each distinct feature from here.
+	bManageFPS = 0
+	bHookCriticalSections = 1
+	bHookLightCriticalSections = 1
+	bHookHashtables = 1
+	bReplaceHeap = 1
+	bReplaceGetTickCount = 1
+	bLogToConsole = 0
+	bFastExit = 1
+	bFlushLog = 1
+	iSchedulingResolution = 1
+	bReplaceRandom = 1
+	bExperimentalStuff = 0
+	iMainHookPoint = 1
+}</pre></div></div></div><div id="one-tweak"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/59266" target="_blank" rel="noopener">One Tweak</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> virusek</p><p class="mt0 mb0"><span class="b">Version: </span> 2.0.1.1</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
+<span class="file">OneTweak for Fallout New Vegas</span>
+main file</p></div></div></section><section id="ui"><h2>User Interface</h2><div id="better-pick-up-prompt"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/63091" target="_blank" rel="noopener">Better Pickup Prompt</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> Ladez</p><p class="mt0 mb0"><span class="b">Version: </span> 2.0</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
 <span class="file">Better Pickup Prompt</span>
 main file</p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>Makes several improvements to the pickup prompt that appears 
 when you look at an item</p></div></div><div id="jip-ccc"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/50468" target="_blank" rel="noopener">JIP Companions Command and Control</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"><span class="b">Author: </span> jazzisparis</p><p class="mt0 mb0"><span class="b">Version: </span> 2.60</p><p class="mt0 mb0"><span class="b">Installation: </span>Install
@@ -291,13 +341,6 @@ main file</p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>Says it right
 replaces the quicksave system with an actually stable, non-save
 corrupting version</p></div></div><div id="enhanced-camera"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/45652" target="_blank" rel="noopener">Enhanced Camera</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>LogicDragon</p><p class="mt0 mb0"> <span class="b">Version: </span>1.4c</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">Enhanced Camera 1.4c</span></p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>Enables a visible body and player shadows when in 
 1st person and changes 3rd person animations to 1st person</p></div></div><div id="fov-slider"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/55085" target="_blank" rel="noopener">FOV Slider</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>Roy Batty</p><p class="mt0 mb0"> <span class="b">Version: </span>2.7</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">FOV Slider</span></p><p class="mt0 mb0"> <span class="b">Mod Notes: </span>Adds an MCM menu with options for adjusting all types of FOV</p></div></div><div id="sortomatic"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/41142" target="_blank" rel="noopener">Sortomatic</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>tunaisafish and Gribbleshnibit8</p><p class="mt0 mb0"> <span class="b">Version: </span>1.3</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">Sortomatic_v1_3</span></p></div></div><div id="sortomatic-ingredient"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/65921" target="_blank" rel="noopener">Sortomatic Ingredient Loader</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>pintocat</p><p class="mt0 mb0"> <span class="b">Version: </span>1.1</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">Sortomatic Ingredient Loader 1-1</span></p></div></div><div id="sortomatic-homes"><h6 class="mod-name mb0"><a class="ttw-color" href="https://www.nexusmods.com/newvegas/mods/65988" target="_blank" rel="noopener">TTW DLC Sortomatic Homes</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>pintocat</p><p class="mt0 mb0"> <span class="b">Version: </span>1.0</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">TTW DLC Sortomatic Homes 1-0</span></p></div></div><div id="universal-item-sorter"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/63867" target="_blank" rel="noopener">Universal Item Sorter</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>PushTheWinButton</p><p class="mt0 mb0"> <span class="b">Version: </span>1.06</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">Universal Item Sorter</span></p><div class="instruction-block"><pre>Right click on Vanilla UI Plus in the left pane of Mod Organizer
-Select "Open In Explorer"
-
-Navigate to menus\prefabs\VUI+\
-Open settings.xml in a text editor
-
-Change <_VUI+noMODSlabel> to 1
-Save and exit</pre></div><p class="mt0 mb0"> <span class="b">Mod Notes: </span>Adds configurable prefixes before items in the pip-boy menu</p></div></div><div id="universal-item-sorter"><h6 class="mod-name mb0"><a class="fnv-color" href="https://www.nexusmods.com/newvegas/mods/63867" target="_blank" rel="noopener">Universal Item Sorter</a></h6><div class="mod-card-bg mt0"><p class="mt0 mb0"> <span class="b">Author:</span>PushTheWinButton</p><p class="mt0 mb0"> <span class="b">Version: </span>1.06</p><p class="mt0 mb0"> <span class="b">Installation: </span>Install <span class="file">Universal Item Sorter</span></p><div class="instruction-block"><pre>Right click on Vanilla UI Plus in the left pane of Mod Organizer
 Select "Open In Explorer"
 
 Navigate to menus\prefabs\VUI+\
@@ -803,4 +846,4 @@ Close FNVEdit and save the plugin, ensure "Backup plugins" is unchecked
 Repeat this process for all plugins that are not part of TTW or vanilla ESMs</pre><p class="important mb0">Shortcuts WILL NOT WORK - only process one plugin at a time</p></section><section id="run-loot"><h2>Run LOOT</h2><pre>Open LOOT through Mod Organizer 
 Sort the mod list
 Click [Apply] when the list of mods is presented
-Close LOOT. </pre></section></main><nav><ul><li class="nav-header"><a href="#guide">☢️ TTW:OEE</a></li><li><a href="#introduction">Introduction</a></li><li><a href="#tools">Tools</a></li><li><a href="#setup">Setup</a></li><li><a href="#configure-mod-organizer">Mod Organizer</a></li><li><a href="#ttw">Install TTW</a></li><li><a href="#cleaning-esms">Cleaning Bethesda ESMs</a></li><li><a href="#ini-tweaks">Ini Tweaks</a></li><li><a href="#fixes-and-extensions">Fixes and Extensions</a></li><li><a href="#ui">User Interface</a></li><li><a href="#qol">Quality of Life</a></li><li><a href="#physics">Physics</a></li><li><a href="#cut-content">Cut Content</a></li><li><a href="#exploration">Exploration</a></li><li><a href="#quests">Quests</a></li><li><a href="#textures">Textures</a></li><li><a href="#environment">Environment</a></li><li><a href="#creatures">Creatures</a></li><li><a href="#npcs">NPCs</a></li><li><a href="#armor">Armor</a></li><li><a href="#weapons">Weapons</a></li><li><a href="#effects">Effects</a></li><li><a href="#lighting">Lighting</a></li><li><a href="#gameplay">Gameplay</a></li><li><a href="#lod">LOD</a></li><li><a href="#bash-tags">Generate Bash Tags </a></li><li><a href="#run-loot">Run LOOT</a></li></ul></nav></body></html>
+Close LOOT. </pre></section></main><nav><ul><li class="nav-header"><a href="#guide">☢️ TTW:OEE</a></li><li><a href="#introduction">Introduction</a></li><li><a href="#tools">Tools</a></li><li><a href="#setup">Setup</a></li><li><a href="#configure-mod-organizer">Mod Organizer</a></li><li><a href="#ttw">Install TTW</a></li><li><a href="#cleaning-esms">Cleaning Bethesda ESMs</a></li><li><a href="#ini-tweaks">Ini Tweaks</a></li><li><a href="#enb">ENB and NVR</a></li><li><a href="#fixes-and-extensions">Fixes and Extensions</a></li><li><a href="#ui">User Interface</a></li><li><a href="#qol">Quality of Life</a></li><li><a href="#physics">Physics</a></li><li><a href="#cut-content">Cut Content</a></li><li><a href="#exploration">Exploration</a></li><li><a href="#quests">Quests</a></li><li><a href="#textures">Textures</a></li><li><a href="#environment">Environment</a></li><li><a href="#creatures">Creatures</a></li><li><a href="#npcs">NPCs</a></li><li><a href="#armor">Armor</a></li><li><a href="#weapons">Weapons</a></li><li><a href="#effects">Effects</a></li><li><a href="#lighting">Lighting</a></li><li><a href="#gameplay">Gameplay</a></li><li><a href="#lod">LOD</a></li><li><a href="#bash-tags">Generate Bash Tags </a></li><li><a href="#run-loot">Run LOOT</a></li></ul></nav></body></html>
