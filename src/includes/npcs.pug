@@ -1,9 +1,5 @@
 //-
     NPCs
-    Updated 2019-04-02
-
-    Potential mods
-        - Immersive mouth and teeth - https://www.nexusmods.com/newvegas/mods/66630 and https://www.nexusmods.com/fallout3/mods/23527
 //-
 
 - sections.push(['#npcs', 'NPCs'])
@@ -12,65 +8,58 @@
 section#npcs
     h2 NPCs
 
-    //-
-        Authentic Burned Man
-        Updated 2019-03-22
-    //-
-    #authentic-burned-man
-        +name('Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974')
-        +modInfo
-            +author Rocket
-            +version 1.0
-            +installation Install #[+file('Better Burned Man')]
-            +instructions TO DO - Requires cleaning
-            +notes
-                | This redesigns Joshua Graham, The Burned Man, to much more closely match his
-                | appearance in the game art. Now he actually looks burnt! 
-
-    //-
-        Beards
-        Updated 2019-03-22
-    //-
-    #beards
-        +name('Beards', 'https://www.nexusmods.com/newvegas/mods/49624')
-        +modInfo
-            +author Drumber
-            +version 1.0
-            +installation Install #[+file('HQ Beards 2048x2048')]
-            +optionalEsps('Beards', 'Beards.esp')
-            +notes Nice beards.
-
-    //-
-        Immersive Mouth and Teeth FO3
-        Updated 2019-04-02
-    //-
-    #immersive-mouth-and-teeth-fo3
-        +name('Immersive Mouth and Teeth FO3', 'https://www.nexusmods.com/fallout3/mods/23527')
-        +modInfo
-            +author ClearanceClarence
-            +version 1.0
-            +installation Install #[+file('Immersive Mouth and Teeth - F3 Version - 2K - 1.0')]
+    //- Authentic Burned Man
+    - modId = 'authentic-burned-man'
+    - modName = 'Authentic Burned Man'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/41974'
+    - modVersion = '1.0'
+    - modAuthor = 'Rocket'
+    - mainFiles = ['Better Burned Man']
+    +mod
+        +instructions TO DO - Requires cleaning
+        +notes
+            | This redesigns Joshua Graham, The Burned Man, to much more closely match his
+            | appearance in the game art. Now he actually looks burnt! 
 
 
-    //-
-        Immersive Mouth and Teeth FNV
-        Updated 2019-04-02
-    //-
-    #immersive-mouth-and-teeth-fnv
-        +name('Immersive Mouth and Teeth FNV', 'https://www.nexusmods.com/newvegas/mods/66630')
-        +modInfo
-            +author ClearanceClarence
-            +version 1.0
-            +installation Install #[+file('Immersive Mouth and Teeth - FNV Version - 2K - 1.0')]
+    //- Beards
+    - modId = 'beards'
+    - modName = 'Beards'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/49624'
+    - modVersion = '1.0'
+    - modAuthor = 'Drumber'
+    - mainFiles = ['HQ Beards 2048x2048']
+    +mod
+        +optionalEsps('Beards', 'Beards.esp')
+        +notes Nice beards.
 
 
-    //-
-        Naturual Eyes
-        Updated 2019-04-02
-    //-
-    #natural-eyes
-        +name('Natural Eyes', 'https://www.nexusmods.com/newvegas/mods/62811')
-        +modInfo
-            +author zzjay
-            +version 1.1
-            +installation Install #[+file('Eyes Smaller Iris')]
+    //- Immersive Mouth and Teeth FO3
+    - modId = 'immersive-mouth-and-teeth-fo3'
+    - modName = 'Immersive Mouth and Teeth FO3'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/23527'
+    - modVersion = '1.0'
+    - modAuthor = 'ClearanceClarence'
+    - mainFiles = ['Immersive Mouth and Teeth - F3 Version - 2K - 1.0']
+    +mod
+
+
+    //- Immersive Mouth and Teeth FNV
+    - modId = 'immersive-mouth-and-teeth-fnv'
+    - modName = 'Immersive Mouth and Teeth FNV'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66630'
+    - modVersion = '1.0'
+    - modAuthor = 'ClearanceClarence'
+    - mainFiles = ['Immersive Mouth and Teeth - FNV Version - 2K - 1.0']
+    +mod
+
+
+    //- Natural Eyes
+    - modId = 'natural-eyes'
+    - modName = 'Natural Eyes'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62811'
+    - modVersion = '1.1'
+    - modAuthor = 'zzjay'
+    - mainFiles = ['Eyes Smaller Iris']
+    +mod
+
