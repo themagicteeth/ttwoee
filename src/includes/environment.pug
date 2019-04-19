@@ -9,37 +9,33 @@
 section#environment
     h2 Environment
 
-    //-
-        Gas Pumps of New Vegas
-        Updated 2019-03-22
-    //-
-    #gas-pumps-of-new-vegas
-        +name('Gas Pumps of New Vegas', 'https://www.nexusmods.com/newvegas/mods/60246')
-        +modInfo
-            +author EdibleGrenade12, Thaiauxn
-            +version v1.5
-            +installation 
-                | Install #[+file('Gas Pumps of NV Ver. 1.0')] main file, and 
-                | #[+file('Gas Pumps of NV Update 1.5')] update file.
-            +notes 
-                | There are gas stations in New Vegas, but where are the gas pumps? 
-                | This mod puts them where I think they should be. 
+    //- Gas Pumps of New Vegas
+    - modId = 'gas-pumps-of-new-vegas'
+    - modName = 'Gas Pumps of New Vegas'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/60246'
+    - modAuthor = 'EdibleGrenade12, Thaiauxn'
+    - modVersion = 'v1.5'
+    - mainFiles = ['Gas Pumps of NV Ver. 1.0']
+    - updateFiles = ['Gas Pumps of NV Update 1.5']
+    +mod
+        +notes
+            | There are gas stations in New Vegas, but where are the gas pumps? 
+            | This mod puts them where I think they should be. 
 
-    //-
-        Vault 22 Flora Overhaul
-        Updated 2019-03-22
-    //-
-    #vault-22-flora-overhaul
-        +name('Vault 22 Flora Overhaul', 'https://www.nexusmods.com/newvegas/mods/54472')
-        +modInfo
-            +author Macintroll
-            +version 1.1
-            +installation Install #[+file('Vault 22 FloraOverhaul Alpha 1-1')]
-            +mispackaged
-                | This mod is packaged incorrectly
-                | Expand "Vault22FloraOverhaul-mod"
-                | Right click "data" and select [Set Data Directory] and click OK
-            +notes 
-                | This mod trys to add realistic flora overgrown in the vault 22. All levels have 
-                | been modified and cluttered with more flora, ivy, bushes, grasses and some creepy things.
-                | Game play should be a little more difficult but main quest is almost untouched.
+
+    //- Vault 22 Flora Overhaul
+    - modId = 'vault-22-flora-overhaul'
+    - modName = 'Vault 22 Flora Overhaul'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/54472'
+    - modAuthor = 'Macintroll'
+    - modVersion = '1.1'
+    - mainFiles = ['Vault 22 FloraOverhaul Alpha 1-1']
+    +mod
+        +mispackaged
+            | This mod is packaged incorrectly
+            | Expand "Vault22FloraOverhaul-mod"
+            | Right click "data" and select [Set Data Directory] and click OK
+        +notes 
+            | This mod trys to add realistic flora overgrown in the vault 22. All levels have 
+            | been modified and cluttered with more flora, ivy, bushes, grasses and some creepy things.
+            | Game play should be a little more difficult but main quest is almost untouched.
