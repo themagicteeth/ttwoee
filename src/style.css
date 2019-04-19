@@ -9,30 +9,85 @@
   font-weight: normal;
   font-style: normal;
 }
-
+:root {
+  --page-bg: #0a1919;
+  --mod-card-bg: #91a6bb;
+  --instructions-bg: #d3d3d3;
+  --important-bg: #ff6653;
+  --ini-bg: #7494ff;
+  --merge-bg: #eb8cba;
+  --optional-bg: #f68f3b;
+  --settings-bg: #d9b400;
+  --mod-name-bg: #2f4f4f;
+  --copy-bg: gray;
+  --menu-accent-bg: #4caf50;
+  --tool-color: #9666fc;
+  --fo3-mod-color: #74fc39;
+  --fnv-mod-color: #fcb040;
+  --ttw-mod-color: #7bdefc;
+  --hidden-bg: #4597de;
+  --mispackage-bg: #8c7b4c;
+  --white: #fff;
+  --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
+}
 body {
   background-color: var(--page-bg);
   margin-left: 0;
-  margin-right: 0;
   margin-bottom: 5rem;
 }
-
 main {
   margin: 0 auto;
   width: 98%;
 }
 
-/* Section header font sizes */
-h1 {font-size: 3rem;}
-h2 {font-size: 2.5rem;}
-h3 {font-size: 2rem;}
-h4 {font-size: 1.75rem;}
+.important {
+  font-family: sans-serif;
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.25rem;
+}
 
-/* Section header styles */
-.section-header {
+.copy-bg {
+  background-color: var(--copy-bg);
+  padding: 0.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Section header font sizes */
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
   color: var(--white);
   font-family: "Monofonto", sans-serif;
   margin-bottom: 0;
+}
+
+/* Link colors */
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: Monofonto, sans-serif;
+}
+/* Generic link hover style */
+a:hover {
+  text-decoration: underline;
 }
 
 /* Instructions */
@@ -56,22 +111,34 @@ pre {
 }
 
 /* Helper classes */
-.mw-100 {max-width: 100%;}
-.b {font-weight: bold;}
-.raised {box-shadow: var(--raised-shadow);}
-.mt0 {margin-top: 0;}
+.mw-100 {
+  max-width: 100%;
+}
+.b {
+  font-weight: bold;
+}
+.mod-card-bg .instruction-block,
+.raised {
+  box-shadow: var(--raised-shadow);
+}
+.mt0 {
+  margin-top: 0;
+}
+.mb0 {
+  margin-bottom: 0;
+}
 
-/* Link colors */
-a {color: var(--white)}
-.tool-color {color: var(--tool-color);}
-.fo3-color {color: var(--fo3-mod-color);}
-.fnv-color {color: var(--fnv-mod-color);}
-.ttw-color {color: var(--ttw-mod-color);}
-
-/* Default link shared styles */
-a {
-  text-decoration: none;
-  font-family: Monofonto, sans-serif;
+.tool-color {
+  color: var(--tool-color);
+}
+.fo3-color {
+  color: var(--fo3-mod-color);
+}
+.fnv-color {
+  color: var(--fnv-mod-color);
+}
+.ttw-color {
+  color: var(--ttw-mod-color);
 }
 
 /* Link styles */
@@ -81,11 +148,6 @@ a {
 .tool-color {
   font-size: 1.25rem;
   padding-left: 0.5rem;
-}
-
-/* Generic link hover style */
-a:hover {
-  text-decoration: underline;
 }
 
 /* Link hover styles */
@@ -113,12 +175,24 @@ a:hover {
 }
 
 /* Special header colors */
-.ini {background-color: var(--ini-bg);}
-.important {background-color: var(--important-bg);}
-.merge {background-color: var(--merge-bg);}
-.optional {background-color: var(--optional-bg);}
-.hidden {background-color: var(--hidden-bg);}
-.mispackage {background-color: var(--mispackage-bg);}
+.ini {
+  background-color: var(--ini-bg);
+}
+.important {
+  background-color: var(--important-bg);
+}
+.merge {
+  background-color: var(--merge-bg);
+}
+.optional {
+  background-color: var(--optional-bg);
+}
+.hidden {
+  background-color: var(--hidden-bg);
+}
+.mispackage {
+  background-color: var(--mispackage-bg);
+}
 
 /* Mod card name style */
 .mod-name {
@@ -144,18 +218,43 @@ a:hover {
   padding-right: 0.5rem;
 }
 
-ul li ul {
-  background-color: #ffffff;
+nav {
+  display: none;
+}
+
+ul,
+li {
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+li a {
+  padding-left: 1rem;
+}
+
+.nav-header {
+  font-size: 2rem;
+  font-family: Monofonto, sans-serif;
+  padding-left: 0.5rem;
+  background: var(--menu-accent-bg);
+  border-bottom: solid thin black;
 }
 
 li,
-li a,
-li:hover ul li a {
+li a {
   color: #000000;
-
 }
 
-li:hover ul li:hover a,
 li:hover a,
 .nav-header a {
   color: #ffffff;
@@ -170,35 +269,6 @@ li:focus-within {
 
 li:focus-within a {
   outline: none;
-}
-
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  min-width: 25rem;
-  position: absolute;
-  margin-top: 0;
-  display: none;
-  margin-left: 50%;
-  z-index: 1;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  top: 0;
-  box-shadow: 4px 3px 3px 3px rgba(41, 41, 41, 0.3);
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
 }
 
 @media screen and (min-width: 60em) {

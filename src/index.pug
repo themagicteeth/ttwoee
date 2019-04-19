@@ -1,4 +1,6 @@
 include includes/mixins/mixins.pug
+include includes/mixins/newmixins.pug
+
 
 - let sections = []
 - let mods = []
@@ -39,6 +41,7 @@ html(lang="en")
             //- include includes/enb.pug
             include includes/fixes-and-extensions.pug
             include includes/ui/ui.pug
+            include includes/ui/qol.pug
             include includes/physics.pug
             include includes/cut-content.pug
             include includes/location.pug
@@ -57,4 +60,4 @@ html(lang="en")
             include includes/runloot.pug
 
         include includes/layout/nav.pug
-        link(rel='stylesheet' type='text/css' href='style.css')
+        

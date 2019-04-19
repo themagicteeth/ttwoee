@@ -4,19 +4,20 @@
 //-
 
 - sections.push(['#ini-tweaks', 'Ini Tweaks'])
+- mods.push([])
 
 section#ini-tweaks
-    h2.section-header Initial Ini Tweaks
+    h2 Initial Ini Tweaks
 
-    p.copy-bg 
+    +copy
         | The following INI tweaks tweak the games engine to enhance visuals, stability, and performance.
         | a very good reference for many tweaks can be found at 
         | #[+link('Gamepedia', 'https://fallout.gamepedia.com/Fallout.ini_(Gamebryo)')]
 
     #fallout-custom-ini
-        h3.section-header FalloutCustom.ini
+        h3 FalloutCustom.ini
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | Tale of Two Wastlands during installation created a FalloutCustom.ini located in
             | Documents\My Games\FalloutNV\FalloutCUstom.ini, these ini settings must be copied
             | into Mod Organizer.
@@ -28,7 +29,7 @@ section#ini-tweaks
             | Verify falloutcustom.ini is selected
             | Paste in the contents of FalloutCustom.ini
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | There are a few more tweaks to improve graphics and performance that should be added
             | to the FalloutCustom.ini. Follow the instructions below to add them.
         pre.mt0
@@ -37,8 +38,7 @@ section#ini-tweaks
             | Verify falloutcustom.ini is selected and add the tweaks in the following subsections.
             | Click [Save] and close the window. 
 
-        +ini Light distance fade
-        pre.mt0
+        +ini('Light distance fade')
             | [Display]
             | fLightLODDefaultStartFade=10240.0
             | fLightLODRange=10240.0
@@ -53,38 +53,31 @@ section#ini-tweaks
             | fSpecularLODMinStartFade=10240.0
             | fSpecularLODMaxStartFade=10240.0
 
-        +ini Extending LOD
-        pre.mt0
+        +ini('Extending LOD')
             | [LOD]
             | bDisplayLODBuildings=1
             | fLODFadeOutMultItems=15
             | fLODFadeOutMultObjects=15
             | fLODFadeOutMultActors=15
         
-        +ini Increase grass render distance
-        pre.mt0
+        +ini('Increase grass render distance')
             | [Grass]
             | fGrassStartFadeDistance=17000
     
-        +ini Set resolution
-        pre.mt0
+        +ini('Set resolution')
             | [Display]
             | ; Horizontal
             | iSize W=1920
             | ; Vertical
             | iSize H=1080
 
-        +ini Double LOD distance
-        pre.mt0
+        +ini('Double LOD distance')
             | [TerrainManager]
             | fBlockLoadDistanceLow=100000.0000
 
-        +ini Mouse acceleration
-        pre.mt0
+        +ini('Mouse acceleration')
             | [Controls]
             | fForegroundMouseAccelBase=0
             | fForegroundMouseAccelTop=0
             | fForegroundMouseBase=0
             | fForegroundMouseMult=0
-
-- mods.push([])

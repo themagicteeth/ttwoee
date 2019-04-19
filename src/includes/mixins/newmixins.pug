@@ -1,0 +1,409 @@
+
+//-
+    These are global variables that are set 
+    throughout pages. They should be reset after
+    each use.
+//-
+- let modId            //- Kebab cased mod name
+- let modName          //- The name of the mod
+- let modUrl           //- URL to the mods page
+- let modAuthor        //- Author(s) of the mod (optional)
+- let modVersion       //- The mods version (optional)
+- let modNotes         //- Notes about the mod (optional)
+- let mainFiles        //- Main files (optional)
+- let updateFiles      //- Update files (optional)
+- let optionalFiles    //- Optional files (optional)
+- let downloadFilesb   //- Download files (optional)
+- let miscFiles        //- Miscellaneous files (optional)
+- let fileType = null      //- Type of file (optional)
+
+
+//-
+    Creates a mod card
+
+    - modId = 'kebab-case-mod-name'
+    - modName = 'Mod Name'
+    - modUrl = 'https://modspage.com'
+    - fileType = ['ttw']    (Can be either 'tools' or 'ttw')
+    - modAuthor = 'Author1 and Author 2'
+    - modVersion = '1.0'
+    - mainFiles = ['file1', 'file2']
+    - updateFiles = ['update']
+    - optionalFiles = ['optional']
+    - miscFiles = ['miscFile1', 'miscFile2']
+    - downloadFiles = ['doNotInstallJustDownload']   (Do not use with other files)
+    +mod
+        +notes
+            | Most commonly the notes mixin is used
+            | Other mixins can also be added here
+//-
+mixin mod
+    //- Container for the mod
+    div(id=modId)
+        +modTitle
+
+        //- Mod info is below
+        div.mod-card-bg.mt0
+
+            //- Check if author is set
+            if modAuthor
+                +modAuthor
+            
+            //- Check if version is set
+            if modVersion
+                +modVersion
+            
+            //- Check if any files are set
+            if mainFiles || updateFiles || optionalFiles || miscFiles || downloadFiles
+                +modInstall
+
+            //- Notes, and installation details here
+            block 
+
+    //- Reset the mod ID
+    - modId = null
+    
+
+//-
+    Creates the Author mod detail for mod cards.
+    This mixin is not called from templates.
+    It is set using the mod author variable.
+
+    - modAuthor = 'Author1 and Author 2'
+//- 
+mixin modAuthor
+    p.mt0.mb0 #[span.b Author: ] #{modAuthor}
+    //- Reset mod author
+    - modAuthor = null
+
+
+//-
+    Creates the Version mod detail for mod cards.
+    This mixin is not called from templates.
+    It is set using the modVersion variable.
+
+    - modVersion = '1.0'
+//-
+mixin modVersion
+    p.mt0.mb0 #[span.b Version: ] #{modVersion}
+    //- Reset mod version
+    - modVersion = null
+
+
+//-
+    Creates the mod card title, and link.
+    This mixin is not called from templates.
+    It is set using the modName, modUrl and
+    optionally the fileType variable.
+
+    - modName = 'Mods name'
+    - modUrl = 'https://modpage.com'
+    - fileType = 'ttw'    (Can be 'ttw', 'tools', 'fo3', or 'fnv')
+
+    Only set fileType if the mod is:
+        - Not on the Nexus
+        - Is a mod for TTW
+        - Is a tool, and not a mod
+//-
+mixin modTitle
+    //- Split the URL into an array, and parse the game from Nexus links
+    - let game = modUrl.split('/')[3]
+
+    //- TODO: Check if www is present
+    h6.mod-name.mb0
+        //- Fallout 3 (https://www.nexusmods.com/fallout3)
+        if game === 'fallout3' & fileType === null
+            +link(modName, modUrl, 'fo3-color')
+
+        //- New Vegas (https://www.nexusmods.com/newvegas)
+        else if game === 'newvegas' & fileType === null
+            +link(modName, modUrl, 'fnv-color')
+        
+        //- Set through fileType variable
+        //- 'tools', 'ttw', 'fnv', or 'fo3'
+        else
+            - let color = `${fileType}-color`
+            +link(modName, modUrl, color)
+
+    //- Reset name, file type and URL
+    - modName = null
+    - modUrl = null
+    - fileType = null
+
+
+//-
+    Creates and formats the installation files
+    Attempts to account for various types of files
+    and change the sentence structure and wording
+//-
+mixin modInstall
+    p.mt0.mb0 #[span.b Installation: ]
+        //- Checks if the file is to be installed or just downloaded
+        if !downloadFiles
+            | Install
+            |
+        else
+            | Download
+            |
+
+        //- Main files come first
+        if mainFiles
+            +mainFiles
+
+        //- Update files come second
+        if updateFiles
+            +updateFiles
+        
+        //- Optional files third
+        if optionalFiles
+            +optionalFiles
+
+        //- Misc files last
+        if miscFiles        
+            +miscFiles
+
+        //- Download files
+        if downloadFiles
+            +downloadFiles
+
+
+//-
+    Files listed as miscellaneous files
+    on the mod page
+//-
+mixin miscFiles
+    +files(miscFiles) 
+        | miscellaneous files
+    //- Reset misc files
+    - miscFiles = null
+
+
+//-
+    Files listed as update files on
+    the mod page
+//-
+mixin updateFiles
+    +files(updateFiles)
+        //- Make plural if more than one
+        if updateFiles.length > 1
+            | update files
+        else
+            | update file
+    //- If any other files, add a comma
+    if optionalFiles || miscFiles
+        |,
+        |
+    //- Reset update files
+    - updateFiles = null
+
+
+//-
+    Either files listed as the main file
+    on the mod page, or files that are not specified
+//-
+mixin mainFiles
+    +files(mainFiles)
+        //- Make plural if more than one
+        if mainFiles.length > 1
+            | main files
+        else
+            | main file
+    //- If any other files, add a comma
+    if updateFiles || optionalFiles || miscFiles
+        |,
+        |
+    //- Reset main files
+    - mainFiles = null
+
+
+//-
+    Files listed as optional on the 
+    mod page
+//-
+mixin optionalFiles
+    +files(optionalFiles)
+        //- Make plural if more than one
+        if optionalFiles > 1
+            | optional files
+        else 
+            | optional
+    //- If any other files, add a comma
+    if miscFiles
+        |,
+        |
+    //- Reset optional files
+    - optionalFiles = null
+
+
+//-
+    Files which are to be downloaded
+    but need more steps to install
+//-
+mixin downloadFiles
+    +files(downloadFiles)
+    //- Reset download files
+    - downloadFiles = null
+
+
+//-
+    Takes an array of files and attempts
+    to create a proper sentence and style
+    the names
+//-
+mixin files(files)
+    //- If there is only one file
+    if  files.length === 1
+        | #[+file(files[0])]
+        |
+
+    //- If there are multiple files
+    else
+        for file, index in files
+            //- If it is the last main file, add and
+            if index === files.length - 1
+                | and #[+file(file)]
+                |
+            //- If it is not the last
+            else
+                | #[+file(file)],
+                |
+    
+    //- Calling mixin will add text here
+    block
+
+
+//-
+    Creates mod notes for mod cards,
+    must be called after calling the mod
+    mixin as it goes within the block
+
+    +notes
+        | Lots of neat notes
+//-
+mixin notes
+    p.mt0.mb0 
+        span.b Mod Notes: 
+        block
+
+//-
+    Styles files
+
+    +file('File Name')
+//- 
+mixin file(name)
+    span.file #{name}
+
+
+//-
+    Creates a link with the proper
+    rel and target attributes, accepts
+    an undefined amount of classes
+
+    +link('Links name', 'https://link.com', 'class2', 'class1')
+//-
+mixin link(name, url, ...style)
+    a(href=url class=style.join(" ") target='_blank' rel="noopener") #{name}
+
+
+//-
+    Creates an instruction block for optional ESPs.
+    The mod variable is should be what the mod is called
+    in the left pane of Mod Organizer, this mixin
+    takes any number of ESPs/ESMs
+
+    +optionalEsps('A Cool Mod', 'esp1', 'esm1')
+//-
+mixin optionalEsps(mod, ...esps)
+    - let optionals = esps
+
+    //- If more than one ESP, split them and format them
+    if esps.length > 1
+        - optionals = esps.slice(0, -1).join(', ') + ', and ' + esps.slice(-1)
+
+    .raised
+        p.optional.mb0 Optional ESPs
+        pre.mt0
+            | Double click #{mod} in the left pane
+            | Go to the [Optional ESPs] tab.
+            | Move #{optionals} to the "Optional ESPs" box.
+
+
+//-
+    Mixin for mispackaged mods. Call the mixin
+    and add any instructions.
+
+    +mispack
+        | Your
+        | Instructions
+        | Here
+//-
+mixin mispack
+    .raised
+        p.mispackage.mb0 Packaged Incorrectly
+        pre.mt0
+            | This mod is packaged incorrectly
+            |
+            block
+            |
+            | Right click and select [Set Data Directory] and click [OK]
+
+
+//-
+    Use for copy text. Can take any number of classes.
+
+    +copy('mb0', 'mt0')
+        | Lots of words and more words
+        | Even more words
+//-
+mixin copy(...style)
+    p(class="copy-bg " + style.join(" "))
+        block
+
+
+//-
+    Creates an ini instruction block.
+//-
+mixin ini(title)
+    div.instruction-block
+        p.ini.mb0 #{title}
+        pre.mt0
+            block
+
+
+//-
+    Creates a hidden files/folders instruction block.
+
+    +hiden
+        | folder
+        | file
+        | file
+//-
+mixin hidden
+    div.instruction-block
+        p.hidden.mb0 Hidden Files
+        pre.mt0
+            | Hide the following files or folders:
+            |
+            block
+
+
+//-
+    Creates a general instructions block with no header
+    Takes any number of classes
+
+    +instructions('mb0', 'mt0')
+        | Do this
+        | Do that
+//-
+mixin instructions(...style)
+    div.instruction-block
+        pre(class=style.join(" "))
+            block
+
+mixin important2(title)
+    div.instruction-block
+        p.important.mb0 #{title}
+        pre.mt0
+            block
+
+

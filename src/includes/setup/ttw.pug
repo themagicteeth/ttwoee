@@ -1,13 +1,14 @@
 
 - sections.push(['#ttw', 'Install TTW'])
+- mods.push([])
 
 section#ttw
-    h2.section-header Install TTW
+    h2 Install TTW
 
     #create-ttwoee-profile
-        h3.section-header Create the TTWOEE Profile
+        h3 Create the TTWOEE Profile
 
-        p.copy-bg.mb0
+        +copy('mb0')
             | Now that an established clean "Fallout New Vegas" profile has been created an unmodified
             | New Vegas may be run at any time. However, the goal of the guide is to mod Fallout and 
             | so a new profile must be established, perform the following.
@@ -18,11 +19,11 @@ section#ttw
             | Type "TTWOEE" in the text box and hit [OK]. 
 
     #install-ttw        
-        h3.section-header Tale of Two Wastelands
+        h3 Tale of Two Wastelands
      
         +important Creating the TTW install files can take over an hour, ensure you have enough time to finish creating them
 
-        p.copy-bg
+        +copy
             | Next, Tale of Two Wastelands will be installed into this profile. Navigate to the mods 
             | download page below, and download the latest version, as well as any
             | hot fixes. Instructions are included as part of this guide so no need to use the ones 
@@ -74,7 +75,7 @@ section#ttw
                 .raised
                     +important Once you have created the TTW install files, you may uninstall Fallout 3 if you want
 
-        p.copy-bg
+        +copy
             | If you would like a clean save file in order to skip the long introduction quest 
             | you can use Tale of Two Wastelands Quick Start. You will have the opportunity to 
             | customize the character just like normal.
@@ -86,5 +87,3 @@ section#ttw
                 +version 1.2
                 +installation Install #[+file('TTW Quick Start')]
                 +notes Quick start plugin to skip Vault 101 and start in the cave just outside the vault.
-
-- mods.push([])

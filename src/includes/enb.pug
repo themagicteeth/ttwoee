@@ -7,7 +7,7 @@
 - mods.push([])
 
 section#enb
-    h2.section-header ENB
+    h2 ENB
 
     //-
         VRamSizeTest
@@ -35,7 +35,7 @@ section#enb
             +author Boris Vorontsov
             +version v0.322
             +installation Download #[+file('enbseries_falloutnv_v0322.zip')]
-            +instructions
+            +instructions('raised')
                 | Open the archive and navigate into the "WrapperVersion" folder
                 |
                 | Extract everything into the Fallout New Vegas root folder except:
@@ -43,23 +43,21 @@ section#enb
                 | * license_en.txt
                 | * readme_en.txt
 
-            +instructions
+            +instructions('raised')
                 | Navigate the Fallout New Vegas folder
                 | Open enseries.ini and make the following change
     
             .raised
-                +ini Disable the ENB effects
-                pre.mt0
+                +ini('Disable the ENB effects')
                     | ; Put on the first line
                     | UseEffect=false
             
-            +instructions
+            +instructions('raised')
                 | Navigate the Fallout New Vegas folder
                 | Open enblocal.ini and make the following changes
 
             .raised
-                +ini Set the memory settings
-                pre.mt0
+                +ini('Set the memory settings')
                     | [MEMORY]
                     | ExpandSystemMemoryX64=false
                     | ReduceSystemMemoryUsage=true

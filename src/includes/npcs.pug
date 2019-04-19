@@ -7,16 +7,17 @@
 //-
 
 - sections.push(['#npcs', 'NPCs'])
+- mods.push([])
 
 section#npcs
-    h2.section-header NPCs
+    h2 NPCs
 
     //-
         Authentic Burned Man
         Updated 2019-03-22
     //-
     #authentic-burned-man
-        +name('Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974', 'fnv')
+        +name('Authentic Burned Man', 'https://www.nexusmods.com/newvegas/mods/41974')
         +modInfo
             +author Rocket
             +version 1.0
@@ -31,14 +32,12 @@ section#npcs
         Updated 2019-03-22
     //-
     #beards
-        +name('Beards', 'https://www.nexusmods.com/newvegas/mods/49624', 'fnv')
+        +name('Beards', 'https://www.nexusmods.com/newvegas/mods/49624')
         +modInfo
             +author Drumber
             +version 1.0
             +installation Install #[+file('HQ Beards 2048x2048')]
-            +optional
-                | Double click Beards in the left pane and go to the [Optional ESPs] tab.
-                | Move "Beards.esp" to the "Optional ESPs" box.
+            +optionalEsps('Beards', 'Beards.esp')
             +notes Nice beards.
 
     //-
@@ -46,7 +45,7 @@ section#npcs
         Updated 2019-04-02
     //-
     #immersive-mouth-and-teeth-fo3
-        +name('Immersive Mouth and Teeth FO3', 'https://www.nexusmods.com/fallout3/mods/23527', 'fo3')
+        +name('Immersive Mouth and Teeth FO3', 'https://www.nexusmods.com/fallout3/mods/23527')
         +modInfo
             +author ClearanceClarence
             +version 1.0
@@ -58,7 +57,7 @@ section#npcs
         Updated 2019-04-02
     //-
     #immersive-mouth-and-teeth-fnv
-        +name('Immersive Mouth and Teeth FNV', 'https://www.nexusmods.com/newvegas/mods/66630', 'fnv')
+        +name('Immersive Mouth and Teeth FNV', 'https://www.nexusmods.com/newvegas/mods/66630')
         +modInfo
             +author ClearanceClarence
             +version 1.0
@@ -70,10 +69,8 @@ section#npcs
         Updated 2019-04-02
     //-
     #natural-eyes
-        +name('Natural Eyes', 'https://www.nexusmods.com/newvegas/mods/62811', 'fnv')
+        +name('Natural Eyes', 'https://www.nexusmods.com/newvegas/mods/62811')
         +modInfo
             +author zzjay
             +version 1.1
             +installation Install #[+file('Eyes Smaller Iris')]
-
-- mods.push([])

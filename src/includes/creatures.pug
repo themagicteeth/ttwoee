@@ -8,177 +8,167 @@
 - mods.push([])
 
 section#creatures
-    h2.section-header Creatures
+    h2 Creatures
 
-    //-
-        It's a Dogs World - Dog Texture Overhaul
-        Updated 2019-03-22
-    //-
-    #its-a-dogs-world
-        +name("It's a Dogs World - Dog Texture Overhaul",'https://www.nexusmods.com/newvegas/mods/59020','fnv')
-        +modInfo
-            +author Nivea
-            +version 1.0
-            +installation Install #[+file('DogsWorldTextureOverhaul_Large_V1_0')]
-            +notes 
-                | This mod provides higher res, and much higher detailed textures for the Normal dog, 
-                | Rex, and the Cyber dog's from Old World Blues. 
+    //- It's a Dogs World - Dog Texture Overhaul
+    - modId = 'its-a-dogs-world'
+    - modName = "It's a Dogs World - Dog Texture Overhaul"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59020'
+    - modAuthor = 'Nivea'
+    - modVersion = '1.0'
+    - mainFiles = ['DogsWorldTextureOverhaul_Large_V1_0']    
+    +mod
+        +notes
+            | This mod provides higher res, and much higher detailed textures
+            | for the Normal dog, Rex, and the Cyber dog's from Old World Blues.
 
-    //-
-        Fawkes Retexture Hi-Res
-        Updated 2019-03-22
-    //-
-    #fawkes-retexture
-        +name('Fawkes Retexture Hi-Res', 'https://www.nexusmods.com/fallout3/mods/8721', 'fo3')
-        +modInfo
-            +author Macintroll
-            +installation Install #[+file('FAWLKES Re-Texture')]
-            +notes We just want this for the clothes
 
-    //-
-        FO3 Hirezd - Supermutants
-        Updated 2019-03-22
-    //-
-    #fo3-hirezd-supermutants
-        +name('FO3 Hirezd - Supermutants', 'https://www.nexusmods.com/fallout3/mods/19931', 'fo3')
-        +modInfo
-            +author Emerald Reign
-            +version 1.0
-            +installation Install #[+file('Supermutants')] main file, and #[+file('Supermutant - 4k Fawkes')] optional file
-            +notes 2k Skin textures for Supermutants and Overlords, 4k for Behemoth, plus 4k for Fawkes
+    //- Fawkes Retexture Hi-Res
+    - modId = 'fawkes-retexture'
+    - modName = 'Fawkes Retexture Hi-Res'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/8721'
+    - modAuthor = 'Macintroll'
+    - mainFiles = ['FAWLKES Re-Texture']
+    +mod
+        +notes We just want this for the clothes
 
-    //-
-        Swampfolk Backwater Retexture
-        Updated 2019-03-22
-    //-
-    #swampfolk-backwater-retexture
-        +name('Swampfolk Backwater Retexture', 'https://www.nexusmods.com/fallout3/mods/18894', 'fo3')
-        +modInfo
-            +author Deathclaw Alpha
-            +version 1
-            +installation Install #[+file('Backwater Retexture')]
-            +notes The Swampfolk are inbred, disease-ridden characters who haven't bathed in, like, twenty years. Well, they are now.
 
-    //-
-        Vandr HD Creatures
-        Updated 2019-03-22
-    //-
-    #vandr-hd-creatures
-        +name('Vandr HD Creatures', 'https://www.nexusmods.com/fallout3/mods/18500', 'fo3')
-        +modInfo
-            +author Vandrerer
-            +version 1.0
-            +installation Install #[+file('Vandr HD Creatures')]
-            +mispackaged
-                | This mod is packaged incorrectly
-                | Right click "data" and select [Set Data Directory] and click [OK]
-            +notes Retexture of creatures with totally new bump-maps and sharpened mip maps! 
-
-    //-
-        aMidianBorn Book Of Water - Book of Flesh
-        Updated 2019-03-22
-    //-
-    #book-of-flesh
-        +name('aMidianBorn Book Of Water - Book of Flesh', 'https://www.nexusmods.com/newvegas/mods/39873', 'fnv')
-        +modInfo
-            +author CaBaL
-            +installation Install #[+file('BOA NV The Book Of Flesh')]
-
-    //-
-        FeralGhouls Hires Retexture
-        Updated 2019-03-22
-    //-
-    #feralghouls-hires-retexture
-        +name('FeralGhouls Hires Retexture', 'https://www.nexusmods.com/newvegas/mods/53960', 'fnv')
-        +modInfo
-            +author Macintroll
-            +version 1.0
-            +installation Install #[+file('Feral Ghould HD')]
-            +mispackaged
-                | This mod is packaged incorrectly
-                | Expand "FeralGhoulsHD"
-                | Right click "data" and select [Set Data Directory] and click [OK]
-
-    //-
-        Super Mutant Mesh Replacer
-        Updated 2019-03-22
-    //-
-    #super-mutant-mesh-replacer
-        +name('Super Mutant Mesh Replacer', 'https://mega.nz/#!9cQXGbQS!GdWRCNZtmEWl_8RSouF70dD8MIQGrWIsFax6mtIRzM0', 'fnv')
-        +modInfo
-            +author TheNeglected
-            +version 1.3
-
-    h3.section-header Robots
-
-    //-
-        Improved Robots Textures
-        Updated 2019-04-02
-    //-
-    #improved-robots
-        +name('Improved Robots Textures', 'https://www.nexusmods.com/newvegas/mods/56759', 'fnv')
-        +modInfo 
-            +author Tau34RUS
-            +version 1.0.1
-            +installation
-                | Install #[+file('Improved Main Robots Textures')], #[+file('Improved OWB Robot Textures')],
-                | and #[+file('Improved LR Robot Textures')]
+    //- FO3 Hirezd - Supermutants
+    - modId = 'fo3-hirezd-supermutants'
+    - modName = 'FO3 Hirezd - Supermutants'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/19931'
+    - modAuthor = 'Emerald Reign'
+    - modVersion = '1.0'
+    - mainFiles = ['Supermutants']
+    - optionalFiles = ['Supermutant - 4k Fawkes']
+    +mod
+        +notes
+            | 2k Skin textures for Supermutants and Overlords, 4k
+            | for Behemoth, plus 4k for Fawkes
     
-    //-
-        Eyebot Retextured
-        Updated 2019-03-22
-    //-
-    #eyebot-retextured
-        +name('Eyebot Retextured', 'https://www.nexusmods.com/fallout3/mods/22564', 'fo3')
-        +modInfo
-            +author d7 aka id2301
-            +version 1
-            +installation Install #[+file('EYEBOT Retextured')]
 
-    //-
-        Robot Revolution HD - Protectron
-        Updated 2019-03-22
-    //-
-    #robot-revolution-protectron
-        +name('Robot Revolution HD - Protectron', 'https://www.nexusmods.com/fallout3/mods/18902', 'fo3')
-        +modInfo
-            +author OpenSaucer
-            +version 1.1
-            +installation Install #[+file('Robot Revolution - Protectron HD Re-texture')]
-            +notes 
-                | Did you ever think the robots in D.C needed a face lift? This is for you.
-                | Actually, this is for you no matter what! 
+    //- Swampfolk Backwater Retexture
+    - modId = 'swampfolk-backwater-retexture'
+    - modName = 'Swampfolk Backwater Retexture'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18894'
+    - modAuthor = 'Deathclaw Alpha'
+    - modVersion = '1'
+    - mainFiles = ['Backwater Retexture']
+    +mod
+        +notes
+            | The Swampfolk are inbred, disease-ridden characters who haven't
+            | bathed in, like, twenty years. Well, they are now.
 
-    //-
-        Robots HD Retexture
-        Updated 2019-04-02
-    //-
-    #robots-hd-retexture
-        +name('Robots HD Retexture', 'http://falcon-lair.com/files/file/497-hd-retekstur-robotov-robots-hd-retexture/', 'fo3')
-        +modInfo
-            +author Magnesium Fire aka QuasarX 
-            +installation Install #[+file('Robots+HD+Retexture.7z')]
-            +instructions
-                | Click the link underneath "Falcon-Lair.com" (Уже зарегистрированы? Войти)
-                | Enter the following credentials:
-                |
-                | Username: ttwoee
-                | Password: fallout3nv
-                |
-                | Once logged in, a light gray button will appear on the far right of the page, underneath the pictures of robots
-                | The button will say "Скачать файл"
-                |
-                | Click the button and and a popup will appear
-                | Click the button that says "Скачать" to download the file
-                 
-    //-
-        SentryTurret Retextured
-        Updated 2019-03-22
-    //-
-    #sentryturret-retextured
-        +name('SentryTurret Retextured', 'https://www.nexusmods.com/fallout3/mods/23034', 'fo3')
-        +modInfo
-            +author d7 aka id2301 
-            +version 1
-            +installation Install #[+file('d7_sentryTurret_retextured')]
-            +notes New normals, spec, glow and diffuse maps. Also cube maps.
+
+    //- Vandr HD Creatures
+    - modId = 'vandr-hd-creatures'
+    - modName = 'Vandr HD Creatures'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18500'
+    - modAuthor = 'Vandrerer'
+    - modVersion = '1.0'
+    - mainFiles = ['Vandr HD Creatures']
+    +mod
+        +mispack
+            | Right click "data"
+        +notes
+            | Retexture of creatures with totally new bump-maps and 
+            | sharpened mip maps!
+
+
+    //- aMidianBorn Book Of Water - Book of Flesh
+    - modId = 'book-of-flesh'
+    - modName = 'aMidianBorn Book Of Water - Book of Flesh'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/39873'
+    - modAuthor = 'CaBaL'
+    - mainFiles = ['BOA NV The Book Of Flesh']
+    +mod
+
+
+    //- FeralGhouls Hires Retexture
+    - modId = 'feralghouls-hires-retexture'
+    - modName = 'FeralGhouls Hires Retexture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/53960'
+    - modAuthor = 'Macintroll'
+    - modVersion = '1.0'
+    - mainFiles = ['Feral Ghould HD']
+    +mod
+        +mispack
+            | Expand "FeralGhoulsHD", right click "data"
+
+
+    //- Super Mutant Mesh Replacer
+    - modId = 'super-mutant-mesh-replacer'
+    - modName = 'Super Mutant Mesh Replacer'
+    - modUrl = 'https://mega.nz/#!9cQXGbQS!GdWRCNZtmEWl_8RSouF70dD8MIQGrWIsFax6mtIRzM0'
+    - fileType = 'fnv'
+    - modAuthor = 'TheNeglected'
+    - modVersion = '1.3'
+    +mod
+
+
+    h3 Robots
+
+    //- Improved Robots Textures
+    - modId = 'improved-robots'
+    - modName = 'Improved Robots Textures'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/56759'
+    - modAuthor = 'Tau34RUS'
+    - modVersion = '1.0.1'
+    - mainFiles = ['Improved Main Robots Textures', 'Improved OWB Robot Textures', 'Improved LR Robot Textures']
+    +mod
+
+
+    //- Eyebot Retextured
+    - modId = 'eyebot-retextured'
+    - modName = 'Eyebot Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/22564'
+    - modAuthor = 'd7 aka id2301'
+    - modVersion = '1'
+    - mainFiles = ['EYEBOT Retextured']
+    +mod
+
+
+    //- Robot Revolution HD - Protectron
+    - modId = 'robot-revolution-protectron'
+    - modName = 'Robot Revolution HD - Protectron'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/18902'
+    - modAuthor = 'OpenSaucer'
+    - modVersion = '1.1'
+    - mainFiles = ['Robot Revolution - Protectron HD Re-texture']
+    +mod
+        +notes
+            | Did you ever think the robots in D.C needed a face lift?
+            | This is for you. Actually, this is for you no matter what!
+
+
+    //- Robots HD Retexture
+    - modId = 'robots-hd-retexture'
+    - modName = 'Robots HD Retexture'
+    - modUrl = 'http://falcon-lair.com/files/file/497-hd-retekstur-robotov-robots-hd-retexture'
+    - fileType = 'fo3'
+    - modAuthor = 'Magnesium Fire aka QuasarX '
+    - mainFiles = ['Robots+HD+Retexture.7z']
+    +mod
+        +instructions
+            | Click the link underneath "Falcon-Lair.com" (Уже зарегистрированы? Войти)
+            | Enter the following credentials:
+            |
+            | Username: ttwoee
+            | Password: fallout3nv
+            |
+            | Once logged in, a light gray button will appear on the far right of the page, underneath the pictures of robots
+            | The button will say "Скачать файл"
+            |
+            | Click the button and and a popup will appear
+            | Click the button that says "Скачать" to download the file
+
+
+    //- SentryTurret Retextured      
+    - modId = 'sentryturret-retextured'
+    - modName = 'SentryTurret Retextured'
+    - modUrl = 'https://www.nexusmods.com/fallout3/mods/23034'
+    - modAuthor = 'd7 aka id2301'
+    - modVersion = '1'
+    - mainFiles = ['d7_sentryTurret_retextured']
+    +mod
+        +notes New normals, spec, glow and diffuse maps. Also cube maps.

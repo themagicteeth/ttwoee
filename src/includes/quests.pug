@@ -7,28 +7,28 @@
 - mods.push([])
 
 section#quests
-    h2.section-header Quests
+    h2 Quests
 
-    //-
-        A Trail of Crumbs
-            - https://taleoftwowastelands.com/viewtopic.php?f=55&t=6517&sid=d7978d3911e87f0ba5b6af81269d94e9
-        Updated 2019-03-22
-    //-
-    #a-trail-of-crumbs
-        +name('A Trail of Crumbs', 'https://www.nexusmods.com/newvegas/mods/66267', 'fo3')
-        +modInfo
-            +author Mike Hancho, Roy Batty
-            +version 1.4
-            +installation Install #[+file('A Trail of Crumbs')]
-            +notes An exciting, fun and challenging quest to 10 forgotten locations
+    //- A Trail of Crumbs
+    - modId = 'a-trail-of-crumbs'
+    - modName = 'A Trail of Crumbs'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66267'
+    - fileType = 'fo3'
+    - mainFiles = ['A Trail of Crumbs']
+    +mod
+        +notes 
+            | An exciting, fun and challenging quest to 10 forgotten locations.
+            | For more info visit the 
+            | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6517&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
-    //-
-        The Regulators
-        Updated 2019-03-29
-    //-
-    #the-regulators
-        +name('The Regulators', 'https://www.nexusmods.com/newvegas/mods/66266', 'ttw')
-        +modInfo
-            +author WilliamSea, Roy Batty
-            +version 1.4
-            +installation Install #[+file('The Regulators')]
+            
+    //- The Regulators
+    - modId = 'the-regulators'
+    - modName = 'The Regulators'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66266'
+    - fileType = 'ttw'
+    - modAuthor = 'WilliamSea, Roy Batty'
+    - modVersion = '1.4'
+    - mainFiles = ['The Regulators']
+    +mod
+

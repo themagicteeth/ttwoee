@@ -7,7 +7,7 @@
 - mods.push([])
 
 section#lod
-    h2.section-header LOD
+    h2 LOD
 
     #improved-lod-noise
         +name('Improved LOD Noise Texture', 'https://www.nexusmods.com/newvegas/mods/46451', 'fnv')
@@ -26,12 +26,12 @@ section#lod
                 | #[+file('NMC LOD texture fix')] and #[+file('Trees LOD Billboards Vanilla')]
                 | optional files
 
-    p.copy-bg.mb0
+    +copy('mb0')
         | Now that FNVLODGens resources are installed into Mod Organizer LODs can
         | be generated using FNVLODGen (installed in the Tools section).
         | These steps are based of the small guide on the 
         | #[+link('TTW forums by Roy Batty', 'https://taleoftwowastelands.com/viewtopic.php?f=24&t=7132&sid=7e34f9e642b87e7e17516369d4a02a47')].
-    p.copy-bg.mt0
+    +copy('mt0')
         | Before running FNVLODGen, an ini setting in the fallout.ini
         | must be updated to include the TTW BSAs.
 
@@ -41,11 +41,10 @@ section#lod
         | Verify fallout.ini is selected and change the following lines.
         | Click [Save] and close the window. 
 
-    +ini Update SArchive list to use TTW assets
-    pre.mt0
+    +ini('Update SArchive list to use TTW assets')
         | [Archive]
         | SArchiveList=Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
-    p.copy-bg.mb0
+    +copy('mb0')
         | Now FNVLODGen can be ran through Mod Organizer to generate the LODs.
         | Follow the instructions below:
     pre.mt0

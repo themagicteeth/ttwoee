@@ -7,18 +7,20 @@
 - mods.push([])
 
 section#fixes-and-extensions
-    h2.section-header Fixes and Extensions
+    h2 Fixes and Extensions
 
-    #jip-ln-nvse-plugin
-        +name('JIP LN NVSE Plugin', 'https://www.nexusmods.com/newvegas/mods/58277', 'fnv')
-        +modInfo
-            +author Jazzisparis and LuthienAnarion
-            +version 55.05
-            +installation Install #[+file('JIP LN NVSE Plugin')]
-            +notes  
-                | This plugin is an extension of the New Vegas Script Extender (NVSE). It adds 800+ new functions, 
-                | which can be used in GECK scripting and (in some cases) as conditions. Additionally, this mod 
-                | includes numerous engine bug fixes/tweaks, and restores several broken game features.
+    //- JIP LN NVSE Plugin
+    - modId = 'jip-ln-nvse-plugin'
+    - modName = 'JIP LN NVSE Plugin'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58277'
+    - modAuthor = 'Jazzisparis and LuthienAnarion'
+    - modVersion = '55.05'
+    - mainFiles = ['JIP LN NVSE Plugin']
+    +mod
+        +notes  
+            | This plugin is an extension of the New Vegas Script Extender (NVSE). It adds 800+ new functions, 
+            | which can be used in GECK scripting and (in some cases) as conditions. Additionally, this mod 
+            | includes numerous engine bug fixes/tweaks, and restores several broken game features.
 
 
     #nvac
