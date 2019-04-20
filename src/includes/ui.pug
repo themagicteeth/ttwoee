@@ -4,6 +4,8 @@ section#ui
     h2 User Interface
 
     //- Better Pickup Prompt
+    - coreMod = true
+    - hasPlugins = true
     - modId = 'better-pick-up-prompt'
     - modName = 'Better Pickup Prompt'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/63091'
@@ -27,6 +29,8 @@ section#ui
 
 
     //- JIP Companions Command and Control
+    - hasPlugins = true
+    - coreMod = true
     - modId = 'jip-ccc'
     - modName = 'JIP Companions Command and Control'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/50468'
@@ -40,6 +44,8 @@ section#ui
 
 
     //- JIP Improved Recipe Menu
+    - hasPlugins = true
+    - coreMod = true
     - modId = 'jip-improved-recipe-menu'
     - modName = 'JIP Improved Recipe Menu'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/59638'
@@ -53,6 +59,8 @@ section#ui
 
 
     //- The Mod Configuration Menu
+    - coreMod = true
+    - hasPlugins = true
     - modId = 'mcm'
     - modName = 'The Mod Configuration Menu'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/42507'
@@ -65,12 +73,15 @@ section#ui
 
 
     //- The Weapon Mod Menu
+    - hasPlugins = true
+    - preReq = 'The Mod Configuration Menu'
     - modId = 'weapon-mod-menu'
     - modName = 'The Weapon Mod Menu'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/44515'
     - modAuthor = 'Pelinor'
     - modVersion = '1.2'
     - mainFiles = ['The Weapon Mod Menu']
+    - modRequires = 'The Mod Configuration Menu'
     +mod
         +notes 
             | Opens up new features to the weapon modding interface used in game,
@@ -88,7 +99,7 @@ section#ui
     +mod
 
 
-    //- FPD Weapon Wheel
+    //- FPS Weapon Wheel
     - modId = 'fps-weapon-wheel'
     - modName = 'FPS Weapon Wheel'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/39997'
@@ -110,6 +121,7 @@ section#ui
 
 
     //- Weapon Wheel Plus Looting Menu for FNV
+    - preReq = 'FPS Weapon Wheel, and Loot Menu'
     - modId = 'weapon-wheel-plus-looting'
     - modName = 'Weapon Wheel Plus Looting Menu for FNV'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/65198'
@@ -120,6 +132,8 @@ section#ui
 
 
     //- UIO - UI Organizer
+    - coreMod = true
+    - hasPlugins = true
     - modId = 'uio'
     - modName = 'UIO - UI Organizer'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/57174'
@@ -135,6 +149,7 @@ section#ui
 
 
     //- One HUD - oHUD
+    - hasPlugins = true
     - modId = 'ohud'
     - modName = 'One HUD - oHUD'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/44757'
@@ -146,6 +161,7 @@ section#ui
 
 
     //- Vanilla UI Plus
+    - coreMod = true
     - modId = 'vanilla-ui-plus'
     - modName = 'Vanilla UI Plus'
     - modUrl = 'https://www.moddb.com/mods/vanilla-ui-plus/downloads'
@@ -171,6 +187,8 @@ section#ui
 
 
     //- Vanilla HUD Remastered
+    - coreMod = true
+    - preReq = 'Vanilla UI Plus'
     - modId = 'vanilla-hud-remastered'
     - modName = 'Vanilla HUD Remastered'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/64102'
@@ -186,6 +204,8 @@ section#ui
 
 
     //- Vanilla HUD Remastered Patch
+    - coreMod = true
+    - preReq = 'Vanilla UI Plus, and Vanilla HUD Remastered'
     - modId = 'vanilla-hud-remastered-patch'
     - modName = 'Vanilla HUD Remastered Patch'
     - modUrl = 'https://www.moddb.com/mods/vanilla-ui-plus/addons/vanilla-hud-remastered-patch'
@@ -200,6 +220,7 @@ section#ui
 
 
     //- CALIFORNIA Fonts for Vanilla
+    - coreMod = true
     - modId = 'california-fonts'
     - modName = 'CALIFORNIA Fonts for Vanilla'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/66000'
@@ -213,6 +234,7 @@ section#ui
 
 
     //- FPS Weapon Wheel - Vanilla UI Patch
+    - preReq = 'Vanilla UI Plus, and FPS Weapon Wheel'
     - modId = 'fps-weapon-wheel-vanilla-ui'
     - modName = 'FPS Weapon Wheel - Vanilla UI Patch'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/63908'
@@ -223,6 +245,7 @@ section#ui
 
 
     //- Loot Menu - Vanilla UI Patch'
+    - preReq = 'Vanilla UI Plus, and Loot Menu'
     - modId = 'loot-menu-vanilla-ui'
     - modName = 'Loot Menu - Vanilla UI Patch'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/63908'

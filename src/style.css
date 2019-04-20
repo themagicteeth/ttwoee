@@ -56,6 +56,14 @@ main {
   font-weight: bold;
 }
 
+.core {
+  float: right;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.25rem;
+  cursor: help;
+}
+
 /* Section header font sizes */
 h1 {
   font-size: 3rem;

@@ -16,7 +16,13 @@
 - let downloadFilesb   //- Download files (optional)
 - let miscFiles        //- Miscellaneous files (optional)
 - let fileType = null      //- Type of file (optional)
-
+- let coreMod = false
+- let highQuality = false
+- let preReq = false
+- let modRequires
+- let testing = false
+- let hasPlugins =  false
+- let converted = false
 
 //-
     Creates a mod card
@@ -40,6 +46,20 @@
 mixin mod
     //- Container for the mod
     div(id=modId)
+
+        if coreMod
+            +coreMod
+        if highQuality
+            +highQuality
+        if preReq
+            +preReq
+        if testing
+            +testing
+        if hasPlugins
+            +hasPlugins
+        if converted
+            +converted
+
         +modTitle
 
         //- Mod info is below
@@ -60,10 +80,17 @@ mixin mod
             //- Notes, and installation details here
             block 
 
+            if modRequires
+                +requires
+
     //- Reset the mod ID
     - modId = null
-    
-
+    - coreMod = false
+    - preReq = false
+    - highQuality = false
+    - testing = false
+    - hasPlugins = false
+    - converted = false
 //-
     Creates the Author mod detail for mod cards.
     This mixin is not called from templates.
@@ -272,6 +299,11 @@ mixin files(files)
     block
 
 
+mixin requires
+    p.mt0.mb0 #[span.b Requires: ] #{modRequires}
+
+    - modRequires = null
+
 //-
     Creates mod notes for mod cards,
     must be called after calling the mod
@@ -407,3 +439,21 @@ mixin important2(title)
             block
 
 
+mixin coreMod
+    span(class='core' title='Core mod') ☢️
+
+mixin highQuality
+    span(class='core' title='High quality textures') 💎
+
+mixin preReq
+    - const requirements = `Requires ${preReq}`
+    span(class='core' title=requirements) 📗
+
+mixin testing
+    span(class='core' title='Mod or installation instructions still in testing') 🚨
+
+mixin hasPlugins
+    span(class='core' title='This mod has plugins') 🔌
+
+mixin converted
+    span(class='core' title='This mod has been converted for TTW') 🌀
