@@ -1,0 +1,23 @@
+{
+  "mod_name": "Universal Item Sorter",
+  "file_name": "Universal Item Sorter-63867-1-06.zip",
+  "file_size": "7396",
+  "version": "1.06",
+  "author": "PushTheWinButton",
+  "md5": "50ecc1be0bc850d7fd5072b5cb92b248",
+  "repository": "NexusMods",
+  "nexus_mod_id": "63867",
+  "nexus_file_id": "1000043888",
+  "nexus_file_name": "Universal Item Sorter",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Universal Item Sorter.esp",
+      "target_location": "\\Universal Item Sorter.esp"
+    },
+    {
+      "source_location": "\\config\\Universal Item Sorter.ini",
+      "target_location": "\\config\\Universal Item Sorter.ini"
+    }
+  ]
+}

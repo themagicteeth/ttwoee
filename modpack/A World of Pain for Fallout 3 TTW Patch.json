@@ -1,0 +1,19 @@
+{
+  "mod_name": "A World of Pain for Fallout 3 TTW Patch",
+  "file_name": "TTW A World of Pain A World of Pain for Fallout 3-66268-1-01-1552236281.7z",
+  "file_size": "6925",
+  "version": "1.01",
+  "author": "Roy Batty",
+  "md5": "5a83d588b1db9fcee4be86b1be162f37",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66268",
+  "nexus_file_id": "1000052504",
+  "nexus_file_name": "TTW A World of Pain A World of Pain for Fallout 3",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\TTW-AWOPNV-AWOPFO3.esp",
+      "target_location": "\\TTW-AWOPNV-AWOPFO3.esp"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "mod_name": "Root 'n Loot TTW",
+  "file_name": "Root 'n Loot-59378-1-8-1551033575.7z",
+  "file_size": "51755",
+  "version": "1.8",
+  "author": "Roy Batty",
+  "md5": "1d34aa77530b6f99e822d8e3177e585d",
+  "repository": "NexusMods",
+  "nexus_mod_id": "59378",
+  "nexus_file_id": "1000052278",
+  "nexus_file_name": "Root 'n Loot",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Root 'n Loot.esp",
+      "target_location": "\\Root 'n Loot.esp"
+    }
+  ]
+}

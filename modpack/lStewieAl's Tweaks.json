@@ -1,0 +1,23 @@
+{
+  "mod_name": "lStewieAl's Tweaks",
+  "file_name": "Stewie Tweaks-66347-2-23b-1554946267.zip",
+  "file_size": "50217",
+  "version": "2.3",
+  "author": "IStewieAl ",
+  "md5": "a09957c5fe362035e524cf69a45c21eb",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66347",
+  "nexus_file_id": "1000053215",
+  "nexus_file_name": "Stewie Tweaks",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\nvse\\plugins\\nvse_stewie_tweaks.dll",
+      "target_location": "\\nvse\\plugins\\nvse_stewie_tweaks.dll"
+    },
+    {
+      "source_location": "\\nvse\\plugins\\Stewie Tweaks Readme.txt",
+      "target_location": "\\nvse\\plugins\\Stewie Tweaks Readme.txt"
+    }
+  ]
+}

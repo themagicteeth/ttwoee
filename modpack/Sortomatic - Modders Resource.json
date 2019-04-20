@@ -1,0 +1,19 @@
+{
+  "mod_name": "Sortomatic - Modders Resource",
+  "file_name": "Sortomatic_v1_3-41142-1-3.7z",
+  "file_size": "89092",
+  "version": "1.3",
+  "author": "tunaisafish",
+  "md5": "2aee3d809b518f35122764d22866f5b7",
+  "repository": "NexusMods",
+  "nexus_mod_id": "41142",
+  "nexus_file_id": "1000006681",
+  "nexus_file_name": "Sortomatic_v1_3",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Sortomatic.esm",
+      "target_location": "\\Sortomatic.esm"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "mod_name": "Vanilla UI Plus",
+  "file_name": "Vanilla_UI_Plus_New_Vegas_7.73.7z",
+  "file_size": "536625",
+  "version": null,
+  "author": null,
+  "md5": "422fc10d5809a2a1d1c681cb16f93674",
+  "repository": null,
+  "nexus_mod_id": null,
+  "nexus_file_id": null,
+  "nexus_file_name": null,
+  "target_game": null,
+  "installation_parameters": [
+    {
+      "source_location": "\\Menus\\barter_menu.xml",
+      "target_location": "\\Menus\\barter_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\black_jack_menu.xml",
+      "target_location": "\\Menus\\black_jack_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\caravan_menu.xml",
+      "target_location": "\\Menus\\caravan_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\companion_wheel_menu.xml",
+      "target_location": "\\Menus\\companion_wheel_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\container_menu.xml",
+      "target_location": "\\Menus\\container_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\globals.xml",
+      "target_location": "\\Menus\\globals.xml"
+    },
+    {
+      "source_location": "\\Menus\\item_mod_menu.xml",
+      "target_location": "\\Menus\\item_mod_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\levelup_menu.xml",
+      "target_location": "\\Menus\\levelup_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\loading_menu.xml",
+      "target_location": "\\Menus\\loading_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\message_menu.xml",
+      "target_location": "\\Menus\\message_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\quantity_menu.xml",
+      "target_location": "\\Menus\\quantity_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\recipe_menu.xml",
+      "target_location": "\\Menus\\recipe_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\repair_menu.xml",
+      "target_location": "\\Menus\\repair_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\repair_services_menu.xml",
+      "target_location": "\\Menus\\repair_services_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\roulette_menu.xml",
+      "target_location": "\\Menus\\roulette_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\sleep_wait_menu.xml",
+      "target_location": "\\Menus\\sleep_wait_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\slot_machine_menu.xml",
+      "target_location": "\\Menus\\slot_machine_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\trait_menu.xml",
+      "target_location": "\\Menus\\trait_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\tutorial_menu.xml",
+      "target_location": "\\Menus\\tutorial_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\vats_menu.xml",
+      "target_location": "\\Menus\\vats_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Chargen\\char_gen_menu.xml",
+      "target_location": "\\Menus\\Chargen\\char_gen_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Chargen\\race_sex_menu.xml",
+      "target_location": "\\Menus\\Chargen\\race_sex_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Dialog\\dialog_menu.xml",
+      "target_location": "\\Menus\\Dialog\\dialog_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Dialog\\texteditmenu.xml",
+      "target_location": "\\Menus\\Dialog\\texteditmenu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Main\\inventory_menu.xml",
+      "target_location": "\\Menus\\Main\\inventory_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Main\\map_menu.xml",
+      "target_location": "\\Menus\\Main\\map_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Main\\stats_menu.xml",
+      "target_location": "\\Menus\\Main\\stats_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Options\\start_menu.xml",
+      "target_location": "\\Menus\\Options\\start_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\bottom_bracket.xml",
+      "target_location": "\\Menus\\Prefabs\\bottom_bracket.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\box.xml",
+      "target_location": "\\Menus\\Prefabs\\box.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\bracket_vert.xml",
+      "target_location": "\\Menus\\Prefabs\\bracket_vert.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\button_companion_wheel.xml",
+      "target_location": "\\Menus\\Prefabs\\button_companion_wheel.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\caravan_bet_menu.xml",
+      "target_location": "\\Menus\\Prefabs\\caravan_bet_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\caravan_builddeck_menu.xml",
+      "target_location": "\\Menus\\Prefabs\\caravan_builddeck_menu.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\card_info.xml",
+      "target_location": "\\Menus\\Prefabs\\card_info.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\hotkey.xml",
+      "target_location": "\\Menus\\Prefabs\\hotkey.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\item_stats_display.xml",
+      "target_location": "\\Menus\\Prefabs\\item_stats_display.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\line.xml",
+      "target_location": "\\Menus\\Prefabs\\line.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\list_box.xml",
+      "target_location": "\\Menus\\Prefabs\\list_box.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\list_box_template.xml",
+      "target_location": "\\Menus\\Prefabs\\list_box_template.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\meter.xml",
+      "target_location": "\\Menus\\Prefabs\\meter.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\scrollbar_horiz.xml",
+      "target_location": "\\Menus\\Prefabs\\scrollbar_horiz.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\scrollbar_vert.xml",
+      "target_location": "\\Menus\\Prefabs\\scrollbar_vert.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\super_text_box.xml",
+      "target_location": "\\Menus\\Prefabs\\super_text_box.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\tabline_template.xml",
+      "target_location": "\\Menus\\Prefabs\\tabline_template.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\text_box.xml",
+      "target_location": "\\Menus\\Prefabs\\text_box.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\top_bracket.xml",
+      "target_location": "\\Menus\\Prefabs\\top_bracket.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\vertical_fade_line.xml",
+      "target_location": "\\Menus\\Prefabs\\vertical_fade_line.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\background.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\background.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\hudcenteredtext.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\hudcenteredtext.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\orphancontrol.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\orphancontrol.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\outline.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\outline.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\preload.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\preload.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\settings.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\settings.xml"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Baked-in_Monofonto_Large.fnt",
+      "target_location": "\\Textures\\Fonts\\Baked-in_Monofonto_Large.fnt.mohidden"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Fixedsys_Comp_uniform_width.fnt",
+      "target_location": "\\Textures\\Fonts\\Fixedsys_Comp_uniform_width.fnt.mohidden"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Glow_Monofonto_Large.fnt",
+      "target_location": "\\Textures\\Fonts\\Glow_Monofonto_Large.fnt.mohidden"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Glow_Monofonto_Medium.fnt",
+      "target_location": "\\Textures\\Fonts\\Glow_Monofonto_Medium.fnt.mohidden"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Glow_Monofonto_VL_Dialogs.fnt",
+      "target_location": "\\Textures\\Fonts\\Glow_Monofonto_VL_Dialogs.fnt.mohidden"
+    },
+    {
+      "source_location": "\\O P T I O N A L\\Font Tweaks\\Textures\\Fonts\\Monofonto_Large.fnt",
+      "target_location": "\\Textures\\Fonts\\Monofonto_Large.fnt.mohidden"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\Companion_Wheel\\hud_comp_bkg.dds",
+      "target_location": "\\Textures\\Interface\\Companion_Wheel\\hud_comp_bkg.dds"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\Icons\\stats\\skills_survival.dds",
+      "target_location": "\\Textures\\Interface\\Icons\\stats\\skills_survival.dds"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\VUI+\\brightness_calibration.dds",
+      "target_location": "\\Textures\\Interface\\VUI+\\brightness_calibration.dds"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\VUI+\\faded_black.dds",
+      "target_location": "\\Textures\\Interface\\VUI+\\faded_black.dds"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\VUI+\\hud_comp_center.dds",
+      "target_location": "\\Textures\\Interface\\VUI+\\hud_comp_center.dds"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\VUI+\\solid_black.dds",
+      "target_location": "\\Textures\\Interface\\VUI+\\solid_black.dds"
+    }
+  ]
+}

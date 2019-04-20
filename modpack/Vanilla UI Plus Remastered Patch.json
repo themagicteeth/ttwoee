@@ -1,0 +1,35 @@
+{
+  "mod_name": "Vanilla UI Plus Remastered Patch",
+  "file_name": "Vanilla_UI_Plus_Remastered_Patch_1.83d.7z",
+  "file_size": "92087",
+  "version": null,
+  "author": null,
+  "md5": "61b27fd0a7058602b4bd0f21baad2b5d",
+  "repository": null,
+  "nexus_mod_id": null,
+  "nexus_file_id": null,
+  "nexus_file_name": null,
+  "target_game": null,
+  "installation_parameters": [
+    {
+      "source_location": "\\fomod\\info.xml",
+      "target_location": "\\fomod\\info.xml"
+    },
+    {
+      "source_location": "\\fomod\\screenshot.jpg",
+      "target_location": "\\fomod\\screenshot.jpg"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\hudtemplates.xml",
+      "target_location": "\\Menus\\Prefabs\\hudtemplates.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\aHUD\\hudtemplates.xml",
+      "target_location": "\\Menus\\Prefabs\\aHUD\\hudtemplates.xml"
+    },
+    {
+      "source_location": "\\Textures\\Interface\\interfaceshared.tai",
+      "target_location": "\\Textures\\Interface\\interfaceshared.tai"
+    }
+  ]
+}

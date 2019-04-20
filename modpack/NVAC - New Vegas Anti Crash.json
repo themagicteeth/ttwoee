@@ -1,0 +1,19 @@
+{
+  "mod_name": "NVAC - New Vegas Anti Crash",
+  "file_name": "NVAC - New Vegas Anti Crash-53635-7-5-1-0.zip",
+  "file_size": "110679",
+  "version": "7.5.1.0",
+  "author": "Queue",
+  "md5": "620cc5d8331650bba6cec9bc2b3beb9c",
+  "repository": "NexusMods",
+  "nexus_mod_id": "53635",
+  "nexus_file_id": "1000039152",
+  "nexus_file_name": "NVAC - New Vegas Anti Crash",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\NVSE\\Plugins\\nvac.dll",
+      "target_location": "\\NVSE\\Plugins\\nvac.dll"
+    }
+  ]
+}

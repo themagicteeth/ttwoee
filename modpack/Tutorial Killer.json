@@ -1,0 +1,19 @@
+{
+  "mod_name": "Tutorial Killer",
+  "file_name": "Tutorial Killer - Scripted version-47746-1-52.7z",
+  "file_size": "3835",
+  "version": "1.52",
+  "author": "pintocat - Roy Batty",
+  "md5": "ae5d80537f9fa84c8f25c3cf736faf24",
+  "repository": "NexusMods",
+  "nexus_mod_id": "47746",
+  "nexus_file_id": "1000044389",
+  "nexus_file_name": "Tutorial Killer - Scripted version",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Tutorial Killer.esp",
+      "target_location": "\\Tutorial Killer.esp"
+    }
+  ]
+}

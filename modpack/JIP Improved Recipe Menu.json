@@ -1,0 +1,19 @@
+{
+  "mod_name": "JIP Improved Recipe Menu",
+  "file_name": "JIP Improved Recipe Menu-59638-1-20-1546213519.7z",
+  "file_size": "791",
+  "version": "1.20",
+  "author": "jazzisparis",
+  "md5": "24e64ee8a8853c262d854ba313838391",
+  "repository": "NexusMods",
+  "nexus_mod_id": "59638",
+  "nexus_file_id": "1000051277",
+  "nexus_file_name": "JIP Improved Recipe Menu",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\JIP Improved Recipe Menu.esp",
+      "target_location": "\\JIP Improved Recipe Menu.esp"
+    }
+  ]
+}

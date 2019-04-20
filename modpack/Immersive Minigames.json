@@ -1,0 +1,63 @@
+{
+  "mod_name": "Immersive Minigames",
+  "file_name": "Immersive Minigames-58246-1-5.zip",
+  "file_size": "44066",
+  "version": "1.5",
+  "author": "Gribbleshnibit8 - pintocat",
+  "md5": "79641ce97aeb6b16e24e2d9066e28bd7",
+  "repository": "NexusMods",
+  "nexus_mod_id": "58246",
+  "nexus_file_id": "1000037175",
+  "nexus_file_name": "Immersive Minigames",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Immersive Minigames.esp",
+      "target_location": "\\Immersive Minigames.esp"
+    },
+    {
+      "source_location": "\\config\\RTLH\\RTLHLocalization.ini",
+      "target_location": "\\config\\RTLH\\RTLHLocalization.ini"
+    },
+    {
+      "source_location": "\\fomod\\info.xml",
+      "target_location": "\\fomod\\info.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\RTLH\\RtLHHUD.xml",
+      "target_location": "\\menus\\prefabs\\RTLH\\RtLHHUD.xml"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_break.dds",
+      "target_location": "\\textures\\RTLH\\lock_break.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_impossible.dds",
+      "target_location": "\\textures\\RTLH\\lock_impossible.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_inaccessible.dds",
+      "target_location": "\\textures\\RTLH\\lock_inaccessible.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_increase.dds",
+      "target_location": "\\textures\\RTLH\\lock_increase.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_locked.dds",
+      "target_location": "\\textures\\RTLH\\lock_locked.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_success.dds",
+      "target_location": "\\textures\\RTLH\\lock_success.dds"
+    },
+    {
+      "source_location": "\\textures\\RTLH\\lock_unknown.dds",
+      "target_location": "\\textures\\RTLH\\lock_unknown.dds"
+    },
+    {
+      "source_location": "\\UIO\\public\\Immersive Minigames.txt",
+      "target_location": "\\UIO\\public\\Immersive Minigames.txt"
+    }
+  ]
+}

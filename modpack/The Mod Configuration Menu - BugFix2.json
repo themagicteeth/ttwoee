@@ -1,0 +1,19 @@
+{
+  "mod_name": "The Mod Configuration Menu - BugFix2",
+  "file_name": "MCM BugFix 2-42507-.7z",
+  "file_size": "18141",
+  "version": null,
+  "author": "Pelinor",
+  "md5": "c9195993f8c40a3ee906ceb7d6f7e3f1",
+  "repository": "NexusMods",
+  "nexus_mod_id": "42507",
+  "nexus_file_id": "1000001534",
+  "nexus_file_name": "MCM BugFix 2",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\The Mod Configuration Menu.esp",
+      "target_location": "\\The Mod Configuration Menu.esp"
+    }
+  ]
+}

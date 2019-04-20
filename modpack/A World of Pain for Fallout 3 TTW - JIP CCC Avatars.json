@@ -1,0 +1,23 @@
+{
+  "mod_name": "A World of Pain for Fallout 3 TTW - JIP CCC Avatars",
+  "file_name": "JIP CCC Avatars-66265-2-02-1553461590.7z",
+  "file_size": "14894",
+  "version": "2.02",
+  "author": "djmystro - Roy Batty",
+  "md5": "a136183986d2d28b5a7fab96a4387e16",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66265",
+  "nexus_file_id": "1000052747",
+  "nexus_file_name": "JIP CCC Avatars",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\textures\\jazzisparis\\ccc\\avatar_the warden.dds",
+      "target_location": "\\textures\\jazzisparis\\ccc\\avatar_the warden.dds"
+    },
+    {
+      "source_location": "\\textures\\jazzisparis\\ccc\\avatar_vonda.dds",
+      "target_location": "\\textures\\jazzisparis\\ccc\\avatar_vonda.dds"
+    }
+  ]
+}

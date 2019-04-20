@@ -1,0 +1,59 @@
+{
+  "mod_name": "TTW Nuka-Cola Expansion",
+  "file_name": "Nuka-Cola Expansion - Main File-66618-1-1552311175.zip",
+  "file_size": "346119",
+  "version": "1",
+  "author": "piber20",
+  "md5": "e34208b8138dc54353dc88b7ea5acccb",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66618",
+  "nexus_file_id": "1000052540",
+  "nexus_file_name": "Nuka-Cola Expansion - Main File",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\NukaExpansion.esp",
+      "target_location": "\\NukaExpansion.esp"
+    },
+    {
+      "source_location": "\\meshes\\p20\\nukacola\\nukacola_cherry.nif",
+      "target_location": "\\meshes\\p20\\nukacola\\nukacola_cherry.nif"
+    },
+    {
+      "source_location": "\\meshes\\p20\\nukacola\\nukacola_dark.nif",
+      "target_location": "\\meshes\\p20\\nukacola\\nukacola_dark.nif"
+    },
+    {
+      "source_location": "\\meshes\\p20\\nukacola\\nukacola_grape.nif",
+      "target_location": "\\meshes\\p20\\nukacola\\nukacola_grape.nif"
+    },
+    {
+      "source_location": "\\meshes\\p20\\nukacola\\nukacola_orange.nif",
+      "target_location": "\\meshes\\p20\\nukacola\\nukacola_orange.nif"
+    },
+    {
+      "source_location": "\\meshes\\p20\\nukacola\\nukacola_wild.nif",
+      "target_location": "\\meshes\\p20\\nukacola\\nukacola_wild.nif"
+    },
+    {
+      "source_location": "\\textures\\p20\\nukacola\\nukacola_cherry.dds",
+      "target_location": "\\textures\\p20\\nukacola\\nukacola_cherry.dds"
+    },
+    {
+      "source_location": "\\textures\\p20\\nukacola\\nukacola_dark.dds",
+      "target_location": "\\textures\\p20\\nukacola\\nukacola_dark.dds"
+    },
+    {
+      "source_location": "\\textures\\p20\\nukacola\\nukacola_grape.dds",
+      "target_location": "\\textures\\p20\\nukacola\\nukacola_grape.dds"
+    },
+    {
+      "source_location": "\\textures\\p20\\nukacola\\nukacola_orange.dds",
+      "target_location": "\\textures\\p20\\nukacola\\nukacola_orange.dds"
+    },
+    {
+      "source_location": "\\textures\\p20\\nukacola\\nukacola_wild.dds",
+      "target_location": "\\textures\\p20\\nukacola\\nukacola_wild.dds"
+    }
+  ]
+}

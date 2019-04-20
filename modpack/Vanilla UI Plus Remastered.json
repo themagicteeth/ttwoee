@@ -1,0 +1,55 @@
+{
+  "mod_name": "Vanilla UI Plus Remastered",
+  "file_name": "Vanilla HUD Remastered 4K v1.83-64102-1-83-1543745073.7z",
+  "file_size": "1523059",
+  "version": "1.83",
+  "author": "BmanBlazer",
+  "md5": "4ae1bf60c06596dac686ffb7ae5a8a07",
+  "repository": "NexusMods",
+  "nexus_mod_id": "64102",
+  "nexus_file_id": "1000050605",
+  "nexus_file_name": "Vanilla HUD Remastered 4K v1.83",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\VHRMdata\\dataVUI\\Menus\\Prefabs\\hudtemplates.xml",
+      "target_location": "\\Menus\\Prefabs\\hudtemplates.xml.mohidden"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataVUI\\Menus\\Prefabs\\aHUD\\hudtemplates.xml",
+      "target_location": "\\Menus\\Prefabs\\aHUD\\hudtemplates.xml.mohidden"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataVUI\\Textures\\Interface\\interfaceshared.tai",
+      "target_location": "\\textures\\interface\\interfaceshared.tai.mohidden"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\interfaceshared0.dds",
+      "target_location": "\\textures\\interface\\interfaceshared0.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\hud\\glow_hud_tick_mark.dds",
+      "target_location": "\\textures\\interface\\hud\\glow_hud_tick_mark.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\hud\\hud_compass_alphamap.dds",
+      "target_location": "\\textures\\interface\\hud\\hud_compass_alphamap.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\hud\\hud_tick_mark.dds",
+      "target_location": "\\textures\\interface\\hud\\hud_tick_mark.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\shared\\arrow\\repair_meter_pips.dds",
+      "target_location": "\\textures\\interface\\shared\\arrow\\repair_meter_pips.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\interface\\wait\\wait_meter.dds",
+      "target_location": "\\textures\\interface\\wait\\wait_meter.dds"
+    },
+    {
+      "source_location": "\\VHRMdata\\dataMainInterfaceshared0\\textures\\LazarusProject\\Rad\\RADIcon.dds",
+      "target_location": "\\textures\\LazarusProject\\Rad\\RADIcon.dds"
+    }
+  ]
+}

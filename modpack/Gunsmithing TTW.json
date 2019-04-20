@@ -1,0 +1,23 @@
+{
+  "mod_name": "Gunsmithing TTW",
+  "file_name": "Gunsmithing TTW-50312-4-4-2-1544320063.7z",
+  "file_size": "124834",
+  "version": "4.4.2",
+  "author": "Puppettron",
+  "md5": "0f56bb62669ee275dfd25b573c9fbc89",
+  "repository": "NexusMods",
+  "nexus_mod_id": "50312",
+  "nexus_file_id": "1000050793",
+  "nexus_file_name": "Gunsmithing TTW",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\gunsmithingttwRevamp.esp",
+      "target_location": "\\gunsmithingttwRevamp.esp"
+    },
+    {
+      "source_location": "\\meshes\\Gunsmithing\\huntingshotgunsilenced.nif",
+      "target_location": "\\meshes\\Gunsmithing\\huntingshotgunsilenced.nif"
+    }
+  ]
+}

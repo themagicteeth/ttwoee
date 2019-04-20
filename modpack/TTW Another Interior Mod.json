@@ -1,0 +1,23 @@
+{
+  "mod_name": "TTW Another Interior Mod",
+  "file_name": "Another Interior Mod-66611-1-0-1552249520.7z",
+  "file_size": "1454571",
+  "version": "1.0",
+  "author": "Wastelandloner - Roy Batty",
+  "md5": "5dd66f8d95cbb5c88404804d9b2af69d",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66611",
+  "nexus_file_id": "1000052516",
+  "nexus_file_name": "Another Interior Mod",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\AnotherInteriorMod - Main.bsa",
+      "target_location": "\\AnotherInteriorMod - Main.bsa"
+    },
+    {
+      "source_location": "\\AnotherInteriorMod.esm",
+      "target_location": "\\AnotherInteriorMod.esm"
+    }
+  ]
+}

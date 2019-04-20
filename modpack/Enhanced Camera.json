@@ -1,0 +1,27 @@
+{
+  "mod_name": "Enhanced Camera",
+  "file_name": "Enhanced Camera 1.4c-55334-1-4c-1544995335.zip",
+  "file_size": "65026",
+  "version": "1.4c",
+  "author": "LogicDragon",
+  "md5": "8444e17565d0770cb428a80fd5735dbe",
+  "repository": "NexusMods",
+  "nexus_mod_id": "55334",
+  "nexus_file_id": "1000050990",
+  "nexus_file_name": "Enhanced Camera 1.4c",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Meshes\\AnimObjects\\KhanTrick.NIF",
+      "target_location": "\\Meshes\\AnimObjects\\KhanTrick.NIF"
+    },
+    {
+      "source_location": "\\NVSE\\Plugins\\NVSE_EnhancedCamera.dll",
+      "target_location": "\\NVSE\\Plugins\\NVSE_EnhancedCamera.dll"
+    },
+    {
+      "source_location": "\\NVSE\\Plugins\\NVSE_EnhancedCamera.ini",
+      "target_location": "\\NVSE\\Plugins\\NVSE_EnhancedCamera.ini"
+    }
+  ]
+}

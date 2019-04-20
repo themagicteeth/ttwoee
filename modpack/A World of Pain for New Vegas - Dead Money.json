@@ -1,0 +1,23 @@
+{
+  "mod_name": "A World of Pain for New Vegas - Dead Money",
+  "file_name": "AWOP Dead Money 2.0-38719-2-0.zip",
+  "file_size": "1414160",
+  "version": "5.4",
+  "author": "Dj Mystro",
+  "md5": "76fdb6e2710b38983e493f7f59da7e1f",
+  "repository": "NexusMods",
+  "nexus_mod_id": "38719",
+  "nexus_file_id": "1000028134",
+  "nexus_file_name": "AWOP Dead Money 2.0",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\AWOP Dead Money 2\\AWOPDeadMoney.esm",
+      "target_location": "\\AWOPDeadMoney.esm"
+    },
+    {
+      "source_location": "\\AWOP Dead Money 2\\AWOPDeadMoneyVendorPatch.esp",
+      "target_location": "\\AWOPDeadMoneyVendorPatch.esp"
+    }
+  ]
+}

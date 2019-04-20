@@ -1,0 +1,31 @@
+{
+  "mod_name": "Better Pickup Prompt",
+  "file_name": "Better Pickup Prompt-63091-2-0.zip",
+  "file_size": "64336",
+  "version": "2.0",
+  "author": "Ladez",
+  "md5": "32172cce8b527bf7eaa7d0649756e817",
+  "repository": "NexusMods",
+  "nexus_mod_id": "63091",
+  "nexus_file_id": "1000042219",
+  "nexus_file_name": "Better Pickup Prompt",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Better Pickup Prompt.esp",
+      "target_location": "\\Better Pickup Prompt.esp"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\BPP\\Main.xml",
+      "target_location": "\\Menus\\Prefabs\\BPP\\Main.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\BPP\\Text.xml",
+      "target_location": "\\Menus\\Prefabs\\BPP\\Text.xml"
+    },
+    {
+      "source_location": "\\Textures\\BPP\\encumber.dds",
+      "target_location": "\\Textures\\BPP\\encumber.dds"
+    }
+  ]
+}

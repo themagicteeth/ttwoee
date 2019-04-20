@@ -1,0 +1,103 @@
+{
+  "mod_name": "The Mod Configuration Menu",
+  "file_name": "The Mod Configuration Menu.7z",
+  "file_size": "192425",
+  "version": "1.5",
+  "author": "Pelinor",
+  "md5": "475e7a07010707ecde54c3131ff13077",
+  "repository": "NexusMods",
+  "nexus_mod_id": "42507",
+  "nexus_file_id": "105803",
+  "nexus_file_name": "The Mod Configuration Menu",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Config\\MCM.ini",
+      "target_location": "\\Config\\MCM.ini"
+    },
+    {
+      "source_location": "\\menus\\options\\start_menu.xml",
+      "target_location": "\\menus\\options\\start_menu.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\includes_StartMenu.xml",
+      "target_location": "\\menus\\prefabs\\includes_StartMenu.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\list_box_template.xml",
+      "target_location": "\\menus\\prefabs\\list_box_template.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\List.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\List.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\ListRect.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\ListRect.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\MCM.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\MCM.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\ModList.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\ModList.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\ModListRect.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\ModListRect.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\ModTitleRect.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\ModTitleRect.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\OptionRect.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\OptionRect.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\Options.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\Options.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\MCM\\Scale.xml",
+      "target_location": "\\menus\\prefabs\\MCM\\Scale.xml"
+    },
+    {
+      "source_location": "\\NVSE\\Plugins\\MCM.dll",
+      "target_location": "\\NVSE\\Plugins\\MCM.dll"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Arrow.dds",
+      "target_location": "\\textures\\MCM\\Arrow.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Check0.dds",
+      "target_location": "\\textures\\MCM\\Check0.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Check1.dds",
+      "target_location": "\\textures\\MCM\\Check1.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Icon.dds",
+      "target_location": "\\textures\\MCM\\Icon.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Indicator1.dds",
+      "target_location": "\\textures\\MCM\\Indicator1.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\MCM.dds",
+      "target_location": "\\textures\\MCM\\MCM.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\Meter.dds",
+      "target_location": "\\textures\\MCM\\Meter.dds"
+    },
+    {
+      "source_location": "\\textures\\MCM\\MeterArrow.dds",
+      "target_location": "\\textures\\MCM\\MeterArrow.dds"
+    }
+  ]
+}

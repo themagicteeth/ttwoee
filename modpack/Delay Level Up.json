@@ -1,0 +1,95 @@
+{
+  "mod_name": "Delay Level Up",
+  "file_name": "Delay Level Up-62921-3-5.zip",
+  "file_size": "49434",
+  "version": "Ladez",
+  "author": "3.5",
+  "md5": "044df403ff2ecbe42e00dd27b0f947f5",
+  "repository": "NexusMods",
+  "nexus_mod_id": "62921",
+  "nexus_file_id": "1000043018",
+  "nexus_file_name": "Delay Level Up",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Delay Level Up - Stealth Suit Fix.esp",
+      "target_location": "\\Delay Level Up - Stealth Suit Fix.esp"
+    },
+    {
+      "source_location": "\\Delay Level Up.esp",
+      "target_location": "\\Delay Level Up.esp"
+    },
+    {
+      "source_location": "\\Config\\Delay Level Up.ini",
+      "target_location": "\\Config\\Delay Level Up.ini"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\CGM_Headline_Title.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\CGM_Headline_Title.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\CGM_PointCounter.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\CGM_PointCounter.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\CGM_Targetable.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\CGM_Targetable.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_Headline_Adjust.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_Headline_Adjust.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_Headline_Title.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_Headline_Title.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_PointCounter.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_PointCounter.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_Properties.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_Properties.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_Selected.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_Selected.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\LUM_Targetable.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\LUM_Targetable.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Assign_Buttons.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Assign_Buttons.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Assign_Buttons_Darn.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Assign_Buttons_Darn.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button_Darn.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button_Darn.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button_VUI+.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Level_Button_VUI+.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Properties.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Properties.xml"
+    },
+    {
+      "source_location": "\\Menus\\Prefabs\\LUD\\Stats_Saved_Levels.xml",
+      "target_location": "\\Menus\\Prefabs\\LUD\\Stats_Saved_Levels.xml"
+    },
+    {
+      "source_location": "\\UIO\\Public\\LUD.txt",
+      "target_location": "\\UIO\\Public\\LUD.txt"
+    }
+  ]
+}

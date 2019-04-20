@@ -1,0 +1,31 @@
+{
+  "mod_name": "Vanilla Sprint",
+  "file_name": "VanillaSprint-66535-rev1-4-1553562090.rar",
+  "file_size": "46447",
+  "version": "rev1.4",
+  "author": "C16 and Asurah",
+  "md5": "4ad3cd91b83f49d7684156ba18c6c9c4",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66535",
+  "nexus_file_id": "1000052842",
+  "nexus_file_name": "VanillaSprint",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Sprint.esp",
+      "target_location": "\\Sprint.esp"
+    },
+    {
+      "source_location": "\\Config\\Sprint\\Sprint.ini",
+      "target_location": "\\Config\\Sprint\\Sprint.ini"
+    },
+    {
+      "source_location": "\\meshes\\characters\\_male\\idleanims\\sprint\\SpecialIdle_Sprint.kf",
+      "target_location": "\\meshes\\characters\\_male\\idleanims\\sprint\\SpecialIdle_Sprint.kf"
+    },
+    {
+      "source_location": "\\meshes\\characters\\_male\\idleanims\\sprint\\SpecialIdle_Sprint_1st.kf",
+      "target_location": "\\meshes\\characters\\_male\\idleanims\\sprint\\SpecialIdle_Sprint_1st.kf"
+    }
+  ]
+}

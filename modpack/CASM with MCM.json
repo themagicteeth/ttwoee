@@ -1,0 +1,19 @@
+{
+  "mod_name": "CASM with MCM",
+  "file_name": "CASM with MCM-45652-1-8.7z",
+  "file_size": "15528",
+  "version": "1.8",
+  "author": "Cipscis - Gribbleshnibit8 ",
+  "md5": "54dddb01f9b93c510716b87339006b2f",
+  "repository": "NexusMods",
+  "nexus_mod_id": "45652",
+  "nexus_file_id": "1000048955",
+  "nexus_file_name": "CASM with MCM",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\CASM with MCM.esp",
+      "target_location": "\\CASM with MCM.esp"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "mod_name": "JIP Companions Command and Control",
+  "file_name": "JIP Companions Command and Control-50468-2-60.7z",
+  "file_size": "1796432",
+  "version": "2.60",
+  "author": "jazzisparis",
+  "md5": "269a3cd2639f96049de6e481541ad8aa",
+  "repository": "NexusMods",
+  "nexus_mod_id": "50468",
+  "nexus_file_id": "1000042126",
+  "nexus_file_name": "JIP Companions Command and Control",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\JIP Companions Command & Control - Assets.bsa",
+      "target_location": "\\JIP Companions Command & Control - Assets.bsa"
+    },
+    {
+      "source_location": "\\JIP Companions Command & Control.esp",
+      "target_location": "\\JIP Companions Command & Control.esp"
+    },
+    {
+      "source_location": "\\config\\ccc_avatars.ini",
+      "target_location": "\\config\\ccc_avatars.ini"
+    },
+    {
+      "source_location": "\\config\\ccc_prefs.ini",
+      "target_location": "\\config\\ccc_prefs.ini"
+    },
+    {
+      "source_location": "\\fomod\\info.xml",
+      "target_location": "\\fomod\\info.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\cccHUD.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\cccHUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\AvatarBox.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\AvatarBox.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\Command.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\Command.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\LimbBar.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\LimbBar.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\LimbMain.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\LimbMain.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\ScrollArrow.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\ScrollArrow.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\StatBar.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\StatBar.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\jazzisparis\\templates\\TickBox.xml",
+      "target_location": "\\menus\\prefabs\\jazzisparis\\templates\\TickBox.xml"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "mod_name": "CALIFORNIA Fonts for Vanilla UI",
+  "file_name": "CALIFORNIA Fonts for Vanilla-66000-0-7-1544740865.zip",
+  "file_size": "630927",
+  "version": "0.7",
+  "author": "emptybell",
+  "md5": "abd3995cda200cc2a6729a8141df9f03",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66000",
+  "nexus_file_id": "1000050912",
+  "nexus_file_name": "CALIFORNIA Fonts for Vanilla",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Menus\\Prefabs\\VUI+\\fonts.xml",
+      "target_location": "\\Menus\\Prefabs\\VUI+\\fonts.xml"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Baked-in_Monofonto_Large.fnt",
+      "target_location": "\\textures\\fonts\\Baked-in_Monofonto_Large.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Baked-in_Monofonto_Large.tex",
+      "target_location": "\\textures\\fonts\\Baked-in_Monofonto_Large.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\fixedsys_comp_uniform_width.fnt",
+      "target_location": "\\textures\\fonts\\fixedsys_comp_uniform_width.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\fixedsys_comp_uniform_width_0_lod_a.tex",
+      "target_location": "\\textures\\fonts\\fixedsys_comp_uniform_width_0_lod_a.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Futura_Caps_Large.fnt",
+      "target_location": "\\textures\\fonts\\Glow_Futura_Caps_Large.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\glow_futura_caps_large_0_lod_a.tex",
+      "target_location": "\\textures\\fonts\\glow_futura_caps_large_0_lod_a.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_Large.fnt",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_Large.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_Large.tex",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_Large.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_Medium.fnt",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_Medium.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_Medium.tex",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_Medium.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_VL_dialogs.fnt",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_VL_dialogs.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Glow_Monofonto_VL_dialogs.tex",
+      "target_location": "\\textures\\fonts\\Glow_Monofonto_VL_dialogs.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Monofonto_Large.fnt",
+      "target_location": "\\textures\\fonts\\Monofonto_Large.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Monofonto_Large.tex",
+      "target_location": "\\textures\\fonts\\Monofonto_Large.tex"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Monofonto_VeryLarge02_Dialogs2.fnt",
+      "target_location": "\\textures\\fonts\\Monofonto_VeryLarge02_Dialogs2.fnt"
+    },
+    {
+      "source_location": "\\textures\\fonts\\Monofonto_VeryLarge02_Dialogs2.tex",
+      "target_location": "\\textures\\fonts\\Monofonto_VeryLarge02_Dialogs2.tex"
+    }
+  ]
+}

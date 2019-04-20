@@ -1,0 +1,19 @@
+{
+  "mod_name": "Delay DLC TTW",
+  "file_name": "Delay DLC 1.0 - TTW 3.2-66690-1-0-1553446293.7z",
+  "file_size": "27680",
+  "version": "1.0",
+  "author": "Gribbleshnibit8",
+  "md5": "034649342d363f7d64994d6ff4f84c29",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66690",
+  "nexus_file_id": "1000052813",
+  "nexus_file_name": "Delay DLC 1.0 - TTW 3.2",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Delay DLC - TTW.esp",
+      "target_location": "\\Delay DLC - TTW.esp"
+    }
+  ]
+}

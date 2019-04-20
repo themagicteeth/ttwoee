@@ -1,0 +1,27 @@
+{
+  "mod_name": "Loot Menu - Vanilla UI Plus Patch",
+  "file_name": "Loot Menu - Vanilla UI Patch-63908-1-1.7z",
+  "file_size": "5049",
+  "version": "1.1",
+  "author": "frosty-theaussie",
+  "md5": "0c8f7b08c5b1309be76c91e117524eb1",
+  "repository": "NexusMods",
+  "nexus_mod_id": "63908",
+  "nexus_file_id": "1000043834",
+  "nexus_file_name": "Loot Menu - Vanilla UI Patch",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\brackets.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\brackets.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\lootmenu.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\lootmenu.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\text_box.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\text_box.xml"
+    }
+  ]
+}
