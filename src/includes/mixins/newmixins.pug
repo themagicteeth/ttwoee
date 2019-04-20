@@ -145,6 +145,9 @@ mixin modTags
         span(class='core' title='This mod increases difficulty') 🔥
         - difficulty = false
 
+    if configFiles
+       span(class='core' title='This mod has configuration or ini files') 📄
+       - configFiles = false
 
 //-
     Creates the Author mod detail for mod cards.
