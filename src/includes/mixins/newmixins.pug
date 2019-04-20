@@ -1,32 +1,5 @@
 
 //-
-    These are global variables that are set 
-    throughout pages. They should be reset after
-    each use.
-//-
-- let modId            //- Kebab cased mod name
-- let modName          //- The name of the mod
-- let modUrl           //- URL to the mods page
-- let modAuthor        //- Author(s) of the mod (optional)
-- let modVersion       //- The mods version (optional)
-- let modNotes         //- Notes about the mod (optional)
-- let mainFiles        //- Main files (optional)
-- let updateFiles      //- Update files (optional)
-- let optionalFiles    //- Optional files (optional)
-- let downloadFilesb   //- Download files (optional)
-- let miscFiles        //- Miscellaneous files (optional)
-- let fileType = null      //- Type of file (optional)
-- let coreMod = false
-- let highQuality = false
-- let preReq = false
-- let modRequires
-- let testing = false
-- let hasPlugins =  false
-- let converted = false
-- let requiredBy = null
-- let downgrade = false
-- let difficulty = false
-//-
     Creates a mod card
 
     - modId = 'kebab-case-mod-name'
@@ -49,24 +22,7 @@ mixin mod
     //- Container for the mod
     div(id=modId)
 
-        if coreMod
-            +coreMod
-        if highQuality
-            +highQuality
-        if preReq
-            +preReq
-        if testing
-            +testing
-        if hasPlugins
-            +hasPlugins
-        if converted
-            +converted
-        if requiredBy
-            +requiredBy
-        if downgrade
-            +downgrade
-        if difficulty
-            +difficulty
+        +modTags
 
         +modTitle
 
@@ -93,40 +49,6 @@ mixin mod
 
     //- Reset the mod ID
     - modId = null
-    - coreMod = false
-    - preReq = false
-    - highQuality = false
-    - testing = false
-    - hasPlugins = false
-    - converted = false
-    - requiredBy = null
-    - downgrade = false
-    - difficulty = false
-
-//-
-    Creates the Author mod detail for mod cards.
-    This mixin is not called from templates.
-    It is set using the mod author variable.
-
-    - modAuthor = 'Author1 and Author 2'
-//- 
-mixin modAuthor
-    p.mt0.mb0 #[span.b Author: ] #{modAuthor}
-    //- Reset mod author
-    - modAuthor = null
-
-
-//-
-    Creates the Version mod detail for mod cards.
-    This mixin is not called from templates.
-    It is set using the modVersion variable.
-
-    - modVersion = '1.0'
-//-
-mixin modVersion
-    p.mt0.mb0 #[span.b Version: ] #{modVersion}
-    //- Reset mod version
-    - modVersion = null
 
 
 //-
@@ -168,6 +90,86 @@ mixin modTitle
     - modName = null
     - modUrl = null
     - fileType = null
+
+
+
+mixin modTags
+    //- Mods that are part of the core guide
+    if coreMod
+        span(class='core' title='Core mod') ☢️
+        - coreMod = false
+
+    //- Mods that have high quality textures
+    if highQuality
+        span(class='core' title='High quality textures') 💎
+        - highQuality = false
+
+    //- Mods which are still being tested, or instructions being developed
+    if testing
+        span(class='core' title='Mod or installation instructions still in testing') 🚧
+        - testing = false
+
+    //- Mods that have plugins
+    if hasPlugins
+        span(class='core' title='This mod has plugins') 🔌
+        - hasPlugins = false
+
+    //- Mods that have been converted for TTW
+    if converted
+        span(class='core' title='This mod has been converted for TTW') 🌀
+        - converted = false
+    
+    //- List of mods which require the mod
+    if requiredBy || preReq
+        - const required = requiredBy ? `Required by ${requiredBy}` : null
+        - const requires = preReq ? `Requires ${preReq}` : null
+        - let requirements = `${requires}\n\n${required}`
+
+        if !requires
+            -requirements = `${required}`
+        if !required
+            - requirements = `${requires}`
+
+        span(class='core' title=requirements) 🔗
+
+        - requiredBy = null
+        - preReq = false
+
+    //- Mods which have a downgrade available
+    if downgrade
+        span(class='core' title='Lower resolution available') 🔻
+        - downgrade = false
+
+    //- MOds which increase the games difficulty
+    if difficulty
+        span(class='core' title='This mod increases difficulty') 🔥
+        - difficulty = false
+
+
+//-
+    Creates the Author mod detail for mod cards.
+    This mixin is not called from templates.
+    It is set using the mod author variable.
+
+    - modAuthor = 'Author1 and Author 2'
+//- 
+mixin modAuthor
+    p.mt0.mb0 #[span.b Author: ] #{modAuthor}
+    //- Reset mod author
+    - modAuthor = null
+
+
+//-
+    Creates the Version mod detail for mod cards.
+    This mixin is not called from templates.
+    It is set using the modVersion variable.
+
+    - modVersion = '1.0'
+//-
+mixin modVersion
+    p.mt0.mb0 #[span.b Version: ] #{modVersion}
+    //- Reset mod version
+    - modVersion = null
 
 
 //-
@@ -265,7 +267,7 @@ mixin optionalFiles
         if optionalFiles > 1
             | optional files
         else 
-            | optional
+            | optional file
     //- If any other files, add a comma
     if miscFiles
         |,
@@ -313,7 +315,6 @@ mixin files(files)
 
 mixin requires
     p.mt0.mb0 #[span.b Requires: ] #{modRequires}
-
     - modRequires = null
 
 //-
@@ -406,6 +407,11 @@ mixin copy(...style)
 
 //-
     Creates an ini instruction block.
+
+    +ini('Description')
+        | ; Ini comments
+        | [INISECITION]
+        | IniSetting=1
 //-
 mixin ini(title)
     div.instruction-block
@@ -430,7 +436,6 @@ mixin hidden
             |
             block
 
-
 //-
     Creates a general instructions block with no header
     Takes any number of classes
@@ -454,31 +459,3 @@ mixin group
     div.group
         block
 
-mixin coreMod
-    span(class='core' title='Core mod') ☢️
-
-mixin highQuality
-    span(class='core' title='High quality textures') 💎
-
-mixin preReq
-    - const requirements = `Requires ${preReq}`
-    span(class='core' title=requirements) 📗
-
-mixin testing
-    span(class='core' title='Mod or installation instructions still in testing') 🚧
-
-mixin hasPlugins
-    span(class='core' title='This mod has plugins') 🔌
-
-mixin converted
-    span(class='core' title='This mod has been converted for TTW') 🌀
-
-mixin requiredBy
-    - const requirements = `Required by ${requiredBy}`
-    span(class='core' title=requirements) 🔗
-
-mixin downgrade
-    span(class='core' title='Lower resolution available') 🔻
-
-mixin difficulty
-    span(class='core' title='This mod increases difficulty') 🔥
