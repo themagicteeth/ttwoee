@@ -25,7 +25,7 @@
 - let converted = false
 - let requiredBy = null
 - let downgrade = false
-
+- let difficulty = false
 //-
     Creates a mod card
 
@@ -65,6 +65,8 @@ mixin mod
             +requiredBy
         if downgrade
             +downgrade
+        if difficulty
+            +difficulty
 
         +modTitle
 
@@ -99,6 +101,8 @@ mixin mod
     - converted = false
     - requiredBy = null
     - downgrade = false
+    - difficulty = false
+
 //-
     Creates the Author mod detail for mod cards.
     This mixin is not called from templates.
@@ -475,3 +479,6 @@ mixin requiredBy
 
 mixin downgrade
     span(class='core' title='Lower resolution available') 🔻
+
+mixin difficulty
+    span(class='core' title='This mod increases difficulty') 🔥
