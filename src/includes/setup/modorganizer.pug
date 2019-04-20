@@ -1,10 +1,8 @@
 //-
     Mod Organizer
-    Updated 2019-03-29
 //-
 
 - sections.push(['#configure-mod-organizer', 'Mod Organizer'])
-- mods.push([])
 
 section#configure-mod-organizer
     h2 Configure Mod Organizer
@@ -90,15 +88,29 @@ section#configure-mod-organizer
             | Do not select any of the optional check boxes.
             | Click the [Add] button. The executable should appear in the list.
             | Repeat this process for each one.
+            |
+            | Add the following executables:
+            | * LOOT
+            | * FNVEdit
+            | * FNVEdit Cleaner (use the FNVEdit executable)
+            | * Wrye Flash
+            | * zEdit
+            | * GECK
+            | * xLODGen (use xLODGenx64.exe)
+            | * FNVLODGen
+
 
         +important Select the executables listed below and input the text into the "Arguments" box.
         pre.mt0
             | Click [Modify] after adding each argument:
             | 
             | LOOT: --game=FalloutNV
+            | FNVEdit: -FNV -IKnowWhatImDoing
+            | FNVEdit Cleaner: -QuickAutoClean
             |
-            | FNVLODGen: -o:"path\to\modorganizer\mods\FNVLODGenOutput"
-            | Make the path point to your Mod Organizer mods directory, and put it in a folder called FNVLODGenOutput
+            | Make these paths point to your Mod Organizer mods directory
+            | FNVLODGen: -o:"path\to\modorganizer\mods\FNVLODGen Output"
+            | xLODGen: -FNV -o:"path\to\modorganizer\mods\xLODGen Output"
             |
             | Then close the dialogue by clicking [OK].
 
@@ -106,36 +118,18 @@ section#configure-mod-organizer
         pre.mt0 
             | Go to the Mods tab
             | Right click the header on the top bar and make sure Lock Times is UNTICKED.
-   
-    #mod-organizer-bsas
-        h3 ModOrganizer and BSAs
-
-        +copy('mb0')
-            | Bethesda Software Archives (BSA) can be used to store mod files to reduce file sizes. 
-            | The added benefit is the reducing in file system fragmentation caused by having many
-            | loose files. Sometimes extracting the contents of a BSA is necessary for various reasons,
-            | such as: not wanting the entire contents of the BSA, to optimize textures within the BSA,
-            | or just to view the contents of it.
-        +copy('mb0', 'mt0')
-            | Mod Organizer manages these archives, follow the steps below to ensure proper loading:
+            
+        +important Launch FNVEdit through Mod Organizer and create the cache folder
         pre.mt0
-            | Go to the Archives tab on the right pane of Mod Organizer.
-            | Ensure that “Have MO Manage Archives” is checked.
+            | Run FNVEdit
+            | Exit once the Module Selection screen pops up
             |
-            | Note: Greyed out BSAs will be checked no matter what due to their plugin requiring
-            | that BSA to load. Make sure that all BSAs in the list are checked, this allows MO to
-            | read their contents. 
+            | In the left pane of  Mod Organizer, scroll to the very last mod called "Overwrite"
+            | Right click and select [Create mod from]
+            | Name the mod FNVEdit Cache
+            |
+            | Open the mod in explorer and delete everything byt the FNVEdit Cache folder
+            |
+            | Right click the FNVEdit Cache mod in Mod Organizers left pane
+            | Select [Ignore missing data]
 
-        +important
-            | Ensure "Fallout - Invalidation.bsa" is the top file in the list, just under data. 
-            | Otherwise many mods will not function properly.
-
-        +copy('mb0')
-            | Throughout the guide BSAs may need to be extracted. Configure Mod Organizer as follows,
-            | so it will ask if you would like to extract BSA's anytime there is a BSA within a mod.
-        pre.mt0
-            | Click the [Settings] button at the top of the main Mod Organizer window. The icon looks 
-            | like a screwdriver and wrench.
-            | Click the [Plugins] tab.
-            | Select BSA Extractor plugin and change false to true. 
-    

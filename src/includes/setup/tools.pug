@@ -1,107 +1,185 @@
 //-
     Tools
-    Updated 2019-03-22
 //-
 
 - sections.push(['#tools', 'Tools'])
-- mods.push([])
 
 section#tools
     h2 Tools
     
-    //-
-        7-Zip
-        Updated 2019-03-22
-    //-
-    #7-zip
-        +name('7-Zip', 'https://www.7-zip.org', 'tool')
-        +modInfo
-            +author Igor Pavlov
-            +version #[+file('2019-02-21')]
-            +installation Download the 64-bit x64 exe
+    //- 7-Zip
+    - modId = '7-zip'
+    - modName = '7-Zip'
+    - modUrl = 'https://www.7-zip.org'
+    - modAuthor = 'Igor Pavlov'
+    - fileType = 'tool'
+    - modVersion = '2019-02-21'
+    - downloadFiles = ['64-bit x64 exe']
+    +mod
+        +notes This is used for working almost any type of compressed archive.
 
-    //-
-        FNVEdit aka xEdit
-        Updated 2019-03-22
-    //-
-    #fnvedit
-        +name('FNVEdit aka xEdit', 'https://www.nexusmods.com/newvegas/mods/34703', 'tool')
-        +modInfo
-            +author ElminsterAU
-            +version 4.0.2
-            +installation Download #[+file('FNVEdit 4.0.2')]
-            +notes 
-                | The function of this tool is to remove Identical To Master(ITM) records, Undelete Deleted Records(UDR), 
-                | and clean dirty edits as specified by the guide the ESMs and ESPs that Fallout will be loading. 
 
-    //-
-        Generate Bash Tags
-        Updated 2019-03-31
-    //-
-    #fnvedit-generate-bash-tags
-    +name('Generate Bash Tags', 'https://mega.nz/#!0QRVAQKa!6dDsprHGy9iuI85k0QYzNtGzH4vZO4uh_tc7L_671ME', 'tool')
-    +modInfo
-        +installation Download #[+file('Generate Bash Tags.pas')]
-        pre.raised
-            | Place "Generate Bash Tags.pas" in "FNVEdit\Edit Scripts" folder
+    //- Microsoft Visual C++ Redistributable for Visual Studio 2017
+    - coreMod = true
+    - modId = 'cpp-redistributable'
+    - modName = 'Microsoft Visual C++ Redistributable for Visual Studio 2017'
+    - modUrl = 'https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads#section-2'
+    - modAuthor = 'Microsoft'
+    - modVersion = '2017'
+    - fileType = 'tool'
+    - downloadFiles = ['vc_redist.x64.exe', 'vc_redist.x86.exe']
+    +mod
+        +notes This is required for Mod Organizer to function properly.
 
-    //-
-        FNVLODGen
-        Updated 2019-03-31
-    //-
-    #fnvlodgen-tool
-        +name('FNVLODGen', 'https://www.nexusmods.com/newvegas/mods/58562', 'tool')
-        +modInfo
-            +author Ehamloptiran Sheson and FNVEdit Team
-            +version 3.2.1
-            +installation Download #[+file('FNVLODGen 3.2.1')]
 
-    //-
-        Merge Plugins Standalone
-        Updated 2019-03-31
-    //-
-    #merge-plugins
-        +name('Merge Plugins Standalone', 'https://www.nexusmods.com/skyrim/mods/69905', 'tool')
-        +modInfo
-            +author Mator
-            +version 2.3.1
-            +installation Download #[+file('Merge Plugins')]
+    //- FNVEdit aka xEdit
+    - coreMod = true
+    - modId = 'fnvedit'
+    - modName = 'FNVEdit aka xEdit'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/34703'
+    - modAuthor = 'ElminsterAU'
+    - fileType = 'tool'
+    - modVersion = '4.0.2'
+    - downloadFiles = ['FNVEdit 4.0.2']
+    +mod
+        +notes 
+            | The function of this tool is to remove Identical To Master(ITM) records, Undelete Deleted Records(UDR), 
+            | and clean dirty edits as specified by the guide the ESMs and ESPs that Fallout will be loading. 
 
-    //-
-        Mod Organizer
-        Updated 2019-03-22
-    //-
-    #mod-organizer
-        +name('Mod Organizer', 'https://github.com/ModOrganizer2/modorganizer/releases', 'tool')
-        +modInfo
-            +author Tannin, MO2 Team 
-            +version 2.2.0beta8
-            +installation Download #[+file('Mod.Organizer-2.2.0beta8.7z')]
-            pre.raised
-                | Create a folder called Mod Organizer - TTW
-                | Extract the contents of the archive into this folder
-            +notes The function of this tool is to manage mods and is the mod manager of choice for this guide.
 
-    //-
-        LOOT
-        Updated 2019-03-22
-    //-
-    #loot
-        +name('LOOT', 'https://loot.github.io', 'tool')
-        +modInfo
-            +author LOOT Team
-            +version v0.14.3
-            +installation Download #[+file('LOOT.Installer.exe')]
+    //- FNVLODGen
+    - modId = 'fnvlodgen-tool'
+    - modName = 'FNVLODGen'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58562'
+    - modAuthor = 'Ehamloptiran Sheson and FNVEdit Team'
+    - modVersion = '3.2.1'
+    - fileType = 'tool'
+    - downloadFiles = ['FNVLODGen 3.2.1']
+    +mod
 
-    //-
-        Wrye Flash NV
-        Updated 2019-03-31
-    //-
-    #wrye-flash-nv
-        +name('Wrye Flash NV', 'https://www.nexusmods.com/newvegas/mods/35003', 'tool')
-        +modInfo
-            +author valda
-            +version 18.0
-            +installation Download #[+file('Wrye Flash 18.0 - Standalone Executable')]
-            pre.raised
-                | Extract the archive into the Fallout New Vegas root directory
+
+    //- GECK
+    - testing = true
+    - modId = 'geck'
+    - modName = 'GECK'
+    - fileType = 'tool'
+    - modUrl = 'https://geck.bethsoft.com/index.php?title=Main_Page'
+    - modAuthor = 'Bethesda'
+    - modVersion = '1.4'
+    - downloadFiles = ['Garden of Eden Creation Kit for Fallout New Vegas']
+    +mod
+        +instructions
+            | Extract the archive into the Fallout New Vegas root directory
+        +notes
+            | Tool that allows you to create or edit any data, mainly used for mod
+            | development, or TTW conversions
+
+
+    //- LOOT
+    - coreMod = true
+    - modId = 'loot'
+    - modName = 'LOOT'
+    - modUrl = 'https://loot.github.io'
+    - modAuthor = 'LOOT Team'
+    - fileType = 'tool'
+    - modVersion = 'v0.14.3'
+    - downloadFiles = ['LOOT.Installer.exe']
+    +mod
+        +notes Extremely useful utility used for sorting mod load orders
+
+
+    //- Mod Organizer 2
+    - coreMod = true
+    - preReq = 'Requires Microsoft Visual C++ Redistributable for Visual Studio 2017'
+    - modId = 'mod-organizer'
+    - modName = 'Mod Organizer 2'
+    - modUrl = 'https://github.com/ModOrganizer2/modorganizer/releases'
+    - modAuthor = 'Tannin, MO2 Team '
+    - modVersion = '2.2.0beta8'
+    - fileType = 'tool'
+    - downloadFiles = ['Mod.Organizer-2.2.0beta8.7z']
+    +mod
+        +instructions
+            | Install to a folder outside of New Vegas’s main directory
+            | 
+            | Right-click ModOrganizer.exe and select Properties
+            | Go to the Compatibility tab and check Run this program as an administrator
+            | Click [Apply] and then [OK]
+        +notes The function of this tool is to manage mods and is the mod manager of choice for this guide.
+
+
+    //- Wrye Flash NV
+    - modId = 'wrye-flash-nv'
+    - modName = 'Wrye Flash NV'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/35003'
+    - modAuthor = 'valda'
+    - modVersion = '18.0'
+    - fileType = 'tool'
+    - downloadFiles = ['Wrye Flash 18.0 - Standalone Executable']
+    +mod
+        +instructions
+            | Extract the archive into the Fallout New Vegas root directory
+
+
+    //- xLODGen
+    - testing = true
+    - modId = 'xlodgen-tool'
+    - modName = 'xLODGen'
+    - modUrl = 'https://forum.step-project.com/topic/13451-xlodgen-terrain-lod-beta-for-fnv-fo3-fo4-fo4vr-tes5-sse-tes5vr/'
+    - modAuthor = 'sheshon'
+    - modVersion = 'beta 42'
+    - fileType = 'tool'
+    - downloadFiles = ['xLODGen beta 42']
+    +mod
+    
+
+    //- zEdit
+    - testing = true
+    - modId = 'zedit'
+    - modName = 'zEdit'
+    - modUrl = 'https://github.com/z-edit/zedit/releases'
+    - modAuthor = 'Mator'
+    - modVersion = 'v.0.6.4'
+    - fileType = 'tool'
+    - downloadFiles = ['zEdit_v0.6.4_-_Portable_x64.7z']
+    +mod
+        +notes A multi-purpose integrated development environment. Will be used to merge plugins.
+
+
+    h3 FNVEdit Scripts
+
+    +important For each download extract the archives into the "FNVEdit\Edit Scripts" folder
+
+    //- dubfunctions
+    - preReq = 'Requires FNVEdit'
+    - modId = 'dubhfunctions'
+    - modName = 'dubfunctions'
+    - modUrl = 'http://www.mediafire.com/file/fi10py1p6pa8hh6/dubhfunctions.7z/file'
+    - downloadFiles = ['dubhfunctions.7z']
+    - fileType = 'tool'
+    +mod
+
+
+    //- Mte Functions
+    - preReq = 'Requires FNVEdit'
+    - modId = 'mtefucntions'
+    - modName = 'Mte Functions'
+    - modUrl = 'http://www.mediafire.com/file/bktk9439j8xxv80/MteFunctions.7z'
+    - downloadFiles = ['MteFunctions.7z']
+    - fileType = 'tool'
+    +mod
+
+
+    //- Generate Bash Tags
+    - preReq = 'Requires FNVEdit'
+    - modId = 'fnvedit-generate-bash-tags'
+    - modName = 'Generate Bash Tags'
+    - modUrl = 'https://mega.nz/#!0QRVAQKa!6dDsprHGy9iuI85k0QYzNtGzH4vZO4uh_tc7L_671ME'
+    - downloadFiles = ['Generate Bash Tags.pas']
+    - fileType = 'tool'
+    +mod
+        +notes
+            | This will be used to generate bash tags 
+            | #[+link('later in the guide', '#bash-tags')]
+
+            
