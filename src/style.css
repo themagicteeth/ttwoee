@@ -202,6 +202,10 @@ pre {
   background-color: var(--mispackage-bg);
 }
 
+.group .mod-name:not(:first-of-type) {
+  margin-top: 0;
+}
+
 /* Mod card name style */
 .mod-name {
   background-color: var(--mod-name-bg);

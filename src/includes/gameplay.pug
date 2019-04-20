@@ -122,19 +122,7 @@ section#gameplay
             +notes Replaces all static containers with lootable equivalents.
 
 
-    //-
-        BLEED
-        Updated 2019-04-02
-    //-
-    #bleed
-        +name('BLEED', 'https://www.nexusmods.com/newvegas/mods/61141', 'ttw')
-        +modInfo
-            +author Roy Batty, Puppettron
-            +version 1.7.3
-            +installation Install #[+file('BLEED')]
-            +notes
-                | Ballistic Locational Energy Explosive Damage. BLEED is an overhaul of how
-                | damage and force is applied.
+ 
 
     //-
         Live Dismemberment
@@ -158,25 +146,43 @@ section#gameplay
     //-         +version 1.6
     //-         +installation Install #[+file('Quick Grenade Hotkey')]
 
-    #vanilla-sprint
-        +name('Vanilla Sprint', 'https://www.nexusmods.com/newvegas/mods/66535', 'fnv')
-        +modInfo
-            +author C16 and Asurah
-            +version rev1.4
-            +installation Install #[+file('VanillaSprint')]
+    //- BLEED
+    - hasPlugins = true
+    - converted = true
+    - modId = 'bleed'
+    - modName = 'BLEED'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/61141'
+    - fileType = 'ttw'
+    - modAuthor = 'Roy Batty, Puppettron'
+    - modVersion = '1.7.3'
+    - mainFiles = ['BLEED']
+    +mod
+        +notes
+            | Ballistic Locational Energy Explosive Damage. BLEED is an overhaul of how
+            | damage and force is applied.
 
+    //- Vanilla Sprint
+    - hasPlugins = true
+    - coreMod = true
+    - modId = 'vanilla-sprint'
+    - modName = 'Vanilla Sprint'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66535'
+    - modAuthor = 'C16 and Asurah'
+    - modVersion = 'rev1.4'
+    - mainFiles = ['VanillaSprint']
+    +mod
+	
 
-    //-
-        VATS Alternative - A Comprehensive Bullet Time Mod
-        Updated 2019-04-03
-    //-
-    #vats-alternative
-        +name('VATS Alternative - A Comprehensive Bullet Time Mod', 'https://www.nexusmods.com/newvegas/mods/62278', 'fnv')
-        +modInfo
-            +author PushTheWinButton and miguick
-            +version 2.5
-            +installation Install #[+file('VATS Alternative - Bullet Time')]
-
+    //- VATS Alternative - A Comprehensive Bullet Time Mod
+    - hasPlugins = true
+    - modId = 'vats-alternative'
+    - modName = 'VATS Alternative - A Comprehensive Bullet Time Mod'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62278'
+    - modAuthor = 'PushTheWinButton and miguick'
+    - modVersion = '2.5'
+    - mainFiles = ['VATS Alternative - Bullet Time']
+    +mod
+	
 
     //- TTW Nuka-Cola Expansion
     - hasPlugins = true
@@ -288,6 +294,7 @@ section#gameplay
 
 
     //- Delay Level Up
+    - hasPlugins = true
     - modId = 'delay-level-up'
     - modName = 'Delay Level Up'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/62921'
@@ -328,6 +335,7 @@ section#gameplay
 
 
     //- Static Battery Replacer
+    - hasPlugins = true
     - modId = 'static-battery-replacer'
     - modName = 'Static Battery Replacer'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/36052'
@@ -341,6 +349,7 @@ section#gameplay
 
 
     //- TTW Comment Removal Mod (Clumsy, Locks, Sneak)
+    - hasPlugins = true
     - converted = true
     - modId = 'ttw-comment-removal'
     - modName = 'TTW Comment Removal Mod (Clumsy, Locks, Sneak)'
@@ -371,6 +380,7 @@ section#gameplay
 
 
     //- Unlocking Containers Doesn't Show Menu
+    - preReq = 'NVSE'
     - modId = 'unlocking-doesnt-show-menu'
     - modName = "Unlocking Containers Doesn't Show Menu"
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/66687'
