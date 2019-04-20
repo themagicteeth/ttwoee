@@ -1,5 +1,8 @@
 //-
     Gameplay
+
+    TTW Economy optimised
+    Just Recoil Emulator BETA
 //-
 
 - mods.push([])
@@ -7,32 +10,6 @@
 
 section#gameplay
     h2 Gameplay
-
-    //-
-        Economy Overhaul
-        Updated 2019-04-03
-    //-
-    //- #economy-overhaul
-    //-     +name('Economy Overhaul', 'https://www.nexusmods.com/newvegas/mods/62899', 'fnv')
-    //-     +modInfo
-    //-         +author PushTheWinButton
-    //-         +version 1.11
-    //-         +installation Install #[+file('Economy Overhaul')]
-    //-         +notes
-    //-             | A simple, highly compatible overhaul of the games economy, aiming to
-    //-             | make buying and selling more rewarding and plausible.
-
-    //-
-        FPGE - Functional Post Game Ending
-        Updated 2019-04-04
-    //-
-    #fpge
-        +name('FPGE - Functional Post Game Ending', 'https://www.nexusmods.com/newvegas/mods/66726', 'fnv')
-        +modInfo
-            +author Kazopert
-            +version 1.3
-            +installation Install #[+file('Functional Post Game Ending')] and #[+file('Functional Post Game Ending - Outside Bets Patch')]
-            +notes Reviewing Outside Bets Patch
 
     //-
         Gunsmithing
@@ -100,8 +77,6 @@ section#gameplay
             +author Roy Batty
             +installation Install #[+file('ttw_flashlightnvse.7z')]
 
-    //- +merge Merge Flashlight NVSE and TTW Flashlight NVSE
-    //- pre.mt0 TODO
 
     +modCard('immersive-minigames', 'Immersive Minigames', 'https://www.nexusmods.com/newvegas/mods/58246', 'fnv-color')
         +author Gribbleshnibit8 and pintocat
@@ -132,17 +107,7 @@ section#gameplay
             +installation Install #[+file('Mobile Truck Base - TTW 3.2 - 1.0')]
             +notes This patches Mobile Truck Base for TTW
 
-    //-
-        Nipton Fires Extinguished
-        Updated 2019-03-22
-    //-
-    #nipton-fires-extinguished
-        +name('Nipton Fires Extinguished', 'https://www.nexusmods.com/newvegas/mods/53846', 'fnv')
-        +modInfo
-            +author Qwerty
-            +version 1.0
-            +installation Install #[+file('Nipton Fires Extinguished')]
-            +notes Makes fire and smoke effects in Nipton disappear 1 day after the first player visit.
+
 
     //-
         Root 'n Loot TTW
@@ -156,19 +121,6 @@ section#gameplay
             +installation Install #[+file("Root 'n Loot")]
             +notes Replaces all static containers with lootable equivalents.
 
-    //-
-        Static Battery Replacer
-        Updated 2019-03-22
-    //-
-    #static-battery-replacer
-        +name('Static Battery Replacer', 'https://www.nexusmods.com/newvegas/mods/36052', 'fnv')
-        +modInfo
-            +author pintocat
-            +version 1.0
-            +installation Install #[+file('Static Battery Replacer')]
-            +notes
-                | Replaces 50 of the 59 static Fission Battery models with the Misc Item version that can be taken.
-                | The remaining 9 are there as visual "power sources" for lights and such.
 
     //-
         BLEED
@@ -225,70 +177,134 @@ section#gameplay
             +version 2.5
             +installation Install #[+file('VATS Alternative - Bullet Time')]
 
-    #ttw-comment-removal
-        +name('TTW Comment Removal Mod (Clumsy, Locks, Sneak)', 'https://drive.google.com/file/d/1NBiMZonFNPvD0yvYarS_eULsIYyghvSH/view?usp=sharing', 'ttw')
-        +modInfo
-            +author frootzcat
-            +installation Install #[+file('CommentTTW.rar')]
-            +notes
-                | This is basically a merged mod that cuts out: knocked Over Items ("Feeling clumsy today?"),
-                | looking at Locks ("Don't try it."), sneaking Comments ("I see you."). More info on the
-                | #[+link('mods forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6605&sid=16a02787fce15e5188a8778d7563b3f2')]
 
-    #delay-dlc
-        +name('Delay DLC TTW', 'https://www.nexusmods.com/newvegas/mods/66690', 'ttw')
-        +modInfo
-            +author Gribbleshnibit8
-            +version 1.0
-            +installation Install #[+file('Delay DLC 1.0 - TTW 3.2')]
-            +notes
-                | It stops the annoying messages that display when a new DLC is loaded, and requires
-                | that you be within a certain distance of the broadcast location before you can pick
-                | up the radio signal. Once you do have the signal, you have to listen to the WHOLE
-                | thing in order to get the quest and map marker for the location.
 
-    #delay-level-up
-        +name('Delay Level Up', 'https://www.nexusmods.com/newvegas/mods/62921')
-        +modInfo
-            +author Ladez
-            +version 3.5
-            +installation Install #[+file('Delay Level Up')]
-            +notes
-                | The level up menu no longer opens automatically.
-                | The player can level up their character via the stats page in the Pip-Boy.
-                | The player can skip assignment of skill points and perks during level up.
-                | Leftover points can be spent in-between levels, also via the Pip-Boy.
 
-    #1stewieAI-tweaks
-        +name("lStewieAl's Tweaks", 'https://www.nexusmods.com/newvegas/mods/66347')
-        +modInfo
-            +author lStewieAl
-            +version 2.21
-            +installation Install #[+file('Stewie Tweaks')] and #[+file('Stewie Tweaks INI')]
-            +instructions
-                | Double click lStewieAl's Tweaks in the left pane of Mod Organizer
-                | Click the [INIs] tab
-                | Modify the ini settings as below
-            .raised
-                +ini('Enable features in nvse_stewie_tweaks.ini')
-                    | [Tweaks]
-                    | bNoScreenshotPopup=1
-                    | bNoKarmaMessages=1
-                    | bNoCrippleCriticalMessages=1
-                    | bFasterSleepWait=1
-                    | bNoXPMessages=1
-                    | bNoUnconciousMessage=1
-                    | bNoStartMenuDLCPopup=1
-            +notes
-                | An espless collection of small game tweaks with an INI to configure settings.
-                | Includes Faster Sleep Wait, Essential Companions toggle and more.
 
-    #tutorial-killer
-        +name('Tutorial Killer', 'https://www.nexusmods.com/newvegas/mods/47746')
-        +modInfo
-            +author pintocat, Roy Batty
-            +version 1.52
-            +installation Install #[+file('Tutorial Killer - Scripted version')]
-            +notes
-                | This removes message boxes that pop up during the tutorial,
-                | as well as one-time help pop-ups, repeating corner-messages.
+    //- lStewieAl's Tweaks
+    - modId = '1stewieAI-tweaks'
+    - modName = "lStewieAl's Tweaks"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66347'
+    - modAuthor = 'lStewieAl'
+    - modVersion = '2.21'
+    - mainFiles = ['Stewie Tweaks', 'Stewie Tweaks INI']
+    +mod
+        +instructions
+            | Double click lStewieAl's Tweaks in the left pane of Mod Organizer
+            | Click the [INIs] tab
+            | Modify the ini settings as below
+        +ini('Enable features in nvse_stewie_tweaks.ini')
+            | [Tweaks]
+            | bNoScreenshotPopup=1
+            | bNoKarmaMessages=1
+            | bNoCrippleCriticalMessages=1
+            | bFasterSleepWait=1
+            | bNoXPMessages=1
+            | bNoUnconciousMessage=1
+            | bNoStartMenuDLCPopup=1
+        +notes
+            | An espless collection of small game tweaks with an INI to configure settings.
+            | Includes Faster Sleep Wait, Essential Companions toggle and more.
+
+
+    //- Delay DLC TTW
+    - modId = 'delay-dlc'
+    - modName = 'Delay DLC TTW'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66690'
+    - fileType = 'ttw'
+    - modAuthor = 'Gribbleshnibit8'
+    - modVersion = '1.0'
+    - mainFiles = ['Delay DLC 1.0 - TTW 3.2']
+    +mod  
+        +notes
+            | It stops the annoying messages that display when a new DLC is loaded, and requires
+            | that you be within a certain distance of the broadcast location before you can pick
+            | up the radio signal. Once you do have the signal, you have to listen to the WHOLE
+            | thing in order to get the quest and map marker for the location.
+
+
+    //- Delay Level Up
+    - modId = 'delay-level-up'
+    - modName = 'Delay Level Up'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62921'
+    - modAuthor = 'Ladez'
+    - modVersion = '3.5'
+    - mainFiles = ['Delay Level Up']
+    +mod  
+        +notes
+            | The level up menu no longer opens automatically.
+            | The player can level up their character via the stats page in the Pip-Boy.
+            | The player can skip assignment of skill points and perks during level up.
+            | Leftover points can be spent in-between levels, also via the Pip-Boy.
+
+
+    //- FPGE - Functional Post Game Ending
+    - modId = 'fpge'
+    - modName = 'FPGE - Functional Post Game Ending'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66726'
+    - modAuthor = 'Kazopert'
+    - modVersion = '1.3'
+    - mainFiles = ['Functional Post Game Ending', 'Functional Post Game Ending - Outside Bets Patch']
+    +mod
+        +notes Reviewing Outside Bets Patch
+
+
+    //- Nipton Fires Extinguished
+    - modId = 'nipton-fires-extinguished'
+    - modName = 'Nipton Fires Extinguished'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/53846'
+    - modAuthor = 'Qwerty'
+    - modVersion = '1.0'
+    - mainFiles = ['Nipton Fires Extinguished']
+    +mod
+        +notes Makes fire and smoke effects in Nipton disappear 1 day after the first player visit.
+
+
+    //- Static Battery Replacer
+    - modId = 'static-battery-replacer'
+    - modName = 'Static Battery Replacer'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/36052'
+    - modAuthor = 'pintocat'
+    - modVersion = '1.0'
+    - mainFiles = ['Static Battery Replacer']
+    +mod
+        +notes
+            | Replaces 50 of the 59 static Fission Battery models with the Misc Item version that can be taken.
+            | The remaining 9 are there as visual "power sources" for lights and such.
+
+
+    //- TTW Comment Removal Mod (Clumsy, Locks, Sneak)
+    - modId = 'ttw-comment-removal'
+    - modName = 'TTW Comment Removal Mod (Clumsy, Locks, Sneak)'
+    - modUrl = 'https://drive.google.com/file/d/1NBiMZonFNPvD0yvYarS_eULsIYyghvSH/view?usp=sharing'
+    - fileType = 'ttw'
+    - modAuthor = 'frootzcat'
+    - mainFiles = ['CommentTTW.rar']
+    +mod  
+        +notes
+            | This is basically a merged mod that cuts out: knocked Over Items ("Feeling clumsy today?"),
+            | looking at Locks ("Don't try it."), sneaking Comments ("I see you."). More info on the
+            | #[+link('mods forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6605&sid=16a02787fce15e5188a8778d7563b3f2')]
+
+
+    //- Tutorial Killer
+    - modId = 'tutorial-killer'
+    - modName = 'Tutorial Killer'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/47746'
+    - modAuthor = 'pintocat, Roy Batty'
+    - modVersion = '1.52'
+    - mainFiles = ['Tutorial Killer - Scripted version']
+    +mod  
+        +notes
+            | This removes message boxes that pop up during the tutorial,
+            | as well as one-time help pop-ups, repeating corner-messages.
+
+
+    //- Unlocking Containers Doesn't Show Menu
+    - modId = 'unlocking-doesnt-show-menu'
+    - modName = "Unlocking Containers Doesn't Show Menu"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66687'
+    - modAuthor = 'lStewieAl'
+    - modVersion = '1.0'
+    - optionalFiles = ["Unlocking Doesn't Activate (NVSE)"]
+    +mod
