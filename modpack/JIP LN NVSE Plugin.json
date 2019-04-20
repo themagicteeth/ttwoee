@@ -1,0 +1,31 @@
+{
+  "mod_name": "JIP LN NVSE Plugin",
+  "file_name": "JIP LN NVSE Plugin-58277-55-10-1554754259.7z",
+  "file_size": "222398",
+  "version": "55.10",
+  "author": "jazzisparis and LuthienAnarion",
+  "md5": "3bb0eacce0b51d3e1b2bc550a8c4e7e9",
+  "repository": "NexusMods",
+  "nexus_mod_id": "58277",
+  "nexus_file_id": "1000053119",
+  "nexus_file_name": "JIP LN NVSE Plugin",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\fomod\\info.xml",
+      "target_location": "\\fomod\\info.xml"
+    },
+    {
+      "source_location": "\\nvse\\plugins\\jip_nvse.dll",
+      "target_location": "\\nvse\\plugins\\jip_nvse.dll"
+    },
+    {
+      "source_location": "\\nvse\\plugins\\jip_nvse.ini",
+      "target_location": "\\nvse\\plugins\\jip_nvse.ini"
+    },
+    {
+      "source_location": "\\nvse\\plugins\\textinput\\texteditmenu.xml",
+      "target_location": "\\nvse\\plugins\\textinput\\texteditmenu.xml"
+    }
+  ]
+}

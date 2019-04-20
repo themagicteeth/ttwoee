@@ -1,0 +1,23 @@
+{
+  "mod_name": "Devestated City TTW",
+  "file_name": "Devestated City.7z",
+  "file_size": "50379",
+  "version": null,
+  "author": null,
+  "md5": "ae065c749615908cb1bdacdaad072af5",
+  "repository": null,
+  "nexus_mod_id": null,
+  "nexus_file_id": null,
+  "nexus_file_name": null,
+  "target_game": null,
+  "installation_parameters": [
+    {
+      "source_location": "\\DCStreet - Devastated City.esp",
+      "target_location": "\\DCStreet - Devastated City.esp"
+    },
+    {
+      "source_location": "\\Devastated City.esp",
+      "target_location": "\\Devastated City.esp"
+    }
+  ]
+}

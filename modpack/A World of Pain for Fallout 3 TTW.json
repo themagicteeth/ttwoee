@@ -1,0 +1,23 @@
+{
+  "mod_name": "A World of Pain for Fallout 3 TTW",
+  "file_name": "A World of Pain for Fallout 3-66265-2-02-1553205677.7z",
+  "file_size": "5926696",
+  "version": "2.02",
+  "author": "djmystro - Roy Batty",
+  "md5": "93aafcf390b3f1338cbf89d9a7045666",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66265",
+  "nexus_file_id": "1000052747",
+  "nexus_file_name": "A World of Pain for Fallout 3",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\AWorldOfPainFO3 - Main.bsa",
+      "target_location": "\\AWorldOfPainFO3 - Main.bsa"
+    },
+    {
+      "source_location": "\\AWorldOfPainFO3.esm",
+      "target_location": "\\AWorldOfPainFO3.esm"
+    }
+  ]
+}

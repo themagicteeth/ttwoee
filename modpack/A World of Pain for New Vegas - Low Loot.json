@@ -1,0 +1,19 @@
+{
+  "mod_name": "A World of Pain for New Vegas - Low Loot",
+  "file_name": "AWOP Optional Plugins-38719-5-4.zip",
+  "file_size": "2527736",
+  "version": "5.4",
+  "author": "Dj Mystro",
+  "md5": "e632bdc1d046714db01ca71f783b3fdb",
+  "repository": "NexusMods",
+  "nexus_mod_id": "38719",
+  "nexus_file_id": "1000028162",
+  "nexus_file_name": "AWOP Optional Plugins",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\AWOP Optional Plugins\\AWOPLowLootAll.esp",
+      "target_location": "\\AWOPLowLootAll.esp"
+    }
+  ]
+}

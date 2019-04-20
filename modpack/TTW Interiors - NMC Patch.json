@@ -1,0 +1,71 @@
+{
+  "mod_name": "TTW Interiors - NMC Patch",
+  "file_name": "NMC NVInt - TTW Int compatibility Patch Large v2.0-66449-v2-0-1549920088.7z",
+  "file_size": "11261817",
+  "version": "2.0",
+  "author": "Chucksteel",
+  "md5": "699a3e9245bcc3b72e55adb5f22611f2",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66449",
+  "nexus_file_id": "1000052038",
+  "nexus_file_name": "NMC NVInt - TTW Int compatibility Patch Large v2.0",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\nv_ushome_Fireplace.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\nv_ushome_Fireplace.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\nv_ushome_Fireplace_n.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\nv_ushome_Fireplace_n.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\Wastelandhome_Fireplace02.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\Wastelandhome_Fireplace02.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\WastelandKitchen_Fireplace03.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\WastelandKitchen_Fireplace03.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\WastelandKitchen_Fireplace04.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanfireplace\\WastelandKitchen_Fireplace04.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorfloor01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorfloor01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorfloor_n01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorfloor_n01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorwall02a.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorwall02a.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorwall02_n.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_craftsmanhomesinterior\\nvcraftsmanhomes_interiorwall02_n.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloonint01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloonint01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloonint_n01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloonint_n01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloon_interiorfloor01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloon_interiorfloor01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloon_interiorfloor_n01.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_goodsprings\\nvsaloon_interiorfloor_n01.dds"
+    },
+    {
+      "source_location": "\\NMC_NVInt_Compatible_Large v2.0\\textures\\NVInteriorsTextures\\dungeons\\nv_ushome\\nv_usohomeKitchenCorner.dds",
+      "target_location": "\\textures\\NVInteriorsTextures\\dungeons\\nv_ushome\\nv_usohomeKitchenCorner.dds"
+    }
+  ]
+}

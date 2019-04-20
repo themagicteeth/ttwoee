@@ -1,0 +1,27 @@
+{
+  "mod_name": "TTW Intro Street Bus and Trailer Ruins",
+  "file_name": "Intro Street Bus-66542-1-0a-1551035965.7z",
+  "file_size": "1326590",
+  "version": "1.0a",
+  "author": "bigpete - Roy Batty",
+  "md5": "8c32220566673d79040421a0ea636926",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66542",
+  "nexus_file_id": "1000052280",
+  "nexus_file_name": "Intro Street Bus",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\DCStreet - Main.bsa",
+      "target_location": "\\DCStreet - Main.bsa"
+    },
+    {
+      "source_location": "\\DCStreet - Main.override",
+      "target_location": "\\DCStreet - Main.override"
+    },
+    {
+      "source_location": "\\DCStreet.esm",
+      "target_location": "\\DCStreet.esm"
+    }
+  ]
+}

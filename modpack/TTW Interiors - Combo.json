@@ -1,0 +1,19 @@
+{
+  "mod_name": "TTW Interiors - Combo",
+  "file_name": "_TTW Interiors Combo v6.5-66449-v6-5-1554528986.7z",
+  "file_size": "6629898",
+  "version": "6.5",
+  "author": "Chucksteel",
+  "md5": "5869acdae6dfdfc387a570f8c51671ea",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66449",
+  "nexus_file_id": "1000053074",
+  "nexus_file_name": "_TTW Interiors Combo v6.5",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\TTW_InteriorsProject Combo v6.5\\TTWInteriorsProject_Combo.esm",
+      "target_location": "\\TTWInteriorsProject_Combo.esm"
+    }
+  ]
+}

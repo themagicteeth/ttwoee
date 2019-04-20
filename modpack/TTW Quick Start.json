@@ -1,0 +1,19 @@
+{
+  "mod_name": "TTW Quick Start",
+  "file_name": "TTW Quick Start-65937-1-2-1542388995.7z",
+  "file_size": "15279",
+  "version": "1.2",
+  "author": "Roy Batty",
+  "md5": "1612acd674dc482869f1f7904b29ae6d",
+  "repository": "NexusMods",
+  "nexus_mod_id": "65937",
+  "nexus_file_id": "1000050256",
+  "nexus_file_name": "TTW Quick Start",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\TTW Quick Start.esp",
+      "target_location": "\\TTW Quick Start.esp"
+    }
+  ]
+}

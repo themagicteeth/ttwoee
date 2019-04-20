@@ -1,0 +1,19 @@
+{
+  "mod_name": "lStewieAl's Tweaks INI",
+  "file_name": "Stewie Tweaks INI-66347-All-1550858583.zip",
+  "file_size": "1091",
+  "version": "2.1",
+  "author": "IStewieAl ",
+  "md5": "778577a57275171e896caff4c80b90fa",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66347",
+  "nexus_file_id": "1000052226",
+  "nexus_file_name": "Stewie Tweaks INI",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\nvse\\plugins\\nvse_stewie_tweaks.ini",
+      "target_location": "\\nvse\\plugins\\nvse_stewie_tweaks.ini"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "mod_name": "FPGE - Functional Post Game Ending",
+  "file_name": "Functional Post Game Ending-66726-1-4-1554633108.7z",
+  "file_size": "1806902",
+  "version": "1.4",
+  "author": "Kazopert",
+  "md5": "9c3f40e674b0eb1a8b8764673f74ba39",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66726",
+  "nexus_file_id": "1000053094",
+  "nexus_file_name": "Functional Post Game Ending",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Functional Post Game Ending - Main.bsa",
+      "target_location": "\\Functional Post Game Ending - Main.bsa"
+    },
+    {
+      "source_location": "\\Functional Post Game Ending - Textures.bsa",
+      "target_location": "\\Functional Post Game Ending - Textures.bsa"
+    },
+    {
+      "source_location": "\\Functional Post Game Ending.esp",
+      "target_location": "\\Functional Post Game Ending.esp"
+    }
+  ]
+}

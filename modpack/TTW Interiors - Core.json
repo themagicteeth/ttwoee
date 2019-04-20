@@ -1,0 +1,35 @@
+{
+  "mod_name": "TTW Interiors - Core",
+  "file_name": "TTW Interiors Core v4.3.3-66449-v4-3-3-1554528862.7z",
+  "file_size": "279967683",
+  "version": "4.3.3",
+  "author": "Chucksteel",
+  "md5": "a0af0420e913d397f98c35f0a99dd116",
+  "repository": "NexusMods",
+  "nexus_mod_id": "66449",
+  "nexus_file_id": "1000053073",
+  "nexus_file_name": "TTW Interiors Core v4.3.3",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\TTW_Interiors Core v4.3.3\\TTWInteriors_Core - Meshes.bsa",
+      "target_location": "\\TTWInteriors_Core - Meshes.bsa"
+    },
+    {
+      "source_location": "\\TTW_Interiors Core v4.3.3\\TTWInteriors_Core - Meshes.override",
+      "target_location": "\\TTWInteriors_Core - Meshes.override"
+    },
+    {
+      "source_location": "\\TTW_Interiors Core v4.3.3\\TTWInteriors_Core - Textures.bsa",
+      "target_location": "\\TTWInteriors_Core - Textures.bsa"
+    },
+    {
+      "source_location": "\\TTW_Interiors Core v4.3.3\\TTWInteriors_Core - Voices.bsa",
+      "target_location": "\\TTWInteriors_Core - Voices.bsa"
+    },
+    {
+      "source_location": "\\TTW_Interiors Core v4.3.3\\TTWInteriors_Core.esm",
+      "target_location": "\\TTWInteriors_Core.esm"
+    }
+  ]
+}

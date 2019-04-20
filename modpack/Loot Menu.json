@@ -1,0 +1,55 @@
+{
+  "mod_name": "Loot Menu",
+  "file_name": "Loot Menu-61723-1-13-1550950286.7z",
+  "file_size": "23433",
+  "version": "1.13",
+  "author": "Gribbleshnibit8",
+  "md5": "ead9f9ffcdc63ea2775358ac69dc8244",
+  "repository": "NexusMods",
+  "nexus_mod_id": "61723",
+  "nexus_file_id": "1000052256",
+  "nexus_file_name": "Loot Menu",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\LootMenu.esp",
+      "target_location": "\\LootMenu.esp"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\bottom_bracket.xml",
+      "target_location": "\\menus\\prefabs\\bottom_bracket.xml.mohidden"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\vertical_fade_line.xml",
+      "target_location": "\\menus\\prefabs\\vertical_fade_line.xml.mohidden"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\box.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\box.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\brackets.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\brackets.xml.mohidden"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\lootitem.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\lootitem.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\lootmenu.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\lootmenu.xml.mohidden"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\text_box.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\text_box.xml.mohidden"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\lootmenu\\xbox_buttons.xml",
+      "target_location": "\\menus\\prefabs\\lootmenu\\xbox_buttons.xml"
+    },
+    {
+      "source_location": "\\uio\\public\\LootMenu.txt",
+      "target_location": "\\uio\\public\\LootMenu.txt"
+    }
+  ]
+}

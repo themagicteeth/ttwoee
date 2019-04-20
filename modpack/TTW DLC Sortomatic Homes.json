@@ -1,0 +1,39 @@
+{
+  "mod_name": "TTW DLC Sortomatic Homes",
+  "file_name": "TTW DLC Sortomatic Homes 1-0-65988-1-0-1542603998.7z",
+  "file_size": "322884",
+  "version": "1.0",
+  "author": "pintocat",
+  "md5": "1b29226b04844139cfd3dcc6b2ea442e",
+  "repository": "NexusMods",
+  "nexus_mod_id": "65988",
+  "nexus_file_id": "1000050305",
+  "nexus_file_name": "TTW DLC Sortomatic Homes 1-0",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\DLCSortomatic.esp",
+      "target_location": "\\DLCSortomatic.esp"
+    },
+    {
+      "source_location": "\\meshes\\SCOL\\TunaAlienReloadBenchSCOL.NIF",
+      "target_location": "\\meshes\\SCOL\\TunaAlienReloadBenchSCOL.NIF"
+    },
+    {
+      "source_location": "\\meshes\\SCOL\\TunaAlienWorkbenchSCOL.NIF",
+      "target_location": "\\meshes\\SCOL\\TunaAlienWorkbenchSCOL.NIF"
+    },
+    {
+      "source_location": "\\meshes\\TTWDLCSorto\\nvdlc02_handradio02static.nif",
+      "target_location": "\\meshes\\TTWDLCSorto\\nvdlc02_handradio02static.nif"
+    },
+    {
+      "source_location": "\\meshes\\SCOL\\TunaAlienReloadBenchSCOL.NIF",
+      "target_location": "\\meshes\\TTWDLCSorto\\TunaAlienReloadBenchSCOL.NIF"
+    },
+    {
+      "source_location": "\\meshes\\SCOL\\TunaAlienWorkbenchSCOL.NIF",
+      "target_location": "\\meshes\\TTWDLCSorto\\TunaAlienWorkbenchSCOL.NIF"
+    }
+  ]
+}

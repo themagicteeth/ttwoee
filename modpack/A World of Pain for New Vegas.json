@@ -1,0 +1,23 @@
+{
+  "mod_name": "A World of Pain for New Vegas",
+  "file_name": "A World of Pain-38719-6-01-1552232671.7z",
+  "file_size": "11001362",
+  "version": "6.01",
+  "author": "Dj Mystro",
+  "md5": "8b2614a42db25d1470908376e6142af2",
+  "repository": "NexusMods",
+  "nexus_mod_id": "38719",
+  "nexus_file_id": "1000052501",
+  "nexus_file_name": "A World of Pain",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\AWorldOfPain(Preview) - Textures.bsa",
+      "target_location": "\\AWorldOfPain(Preview) - Textures.bsa"
+    },
+    {
+      "source_location": "\\AWorldOfPain(Preview).esm",
+      "target_location": "\\AWorldOfPain(Preview).esm"
+    }
+  ]
+}

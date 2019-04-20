@@ -1,0 +1,123 @@
+{
+  "mod_name": "One HUD - oHUD",
+  "file_name": "One HUD (oHUD)-44757-1-1.rar",
+  "file_size": "71162",
+  "version": "1.1",
+  "author": "Gopher",
+  "md5": "a906d4e526cb857f86f5d920a0119bac",
+  "repository": "NexusMods",
+  "nexus_mod_id": "44757",
+  "nexus_file_id": "1000024091",
+  "nexus_file_name": "One HUD (oHUD)",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\oHUD.esm",
+      "target_location": "\\oHUD.esm"
+    },
+    {
+      "source_location": "\\menus\\main\\hud_main_menu.xml",
+      "target_location": "\\menus\\main\\hud_main_menu.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\flashlight_battery.xml",
+      "target_location": "\\menus\\prefabs\\flashlight_battery.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\GrenadeHotkeyHUD.xml",
+      "target_location": "\\menus\\prefabs\\GrenadeHotkeyHUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\includes_HUDMainMenu.xml",
+      "target_location": "\\menus\\prefabs\\includes_HUDMainMenu.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\aHUD\\aHUD.xml",
+      "target_location": "\\menus\\prefabs\\aHUD\\aHUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\aHUD\\aHUD_language_keys_1.xml",
+      "target_location": "\\menus\\prefabs\\aHUD\\aHUD_language_keys_1.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\aHUD\\hudtemplates.xml",
+      "target_location": "\\menus\\prefabs\\aHUD\\hudtemplates.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\aHUD\\hudtemplates_darn.xml",
+      "target_location": "\\menus\\prefabs\\aHUD\\hudtemplates_darn.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\Arwen\\Strain_HUD.xml",
+      "target_location": "\\menus\\prefabs\\Arwen\\Strain_HUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\FairyPack\\FairyPack_HUD.xml",
+      "target_location": "\\menus\\prefabs\\FairyPack\\FairyPack_HUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\HUDE\\HUD_E.xml",
+      "target_location": "\\menus\\prefabs\\HUDE\\HUD_E.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\IMCNNV\\imp.xml",
+      "target_location": "\\menus\\prefabs\\IMCNNV\\imp.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\pnx\\pnxhud.xml",
+      "target_location": "\\menus\\prefabs\\pnx\\pnxhud.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PPA\\PPA_HUD.xml",
+      "target_location": "\\menus\\prefabs\\PPA\\PPA_HUD.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHClock.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHClock.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHCombat.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHCombat.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHEncumb.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHEncumb.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHFat.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHFat.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHLabels.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHLabels.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHPrimaryNeeds.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHPrimaryNeeds.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHRads.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHRads.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHResists.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHResists.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHSettings.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHSettings.xml"
+    },
+    {
+      "source_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHStat.xml",
+      "target_location": "\\menus\\prefabs\\PrimaryNeedsHUD\\PNHStat.xml"
+    },
+    {
+      "source_location": "\\textures\\interface\\interfaceshared.tai",
+      "target_location": "\\textures\\interface\\interfaceshared.tai"
+    }
+  ]
+}

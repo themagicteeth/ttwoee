@@ -1,0 +1,19 @@
+{
+  "mod_name": "TTW Interiors - Devestated City Patch",
+  "file_name": "TTWInt_devastated_city Patch v2.0.7z",
+  "file_size": "4481",
+  "version": null,
+  "author": null,
+  "md5": "9ea90291f0457f893ff003cceee74e9b",
+  "repository": null,
+  "nexus_mod_id": null,
+  "nexus_file_id": null,
+  "nexus_file_name": null,
+  "target_game": null,
+  "installation_parameters": [
+    {
+      "source_location": "\\TTWInt_devastated_city Patch v2.0\\TTWInt_Devestated_City.esp",
+      "target_location": "\\TTWInt_Devestated_City.esp"
+    }
+  ]
+}

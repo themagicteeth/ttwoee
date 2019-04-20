@@ -1,0 +1,31 @@
+{
+  "mod_name": "UIO - User Interface Organizer",
+  "file_name": "UIO - User Interface Organizer-57174-2-08-1553898528.7z",
+  "file_size": "52691",
+  "version": "2.08",
+  "author": "jazzisparis",
+  "md5": "c3bfea47b242514daacca9ef6c86cba8",
+  "repository": "NexusMods",
+  "nexus_mod_id": "57174",
+  "nexus_file_id": "1000052895",
+  "nexus_file_name": "UIO - User Interface Organizer",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\fomod\\info.xml",
+      "target_location": "\\fomod\\info.xml"
+    },
+    {
+      "source_location": "\\nvse\\plugins\\ui_organizer.dll",
+      "target_location": "\\nvse\\plugins\\ui_organizer.dll"
+    },
+    {
+      "source_location": "\\uio\\settings.ini",
+      "target_location": "\\uio\\settings.ini"
+    },
+    {
+      "source_location": "\\uio\\supported.txt",
+      "target_location": "\\uio\\supported.txt"
+    }
+  ]
+}
