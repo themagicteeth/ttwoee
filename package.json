@@ -14,7 +14,7 @@
   "scripts": {
     "build:pug": "pug --no-debug ./src/index.pug  --out ./dist",
     "build:css": "uglifycss ./src/style.css > ./dist/style.css",
-    "build:html": "html-minifier --use-short-doctype --minify-css true --remove-attribute-quotes --remove-comments --remove-optional-tags --remove-redundant-attributes -remove-empty-attributes --remove-empty-elements ./dist/index.html -o ./dist/index.html",
+    "build:html": "html-minifier --use-short-doctype --minify-css true --remove-attribute-quotes --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-empty-attributes --remove-empty-elements ./dist/index.html -o ./dist/index.html",
     "build": "yarn build:css && yarn build:pug && yarn build:html"
   },
   "devDependencies": {
