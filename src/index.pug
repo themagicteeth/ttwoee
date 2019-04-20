@@ -1,7 +1,6 @@
 include includes/mixins/mixins.pug
 include includes/mixins/newmixins.pug
 
-
 - let sections = []
 - let mods = []
 - let navMods = []
@@ -16,7 +15,7 @@ html(lang="en")
 
     body
 
-        include includes/layout/github.pug
+        //- include includes/layout/github.pug
 
         main#guide
             +important
@@ -36,7 +35,6 @@ html(lang="en")
             include includes/setup/modorganizer.pug
             include includes/setup/ttw.pug
             include includes/setup/cleaning-esms.pug
-            //- include includes/setup/optimized-textures.pug
             include includes/setup/initweaks.pug
             include includes/enb.pug
             include includes/fixes-and-extensions.pug
@@ -60,4 +58,3 @@ html(lang="en")
             include includes/runloot.pug
 
         include includes/layout/nav.pug
-        
