@@ -12,15 +12,18 @@
     "url": "https://github.com/themagicteeth"
   },
   "scripts": {
-    "build:pug": "pug --no-debug ./src/index.pug  --out ./dist",
+    "build:pug": "pug --no-debug ./src/index.pug --out ./dist",
     "build:css": "uglifycss ./src/style.css > ./dist/style.css",
-    "build:html": "html-minifier --use-short-doctype --minify-css true --remove-attribute-quotes --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-empty-attributes --sort-attributes --sort-class-name --remove-empty-elements ./dist/index.html -o ./dist/index.html",
-    "build": "yarn build:css && yarn build:pug && yarn build:html"
+    "build:html": "html-minifier --use-short-doctype --minify-css true --collapse-boolean-attributes --remove-attribute-quotes --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-empty-attributes --sort-attributes --sort-class-name --remove-empty-elements ./dist/index.html -o ./dist/index.html",
+    "build:clean": "rimraf ./dist/style.css",
+    "build": "yarn build:css && yarn build:pug && yarn build:html && yarn build:clean",
+    "watch": "pug ./src/index.pug --watch --out ./dist"
   },
   "devDependencies": {
     "html-minifier": "^4.0.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.3",
     "uglifycss": "^0.0.29",
     "yarn": "^1.15.0"
   }
