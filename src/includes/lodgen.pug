@@ -1,30 +1,33 @@
 //-
     LODGen
-    Updated 2019-03-30
 //-
 
 - sections.push(['#lod', 'LOD'])
-- mods.push([])
 
 section#lod
     h2 LOD
 
-    #improved-lod-noise
-        +name('Improved LOD Noise Texture', 'https://www.nexusmods.com/newvegas/mods/46451', 'fnv')
-        +modInfo
-            +author Cyberlazy
-            +version V1.00
-            +installation Install #[+file('Improved LOD noise Texture')]
+    //- Improved LOD Noise Texture
+    - modId = 'improved-lod-noise'
+    - modName = 'Improved LOD Noise Texture'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/46451'
+    - modVersion = 'V1.00'
+    - modAuthor = 'Cyberlazy'
+    - mainFiles = ['Improved LOD noise Texture']
+    +mod
 
-    #fnvlodgen
-        +name('FNVLODGen', 'https://www.nexusmods.com/newvegas/mods/58562', 'fnv')
-        +modInfo
-            +author Ehamloptiran Sheson and FNVEdit Team
-            +version 1.1
-            +installation 
-                | Install #[+file('FNVLODGen Resources')] main file, and
-                | #[+file('NMC LOD texture fix')] and #[+file('Trees LOD Billboards Vanilla')]
-                | optional files
+
+    //- FNVLODGen
+    - testing = true
+    - modId = 'improved-lod-noise'
+    - modName = 'FNVLODGen'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58562'
+    - modVersion = '1.1'
+    - modAuthor = 'Ehamloptiran Sheson and FNVEdit Team'
+    - mainFiles = ['FNVLODGen Resources']
+    - optionalFiles = ['NMC LOD texture fix', 'Trees LOD Billboards Vanilla']
+    +mod
+
 
     +copy('mb0')
         | Now that FNVLODGens resources are installed into Mod Organizer LODs can
