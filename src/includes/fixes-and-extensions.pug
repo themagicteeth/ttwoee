@@ -1,10 +1,8 @@
 //-
     Fixes and Extensions
-    Updated 2019-03-22
 //-
 
 - sections.push(['#fixes-and-extensions', 'Fixes and Extensions'])
-- mods.push([])
 
 section#fixes-and-extensions
     h2 Fixes and Extensions
@@ -40,55 +38,24 @@ section#fixes-and-extensions
 
 
     //- NVTF - New Vegas Tick Fix
-    //- - modId = 'nvtf'
-    //- - modName = 'NVTF - New Vegas Tick Fix'
-    //- - modUrl = 'https://www.nexusmods.com/newvegas/mods/66537'
-    //- - modAuthor = 'SCarxt - Tgspy'
-    //- - modVersion = '1.3'
-    //- - mainFiles = ['New Vegas Tick Fix']
-    //- +mod
-    //-     +mispackaged
-    //-         | This mod is packaged incorrectly
-    //-         | During install right click and select "Create folder"
-    //-         | Name the new folder NVSE
-    //-         |
-    //-         | Right click the new NVSE folder and create a new folder
-    //-         | Name the new folder plugins
-    //-         |
-    //-         | Move FastExitnTickCountReplace.dll and FastExitnTickCountReplace.ini into the new plugins folder
-    //-         |
-    //-         | Click [OK]
-
-
-    //- NVSR - New Vegas Stutter Remover
-    - coreMod = true
-    - testing = true
-    - configFiles = true
-    - modId = 'nvsr'
-    - modName = 'NVSR - New Vegas Stutter Remover'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/34832'
-    - modAuthor = 'SkyRanger-1'
-    - modVersion = '4.1.3.6'
-    - mainFiles = ['NVSR_4-1-36']
+    - modId = 'nvtf'
+    - modName = 'NVTF - New Vegas Tick Fix'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66537'
+    - modAuthor = 'SCarxt - Tgspy'
+    - modVersion = '1.3'
+    - mainFiles = ['New Vegas Tick Fix']
     +mod
-        +mispack Select "Data"
-        +ini('Edit the NVSR ini')
-            | Master = {
-            |	_comment = You can turn on or off each distinct feature from here.
-            |	bManageFPS = 0
-            |	bHookCriticalSections = 1
-            |	bHookLightCriticalSections = 1
-            |	bHookHashtables = 1
-            |	bReplaceHeap = 1
-            |	bReplaceGetTickCount = 1
-            |	bLogToConsole = 0
-            |	bFastExit = 1
-            |	bFlushLog = 1
-            |	iSchedulingResolution = 1
-            |	bReplaceRandom = 1
-            |	bExperimentalStuff = 0
-            |	iMainHookPoint = 1
-            | }
+         +mispackaged
+             | This mod is packaged incorrectly
+             | During install right click and select "Create folder"
+             | Name the new folder NVSE
+             |
+             | Right click the new NVSE folder and create a new folder
+             | Name the new folder plugins
+             |
+             | Move FastExitnTickCountReplace.dll and FastExitnTickCountReplace.ini into the new plugins folder
+             |
+             | Click [OK]
 
 
     //- One Tweak
