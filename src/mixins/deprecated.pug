@@ -5,10 +5,12 @@ mixin modCard(id, name, url, game)
         div.mod-card-bg.mt0
             block
 
+
 //- Deprecated
 mixin modInfo
     div.mod-card-bg.mt0
         block
+
 
 //- Deprecated
 mixin name(name, url, fileType=null)
@@ -24,11 +26,13 @@ mixin name(name, url, fileType=null)
 
     h6.mod-name.mb0 #[a(href=url class=color target='_blank' rel="noopener") #{name}]
 
+
 //- Deprecated
 mixin author
     p.mt0.mb0 
         span.b Author:
         block
+
 
 //- Deprecated
 mixin installation
@@ -36,35 +40,36 @@ mixin installation
         span.b Installation: #{text}
         block
 
+
 //- Deprecated
 mixin version
     p.mt0.mb0 
         span.b Version: 
         block
 
-mixin important
-    p.important.mb0
-        block
 
-mixin merge
-    p.merge.mb0
-        block
-
+//- Deprecated
 mixin newName
     h6.mod-name.mb0 #[a(href=modUrl class=color target='_blank' rel="noopener") #{modName}]
 
+
+//- Deprecated
 mixin optional
     .raised
         p.optional.mb0 Optional ESPs
         pre.mt0
             block
 
+
+//- Deprecated
 mixin hidden
     .raised
         p.hidden.mb0 Hidden Files
         pre.mt0
             block
 
+
+//- Deprecated
 mixin mispackaged
     .raised
         p.mispackage.mb0 Packaged Incorrectly

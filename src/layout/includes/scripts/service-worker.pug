@@ -4,7 +4,7 @@ script.
             console.log("[TTWOEE] active service worker found, no need to register");
         } else {
             navigator.serviceWorker
-            .register("ttwoee-sw.js", {
+            .register("sctips/ttwoee-sw.js", {
                 scope: "./"
             })
             .then(function (reg) {

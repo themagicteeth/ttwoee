@@ -1,4 +1,3 @@
-
 //-
     Creates a mod card
 
@@ -320,6 +319,7 @@ mixin requires
     p.mt0.mb0 #[span.b Requires: ] #{modRequires}
     - modRequires = null
 
+
 //-
     Creates mod notes for mod cards,
     must be called after calling the mod
@@ -333,6 +333,7 @@ mixin notes
         span.b Mod Notes: 
         block
 
+
 //-
     Styles files
 
@@ -340,17 +341,6 @@ mixin notes
 //- 
 mixin file(name)
     span.file #{name}
-
-
-//-
-    Creates a link with the proper
-    rel and target attributes, accepts
-    an undefined amount of classes
-
-    +link('Links name', 'https://link.com', 'class2', 'class1')
-//-
-mixin link(name, url, ...style)
-    a(href=url class=style.join(" ") target='_blank' rel="noopener") #{name}
 
 
 //-
@@ -397,33 +387,6 @@ mixin mispack
 
 
 //-
-    Use for copy text. Can take any number of classes.
-
-    +copy('mb0', 'mt0')
-        | Lots of words and more words
-        | Even more words
-//-
-mixin copy(...style)
-    p(class="copy-bg " + style.join(" "))
-        block
-
-
-//-
-    Creates an ini instruction block.
-
-    +ini('Description')
-        | ; Ini comments
-        | [INISECITION]
-        | IniSetting=1
-//-
-mixin ini(title)
-    div.instruction-block
-        p.ini.mb0 #{title}
-        pre.mt0
-            block
-
-
-//-
     Creates a hidden files/folders instruction block.
 
     +hiden
@@ -438,27 +401,3 @@ mixin hidden
             | Hide the following files or folders:
             |
             block
-
-//-
-    Creates a general instructions block with no header
-    Takes any number of classes
-
-    +instructions('mb0', 'mt0')
-        | Do this
-        | Do that
-//-
-mixin instructions(...style)
-    div.instruction-block
-        pre(class=style.join(" "))
-            block
-
-mixin important2(title)
-    div.instruction-block
-        p.important.mb0 #{title}
-        pre.mt0
-            block
-
-mixin group
-    div.group
-        block
-

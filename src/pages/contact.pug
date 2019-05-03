@@ -1,0 +1,14 @@
+extends ../layout/index.pug
+
+block content
+    main#contact
+        form(name='contact' method='POST' data-netlify='true' netlify)
+            p
+                label Name:
+                    input(type='text' name="name")
+            
+            p
+                label Message:
+                    textarea(name='message')
+            p
+                button(type='submit') Send

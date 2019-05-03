@@ -1,0 +1,23 @@
+include ../mixins/deprecated.pug
+include ../mixins/shared.pug
+include ../mixins/mods.pug
+
+- let sections = []
+- let mods = []
+- let navMods = []
+- let nav = []
+- let mod
+- let id
+
+doctype html
+html(lang="en")
+
+    include includes/head.pug
+    include includes/seo/organization.pug
+    
+    body
+
+        block content
+
+        include includes/nav.pug
+        include includes/scripts/service-worker.pug
