@@ -1,6 +1,9 @@
 extends ../layout/index.pug
 
 block content
+    - sections.push(['https://ttwoee.com', 'Guide'])
+    - sections.push(['https://ttwoee.com/changelog', 'Changelog'])
+
     main#contact
         form(name='contact' method='POST' data-netlify='true' netlify)
             p
