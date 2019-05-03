@@ -296,7 +296,10 @@ li:hover a,
   color: #ffffff;
   text-decoration: none;
 }
-
+#changelog a {
+  color: var(--menu-accent-bg);
+  font-weight: bold;
+}
 li:hover,
 li:focus-within {
   cursor: pointer;
