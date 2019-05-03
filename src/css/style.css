@@ -28,7 +28,19 @@ main {
   margin: 0 auto;
   width: 98%;
 }
-
+form {
+  background-color: var(--mod-card-bg);
+}
+button {
+  background-color: var(--menu-accent-bg);
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: var(--raised-shadow);
+  cursor: pointer;
+}
 .important {
   font-family: sans-serif;
   color: black;
@@ -37,7 +49,18 @@ main {
   padding-left: 0.5rem;
   font-size: 1.25rem;
 }
-
+textarea,
+input {
+  background-color: var(--instructions-bg);
+  box-shadow: var(--raised-shadow);
+  border: none;
+}
+input {
+  height: 2.25rem;
+}
+textarea {
+  padding: 1rem;
+}
 .copy-bg {
   background-color: var(--copy-bg);
   padding: 0.5rem;
@@ -111,6 +134,10 @@ pre {
 .mw-100 {
   max-width: 100%;
 }
+.mw40 {
+  max-width: 40rem;
+}
+
 .b {
   font-weight: bold;
 }
@@ -124,7 +151,18 @@ pre {
 .mb0 {
   margin-bottom: 0;
 }
-
+.pt2 {
+  padding-top: 2rem;
+}
+.pb2 {
+  padding-bottom: 2rem;
+}
+.center {
+  margin: 0 auto;
+}
+.w-80 {
+  width: 80%;
+}
 .tool-color {
   color: var(--tool-color);
 }
@@ -136,6 +174,10 @@ pre {
 }
 .ttw-color {
   color: var(--ttw-mod-color);
+}
+
+.db {
+  display: block;
 }
 
 /* Link styles */

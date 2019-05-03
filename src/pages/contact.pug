@@ -4,14 +4,25 @@ block content
     - sections.push(['https://ttwoee.com', 'Guide'])
     - sections.push(['https://ttwoee.com/changelog', 'Changelog'])
 
-    main#contact
-        form(name='contact' method='POST' data-netlify='true' netlify)
-            p
-                label Name:
-                    input(type='text' name="name")
-            
-            p
-                label Message:
-                    textarea(name='message')
-            p
-                button(type='submit') Send
+    main#contact.mw40
+
+        h1 Contact Form
+
+        +copy
+            | To get in touch with me directly, you may fill out the form below and I will recieve your message.
+            | Submit any issues, suggestions, feedback, or help requests. They may get incorporated into the guide!
+            | You may also reach out on #[+link('Reddit', 'https://reddit.com/r/ttwoee')] or on 
+            | #[+link('GitHub', 'https://github.com/themagicteeth/ttwoee')] or on 
+            | the #[+link('STEP forums', 'http://forum.step-project.com/topic/8447-tale-of-two-wastelands-over-encumbered-edition/')].
+
+        form(name='contact' method='POST' data-netlify='true' netlify).pb2.mw40
+            div.w-80.center
+                p.pt2
+                    label Name:
+                        input(type='text' name="name").db
+                
+                p
+                    label Message:
+                        textarea(name='message' rows="10" cols="50").db
+                p
+                    button(type='submit') Send
