@@ -119,17 +119,6 @@ pre {
   font-size: 1rem;
 }
 
-/* GitHub icon */
-.github {
-  width: 2rem;
-  position: fixed;
-  right: 0;
-  margin-right: 1rem;
-  background: white;
-  border-radius: 100px;
-  border: solid medium white;
-}
-
 /* Helper classes */
 .mw-100 {
   max-width: 100%;
@@ -292,7 +281,7 @@ li a {
 .nav-header {
   font-size: 2rem;
   font-family: sans-serif;
-  padding-left: 0.5rem;
+  padding-left: 0;
   background: var(--menu-accent-bg);
   border-bottom: solid thin black;
 }
