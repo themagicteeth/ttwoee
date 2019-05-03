@@ -1,3 +1,9 @@
 include bashtags.pug
-include runloot.pug
-include mergepatch.pug
+
+- sections.push(['#final-steps', 'Final Steps'])
+
+section#finishing-up
+    h2 Final Steps
+
+    include runloot.pug
+    include mergepatch.pug

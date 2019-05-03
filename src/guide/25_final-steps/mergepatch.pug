@@ -1,7 +1,7 @@
 
 section#merge-patch
-    h2 Create a Merge Patch
-    
+    h3 Create a Merge Patch
+
     +copy('mb0')
         | It is important to generate a merge patch through FNVEdit to ensure compatibility with mods.
         | Follow the instructions below.
@@ -9,12 +9,16 @@ section#merge-patch
         | Launch FNVEdit through ModOrganizer executable menu.
         | Click [OK] to load all plugins.
         | Wait until it says "Background Loader: finished" in the bottom left corner.
+        |
         | Right-click on any mod in the left pane, and select [Other->Create Merged Patch]
         | A window will pop up asking for a file name, input "TTW Merge Patch", click [OK]
+        |
         | Wait for it to finish and then close the window.
         | Ensure only "TTW Merge Patch.esp" is checked, and that "Backup plugins" is unchecked, click [OK]
+        |
         | Right-click "Overwrite" on the bottom of the left pane of ModOrganizer.
         | Click "Create Mod...", name the mod "TTW Merge Patch"
+        |
         | Enable the mod in the left pane. Ensure the ESP is always loaded last in the load order in the right pane.
     
     +important Every time a new plugin is added or removed this patch must be remade in FNVEdit.
