@@ -1,31 +1,34 @@
 {
-  "name": "Tale of Two Wastelands: Over-Encumbered Edition",
-  "short_name": "TTW:OEE",
-  "description": "Tale of Two Wastelands: Over-Encumbered Edition is a modding guide for Tale of Two Wastelands",
-  "start_url": ".",
+  "name": "TTWOEE",
+  "short_name": "TTWOEE",
   "icons": [
     {
-      "src": "/icons/icon-48x48.png",
+      "src": "/icons/android-chrome-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-72x72.png",
+      "src": "/icons/android-chrome-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-96x96.png",
+      "src": "/icons/android-chrome-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/icons/ms-icon-144x144.png",
+      "src": "/icons/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-168x168.png",
+      "src": "/icons/android-chrome-168x168.png",
       "sizes": "168x168",
       "type": "image/png"
     },
@@ -35,7 +38,7 @@
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-256x256.png",
+      "src": "/icons/android-chrome-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
@@ -52,5 +55,6 @@
   ],
   "theme_color": "#0a1919",
   "background_color": "#0a1919",
+  "start_url": "https://ttwoee.com",
   "display": "standalone"
 }
