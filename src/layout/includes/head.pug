@@ -12,20 +12,29 @@ head
     meta(name='keywords' content='Fallout, Fallout 3, Fallout New Vegas, TTW, Tale of Two Wastelands, Modding, Mod, Guide, Tutorial')
     meta(name='author' content='themagicteeth')
     meta(name='robots' content='index,nofollow')
+    link(href='https://ttwoee.com' rel='canonical')
     title Tale of Two Wastelands: Over-Encumbered Edition | TTWOEE
+
+    //- Google
+    meta(itemprop="name" content="Tale of Two Wastelands: Over-Encumbered Edition")
+    meta(itemprop="description" content="Tale of Two Wastelands: Over-Encumbered Edition is a modding guide for Tale of Two Wastelands")
+    meta(itemprop="image" content="https://ttwoee.com/icons/og-image.jpg")
     
     //- Twitter
+    meta(name="twitter:card" content="summary")
     meta(name="twitter:title" content='Tale of Two Wastelands: Over-Encumbered Edition')
     meta(name="twitter:description" content='Tale of Two Wastelands: Over-Encumbered Edition is a modding guide for Tale of Two Wastelands')
+    meta(name="twitter:image:src" content="https://ttwoee.com/icons/og-image.jpg")
 
-    //- Facebook
-    meta(property='og:title' content='Tale of Two Wastelands: Over-Encumbered Edition')
-    meta(property='og:type' content='article')
-    meta(property='og:description' content='Tale of Two Wastelands: Over-Encumbered Edition is a modding guide for Tale of Two Wastelands')
-    meta(property="og:image" content="https://ttwoee.com/icons/og-image.jpg")
-    meta(property="og:image:height" content="411")
-    meta(property="og:image:width" content="785")
-    meta(property='og:url' content='https://ttwoee.com')
+    //- Open graph
+    meta(name='og:title' content='Tale of Two Wastelands: Over-Encumbered Edition')
+    meta(name="og:site_name" content="Tale of Two Wastelands: Over-Encumbered Edition")
+    meta(name='og:type' content='article')
+    meta(name='og:description' content='Tale of Two Wastelands: Over-Encumbered Edition is a modding guide for Tale of Two Wastelands')
+    meta(name="og:image" content="https://ttwoee.com/icons/og-image.jpg")
+    meta(name="og:image:height" content="411")
+    meta(name="og:image:width" content="785")
+    meta(name='og:url' content='https://ttwoee.com')
 
     //-iOS
     meta(name='apple-mobile-web-app-title' content='TTWOEE')
@@ -42,49 +51,32 @@ head
     //- UC Mobile Browser
     meta(name='full-screen' content='yes')
     meta(name='browsermode' content='application')
-
-    //- Android
-    meta(name="theme-color" content="#0a1919")
-    meta(name="mobile-web-app-capable" content="yes")
-
-    //- Imagemode
-    meta(name='imagemode' content='force')
-
-    //- Orientation
     meta(name='screen-orientation' content='portrait')
-
-    //- Canonical
-    link(href='https://ttwoee.com' rel='canonical')
-
+    meta(name="mobile-web-app-capable" content="yes")
+    meta(name='imagemode' content='force')
+    meta(name="theme-color" content="#0a1919")
 
     //- Main Favicons
+    link(href='/icons/favicon.ico' rel='shortcut icon' type='image/x-icon')
     link(href="/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16")
     link(href="/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32")
-    link(href="/icons/favicon-48x48.png" rel="icon" type="image/png" sizes="48x48")
     link(href="/icons/favicon-194x194.png" rel="icon" type="image/png" sizes="194x194")
 
     //- iOS
     link(href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180")
+    link(href='/icons/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72')
     link(href="/icons/apple-touch-icon-icon-76x76.png" rel="apple-touch-icon" sizes="76x76")
     link(href="/icons/apple-touch-icon-icon-120x120.png" rel="apple-touch-icon" sizes="120x120")
     link(href="/icons/apple-touch-icon-icon-152x152.png" rel="apple-touch-icon" sizes="152x152")
+    link(href='/icons/apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon-precomposed' sizes='57x57')
     
-    //- Pinned tab
     link(rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5")
 
     //- Android
     link(href='/icons/android-chrome-192x192.png' rel='icon' sizes='192x192')
-    link(href='/icons/android-chrome-128x128.png' rel='icon' sizes='128x128')
-
-    //- UC Browser
-    link(href='/icons/apple-touch-icon-57x57-precomposed.png' rel='apple-touch-icon-precomposed' sizes='57x57')
-    link(href='/icons/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72')
 
     //- Manifest
     link(href="site.webmanifest" rel="manifest")
-
-    //- Other
-    link(href='/icons/favicon.ico' rel='shortcut icon' type='image/x-icon')
 
     //- CSS
     style
