@@ -2,3 +2,12 @@ node_modules
 yarn-error.log
 dist/style.css
 .idea
+ttwoee_key.jks
+*.iml
+.gradle
+local.properties
+.DS_Store
+build
+captures
+.externalNativeBuild
+release
