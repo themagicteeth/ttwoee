@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.themagicteeth.ttwoee",
+      "sha256_cert_fingerprints": [
+        "93:58:CA:4B:A9:D8:7C:A7:0E:79:60:34:6B:46:5C:6D:D2:44:66:01:8E:EB:5D:A3:B1:72:03:42:F5:A8:ED:22"
+      ]
+    }
+  }
+]
