@@ -296,6 +296,7 @@ li:hover a,
   color: #ffffff;
   text-decoration: none;
 }
+#adding-mods a,
 #changelog a {
   color: var(--menu-accent-bg);
   font-weight: bold;
