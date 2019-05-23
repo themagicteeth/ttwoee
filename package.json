@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "html-minifier": "^4.0.0",
+    "normalize.css": "^8.0.1",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.6.3",
