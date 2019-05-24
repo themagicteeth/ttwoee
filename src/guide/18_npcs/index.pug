@@ -18,7 +18,7 @@ section#npcs
         +instructions TO DO - Requires cleaning
         +notes
             | This redesigns Joshua Graham, The Burned Man, to much more closely match his
-            | appearance in the game art. Now he actually looks burnt! 
+            | appearance in the game art. Now he actually looks burnt!
 
 
     //- Beards
@@ -47,40 +47,79 @@ section#npcs
     +mod
 
 
-    //- ApateX Female Face Textures
-    - testing = true
-    - highQuality = true
-    - modId = 'apatex-female-face'
-    - modName = 'ApateX Female Face Textures'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62699'
-    - modAuthor = 'Zephranthes'
-    - modVersion = 'v0.8'
-    - mainFiles = ['Installer for ApateX Basic ONLY']
-    - optionalFiles = ['ApateX Wasteland', 'ApateX Normal Map']
+    //- Breeze Male Redux
+    - modId = 'breeze-male-redux'
+    - modName = 'Breeze Male Redux'
+    - modAuthor = 'Kendo 2'
+    - modVersion = '1.0.0'
+    - modUrl = 'https://nsfwmods.com/files/file/61-breeze-male-redux/'
+    - downloadFiles = ['K2_BREEZE_REDUX_Base_Files.rar', 'FO3_DLC_Pitt.rar', 'FO3_DLC Point Lookout.rar',
+    'NV_DLC OldWorldBlues.rar', 'NV_DLC LonesomeRoad.rar', 'K2_BREEZE_REDUX_Update 12.2018.rar']
+    - fileType = 'ttw'
     +mod
-        +mispack
-            | During installation of ApateX Wasteland and ApateX Normal Map create the following directories:
+        +instructions
+            | Go to the folder Data\meshes\characters\_male
+            | Look for the files upperbody_nude erect,  upperbody_nude and  upperbodymale_underwear shorts.
             |
-            | Create a folder called textures
-            | Within the new textures folder create a folder named characters
-            | Within the new chatacters folder create folder named female
-            |
-            | Drag the headhuman.dds file into the female folder (ApateX Wasteland)
-            | Drag the headhuman_n.dds into the female folder (ApateX Normal Map)
-            |
-            | Structure should be textures/characters/female/headhuman(_n).dds
+            | Rename one of these files to upperbody
+
+
+    //- Honest Hearts Tribals
+    - modId = 'honest-hearts-tribals'
+    - modName = 'Honest Hearts Tribals'
+    - modAuthor = 'Kendo 2'
+    - modVersion = '1.0.0'
+    - modUrl = 'https://nsfwmods.com/files/file/60-kendo-2s-honest-hearts-tribals/'
+    - downloadFiles = ['K2_Honest_Hearts_Tribals.rar']
+    - fileType = 'fnv'
+    +mod
+
+
+    //- TYPE4 Female Body and Armors
+    - modId = 'type4-female-body-and-armors'
+    - modName = 'TYPE4 Female Body and Armors'
+    - modAuthor = 'junkacc11'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66903'
+    - mainFiles = ['T4 - Main']
+    - optionalFiles = ['T4 - Plugin TTW']
+    - modVersion = '1.9a'
+    +mod
+        +optionalEsps('T4-plugin.esp')
+
+
+    //- ApateX Female Face Textures
+    //- - testing = true
+    //- - highQuality = true
+    //- - modId = 'apatex-female-face'
+    //- - modName = 'ApateX Female Face Textures'
+    //- - modUrl = 'https://www.nexusmods.com/newvegas/mods/62699'
+    //- - modAuthor = 'Zephranthes'
+    //- - modVersion = 'v0.8'
+    //- - mainFiles = ['Installer for ApateX Basic ONLY']
+    //- - optionalFiles = ['ApateX Wasteland', 'ApateX Normal Map']
+    //- +mod
+    //-     +mispack
+    //-         | During installation of ApateX Wasteland and ApateX Normal Map create the following directories:
+    //-         |
+    //-         | Create a folder called textures
+    //-         | Within the new textures folder create a folder named characters
+    //-         | Within the new chatacters folder create folder named female
+    //-         |
+    //-         | Drag the headhuman.dds file into the female folder (ApateX Wasteland)
+    //-         | Drag the headhuman_n.dds into the female folder (ApateX Normal Map)
+    //-         |
+    //-         | Structure should be textures/characters/female/headhuman(_n).dds
 
 
     //- Ghouls Hires retexture
-    - coreMod = true
     - modId = 'ghouls-hires-retexture'
     - modName = 'Ghouls Hires retexture'
     - modUrl = 'https://www.nexusmods.com/newvegas/mods/49449'
     - modAuthor = 'Macintroll'
     - modVersion = '1.1'
-    - mainFiles = ['Ghoul retexture']
+    - optionalFiles = ['Ghoul retexture for Breeze Male Body replacer']
     +mod
-	
+
 
     //- High Resolution Male Body Textures
     - highQuality = true
@@ -125,4 +164,3 @@ section#npcs
     - modAuthor = 'zzjay'
     - mainFiles = ['Eyes Smaller Iris']
     +mod
-
