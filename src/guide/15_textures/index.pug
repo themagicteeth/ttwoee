@@ -1,8 +1,7 @@
 //-
     Textures
 
-    Wasteland Flore Overhaul - https://www.nexusmods.com/newvegas/mods/39856
-    Vurt's Improved Plants - https://www.nexusmods.com/newvegas/mods/66898
+
     Clipboards Retexture - https://www.nexusmods.com/newvegas/mods/66843
     Seed Package Retexture - https://www.nexusmods.com/newvegas/mods/64415
     Dufflebag Retexture - https://www.nexusmods.com/newvegas/mods/63100
@@ -254,32 +253,6 @@ section#textures
         +notes New meshes and textures for the Arlington graveyard tombstones
 
 
-    //- Hectrol Tumbleweed
-    - downgrade = true
-    - requiredBy = 'Collision Meshes - Hectrol Tumbleweed'
-    - modId = 'hectrol-tumbleweed'
-    - modName = 'Hectrol Tumbleweed'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/40333'
-    - modAuthor = 'Hectrol'
-    - modVersion = '1.0'
-    - mainFiles = ['Hectrol Tumbleweed Deluxe HighRes Retex']
-    +mod
-        +notes
-            | This skin modifies the aspect of default boring tumbleweeds
-            | by realistic tumbleweeds, and adds a new Normal Map
-
-
-    //- Collision Meshes - Hectrol Tumbleweed
-    - preReq = 'Collision Meshes, and Hectrol Tumbleweed'
-    - modId = 'collision-meshes-tumbleweed'
-    - modName = 'Collision Meshes - Hectrol Tumbleweed'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59149'
-    - modAuthor = 'MadAce, KiCHo666'
-    - modVersion = '1.0'
-    - miscFiles = ['Hectrol Tumbleweed compatibility']
-    +mod
-
-
     //- Money Higher Quality Retex
     - coreMod = true
     - modId = 'money-higher-quality-retex'
@@ -469,6 +442,8 @@ section#textures
     - mainFiles = ['Vertibird re-textured']
     +mod
 
+
+    include plants.pug
     include minigames.pug
     include books.pug
     include tweaked.pug
