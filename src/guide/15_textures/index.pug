@@ -296,21 +296,6 @@ section#textures
         +notes A new texture for the bear trap.
 
 
-    //- Bobbleheads Retextured
-    - modId = 'bobbleheads-retextured'
-    - modName = 'Bobbleheads Retextured'
-    - modUrl = 'https://www.nexusmods.com/fallout3/mods/12378'
-    - modAuthor = 'konji'
-    - modVersion = ' 1.00'
-    - mainFiles = ['Bobbleheads_Retextured']
-    +mod
-        +mispack
-            | Select either tex - BLACK VERSION or tex - WHITE VERSION
-            | Drag the textures folder into the into the root directory so it is the same level as meshes
-            |
-            | Uncheck bobbleheads.jpg
-
-
     //- Casco Wonderglue Retex
     - modId = 'casco-wonderglue'
     - modName = 'Casco Wonderglue Retex'
@@ -332,30 +317,13 @@ section#textures
         +notes Cherry Bomb retextured to be less ugly.
 
 
-    //- Fallout Food Package Retexture Compilation
-    - coreMod = true
-    - requiredBy = 'Collision Meshes FO3 - Fallout Food Package Retexture Compilation'
-    - modId = 'food-package-retexture-collection'
-    - modName = 'Fallout Food Package Retexture Compilation'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59232'
-    - modAuthor = 'Majormodder'
-    - modVersion = '3.0'
-    - mainFiles = ['Food compilation dirty set uncompressed 3 point Oh']
-    +mod
-        +optionalEsps('Food Package Retexture Compilation', "majormodder's Junk Food to Barbeque Crisps.esp")
-        +notes
-            | Revamps the old food textures for the box packages with textures ranging
-            | from 1k-2k size, lore friendly too.
-
-
-    //- Collision Meshes FO3 - Fallout Food Package Retexture Compilation
-    - preReq = 'Collision Meshes, and Fallout Food Package Retexture Compilation'
-    - modId = 'collision-meshes-fo3-food-package-retexture-patch'
-    - modName = 'Collision Meshes FO3 - Fallout Food Package Retexture Compilation'
-    - modUrl = 'https://www.nexusmods.com/fallout3/mods/21946'
-    - modAuthor = 'KaneWright'
-    - modVersion = '1.0'
-    - miscFiles = ['FalloutFoodPackageRetextureCompilationFix']
+    //- HD Duct Tape Retexture
+    - modId = 'hd-duct-tape'
+    - modName = 'HD Duct Tape Retexture'
+    - modAuthor = 'Deanoman'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/59739'
+    - modVersion = '1.1'
+    - mainFiles = ['HD Duct Tape 1.1']
     +mod
 
 
@@ -393,25 +361,6 @@ section#textures
     - mainFiles = ['Hula Girl - Coconut Bra']
     +mod
 
-    //- High Resolution Iguana on a Stick
-    - modId = 'iguana-on-a-stick'
-    - modName = 'High Resolution Iguana on a Stick'
-    - modAuthor = 'Jokerine'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/58660'
-    - modVersion = '1.0'
-    - mainFiles = ['High-Res Iguana on a Stick v1']
-    +mod
-
-
-    //- High Resolution Potato
-    - modId = 'high-res-potato'
-    - modName = 'High Resolution Potato'
-    - modAuthor = 'Jokerine'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/63563'
-    - modVersion = '1.0'
-    - mainFiles = ['High Res Potato v1']
-    +mod
-
 
     //- Neglected Clutter
     - coreMod = true
@@ -424,15 +373,6 @@ section#textures
     - optionalFiles = ['Neglected Clutters - New Paint Gun']
     +mod
 
-
-    //- Pinyon Nuts Retexture
-    - modId = 'pinyon-nuts'
-    - modName = 'Pinyon Nuts Retexture'
-    - modAuthor = 'Jokerine'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/60481'
-    - modVersion = '1.0'
-    - mainFiles = ['Pinyon Nuts Retexture v1']
-    +mod
 
     //- PM's HD Ammo Boxes
     - highQuality = true
@@ -475,17 +415,6 @@ section#textures
             | appropriately distressed, bills
 
 
-    //- Snowglobes Redone
-    - modId = 'snowglobes-redone'
-    - modName = 'Snowglobes Redone'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/62489'
-    - modAuthor = 'Quoter1'
-    - modVersion = '1.0'
-    - optionalFiles = ['Snowglobes Redone DLC 2K']
-    +mod
-        +optionalEsps('Snowglobes Redone', 'Snowglobes Redone - DLC.esp')
-
-
     //- Toaster Retexture
     - highQuality = true
     - downgrade = true
@@ -518,6 +447,8 @@ section#textures
     +mod
 
 
+    include collectibles.pug
+    include fooddrink.pug
     include plants.pug
     include minigames.pug
     include books.pug
