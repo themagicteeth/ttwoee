@@ -11,37 +11,7 @@
 section#gameplay
     h2 Gameplay
 
-    //- Sawyer Batty
-    - difficulty = true
-    - hasPlugins = true
-    - converted = true
-    - modId = 'sawyer-batty'
-    - modName = 'Sawyer Batty'
-    - modUrl = 'https://drive.google.com/open?id=1UXVRedhxB7ZZxksSU110zSP3mlxFT4MO'
-    - fileType = 'ttw'
-    - modAuthor = 'jsawyer, Roy Batty'
-    - modVersion = ''
-    - mainFiles = ['sawyerbatty.7z']
-    +mod
-        +notes
-            | This is a modified version of JSawyer Mod, which overhauls many aspects of the game
-            | a list of what is changed (mostly, some has been removed) can be found on
-            | #[+link('Gamepedia', 'https://fallout.gamepedia.com/JSawyer')].
-            | More info on this patched version can be found on
-            | #[+link('the TTW forums', 'https://taleoftwowastelands.com/viewtopic.php?t=6578')]
-
-
-    //- Weapons of the Wasteland
-    - hasPlugins = true
-    - modId = 'weapons-of-the-wasteland'
-    - modName = 'Weapons of the Wasteland'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66115'
-    - modAuthor = 'MildlyFootwear'
-    - modVersion = 'v0.9b'
-    - mainFiles = ['Weapons of the Wasteland']
-    +mod
-
-
+    include overhauls.pug
     include combat.pug
     include annoyances.pug
     include newitems.pug
