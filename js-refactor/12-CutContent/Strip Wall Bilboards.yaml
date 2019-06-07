@@ -1,0 +1,13 @@
+mod:
+  name: Strip Wall Billboards
+  url: https://www.nexusmods.com/newvegas/mods/56257
+  author: sandbox6
+  version: 1.0
+  mainFiles:
+    - Strip Wall Billboards
+  notes: Adds previously unused billboards which were only seen during
+    the intro to The Strip's perimeter wall making it slightly less
+    dull. There are only three images on the billboards used in different
+    orientations, but it's still an improvement over the boring vanilla walls.
+  tags:
+    - plugins

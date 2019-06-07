@@ -1,0 +1,19 @@
+{
+  "mod_name": "Static Battery Replacer",
+  "file_name": "Static Battery Replacer-36052.7z",
+  "file_size": "4215",
+  "version": "1.0",
+  "author": "pintocat",
+  "md5": "b46967410caa58c12159008ec1f1d43a",
+  "repository": "NexusMods",
+  "nexus_mod_id": "36052",
+  "nexus_file_id": "71861",
+  "nexus_file_name": "Static Battery Replacer",
+  "target_game": "NewVegas",
+  "installation_parameters": [
+    {
+      "source_location": "\\Static Battery Replacer\\Static Battery Replacer.esp",
+      "target_location": "\\Static Battery Replacer.esp"
+    }
+  ]
+}

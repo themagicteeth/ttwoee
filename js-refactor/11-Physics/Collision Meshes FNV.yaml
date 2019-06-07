@@ -1,0 +1,9 @@
+mod:
+  name: Collision Meshes FNV
+  url: https://www.nexusmods.com/newvegas/mods/59149
+  author: MadAce
+  version: 1.6.2
+  mainFiles:
+    - Collision Meshes FNV
+  updateFiles:
+    - update Collision Meshes FNV 1.6.1 to 1.6.2

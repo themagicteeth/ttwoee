@@ -1,0 +1,18 @@
+mod:
+  name: Vault 22 Flora Overhaul
+  version: 1.1
+  url: https://www.nexusmods.com/newvegas/mods/54472
+  author: Macintroll
+  notes:
+    This mod trys to add realistic flora overgrown in the vault 22. All levels have
+    been modified and cluttered with more flora, ivy, bushes, grasses and some creepy things.
+    Game play should be a little more difficult but main quest is almost untouched.
+  mainFiles:
+    - Vault 22 FloraOverhaul Alpha 1-1
+  instructions:
+    mispackaged: |
+      This mod is packaged incorrectly
+      Expand "Vault22FloraOverhaul-mod"
+      Right click "data" and select [Set Data Directory] and click OK
+  tags:
+    - plugins

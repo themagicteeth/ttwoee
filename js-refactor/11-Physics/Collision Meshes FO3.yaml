@@ -1,0 +1,9 @@
+mod:
+  name: Collision Meshes FO3
+  url: https://www.nexusmods.com/fallout3/mods/21946
+  author: KaneWright
+  version: 1.6.1
+  mainFiles:
+    - CollisionMeshesFO3
+  updateFiles:
+    - update Collision Meshes FO3 1.6.0 to 1.6.1

@@ -1,0 +1,18 @@
+mod:
+  name: Realistic Wasteland Lighting
+  author: xCamoLegend, Sal203, RoyBatty
+  fileType: TTW
+  version: v5.542
+  url: https://www.nexusmods.com/newvegas/mods/52037
+  notes: A complete weather overhaul for Fallout New Vegas and its DLCs
+    with complete Tale of Two Wastelands support. Designed to make
+    the game look more realistic. Improves lighting, weather, clouds,
+    stars, moon and the overall look and feel of the wasteland. For
+    more details check the TTW forum post
+    https://taleoftwowastelands.com/viewtopic.php?f=55&t=6685&sid=d7978d3911e87f0ba5b6af81269d94e9
+  mainFiles:
+    - TTW Realistic Wasteland Lighting
+  tags:
+    - core
+    - plugins
+    - converted

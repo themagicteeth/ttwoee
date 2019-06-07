@@ -1,0 +1,16 @@
+mod:
+  name: Outside Bets
+  url: https://drive.google.com/file/d/12rbimLX3N4zkxCPgT0P2hfbg3H9ZJJdD/view?usp=sharing
+  fileType: FNV
+  author: MoBurma, FiftyTifty
+  downloadFiles:
+    - outsidebets.esp
+  instructions:
+    - general: |
+        Create an archive with just the esp
+        Install in Mod Organizer
+  notes: For more info visit the TTW forums
+    https://taleoftwowastelands.com/viewtopic.php?f=55&t=6769&sid=16a02787fce15e5188a8778d7563b3f2
+  tags:
+    - plugins
+    - converted
