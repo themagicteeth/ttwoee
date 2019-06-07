@@ -1,31 +1,42 @@
 h3 New Items
 
 //- Flashlight NVSE
-#flashlight-nvse
-    +name('Flashlight NVSE', 'https://www.nexusmods.com/newvegas/mods/39968', 'fnv')
-    +modInfo
-        +author vivanto
-        +version 1.22
-        +installation Install #[+file('FlashlightNVSE122 fomod installer')]
+- hasPlugins = true
+- modId = 'flashlight-nvse'
+- modName = 'Flashlight NVSE'
+- modAuthor = 'vivanto'
+- modVersion = '1.22'
+- modUrl = 'https://www.nexusmods.com/newvegas/mods/39968'
+- mainFiles = ['FlashlightNVSE122 fomod installer']
++mod
+
 
 //- TTW Flashlight NVSE
-#flashlight-nvse-ttw
-    +name('TTW Flashlight NVSE', 'https://drive.google.com/open?id=1lJpwTDidKoh7QuwnqQzKNN8lc-17exiY', 'ttw')
-    +modInfo
-        +author Roy Batty
-        +installation Install #[+file('ttw_flashlightnvse.7z')]
+- converted = true
+- hasPlugins = true
+- modName = 'TTW Flashlight NVSE'
+- modId = 'flashlight-nvse-ttw'
+- fileType = 'ttw'
+- modUrl = 'https://drive.google.com/open?id=1lJpwTDidKoh7QuwnqQzKNN8lc-17exiY'
+- modAuthor = 'Roy Batty'
+- downloadFiles = ['ttw_flashlightnvse.7z']
++mod
 
 
 //- Mobile Truck Base
-#mobile-truck-base
-    +name('Mobile Truck Base', 'https://www.nexusmods.com/newvegas/mods/50978', 'fnv')
-    +modInfo
-        +author tdx73
-        +version 1.51
-        +installation Install #[+file('Data')]
-        +notes This adds a purchase able truck to Gibson Scrapyard that serves as a mobile player base.
+- modId = 'mobile-truck-base'
+- modName = 'Mobile Truck Base'
+- modUrl = 'https://www.nexusmods.com/newvegas/mods/50978'
+- modAuthor = 'tdx73'
+- modVersion = '1.51'
+- mainFiles = ['Data']
++mod
+    +notes This adds a purchase able truck to Gibson Scrapyard that serves as a mobile player base.
+
 
 //- Mobile Truck Base - TTW
+- converted = true
+- hasPlugins = true
 - modId = 'mobile-truck-base-ttw'
 - modName = 'Mobile Truck Base - TTW'
 - modUrl = 'https://www.nexusmods.com/newvegas/mods/66012'
