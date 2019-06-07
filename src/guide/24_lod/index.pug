@@ -35,6 +35,8 @@ section#lod
         +hidden
             | * textures/clutter/billboard01blod.dds
             | * textures/clutter/billboard01blod_n.dds
+        +instructions
+            | Move the meshes/architecture/primm/ folder to textures/architecture/
         +important2('Requires manual cleaning')
             | Run FNVEdit through MO2
             | Right-click inside the file listing and select None
@@ -67,6 +69,23 @@ section#lod
     - mainFiles = ['Much Needed LOD']
     - optionalFiles = ['Much Needed LOD - Ojo Bueno Patch']
     +mod
+        +hidden
+            | * meshes/scol/
+            | * textures/scol/
+            | * meshes/landscape/nv_rocks/nvn_rockcanyon19_lod.nif
+            | * meshes/landscape/nv_rocks/nvn_rockcanyon19blk_lod.nif
+            | * meshes/landscape/nv_rocks/nvn_rockcanyon19rdrk_lod.nif
+        +important('Requires manual cleaning')
+            | Run FNVEdit through MO2
+            | Right-click in the Module Selection pop-up and click Select None
+            | Check the box adjacent to MuchNeededLOD.esp then hold down left shift and click OK
+            | Wait for the message Background Loader: finished to appear in the right pane
+            | Input 119878 into the FormID search box in the top left and hit enter
+            | In the right pane, right-click on the Visible when distant flag and select Remove
+            | 
+            | Repeat for 120F46, 12FC67, and 144B9B
+            |
+            | Save and exit
         +notes Adds new distant LOD to vehicles, roads, barricades, rocks/cliffs, etc.
 
 
