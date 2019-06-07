@@ -20,31 +20,33 @@
 mixin mod
     //- Container for the mod
     div(id=modId)
+        details(open)
+            summary
+                div
+                    +modTags
 
-        +modTags
+                    +modTitle
 
-        +modTitle
+            //- Mod info is below
+            div.mod-card-bg.mt0
 
-        //- Mod info is below
-        div.mod-card-bg.mt0
+                //- Check if author is set
+                if modAuthor
+                    +modAuthor
+                
+                //- Check if version is set
+                if modVersion
+                    +modVersion
+                
+                //- Check if any files are set
+                if mainFiles || updateFiles || optionalFiles || miscFiles || downloadFiles
+                    +modInstall
 
-            //- Check if author is set
-            if modAuthor
-                +modAuthor
-            
-            //- Check if version is set
-            if modVersion
-                +modVersion
-            
-            //- Check if any files are set
-            if mainFiles || updateFiles || optionalFiles || miscFiles || downloadFiles
-                +modInstall
+                //- Notes, and installation details here
+                block 
 
-            //- Notes, and installation details here
-            block 
-
-            if modRequires
-                +requires
+                if modRequires
+                    +requires
 
     //- Reset the mod ID
     - modId = null

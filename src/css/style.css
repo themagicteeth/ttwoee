@@ -199,11 +199,24 @@ template {
   --white: #fff;
   --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
 }
-
+details summary::marker {
+  display: none;
+}
+details:not([open]) {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--mod-name-bg);
+  /* padding-bottom: 2px; */
+  /* margin-bottom: 5px; */
+  /* margin-top: 5px; */
+  border-radius: 8px;
+}
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
