@@ -20,20 +20,6 @@ section#qol
             | corrupting version
 
 
-    //- Enhanced Camera
-    - coreMod = true
-    - modId = 'enhanced-camera'
-    - modName = 'Enhanced Camera'
-    - modUrl = 'https://www.nexusmods.com/newvegas/mods/55334'
-    - modAuthor = 'LogicDragon'
-    - modVersion = '1.4c'
-    - mainFiles = ['Enhanced Camera 1.4c']
-    +mod
-        +notes
-            | Enables a visible body and player shadows when in
-            | 1st person and changes 3rd person animations to 1st person
-
-
     //- FOV Slider
     - hasPlugins = true
     - preReq = 'NVSE, The Mod Configuration Menu, and JIP LN NVSE Plugin'
@@ -96,6 +82,66 @@ section#qol
             | Change <_VUI+noMODSlabel> to 1
             | Save and exit
         +notes Adds configurable prefixes before items in the pip-boy menu
+
+
+    h3 Charcter Movements and Immersion
+
+    //- C16's Vanilla Sprint
+    - hasPlugins = true
+    - coreMod = true
+    - modId = 'c16-vanilla-sprint'
+    - modName = "C16's Vanilla Sprint"
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66960'
+    - modAuthor = 'C16, Asurah, and yvileapsis'
+    - modVersion = '2.3'
+    - mainFiles = ['C16s Vanilla Sprint - Main File']
+    +mod
+
+
+    //- B42 Weapon Inertia
+    - hasPlugins = true
+    - modId = 'b42-weapon-inertia'
+    - modName = 'B42 Weapon Inertia'
+    - modAuthor = 'Xilandro and JazzIsParis'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/64335'
+    - modVersion = '0.1beta'
+    - mainFiles = ['B42 Inertia']
+    +mod
+        +instructions
+            | During installation uncheck "readme.txt"
+
+
+    //- Enhanced Camera
+    - coreMod = true
+    - modId = 'enhanced-camera'
+    - modName = 'Enhanced Camera'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/55334'
+    - modAuthor = 'LogicDragon'
+    - modVersion = '1.4c'
+    - mainFiles = ['Enhanced Camera 1.4c']
+    +mod
+        +notes
+            | Enables a visible body and player shadows when in
+            | 1st person and changes 3rd person animations to 1st person
+
+
+    //- DiaMoveNVSE
+    - configFiles = true
+    - modId = 'diamovenvse'
+    - modName = 'DiaMoveNVSE'
+    - modAuthor = 'cOjzZ'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/66451'
+    - modVersion = 'Alpha04.53'
+    - mainFiles = ['DiaMoveNVSE']
+    +mod
+        +ini('If using Enhanced Camera make the following changes to the INI')
+            | ; Find the ControlNode section and make this change
+            | [ControlNode]
+            | EnableECCompatible=true
+        +notes
+            | To use load a save, walk around and double click "z" to enable exVanity mode
+            | (skyrim-like vanity mode, need to switch POV once to works)
+
 
     h3 Sortomatic
 
