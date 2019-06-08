@@ -199,6 +199,9 @@ template {
   --white: #fff;
   --raised-shadow: 2px 3px 3px 0 rgba(41, 41, 41, 0.3);
 }
+details {
+  cursor: pointer;
+}
 details summary::marker {
   display: none;
 }
