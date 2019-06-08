@@ -40,9 +40,27 @@ mixin important
     p.important.mb0
         block
 
-mixin merge
-    p.merge.mb0
-        block
+mixin merge(title, id)
+    details(style='background-color: #eb8cba;', id=id)
+        summary
+            p.merge.mb0 #{title}
+        pre.mt0
+            | Run zEdit through MO2
+            | From the top drop-down menu, select zMerge, and from the bottom select Fallout NV
+            | Click Start Session
+            | Click the Create Merge button
+            | In the Details tab, change the Name to #{title} and make sure the Merge Method is "Merge down (improved)"
+            |
+            | In the Plugins tab, select the following:
+            |
+            |
+            block
+            |
+            |
+            | Click OK to exit the merge menu
+            | Click the Build button in the top right to the right of the merge name
+            |
+            | The merge should build successfully and you can exit out of the pop-up
 
 
 //-
