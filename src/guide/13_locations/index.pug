@@ -4,6 +4,46 @@
 
 - sections.push(['#exploration', 'Exploration'])
 
+section#new-california
+    h2 New California
+
+    +important
+        | This section, including the mods and instructions are in heavy testing. Use at your own risk.
+
+    //- Fallout New California
+    - modId = 'fallout-new-california'
+    - nodName = 'Fallout New California'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/45138'
+    - modAuthor = 'Radian-Helix Media'
+    - modVersion '2.2.2'
+    - downloadFiles = ['Fallout New California BETA 221 INSTALLER', 'Fallout New California BETA 222 PATCH']
+    +mod
+        +important
+            | It is very important to follow these instructions exactly
+        +instructions
+            | Extract the contents of the installer somewhere NOT in the Fallout directory
+            |
+            | Create a temporary folder
+            | Copy FalloutNV.exe into the temporary folder
+            | Run the FNC Installer.exe file and click [Next] until it asks for a destination folder
+            | Select the temporary folder, and click [Install]
+            |
+            | Once finished create an archive of ONLY the Data folder
+            | Install the archive through Mod Organizer
+            |
+            | Install the Fallout New California BETA 222 PATCH file as any other mod
+
+
+    //- Star the Wandering Courier
+    - modId = 'star-the-wandering-courier'
+    - modName = 'Star the Wandering Courier'
+    - modAuthor = 'Kyle and Kira'
+    - modUrl = 'https://www.nexusmods.com/newvegas/mods/67242'
+    - modversion = 'v1.1'
+    - mainFiles = ['StarTheWanderingCourier (FNC-TTW Patch)']
+    +mod
+
+
 section#exploration
     h2 Exploration
 
@@ -17,8 +57,8 @@ section#exploration
     - modVersion = '1.0'
     - mainFiles = ['Another Interior Mod']
     +mod
-        +notes 
-            | Adds 40+ locations to the DC Wasteland, compatible with TTW Interiors, AWOP4FO3 
+        +notes
+            | Adds 40+ locations to the DC Wasteland, compatible with TTW Interiors, AWOP4FO3
             | and The Regulators, for more info visit the
             | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6518&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
@@ -33,9 +73,9 @@ section#exploration
     - modAuthor = 'Roy Batty'
     - modVersion = 'Update 2'
     +mod
-        +notes 
+        +notes
             | This mod makes all the animated gates, doors and rivet city bridge animate when you
-            | approach and leave. For more info visit the 
+            | approach and leave. For more info visit the
             | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6519&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
 
@@ -52,11 +92,11 @@ section#exploration
     - mainFiles = ['A World of Pain for Fallout 3']
     - optionalFiles = ['JIP CCC Avatars']
     +mod
-        +notes 
-            | Adds many intense and unique locations to the Capital Wasteland, new items, 4D storage, 
-            | two companions and a couple of quests. For more info visit the 
+        +notes
+            | Adds many intense and unique locations to the Capital Wasteland, new items, 4D storage,
+            | two companions and a couple of quests. For more info visit the
             | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6617&sid=d7978d3911e87f0ba5b6af81269d94e9')]
-    
+
 
     //- A World of Pain NV
     - hasPlugins = true
@@ -69,11 +109,11 @@ section#exploration
     - mainFiles = ['A World of Pain', 'AWOP Dead Money 2.0']
     - optionalFiles = ['AWOP Compatibility Patches', 'AWOP Optional Plugins', 'AWOP WRP Patch']
     +mod
-        +notes 
+        +notes
             | Adds 159 new and intense locations to the wasteland filled with enemies and loot. They vary from small Gas Stations
-            | to huge maze-like sewers and derelict factories. Adds several days of new gameplay possibilities. Filled with quests, 
-            | NPCs with dialogue, vendors and some of the toughest enemies you will ever encounter. 
-        
+            | to huge maze-like sewers and derelict factories. Adds several days of new gameplay possibilities. Filled with quests,
+            | NPCs with dialogue, vendors and some of the toughest enemies you will ever encounter.
+
 
     //- A World of Pain for Dead Money - Unofficial Revisions
     - hasPlugins = true
@@ -98,8 +138,8 @@ section#exploration
     - fileType = 'ttw'
     - mainFiles = ['TTW A World of Pain A World of Pain for Fallout 3', 'TTW A World of Pain Patch']
     +mod
-        +notes 
-            | Compatibility patches for A World of Pain, A World of Pain for Fallout 3 
+        +notes
+            | Compatibility patches for A World of Pain, A World of Pain for Fallout 3
             | and Tale of Two Wastelands. For more info visit the
             | #[+link('TTW forum post', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6526&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
@@ -114,11 +154,11 @@ section#exploration
     - fileType = 'fo3'
     - modAuthor = 'Wasteland Loner, Roy Batty'
     +mod
-        +notes 
-            | This mod attempts to make the downtown D.C. area feel more post apocalyptic, 
+        +notes
+            | This mod attempts to make the downtown D.C. area feel more post apocalyptic,
             | by adding things like vehicles, rubble, craters etc. However, the changes are
             | not too extensive at the moment.
-            
+
 
     //- Museum Halls of Today
     - hasPlugins = true
@@ -129,9 +169,9 @@ section#exploration
     - fileType = 'fo3'
     - modAuthor = 'Wasteland Loner, Roy Batty'
     +mod
-        +notes 
+        +notes
             | This mod adds The Halls of Today to the Museum of Technology in The Mall.
-            | For more information check the 
+            | For more information check the
             | #[+link('TTW forums', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6522&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
 
@@ -148,9 +188,9 @@ section#exploration
     - optionalFiles = ["TTW Interiors The Mad Bomber's Workshop v3.1"]
     - miscFiles = ['NMC NVInt - TTW Int compatibility Patch Large v2.0', 'FPGE - TTW Interiors Patch v1.1']
     +mod
-        +notes 
+        +notes
             | This is a total merge of The D.C. Interiors Project, The N.V. Interiors Project and
-            | some of chucksteels other mods. For more details check the 
+            | some of chucksteels other mods. For more details check the
             | #[+link('TTW forums', 'https://taleoftwowastelands.com/viewtopic.php?f=55&t=6541&sid=d7978d3911e87f0ba5b6af81269d94e9')]
 
 
@@ -169,7 +209,7 @@ section#exploration
             | Modifies the Sink from chucksteel's TTW interiors mod to use Sortomatic,
             | also adds support for the Mad Bomber's Workbench for Sortomatic in the Sink
             | and edits the crafting scripts to bring all items to the player while crafting
-            | from all containers. 
+            | from all containers.
 
 
     //- DCInteriors HD
@@ -210,7 +250,7 @@ section#exploration
     - modAuthor = 'chucksteel'
     - fileType = 'fo3'
     +mod
-    
+
     //- TTW Paradise Rising
     - hasPlugins = true
     - converted = true
