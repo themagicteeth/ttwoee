@@ -27,8 +27,5 @@
     "rimraf": "^2.6.3",
     "uglifycss": "^0.0.29",
     "yarn": "^1.15.0"
-  },
-  "dependencies": {
-    "js-yaml": "^3.13.1"
   }
 }
